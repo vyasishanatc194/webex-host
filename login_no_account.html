@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="description" content="" />
+<meta name="author" content="" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>Login | Certis</title>
+<meta content='initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width' name='viewport' />
+<meta name="theme-color" content="#002855">
+<meta name="msapplication-navbutton-color" content="#002855">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#002855">
+<link href='assets/images/favicon.png' rel='shortcut icon'>
+<link href="assets/css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet" />
+<link href="assets/fonts/lato/lato-font.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/auth-style.css" media="all" rel="stylesheet" type="text/css" />
+<script src="assets/js/modernizr.js"></script>
+</head>
+
+<body>
+
+<div id="wrapper" class="wrapper login-wrapper">
+
+  <div class="main-middle-area">
+    
+    <section class="auth-section" id="login-section">
+      <div class="auth-div">
+
+        <div class="container container-lg">
+          <div class="row">
+            <div class="col-lg-12 col-md-12">
+
+              <div class="auth-center-root">
+
+                <div class="auth-header-div">
+                  <div class="logo-header-div">
+                    <a href="login.html" class="link">
+                      <img src="assets/images/logo.png" class="img-fluid img-logo-auth" alt="logo" />
+                    </a>
+                  </div>
+                  <div class="text-div">
+                    <h3>Digital Executive Briefing Centre</h3>
+                  </div>
+                </div>
+
+                <div class="auth-body-div">
+                  <div class="auth-card-box">
+                    <div class="center-container">
+                      <div class="title-div">
+                        <h1>Host Login</h1>
+                      </div>
+                      <div class="auth-card-body">
+                        <div class="form-root">
+                          <div class="form-div">
+  
+                            <div class="row mlr-10 mb-3">
+
+                              <div class="col-lg-12 col-md-12 plr-10">
+                                <div class="form-group form-group-custom">
+                                  <div class="row mlr-10">
+                                    <div class="col-lg-4 col-md-4 plr-10">
+                                      <div class="label-div">
+                                        <label>Email</label>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 plr-10">
+                                      <div class="input-control">
+                                        <input type="email" class="form-control" placeholder="Enter Email Here" />
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="col-lg-12 col-md-12 plr-10">
+                                <div class="form-group form-group-custom form-group-icon">
+                                  <div class="row mlr-10">
+                                    <div class="col-lg-4 col-md-4 plr-10">
+                                      <div class="label-div">
+                                        <label>Password</label>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 plr-10">
+                                      <div class="input-control">
+                                        <input type="password" id="password01" class="form-control" placeholder="Enter Password Here" />
+                                        <span class="icon-group">
+                                          <button type="button" id="show_password01" name="show_password" class="pass-hide password-view-click">
+                                              <span class="pass-custom-icon material-icons"> visibility_off </span>
+                                          </button> 
+                                        </span>
+                                      </div>
+
+                                      <div class="bottom-row">
+                                        <div class="link-box w-100">
+                                          <a href="forgot_password.html" class="btn btn-link btn-recover-password">Forgot Password?</a>
+                                        </div>
+
+                                        <div class="error-message-box w-100">
+                                          <p>Invalid login credentials, please try again.</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                            </div>
+
+                            <div class="row mlr-10">
+                              <div class="col-lg-8 offset-lg-4 col-md-8 offset-md-4 plr-10">
+                                <div class="general-form-btn">
+                                  <a href="#" class="btn-common-linked"> <button type="button" class="btn btn-common-primary btn-block btn-login">Sign In</button> </a>
+                                </div>
+                              </div>
+                            </div>
+  
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      
+      </div>
+    </section>
+
+  </div>
+
+</div><!-- end of wrapper -->
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/custom.js"></script>
+
+<script>
+$(document).ready(function() {
+  $('#show_password01').on('click', function(){  
+    var passwordField2 = $('#password01');  
+    var passwordFieldType2 = passwordField2.attr('type');
+      
+    if(passwordField2.val() != ''){
+      if(passwordFieldType2 == 'password') {  
+        passwordField2.attr('type', 'html');  
+        $(this).html('<span class="pass-custom-icon material-icons password-hide"> visibility </span>');  
+      } else {  
+        passwordField2.attr('type', 'password');  
+        $(this).html('<span class="pass-custom-icon material-icons password-view"> visibility_off </span>');     
+      }
+    }
+  });
+});
+</script>
+
+</body>
+</html>

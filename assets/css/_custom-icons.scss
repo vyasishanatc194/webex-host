@@ -1,0 +1,25 @@
+.menu-icon {
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='%23fff' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-menu white-color'%3E%3Cline x1='3' y1='12' x2='21' y2='12'%3E%3C/line%3E%3Cline x1='3' y1='6' x2='21' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='18' x2='21' y2='18'%3E%3C/line%3E%3C/svg%3E");
+}
+
+.menu-icon-hover {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='%23131727' stroke='%23131727' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-menu white-color'%3E%3Cline x1='3' y1='12' x2='21' y2='12'%3E%3C/line%3E%3Cline x1='3' y1='6' x2='21' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='18' x2='21' y2='18'%3E%3C/line%3E%3C/svg%3E");
+}
+
+/* BG ICON */
+.bg-custom-icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.search-icon {
+  width: 18px;
+  height: 18px;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='17px' height='18px' viewBox='0 0 17 18' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3E🔹Icon Color%3C/title%3E%3Cg id='Admin' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cpath d='M12.5006256,11.0006256 L11.7106256,11.0006256 L11.4306256,10.7306256 C12.6306256,9.33062559 13.2506256,7.42062559 12.9106256,5.39062559 C12.4406256,2.61062559 10.1206256,0.390625593 7.32062559,0.0506255931 C3.09062559,-0.469374407 -0.469374407,3.09062559 0.0506255931,7.32062559 C0.390625593,10.1206256 2.61062559,12.4406256 5.39062559,12.9106256 C7.42062559,13.2506256 9.33062559,12.6306256 10.7306256,11.4306256 L11.0006256,11.7106256 L11.0006256,12.5006256 L15.2506256,16.7506256 C15.6606256,17.1606256 16.3306256,17.1606256 16.7406256,16.7506256 C17.1506256,16.3406256 17.1506256,15.6706256 16.7406256,15.2606256 L12.5006256,11.0006256 Z M6.50062559,11.0006256 C4.01062559,11.0006256 2.00062559,8.99062559 2.00062559,6.50062559 C2.00062559,4.01062559 4.01062559,2.00062559 6.50062559,2.00062559 C8.99062559,2.00062559 11.0006256,4.01062559 11.0006256,6.50062559 C11.0006256,8.99062559 8.99062559,11.0006256 6.50062559,11.0006256 Z' id='🔹Icon-Color' fill='%239B9B9B' fill-rule='nonzero'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+}
