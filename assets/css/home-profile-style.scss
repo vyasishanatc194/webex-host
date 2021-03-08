@@ -53,6 +53,22 @@
 
   .form-root {
     .form-group-custom {
+      margin-bottom: 30px;
+      display: flex;
+      flex-wrap: wrap;
+
+      .form-group-custom-inner {
+        width: 100%;
+      }
+
+      .error-message-box {
+        margin-bottom: 8px;
+      }
+
+      .form-control {
+        margin: 0 0 2px 0;
+      }
+
       .input-control {
         max-width: 70%;
       }
@@ -90,6 +106,8 @@
     }
 
     .profile-pic-upload-group {
+      margin: 0 0 40px 0;
+
       .circle {
         .profile-pic {
           height: 100px;
@@ -101,6 +119,36 @@
         label.filelabel-text {
           font-size: 14px;
         }
+      }
+    }
+
+    .form-root {
+      .form-group-custom {
+        .input-control {
+          max-width: 100%;
+        }
+      }
+    }
+
+    .btn-group-div {
+      max-width: 100%;
+
+      .btn.btn-common-secondary {
+        min-height: 46px;
+        min-width: auto;
+        font-size: 14px;
+        padding: 7px 20px 7px 20px;
+
+        &.mr-15 {
+          margin-right: 8px !important;
+        }
+      }
+
+      .btn.btn-common-primary.btn-common-primary-54 {
+        min-height: 46px;
+        min-width: auto;
+        font-size: 14px;
+        padding: 7px 20px 7px 20px;
       }
     }
   }

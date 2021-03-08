@@ -340,6 +340,7 @@
 
         .side-nav-item {
           overflow-y: scroll;
+          max-height: calc(100vh - 140px);
         }
       }
 
@@ -489,6 +490,7 @@
 
         .side-nav-item {
           overflow-y: scroll;
+          max-height: calc(100vh - 140px);
         }
       }
 

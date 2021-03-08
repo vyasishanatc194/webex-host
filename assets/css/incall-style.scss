@@ -1,0 +1,224 @@
+.main-center-section {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  min-height: 100vh;
+
+  .main-center-div {
+    padding: 0;
+    width: 100%;
+  }
+
+  .incall-area-section {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 100vh;
+    width: 100%;
+
+    .incall-area-div {
+      width: 100%;
+    }
+
+    .in-call-video-bg-fixed-div {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      .in-call-video-bg {
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+      }
+    }
+  }
+}
+
+.incall-area-section {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  min-height: 100vh;
+  width: 100%;
+
+  .in-call-video-bg-fixed-div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    .in-call-video-bg {
+      height: 100vh;
+      width: 100%;
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+
+  .in-call-area-root {
+    width: 100%;
+    position: relative;
+  }
+}
+
+.in-call-user-owl-slider-slider {
+  padding: 0 50px;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  max-width: 980px;
+
+  .owl-carousel .owl-nav {
+    .owl-next,
+    .owl-prev {
+      border: none;
+      padding: 0 !important;
+      background: #6e656c;
+      border-radius: 100px;
+      height: 36px;
+      width: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #f98d29;
+      outline: none;
+
+      .span-roundcircle {
+        display: flex;
+      }
+
+      &.disabled {
+        background: #211c1f;
+      }
+    }
+
+    .owl-prev {
+      position: absolute;
+      left: -50px;
+      top: calc(50% - 20px);
+    }
+
+    .owl-next {
+      position: absolute;
+      right: -50px;
+      top: calc(50% - 20px);
+    }
+  }
+
+  .in-call-user-slider-box {
+    margin: 0 0 20px 0;
+
+    .in-call-user-slider-box-inner {
+      max-width: 135px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .in-call-user-slider-img-thumb {
+      border: 4px solid #fff;
+      border-radius: 100%;
+      height: 115px;
+      width: 115px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .img-responsive {
+        border-radius: 100%;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .in-call-user-slider-content-div {
+      background: rgba(0, 0, 0, 1);
+      border-radius: 60px;
+      top: -12px;
+      position: relative;
+
+      &::before {
+        content: "";
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 60px;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        filter: blur(2px);
+      }
+
+      .in-call-user-slider-content-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 4px 15px;
+        min-height: 30px;
+        z-index: 2;
+        position: relative;
+
+        .btn-audio {
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        p {
+          letter-spacing: 0;
+          color: #fff;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 1.5;
+          width: calc(100% - 15px);
+          word-break: break-all;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+
+    &.active {
+      .in-call-user-slider-img-thumb {
+        border-color: #f98d29;
+      }
+
+      .in-call-user-slider-content-div {
+        background: #f98d29;
+
+        &::before {
+          background: #f98d29;
+          filter: none;
+        }
+      }
+    }
+
+    &.active-in {
+      .in-call-user-slider-img-thumb {
+        background: #00142f;
+
+        .img-thumb {
+          border: 5px solid #f78c2645;
+          border-radius: 999px;
+        }
+
+        .img-responsive {
+          height: 66px;
+          width: 66px;
+          border: 5px solid #f78c2666;
+        }
+      }
+    }
+  }
+}

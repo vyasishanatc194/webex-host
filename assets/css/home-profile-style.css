@@ -56,6 +56,27 @@
   cursor: pointer;
 }
 
+.my-profile-root .form-root .form-group-custom {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.my-profile-root .form-root .form-group-custom .form-group-custom-inner {
+  width: 100%;
+}
+
+.my-profile-root .form-root .form-group-custom .error-message-box {
+  margin-bottom: 8px;
+}
+
+.my-profile-root .form-root .form-group-custom .form-control {
+  margin: 0 0 2px 0;
+}
+
 .my-profile-root .form-root .form-group-custom .input-control {
   max-width: 70%;
 }
@@ -92,12 +113,36 @@
   .my-profile-root .heading-title-div h2 {
     font-size: 24px;
   }
+  .my-profile-root .profile-pic-upload-group {
+    margin: 0 0 40px 0;
+  }
   .my-profile-root .profile-pic-upload-group .circle .profile-pic {
     height: 100px;
     width: 100px;
   }
   .my-profile-root .profile-pic-upload-group .profile-label-text-div label.filelabel-text {
     font-size: 14px;
+  }
+  .my-profile-root .form-root .form-group-custom .input-control {
+    max-width: 100%;
+  }
+  .my-profile-root .btn-group-div {
+    max-width: 100%;
+  }
+  .my-profile-root .btn-group-div .btn.btn-common-secondary {
+    min-height: 46px;
+    min-width: auto;
+    font-size: 14px;
+    padding: 7px 20px 7px 20px;
+  }
+  .my-profile-root .btn-group-div .btn.btn-common-secondary.mr-15 {
+    margin-right: 8px !important;
+  }
+  .my-profile-root .btn-group-div .btn.btn-common-primary.btn-common-primary-54 {
+    min-height: 46px;
+    min-width: auto;
+    font-size: 14px;
+    padding: 7px 20px 7px 20px;
   }
 }
 /*# sourceMappingURL=home-profile-style.css.map */

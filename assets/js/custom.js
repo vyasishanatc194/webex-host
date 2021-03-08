@@ -40,4 +40,11 @@ $(document).ready(function(){
 
   $("[data-toggle='tooltip']").tooltip();
 
+  let modalBackTransparent = document.querySelector(".modal-backdrop-transaprent");
+  let modal = document.querySelector(".modal");
+  if (modalBackTransparent == modal) {
+    $(modalBackTransparent).on('shown.bs.modal', function () {
+      $(".modal-backdrop").addClass("bg-transparent-color");
+    })
+  }
 });
