@@ -82,4 +82,26 @@
 }
 
 @media (max-width: 767px) {
+  .my-profile-root {
+    .heading-title-div {
+      h2 {
+        font-size: 24px;
+      }
+    }
+
+    .profile-pic-upload-group {
+      .circle {
+        .profile-pic {
+          height: 100px;
+          width: 100px;
+        }
+      }
+
+      .profile-label-text-div {
+        label.filelabel-text {
+          font-size: 14px;
+        }
+      }
+    }
+  }
 }
