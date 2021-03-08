@@ -1,0 +1,90 @@
+.my-profile-section {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.my-profile-root .heading-title-div {
+  margin: 0 0 40px 0;
+}
+
+.my-profile-root .heading-title-div h2 {
+  font-size: 38px;
+  line-height: 1.5;
+  font-weight: 600;
+  letter-spacing: 0;
+  color: #083257;
+  display: block;
+  margin: 0 0 5px 0;
+}
+
+.my-profile-root .profile-pic-upload-group .circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 10px 0;
+}
+
+.my-profile-root .profile-pic-upload-group .circle .profile-pic {
+  height: 165px;
+  width: 165px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 200px;
+}
+
+.my-profile-root .profile-pic-upload-group .profile-label-text-div {
+  text-align: center;
+}
+
+.my-profile-root .profile-pic-upload-group .profile-label-text-div label.filelabel-text {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 600;
+  letter-spacing: 0;
+  color: #f98d29;
+  display: block;
+  margin: 0 0 5px 0;
+  cursor: pointer;
+}
+
+.my-profile-root .form-root .form-group-custom .input-control {
+  max-width: 70%;
+}
+
+.my-profile-root .my-profile-body {
+  min-height: calc(100vh - 400px);
+}
+
+.my-profile-root .btn-group-div {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 30px 0 10px 0;
+  max-width: 80%;
+}
+
+.my-profile-root .btn-group-div .btn.btn-common-secondary {
+  padding: 7px 20px 7px 20px;
+  min-height: 54px;
+  min-width: 240px;
+  font-size: 20px;
+}
+/*# sourceMappingURL=home-profile-style.css.map */
