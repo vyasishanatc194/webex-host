@@ -11,6 +11,10 @@
     box-shadow: none;
     outline: none;
     font-weight: 600;
+    transition: all .3s ease-in-out;
+    &:hover {
+        transition: all .3s ease-in-out;
+    }
 }
 
 .btn-blue {
@@ -21,6 +25,7 @@
 
     &:hover {
         background: transparent linear-gradient(105deg, #0072FF 0%, #00C6FF 100%) 0% 0% no-repeat padding-box;
+        box-shadow: 0 5px 15px 0 rgba(0, 115, 255, 0.20);
     }
 
     &:focus {
@@ -40,6 +45,7 @@
 
     &:hover {
         background: transparent linear-gradient(287deg, #FF223B 0%, #F87777 100%) 0% 0% no-repeat padding-box;
+        box-shadow: 0 5px 15px 0 rgba(255, 34, 59, 0.20);
     }
 
     &:focus {
@@ -59,6 +65,7 @@
 
     &:hover {
         background: transparent linear-gradient(105deg, #FC711A 0%, #F7B733 100%) 0% 0% no-repeat padding-box;
+        box-shadow: 0 5px 15px 0 rgba(247,182,51, 0.30);
     }
 
     &:focus {

@@ -18,6 +18,13 @@
           box-shadow: none;
   outline: none;
   font-weight: 600;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.btn.btn-custom:hover {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .btn-blue {
@@ -30,6 +37,8 @@
 
 .btn-blue:hover {
   background: transparent linear-gradient(105deg, #0072FF 0%, #00C6FF 100%) 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0 5px 15px 0 rgba(0, 115, 255, 0.2);
+          box-shadow: 0 5px 15px 0 rgba(0, 115, 255, 0.2);
 }
 
 .btn-blue:focus {
@@ -50,6 +59,8 @@
 
 .btn-red:hover {
   background: transparent linear-gradient(287deg, #FF223B 0%, #F87777 100%) 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0 5px 15px 0 rgba(255, 34, 59, 0.2);
+          box-shadow: 0 5px 15px 0 rgba(255, 34, 59, 0.2);
 }
 
 .btn-red:focus {
@@ -70,6 +81,8 @@
 
 .btn-orange:hover {
   background: transparent linear-gradient(105deg, #FC711A 0%, #F7B733 100%) 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0 5px 15px 0 rgba(247, 182, 51, 0.3);
+          box-shadow: 0 5px 15px 0 rgba(247, 182, 51, 0.3);
 }
 
 .btn-orange:focus {
