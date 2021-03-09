@@ -212,6 +212,38 @@ body {
   }
 }
 
+.btn.btn-common-danger {
+  color: #fff;
+  padding: 7px 15px 7px 15px;
+  min-height: 46px;
+  margin: 0;
+  min-width: 130px;
+  font-weight: 600;
+  border: none;
+  transition: all 0.8s;
+  font-size: 17px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  background: transparent linear-gradient(292deg, #ff223b 0%, #f87777 100%);
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: transparent linear-gradient(292deg, #ff223b 0%, #f87777 100%);
+    box-shadow: 0 5px 15px 0 rgba(255, 34, 60, 0.2);
+  }
+
+  &:not(:disabled):not(.disabled).active,
+  &:not(:disabled):not(.disabled):active {
+    background: transparent linear-gradient(292deg, #ff223b 0%, #f87777 100%);
+    box-shadow: 0 5px 15px 0 rgba(255, 34, 60, 0.2);
+  }
+}
+
 .btn.btn-cancel {
   background-color: #fff;
   border-radius: 3px;
