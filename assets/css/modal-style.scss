@@ -717,6 +717,45 @@ $proxima: 'Proxima Nova Rg';
                     }
 
                 }
+
+                .share-card-div {
+                   .row-5 {
+                       margin: 0 -5px;
+                       justify-content: center;
+                       
+                       .pad-5 {
+                        padding: 0 5px;
+                       }
+                   } 
+
+                    .share-card {
+                        border: 2px solid #ECEFF5;
+                        padding: 15px 20px;
+                        border-radius: 10px;
+                        margin-bottom: 10px;
+
+                        .share-card-body {
+                            img {
+                                height: 122px;
+                                width: 100%;
+                            }
+                        }
+    
+                        .share-card-footer {
+                            padding: 10px 0 0 0;
+
+                            p {
+                                font-size: 18px;
+                                line-height: 22px;
+                                color: #00142F;
+                                margin-bottom: 0;
+                                text-align: center;
+                            }
+                        }   
+                    }
+
+                   
+                }
             }
         }
     }

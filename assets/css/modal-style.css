@@ -841,6 +841,41 @@
   background: #F98D29;
 }
 
+.modal-custom .modal-dialog .modal-content .modal-body .share-card-div .row-5 {
+  margin: 0 -5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .share-card-div .row-5 .pad-5 {
+  padding: 0 5px;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .share-card-div .share-card {
+  border: 2px solid #ECEFF5;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .share-card-div .share-card .share-card-body img {
+  height: 122px;
+  width: 100%;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .share-card-div .share-card .share-card-footer {
+  padding: 10px 0 0 0;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .share-card-div .share-card .share-card-footer p {
+  font-size: 18px;
+  line-height: 22px;
+  color: #00142F;
+  margin-bottom: 0;
+  text-align: center;
+}
+
 .modal-backdrop {
   background: rgba(0, 0, 0, 0.75);
   z-index: 9998;
