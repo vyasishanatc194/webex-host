@@ -38,6 +38,52 @@
         object-position: top;
       }
     }
+
+    .in-call-center-user-fixed-div {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 50px 10px;
+
+      .in-call-user-img-thumb {
+        border: 12px solid rgba(248, 149, 44, 0.27);
+        border-radius: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .img-responsive {
+          border-radius: 100%;
+          height: 180px;
+          width: 180px;
+          object-fit: cover;
+          border-radius: 999px;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+        }
+
+        &.active-in {
+          .img-thumb {
+            border: 12px solid #8b5518;
+            border-radius: 999px;
+          }
+
+          .img-responsive {
+            border: 9px solid #f98d29;
+            border-radius: 999px;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -520,6 +566,28 @@
 }
 
 @media (max-width: 767px) {
+  .main-center-section {
+    .incall-area-section {
+      .in-call-center-user-fixed-div {
+        padding-bottom: 240px;
+
+        .in-call-user-img-thumb.active-in {
+          border-width: 8px;
+
+          .img-thumb {
+            border-width: 8px;
+          }
+
+          .img-responsive {
+            border: 4px solid #f98d29;
+            height: 120px;
+            width: 120px;
+          }
+        }
+      }
+    }
+  }
+
   .in-call-action-area-div {
     .in-call-action-area-row {
       padding: 10px 10px;
@@ -566,6 +634,11 @@
           height: 11px;
         }
 
+        .no-video-camera-icon {
+          width: 22px;
+          height: 19px;
+        }
+
         .exclusion-icon {
           width: 20px;
           height: 15px;
@@ -610,7 +683,112 @@
           }
         }
 
-        
+        .dropdown-menu-custom {
+          min-width: 100%;
+          position: fixed !important;
+          transform: none !important;
+          top: auto !important;
+          bottom: 135px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .in-call-action-area-div {
+    .in-call-action-area-row {
+      padding: 10px 10px 0 10px;
+
+      .in-call-action-area-left {
+        width: 140px;
+        padding: 0 10px 10px 10px;
+        margin: 0 0 0 0;
+
+        .img-logo-action {
+          width: 120px;
+        }
+      }
+
+      .in-call-action-area-right {
+        width: calc(100% - 140px);
+        padding: 0;
+      }
+    }
+
+    .btn-group-root {
+      padding: 0 10px;
+
+      ul.btn-group-list {
+        justify-content: center;
+
+        .btn-item-li {
+          margin: 0 10px 10px 0;
+        }
+      }
+
+      .btn.btn-primary {
+        padding: 5px 10px 5px 10px;
+        font-size: 14px;
+
+        .microphone-icon {
+          width: 15px;
+          height: 22px;
+        }
+
+        .video-camera-icon {
+          width: 22px;
+          height: 11px;
+        }
+
+        .no-video-camera-icon {
+          width: 22px;
+          height: 19px;
+        }
+
+        .exclusion-icon {
+          width: 20px;
+          height: 15px;
+        }
+
+        .telephone-button {
+          width: 24px;
+          height: 24px;
+        }
+
+        .icon-span {
+          width: 28px;
+          display: flex;
+          justify-content: center;
+          margin: 0 !important;
+        }
+
+        span.text-pre {
+          font-size: 8px;
+          right: -5px;
+        }
+
+        .mr-6px {
+          margin-right: 0;
+        }
+
+        .text-span {
+          display: none;
+        }
+      }
+
+      .dropup-custom {
+        .btn.btn-common-secondary.dropdown-toggle {
+          .text-span {
+            display: none;
+          }
+
+          .icon-span {
+            width: 28px;
+            display: flex;
+            justify-content: flex-start;
+          }
+        }
       }
     }
   }
