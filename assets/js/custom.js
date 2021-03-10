@@ -43,8 +43,9 @@ $(document).ready(function(){
   let modalBackTransparent = document.querySelector(".modal-backdrop-transaprent");
   let modal = document.querySelector(".modal");
   if (modalBackTransparent == modal) {
-    $(modalBackTransparent).on('shown.bs.modal', function () {
-      $(".modal-backdrop").addClass("bg-transparent-color");
+    $(modalBackTransparent).on('show.bs.modal', function () {
+      // $(".modal-backdrop").addClass("bg-transparent-color");
+      $("body").addClass("modal-bg-transparent-color");
     })
   }
 });

@@ -4,7 +4,7 @@
 <meta name="description" content="" />
 <meta name="author" content="" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<title>In call | Certis</title>
+<title>Share Screen | Certis</title>
 <meta content='initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width' name='viewport' />
 <meta name="theme-color" content="#002855">
 <meta name="msapplication-navbutton-color" content="#002855">
@@ -40,13 +40,13 @@
                 <section class="incall-area-section">
                   <div class="incall-area-div">
 
-                    <div class="in-call-video-bg-fixed-div d-none">
+                    <div class="in-call-video-bg-fixed-div ">
                       <video class="in-call-video-bg" poster="assets/images/background/login_background_graphic.jpg" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
                         <source src="assets/images/background/bg_1.mp4" type="video/mp4">
                       </video>
                     </div>
 
-                    <div class="in-call-center-user-fixed-div">
+                    <div class="in-call-center-user-fixed-div d-none">
                       <div class="center-user-div">
                         <div class="in-call-user-img-thumb active active-in">
                           <div class="img-div">
@@ -58,158 +58,72 @@
                       </div>
                     </div>
 
+                    <div class="tplf-recording-option-div d-none">
+                      <div class="tplf-recording-option-inner">
+                        <div class="tplf-recording-option-left">
+                          <span class="icon-span"> <span class="bg-custom-icon rec-icon"></span> </span>
+                          <span class="text-span">Recording</span>
+                        </div>
+                        <div class="tplf-recording-option-inright">
+                          <button type="button" class="btn-icon btn-play-paused">
+                            <span class="bg-custom-icon play-icon d-none"></span>
+                            <span class="bg-custom-icon paused-icon "></span>
+                          </button>
+                          <button type="button" class="btn-icon btn-stop">
+                            <span class="bg-custom-icon stop-icon"></span>
+                          </button>
+                        </div>
+                      </div>    
+                    </div>
+
+                    <div class="tplf-share-screen-div">
+                      <div class="tplf-share-screen-inner">
+                       
+                        <div class="in-call-user-ss-box">
+                          <div class="in-call-user-ss-box-inner">
+                            <div class="in-call-user-ss-img-thumb">
+                              <div class="img-div">
+                                <div class="img-thumb"> 
+                                  <img src="assets/images/profile.jpg" class="img-fluid img-responsive" alt="image" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="in-call-user-ss-content-div">
+                              <div class="in-call-user-ss-content-row">
+                                <p>Certis EBC</p>
+                                <a href="#" class="btn-audio">
+                                  <span class="bg-custom-icon un-mute-microphone-icon"></span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>    
+                    </div>
 
                     <div class="in-call-area-root">
 
-                      <div class="in-call-area-top">
-                        <div class="in-call-area-top-center">
-                          <div class="row">
-                            <div class="col-lg-12 col-md-12">
-
-                              <div class="in-call-user-owl-slider-slider">
-                                <div class="owl-carousel owl-theme in-call-user-slider-owl" id="in-call-user-slider-owl">
-
-                                  <div class="item">  
-                                    <div class="in-call-user-slider-box">
-                                      <div class="in-call-user-slider-box-inner">
-                                        <div class="in-call-user-slider-img-thumb">
-                                          <div class="img-div">
-                                            <div class="img-thumb"> 
-                                              <img src="assets/images/profile.jpg" class="img-fluid img-responsive" alt="image" />
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="in-call-user-slider-content-div">
-                                          <div class="in-call-user-slider-content-row">
-                                            <p>Tristan Lapel</p>
-                                            <a href="#" class="btn-audio">
-                                              <span class="bg-custom-icon un-mute-microphone-icon"></span>
-                                            </a>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-
-                                  <div class="item">  
-                                    <div class="in-call-user-slider-box">
-                                      <div class="in-call-user-slider-box-inner">
-                                        <div class="in-call-user-slider-img-thumb">
-                                          <div class="img-div">
-                                            <div class="img-thumb"> 
-                                              <img src="assets/images/profile.jpg" class="img-fluid img-responsive" alt="image" />
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="in-call-user-slider-content-div">
-                                          <div class="in-call-user-slider-content-row">
-                                            <p>Rafael Gomez</p>
-                                            <a href="#" class="btn-audio">
-                                              <span class="bg-custom-icon microphone-icon"></span>
-                                            </a>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-
-                                  <div class="item">  
-                                    <div class="in-call-user-slider-box">
-                                      <div class="in-call-user-slider-box-inner">
-                                        <div class="in-call-user-slider-img-thumb">
-                                          <div class="img-div">
-                                            <div class="img-thumb"> 
-                                              <img src="assets/images/profile.jpg" class="img-fluid img-responsive" alt="image" />
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="in-call-user-slider-content-div">
-                                          <div class="in-call-user-slider-content-row">
-                                            <p>Hailey Riota</p>
-                                            <a href="#" class="btn-audio">
-                                              <span class="bg-custom-icon un-mute-microphone-icon"></span>
-                                            </a>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-
-                                  <div class="item">  
-                                    <div class="in-call-user-slider-box active active-in">
-                                      <div class="in-call-user-slider-box-inner">
-                                        <div class="in-call-user-slider-img-thumb">
-                                          <div class="img-div">
-                                            <div class="img-thumb"> 
-                                              <img src="assets/images/profile.jpg" class="img-fluid img-responsive" alt="image" />
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="in-call-user-slider-content-div">
-                                          <div class="in-call-user-slider-content-row">
-                                            <p>Sarah Parker</p>
-                                            <a href="#" class="btn-audio">
-                                              <span class="bg-custom-icon microphone-icon"></span>
-                                            </a>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-
-                                  <div class="item">  
-                                    <div class="in-call-user-slider-box active">
-                                      <div class="in-call-user-slider-box-inner">
-                                        <div class="in-call-user-slider-img-thumb">
-                                          <div class="img-div">
-                                            <div class="img-thumb"> 
-                                              <img src="assets/images/profile.jpg" class="img-fluid img-responsive" alt="image" />
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="in-call-user-slider-content-div">
-                                          <div class="in-call-user-slider-content-row">
-                                            <p>Jamilah Rai</p>
-                                            <a href="#" class="btn-audio">
-                                              <span class="bg-custom-icon microphone-icon"></span>
-                                            </a>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-
-                                  <div class="item">  
-                                    <div class="in-call-user-slider-box">
-                                      <div class="in-call-user-slider-box-inner">
-                                        <div class="in-call-user-slider-img-thumb">
-                                          <div class="img-div">
-                                            <div class="img-thumb"> 
-                                              <img src="assets/images/profile.jpg" class="img-fluid img-responsive" alt="image" />
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="in-call-user-slider-content-div">
-                                          <div class="in-call-user-slider-content-row">
-                                            <p>Hailey Riota</p>
-                                            <a href="#" class="btn-audio">
-                                              <span class="bg-custom-icon un-mute-microphone-icon"></span>
-                                            </a>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-
-                                </div>
-                              </div>
-
-                            </div>
+                      
+                      <div class="in-call-are-body-top-div">
+                        <div class="in-call-are-bt-center-div">
+                          <div class="btn-group-bx-div mb-mobile-0">
+                            <button class="btn btn-screen-sharing-it br-tlr-10">
+                              <span class="icon-span mr-2"> <span class="bg-custom-icon share-option-icon"></span> </span>
+                              <span class="text-span"> Armin Arlelt is sharing their screen </span>
+                            </button>
+                            <button class="btn btn-sharing-it d-none">
+                              <span class="icon-span mr-2"> 
+                                <span class="bg-custom-icon stop-icon "></span>
+                                <span class="bg-custom-icon paused-icon d-none"></span>
+                              </span>
+                              <span class="text-span"> Stop Sharing </span>
+                            </button>
                           </div>
                         </div>
                       </div>
 
-                      <div class="in-call-area-body">
+                      <div class="in-call-area-body d-none">
                         
                         <div class="in-call-action-area-div">
                           <div class="in-call-action-area-row">
@@ -281,8 +195,8 @@
                                   <li class="btn-item-li"> 
                                     <div class="dropup-custom dropup">
                                       <button type="button" class="btn btn-primary btn-common-secondary dropdown-toggle" data-toggle="dropdown">
-                                        <span class="icon-span mr-1"> <span class="bg-custom-icon no-video-camera-icon"></span> </span>
-                                        <span class="text-span"> Start Video </span>
+                                        <span class="icon-span mr-1"> <span class="bg-custom-icon video-camera-icon"></span> </span>
+                                        <span class="text-span"> Stop Video </span>
                                       </button>
                                       
                                       <div class="dropdown-menu dropdown-menu-custom">
@@ -325,7 +239,7 @@
                                   <li class="btn-item-li"> 
                                     <button type="button" class="btn btn-primary btn-common-secondary">
                                       <span class="icon-span mr-6px"> <span class="bg-custom-icon exclusion-icon"></span> </span>
-                                      <span class="text-span"> Share Screen </span>
+                                      <span class="text-span"> New Share </span>
                                     </button>
                                   </li>
 
@@ -336,11 +250,68 @@
                                     </button>
                                   </li>
 
-                                  <li class="btn-item-li"> 
-                                    <button type="button" class="btn btn-primary btn-common-secondary">
-                                      <span class="icon-span"> <span class="bg-custom-icon record-circular-button"></span> </span>
+                                  <li class="btn-item-li multiple-btn-item-li"> 
+                                    <button type="button" class="btn btn-primary btn-common-secondary multiple-btn-common">
+                                      <span class="icon-span"> 
+                                        <span class="bg-custom-icon record-circular-button "></span> 
+                                        <span class="bg-custom-icon stop-icon d-none"></span>
+                                      </span>
                                       <span class="text-span mr-6px"> Record </span>
                                     </button>
+                                    <div class="btn-item-option-inright">
+                                      <button type="button" class="btn-icon btn-play-paused">
+                                        <span class="bg-custom-icon play-icon d-none"></span>
+                                        <span class="bg-custom-icon paused-icon "></span>
+                                      </button>
+                                      <button type="button" class="btn-icon btn-stop">
+                                        <span class="bg-custom-icon stop-icon"></span>
+                                      </button>
+                                    </div>
+                                  </li>
+
+                                  <li class="btn-item-li multiple-btn-item-li"> 
+                                    <button type="button" class="btn btn-primary btn-common-secondary multiple-btn-common">
+                                      <span class="icon-span mr-6px"> 
+                                        <span class="bg-custom-icon exclusion-icon"></span>
+                                      </span>
+                                      <span class="text-span mr-6px"> Share </span>
+                                    </button>
+                                    <div class="btn-item-option-inright">
+                                      <button type="button" class="btn-icon btn-play-paused">
+                                        <span class="bg-custom-icon play-icon "></span>
+                                        <span class="bg-custom-icon paused-icon d-none"></span>
+                                      </button>
+                                      <button type="button" class="btn-icon btn-stop">
+                                        <span class="bg-custom-icon stop-icon"></span>
+                                      </button>
+                                    </div>
+                                  </li>
+
+                                  <li class="btn-item-li"> 
+                                    <div class="dropup-custom dropup">
+                                      <button type="button" class="btn btn-primary btn-common-secondary dropdown-toggle remove-arrow" data-toggle="dropdown">
+                                        <span class="icon-span mr-1"> <span class="bg-custom-icon more-icon"></span> </span>
+                                        <span class="text-span"> More Options </span>
+                                      </button>
+                                      
+                                      <div class="dropdown-menu dropdown-menu-custom dropdown-menu-right">
+                                        <div class="dropdown-form-div">
+                                          <div class="form-group border-bottom-0">
+                                            <div class="check-list-box">
+                                              <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="more-check02-01" name="stp-video-select">
+                                                <label class="custom-control-label" for="more-check02-01">Hide Floating Meeting Controls</label>
+                                              </div>
+                                              <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="more-check02-02" name="stp-video-select">
+                                                <label class="custom-control-label" for="more-check02-02">Share Computer Sound</label>
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                        </div>
+                                      </div>
+                                    </div>
                                   </li>
 
                                   <li class="btn-item-li"> 
@@ -373,6 +344,27 @@
   </main>
 
 </div><!-- end of wrapper -->
+
+<div class="modal modal-backdrop-transaprent modal-general-message fade" role="dialog" id="session_recorded_succesfully_modal" >
+  <div class="modal-dialog modal-dialog-centered">
+
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="general-message-card-div">
+          <div class="general-message-card-inner">
+            <p>Session Recorded Succesfully</p>
+            <p class="prag2">You can find your recording in the Recordings Panel from your dashboard.</p>
+          </div>
+
+          <div class="btn-group-div">
+            <a href="#" class="btn btn-common-primary btn-common-primary-54" data-dismiss="modal"> Ok </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/popper.min.js"></script>
@@ -417,6 +409,8 @@
     $('.dropdown-menu.dropdown-menu-custom').on('click', function(event){
       event.stopPropagation();
     });
+
+    // $("#session_recorded_succesfully_modal").modal("show");
   });
 </script>
 

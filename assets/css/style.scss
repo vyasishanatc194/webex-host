@@ -1830,6 +1830,31 @@ body {
   }
 }
 
+.modal-bg-transparent-color {
+  .modal {
+    z-index: 99999;
+  }
+
+  .modal-backdrop {
+    opacity: 0;
+    background-color: transparent;
+    transition: none;
+    z-index: 9999;
+  }
+}
+
+.modal.fade {
+  .modal-dialog {
+    transform: translate(0, 0) scale(0.8);
+  }
+
+  &.show {
+    .modal-dialog {
+      transform: translate(0, 0) scale(1);
+    }
+  }
+}
+
 /* message modal code */
 .modal-backdrop.show {
   &.bg-transparent-color {
@@ -1880,6 +1905,14 @@ body {
         line-height: 1.5;
         font-weight: 600;
         margin: 0 0 10px 0;
+      }
+
+      .prag2 {
+        font-size: 20px;
+        color: #86a3cb;
+        font-weight: 500;
+        max-width: 400px;
+        margin: 0 auto 35px auto;
       }
     }
 
@@ -2084,6 +2117,11 @@ body {
 
         p {
           font-size: 20px;
+        }
+
+        .prag2 {
+          font-size: 16px;
+          margin: 0 auto 30px auto;
         }
       }
 
