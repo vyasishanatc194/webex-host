@@ -191,3 +191,34 @@
   height: 28px;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27.501' height='27.5' viewBox='0 0 27.501 27.5'%3E%3Cg id='telephone' transform='matrix(-0.719, 0.695, -0.695, -0.719, 25.501, 13.99)'%3E%3Cg id='Group_7' data-name='Group 7' transform='translate(-1.439 -1.389)'%3E%3Cpath id='Path_3' data-name='Path 3' d='M16.357,12.167a1.507,1.507,0,0,0-2.279,0c-.533.528-1.066,1.057-1.589,1.594a.314.314,0,0,1-.439.081c-.345-.188-.712-.34-1.043-.546A16.528,16.528,0,0,1,7.022,9.669,9.44,9.44,0,0,1,5.594,7.381a.328.328,0,0,1,.081-.421c.533-.515,1.052-1.043,1.576-1.571a1.513,1.513,0,0,0,0-2.333C6.83,2.635,6.413,2.223,6,1.8S5.142.939,4.708.513a1.517,1.517,0,0,0-2.279,0c-.537.528-1.052,1.07-1.6,1.589A2.594,2.594,0,0,0,.016,3.858,7.417,7.417,0,0,0,.589,7.05a19.4,19.4,0,0,0,3.443,5.735,21.305,21.305,0,0,0,7.056,5.52A10.2,10.2,0,0,0,15,19.442a2.864,2.864,0,0,0,2.458-.936c.457-.51.972-.976,1.455-1.464a1.523,1.523,0,0,0,.009-2.319Q17.642,13.441,16.357,12.167Z' transform='translate(0 0)' fill='%23fff'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
 }
+
+.rec-icon {
+  width: 21px;
+  height: 21px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21' height='21' viewBox='0 0 21 21'%3E%3Cg id='rc-icon' transform='translate(12056 789)'%3E%3Ccircle id='Ellipse_207' data-name='Ellipse 207' cx='10.5' cy='10.5' r='10.5' transform='translate(-12056 -789)' fill='%23fff'/%3E%3Ccircle id='Ellipse_208' data-name='Ellipse 208' cx='5.5' cy='5.5' r='5.5' transform='translate(-12051 -784)' fill='%23ff1a46'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+
+.play-icon {
+  width: 12px;
+  height: 15px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='15' viewBox='0 0 12 15'%3E%3Cg id='Group_3341' data-name='Group 3341' transform='translate(-1104.865 -19.297)'%3E%3Crect id='Rectangle_84' data-name='Rectangle 84' width='3' height='15' rx='1' transform='translate(1104.865 19.297)' fill='%23fff'/%3E%3Crect id='Rectangle_85' data-name='Rectangle 85' width='3' height='15' rx='1' transform='translate(1113.865 19.297)' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+
+.paused-icon {
+  width: 19px;
+  height: 16px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='19' viewBox='0 0 16 19'%3E%3Cpath id='Polygon_4' data-name='Polygon 4' d='M7.78,2.9a2,2,0,0,1,3.439,0l5.987,10.083A2,2,0,0,1,15.487,16H3.513a2,2,0,0,1-1.72-3.021Z' transform='translate(16) rotate(90)' fill='%23fff'/%3E%3C/svg%3E%0A");
+  background-position: 5px;
+}
+
+.stop-icon {
+  width: 15px;
+  height: 15px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 0 15 15'%3E%3Crect id='Rectangle_82' data-name='Rectangle 82' width='15' height='15' rx='1' fill='%23fff'/%3E%3C/svg%3E%0A");
+}
+
+.more-icon {
+  width: 20px;
+  height: 4px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='4' viewBox='0 0 20 4'%3E%3Cg id='more-icon' transform='translate(10588 -5006)'%3E%3Ccircle id='Ellipse_209' data-name='Ellipse 209' cx='2' cy='2' r='2' transform='translate(-10588 5006)' fill='%23fff'/%3E%3Ccircle id='Ellipse_210' data-name='Ellipse 210' cx='2' cy='2' r='2' transform='translate(-10580 5006)' fill='%23fff'/%3E%3Ccircle id='Ellipse_211' data-name='Ellipse 211' cx='2' cy='2' r='2' transform='translate(-10572 5006)' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E%0A");
+}

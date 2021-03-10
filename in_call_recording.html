@@ -40,13 +40,13 @@
                 <section class="incall-area-section">
                   <div class="incall-area-div">
 
-                    <div class="in-call-video-bg-fixed-div d-none">
+                    <div class="in-call-video-bg-fixed-div ">
                       <video class="in-call-video-bg" poster="assets/images/background/login_background_graphic.jpg" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
                         <source src="assets/images/background/bg_1.mp4" type="video/mp4">
                       </video>
                     </div>
 
-                    <div class="in-call-center-user-fixed-div">
+                    <div class="in-call-center-user-fixed-div d-none">
                       <div class="center-user-div">
                         <div class="in-call-user-img-thumb active active-in">
                           <div class="img-div">
@@ -58,6 +58,23 @@
                       </div>
                     </div>
 
+                    <div class="tplf-recording-option-div">
+                      <div class="tplf-recording-option-inner">
+                        <div class="tplf-recording-option-left">
+                          <span class="icon-span"> <span class="bg-custom-icon rec-icon"></span> </span>
+                          <span class="text-span">Recording</span>
+                        </div>
+                        <div class="tplf-recording-option-inright">
+                          <button type="button" class="btn-icon btn-play-paused">
+                            <span class="bg-custom-icon play-icon "></span>
+                            <span class="bg-custom-icon paused-icon d-none"></span>
+                          </button>
+                          <button type="button" class="btn-icon btn-stop">
+                            <span class="bg-custom-icon stop-icon"></span>
+                          </button>
+                        </div>
+                      </div>    
+                    </div>
 
                     <div class="in-call-area-root">
 
@@ -281,8 +298,8 @@
                                   <li class="btn-item-li"> 
                                     <div class="dropup-custom dropup">
                                       <button type="button" class="btn btn-primary btn-common-secondary dropdown-toggle" data-toggle="dropdown">
-                                        <span class="icon-span mr-1"> <span class="bg-custom-icon no-video-camera-icon"></span> </span>
-                                        <span class="text-span"> Start Video </span>
+                                        <span class="icon-span mr-1"> <span class="bg-custom-icon video-camera-icon"></span> </span>
+                                        <span class="text-span"> Stop Video </span>
                                       </button>
                                       
                                       <div class="dropdown-menu dropdown-menu-custom">
@@ -338,8 +355,21 @@
 
                                   <li class="btn-item-li"> 
                                     <button type="button" class="btn btn-primary btn-common-secondary">
-                                      <span class="icon-span"> <span class="bg-custom-icon record-circular-button"></span> </span>
-                                      <span class="text-span mr-6px"> Record </span>
+                                      <span class="icon-span"> 
+                                        <span class="bg-custom-icon play-icon"></span>
+                                        <span class="bg-custom-icon paused-icon d-none"></span>
+                                      </span>
+                                      <span class="text-span mr-6px"> Pause Recording </span>
+                                    </button>
+                                  </li>
+
+                                  <li class="btn-item-li"> 
+                                    <button type="button" class="btn btn-primary btn-common-secondary" data-toggle="modal" data-target="#session_recorded_succesfully_modal">
+                                      <span class="icon-span"> 
+                                        <span class="bg-custom-icon record-circular-button d-none"></span> 
+                                        <span class="bg-custom-icon stop-icon"></span>
+                                      </span>
+                                      <span class="text-span mr-6px"> Stop Recording </span>
                                     </button>
                                   </li>
 
@@ -373,6 +403,27 @@
   </main>
 
 </div><!-- end of wrapper -->
+
+<div class="modal modal-backdrop-transaprent modal-general-message fade" role="dialog" id="session_recorded_succesfully_modal" >
+  <div class="modal-dialog modal-dialog-centered">
+
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="general-message-card-div">
+          <div class="general-message-card-inner">
+            <p>Session Recorded Succesfully</p>
+            <p class="prag2">You can find your recording in the Recordings Panel from your dashboard.</p>
+          </div>
+
+          <div class="btn-group-div">
+            <a href="#" class="btn btn-common-primary btn-common-primary-54" data-dismiss="modal"> Ok </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/popper.min.js"></script>
@@ -417,6 +468,8 @@
     $('.dropdown-menu.dropdown-menu-custom').on('click', function(event){
       event.stopPropagation();
     });
+
+    // $("#session_recorded_succesfully_modal").modal("show");
   });
 </script>
 
