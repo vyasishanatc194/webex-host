@@ -45,7 +45,7 @@ $proxima: 'Proxima Nova Rg';
         content: '';
         background: transparent linear-gradient(98deg, #1859B2 0%, #1E8EE0 100%) 0% 0% no-repeat padding-box;
         border-radius: 60px;
-        opacity: 0.6;
+        opacity: 0.4;
         filter: blur(3px);
         position: absolute;
         z-index: 0;
@@ -129,7 +129,7 @@ $proxima: 'Proxima Nova Rg';
     position: relative;
     &:before {
         content: '';
-        background: transparent linear-gradient(98deg, #1859B2 0%, #1E8EE0 100%) 0% 0% no-repeat padding-box;
+        background: transparent linear-gradient(103deg, #FC711A 0%, #F7B733 100%) 0% 0% no-repeat padding-box;
         border-radius: 60px;
         opacity: 0.6;
         filter: blur(3px);
