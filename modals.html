@@ -267,6 +267,14 @@
                   <a href="#!" class="btn btn-primary mb-2" data-toggle="modal" data-target="#modal-audio-test">Audio Test</a>
                   <a href="#!" class="btn btn-primary mb-2" data-toggle="modal" data-target="#modal-audio-test-2">Audio Test with input</a>
                   <a href="#!" class="btn btn-primary mb-2" data-toggle="modal" data-target="#modal-incall-participant">Incall participant</a>
+                  <a href="#!" class="btn btn-primary mb-2" data-toggle="modal" data-target="#modal-share-screen">Select a Screen To Share</a>
+                  <a href="#!" class="btn btn-primary mb-2" data-toggle="modal" data-target="#modal-leaving-session">Leaving Session</a>
+                  <a href="#!" class="btn btn-primary mb-2" data-toggle="modal" data-target="#modal-session-recored">modal-session-record</a>
+                  <a href="#!" class="btn btn-primary mb-2" data-toggle="modal" data-target="#modal-invitation-successsfully">Participant Invitation Sent Successfully</a>   
+                  <a href="#!" class="btn btn-primary mb-2" data-toggle="modal" data-target="#modal-request-to-shares"> Request To Shares Screen</a>               
+                  <a href="#!" class="btn btn-primary mb-2" data-toggle="modal" data-target="#modal-video-type">Video Type</a>               
+                  <a href="#!" class="btn btn-primary mb-2" data-toggle="modal" data-target="#modal-live-stream">Connect your Live Stream</a>    
+                  <a href="#!" class="btn btn-primary mb-2" data-toggle="modal" data-target="#modal-setting">Setting</a> 
                 </div>  
               </div>        
             </div>
@@ -762,6 +770,422 @@
         <button type="button" class="btn btn-custom btn-sm btn-blue" data-dismiss="modal">Mute All</button>
         <button type="button" class="btn btn-custom btn-sm btn-orange" data-dismiss="modal">Add Participant</button>
         <button type="button" class="btn btn-custom btn-sm btn-transparent" data-dismiss="modal">Stop Video For All</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- select share screen -->
+<div class="modal fade modal-custom" tabindex="-1" id="modal-share-screen">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-986">
+    <div class="modal-content">
+      <div class="modal-header close-top-right">
+        <h5 class="modal-title">Select a Screen To Share</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <div class="share-card-div">
+        <div class="row row-5">
+          <div class="col-lg-4 col-md-6 pad-5">
+            <div class="share-card">
+              <div class="share-card-body">
+                <img src="assets/images/participant/share-1.jpg" alt="">
+
+                <div class="select-screen">
+                  <a href="#!" class="btn btn-blue">Select</a>
+                </div>
+
+              </div>
+              <div class="share-card-footer">
+                <p>Desktop 1</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 pad-5">
+            <div class="share-card">
+              <div class="share-card-body">
+                <img src="assets/images/participant/share-2.jpg" alt="">
+
+                <div class="select-screen">
+                  <a href="#!" class="btn btn-blue">Select</a>
+                </div>
+              </div>
+              <div class="share-card-footer">
+                <p>Microsoft Word - 2021 Fin…</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 pad-5">
+            <div class="share-card ">
+              <div class="share-card-body">
+                <img src="assets/images/participant/share-3.jpg" alt="">
+
+                <div class="select-screen">
+                  <a href="#!" class="btn btn-blue">Select</a>
+                </div>
+              </div>
+              <div class="share-card-footer">
+                <p>Microsoft Powerpoint - Ma…</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 pad-5">
+            <div class="share-card selected">
+              <div class="share-card-body">
+                <img src="assets/images/participant/share-4.jpg" alt="">
+
+                <div class="select-screen">
+                  <a href="#!" class="btn btn-blue">Select</a>
+                </div>
+              </div>
+              <div class="share-card-footer">
+                <p>Chrome - Certis Web Conf…</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 pad-5">
+            <div class="share-card">
+              <div class="share-card-body">
+                <img src="assets/images/participant/share-5.jpg" alt="">
+
+                <div class="select-screen">
+                  <a href="#!" class="btn btn-blue">Select</a>
+                </div>
+
+              </div>
+              <div class="share-card-footer">
+                <p>Chrome - Business Illustra…</p>
+              </div>
+            </div>
+          </div>
+
+     
+
+        </div>
+      </div>
+      </div>
+      <div class="modal-footer modal-footer-share">
+        <div class="check-share">
+          <div class="form-group">
+            <div class="custom-control custom-checkbox custom-checkbox-2">
+              <input type="checkbox" class="custom-control-input" id="share" name="example1" checked>
+              <label class="custom-control-label" for="share">Share my computer audio</label>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-custom btn-orange btn-md" data-dismiss="modal">Share </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- select leaing session -->
+<div class="modal fade modal-custom" tabindex="-1" id="modal-leaving-session">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header close-none">
+        <h5 class="modal-title">Leaving Session</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="content-leaving">
+          <h5>Are you sure you’d like to leave this session?</h5>
+
+          <h4>All remaining participants in the session will
+            have their session ended too.</h4>
+        </div>
+      </div>
+      <div class="modal-footer ">
+        <button type="button" class="btn btn-custom btn-red " data-dismiss="modal">Yes, Leave Session </button>
+        <button type="button" class="btn btn-custom btn-blue " data-dismiss="modal">No, Stay in Session </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- select  session record -->
+<div class="modal fade modal-custom" tabindex="-1" id="modal-session-recored">
+  <div class="modal-dialog modal-dialog-centered modal-546">
+    <div class="modal-content">
+      <div class="modal-header white-header pt-4 close-none">
+        <h5 class="modal-title text-center">Session Recorded Succesfully</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body pt-0">
+        <div class="session-record">
+
+          <h4>You can find your recording in the Recordings
+            Panel from your dashboard.</h4>
+        </div>
+      </div>
+      <div class="modal-footer pb-4">
+        <button type="button" class="btn btn-custom btn-orange " data-dismiss="modal">Ok</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- modal add participant -->
+<div class="modal fade modal-custom" tabindex="-1" id="modal-add-participent">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header close-none">
+        <h5 class="modal-title">Add Participant</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="add-participent mb-4">
+           <div class="row">
+            <div class="col-lg-12">
+            
+             
+
+              <div class="form-group row">
+                <label for="staticEmail" class="col-sm-4 col-form-label">First Name</label>
+                <div class="col-sm-8">
+                <div class="form-group-inner">
+                  <input type="text" class="form-control" value="Hange">
+                </div>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="staticEmail" class="col-sm-4 col-form-label">Last Name</label>
+                <div class="col-sm-8">
+                <div class="form-group-inner">
+                  <input type="text" class="form-control" value="Zoe" >
+                </div>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="staticEmail" class="col-sm-4 col-form-label">Email</label>
+                <div class="col-sm-8">
+                <div class="form-group-inner">
+                  <input type="email" class="form-control" value="Hange_zoe@capitaland.com">
+                </div>
+                </div>
+              </div>
+
+
+           </div>
+           </div>
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-custom btn-orange" data-dismiss="modal">Send Invitation</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- modal invitaion succeessfully -->
+<div class="modal fade modal-custom" tabindex="-1" id="modal-invitation-successsfully">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header close-none">
+        <h5 class="modal-title">Participant Invitation Sent Successfully</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="invitation-success">
+          <h5>Unique Link Generated for Hange Zoe:</h5>
+          <h4>Certiswebex.com/GH635F5</h4>
+        </div>
+      </div>
+      <div class="modal-footer pb-4">
+        <button type="button" class="btn btn-custom btn-orange" data-dismiss="modal">Ok</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- select leaing session -->
+<div class="modal fade modal-custom" tabindex="-1" id="modal-request-to-shares">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header close-none">
+        <h5 class="modal-title">Request to Share Screen</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="content-share">
+          <h5>This participant would like to share their screen:</h5>
+
+          <h4>Hange Zoe (Hange_Zoe@Capitaland.sg)</h4>
+        </div>
+      </div>
+      <div class="modal-footer ">
+        <button type="button" class="btn btn-custom btn-red " data-dismiss="modal">Do Not Allow </button>
+        <button type="button" class="btn btn-custom btn-blue " data-dismiss="modal">Allow </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- select video type -->
+<div class="modal fade modal-custom" tabindex="-1" id="modal-video-type">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header close-none">
+        <h5 class="modal-title">Select Video Type</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="content-video-type">
+          <h5>Are you Live Streaming this video from Youtube
+            or using your webcam?</h5>
+        </div>
+      </div>
+      <div class="modal-footer ">
+        <button type="button" class="btn btn-custom btn-orange " data-dismiss="modal">Using Webcam</button>
+        <button type="button" class="btn btn-custom btn-blue " data-dismiss="modal">Live Streaming </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- connect live stream -->
+<div class="modal fade modal-custom" tabindex="-1" id="modal-live-stream">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header close-back">
+        <h5 class="modal-title">Connect Your Live Stream</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="content-stream">
+          <div class="img-stream">
+            <img src="assets/images/participant/stream-img.jpg" alt="">
+          </div>
+
+          <h5>Right-click on your Live stream video from Youtube Studio
+            and paste the URL below:</h5>
+
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Paste Stream URL Here" />
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer pb-5">
+        <button type="button" class="btn btn-custom btn-orange " data-dismiss="modal">Done</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- setting modal -->
+<div class="modal fade modal-custom" tabindex="-1" id="modal-setting">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-986">
+    <div class="modal-content">
+      <div class="modal-header close-top-right">
+        <h5 class="modal-title">Settings</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="setting-content">
+          <ul class="nav nav-tabs">
+            <li><a data-toggle="tab"  class="active" href="#home">General</a></li>
+            <li><a data-toggle="tab" href="#menu1">Video</a></li>
+            <li><a data-toggle="tab" href="#menu2">Audio</a></li>
+            <li><a data-toggle="tab" href="#menu3">Share Screen</a></li>
+          </ul>
+          
+          <div class="tab-content">
+            <div id="home" class="tab-pane fade in show active">
+              <div class="tab-inner">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <div class="custom-control custom-checkbox custom-checkbox-2">
+                        <input type="checkbox" class="custom-control-input" id="share1" name="example1" checked>
+                        <label class="custom-control-label" for="share1">Ask me to confirm when I choose to leave a session</label>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <div class="custom-control custom-checkbox custom-checkbox-2">
+                        <input type="checkbox" class="custom-control-input" id="share2" name="example1" checked>
+                        <label class="custom-control-label" for="share2">Stop my video and audio when my display is inactive or when screen saver begins</label>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+              <div class="tab-inner">
+
+              </div>
+            </div>
+            <div id="menu2" class="tab-pane fade">
+              <div class="tab-inner">
+
+              </div>
+            </div>
+            <div id="menu3" class="tab-pane fade">
+              <div class="tab-inner">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <div class="custom-control custom-checkbox custom-checkbox-2">
+                        <input type="checkbox" class="custom-control-input" id="11" name="example3" checked>
+                        <label class="custom-control-label" for="11">Go full screen when a participant shares their screen</label>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <div class="custom-control custom-checkbox custom-checkbox-2">
+                        <input type="checkbox" class="custom-control-input" id="22" name="example1" checked>
+                        <label class="custom-control-label" for="22">Maximise session room window when a participant shares screen</label>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <div class="custom-control custom-checkbox custom-checkbox-2">
+                        <input type="checkbox" class="custom-control-input" id="33" name="example1" checked>
+                        <label class="custom-control-label" for="33">Scale to fit shared content to session room window</label>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        
+        <button type="button" class="btn btn-custom btn-orange btn-md" data-dismiss="modal">Save</button>
       </div>
     </div>
   </div>

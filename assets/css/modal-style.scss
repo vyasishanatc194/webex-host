@@ -27,6 +27,12 @@ $proxima: 'Proxima Nova Rg';
     line-height: 19px;
 }
 
+.btn.btn-md {
+    height: 54px;
+    font-size: 20px;
+    line-height: 24px;
+}
+
 .btn.btn-xs {
     height: 36px;
     font-size: 16px;
@@ -39,10 +45,12 @@ $proxima: 'Proxima Nova Rg';
     box-shadow: 0px 3px 26px #FFFFFF29;
     border-radius: 60px;
     opacity: 1;
+    color: #fff;
 
     &:hover {
         background: transparent linear-gradient(105deg, #0072FF 0%, #00C6FF 100%) 0% 0% no-repeat padding-box;
         box-shadow: 0 5px 15px 0 rgba(0, 115, 255, 0.20);
+        color: #fff;
     }
 
     &:focus {
@@ -59,10 +67,12 @@ $proxima: 'Proxima Nova Rg';
     box-shadow: 0px 3px 26px #FFFFFF29;
     border-radius: 60px;
     opacity: 1;
+    color: #fff;
 
     &:hover {
         background: transparent linear-gradient(287deg, #FF223B 0%, #F87777 100%) 0% 0% no-repeat padding-box;
         box-shadow: 0 5px 15px 0 rgba(255, 34, 59, 0.20);
+        color: #fff;
     }
 
     &:focus {
@@ -79,10 +89,12 @@ $proxima: 'Proxima Nova Rg';
     box-shadow: 0px 3px 26px #FFFFFF29;
     border-radius: 60px;
     opacity: 1;
+    color: #fff;
 
     &:hover {
         background: transparent linear-gradient(105deg, #FC711A 0%, #F7B733 100%) 0% 0% no-repeat padding-box;
         box-shadow: 0 5px 15px 0 rgba(247,182,51, 0.30);
+        color: #fff;
     }
 
     &:focus {
@@ -158,11 +170,31 @@ $proxima: 'Proxima Nova Rg';
     .custom-control-input:focus ~ .custom-control-label::before {
         box-shadow: none;
     }
+}
+
+
+.modal.fade {
+    .modal-dialog {
+      transform: translate(0, 0) scale(0.8);
+    }
+  
+    &.show {
+      .modal-dialog {
+        transform: translate(0, 0) scale(1);
+      }
+    }
   }
 
-
   .modal-custom {
-    z-index: 9999;
+    z-index: 99991;
+
+    .modal-986 {
+        max-width: 986px !important;
+    }
+
+    .modal-546 {
+        max-width: 546px !important;
+    }
 
     .modal-dialog {
         max-width: 657px;
@@ -295,6 +327,25 @@ $proxima: 'Proxima Nova Rg';
                 
             }
 
+            .modal-footer-share {
+                border-top: 1px solid #EFF2F6;
+                padding: 20px 30px 40px 30px;
+                display: flex;
+                flex-direction: column;
+
+                .check-share {
+                    margin-bottom: 50px;
+
+                    .custom-checkbox.custom-checkbox-2 {
+                        .custom-control-label {
+                            color: #000000;
+                            font-size: 18px;
+                            line-height: 30px;
+                        }
+                    }
+                }
+            }
+
             .modal-body {
                 padding: 30px 30px 20px 30px;
 
@@ -374,7 +425,8 @@ $proxima: 'Proxima Nova Rg';
                         }
 
                         .custom-file-label {
-                            width: 100%;
+                            width: auto;
+                            margin-right: 70px;
                             background: transparent linear-gradient(100deg, #0072FF 0%, #00C6FF 100%) 0% 0% no-repeat padding-box;
                             box-shadow: 0px 3px 26px #FFFFFF29;
                             border-radius: 60px;
@@ -717,6 +769,300 @@ $proxima: 'Proxima Nova Rg';
                     }
 
                 }
+
+                .share-card-div {
+                    padding: 20px 50px;
+
+                   .row-5 {
+                       margin: 0 -8px;
+                       justify-content: center;
+                       
+                       .pad-5 {
+                        padding: 0 8px;
+                       }
+                   } 
+
+                    .share-card {
+                        border: 2px solid #ECEFF5;
+                        padding: 16px 22px 18px 22px;
+                        border-radius: 20px;
+                        margin-bottom: 15px;
+                        background: #fff;
+                        display: block;
+                        transition: all 0.4s ease-in-out;
+
+                        &.selected {
+                            transition: all 0.4s ease-in-out;
+                            background: transparent linear-gradient(127deg, #0072FF 0%, #00C6FF 100%) 0% 0% no-repeat padding-box;
+
+                            .share-card-footer {
+                                p {
+                                    color: #fff;
+                                }
+                            }
+                        }
+
+                        .share-card-body {
+                            position: relative;
+
+                            img {
+                                height: 122px;
+                                width: 100%;
+                            }
+
+                            .select-screen {
+                                position: absolute;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+                                right: 0;
+                                height: 100%;
+                                width: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                display: none;
+                                opacity: 0;
+                                transition: all 0.3s ease-in-out;
+
+                                a.btn {
+                                    width: 136px;
+                                    min-width: 136px;
+                                    font-size: 16px;
+                                    line-height: 19px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    height: 44px;
+                                }
+                            }
+                        }
+    
+                        .share-card-footer {
+                            padding: 10px 0 0 0;
+
+                            p {
+                                font-size: 18px;
+                                line-height: 22px;
+                                color: #00142F;
+                                margin-bottom: 0;
+                                text-align: center;
+                                font-weight: 600;
+                                -webkit-line-clamp: 1;
+                                -webkit-box-orient: vertical;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                display: block;
+                                display: -webkit-box;
+                                max-width: 100%
+                            }
+                        }
+
+                        &:hover {
+                            .select-screen {
+                                display: flex;
+                                opacity: 1;
+                                transition: all 0.3s ease-in-out;
+                            }
+                        }
+
+                       
+                    }
+
+                   
+                }
+
+                .content-leaving {
+                    h5 {
+                        font-size: 22px;
+                        color: #00142F;
+                        line-height: 27px;
+                        margin-bottom: 20px;
+                        font-weight: 600;
+                        text-align: center;
+                    }
+
+                    h4 {
+                        font-size: 20px;
+                        color: #86A3CB;
+                        line-height: 27px;
+                        margin-bottom: 20px;
+                        font-weight: 600;
+                        text-align: center;
+                    }
+                }
+
+                .session-record {
+                    h4 {
+                        font-size: 20px;
+                        line-height: 26px;
+                        font-weight: 500;
+                        color: #86A3CB;
+                        max-width: 396px;
+                        margin: 0 auto;
+                        text-align: center;
+                    }
+                }
+
+                .add-participent {
+                    .form-group {
+                        margin-bottom: 24px;
+
+                        label.col-form-label {
+                            font-size: 20px;
+                            line-height: 24px;
+                            font-weight: 600;
+                        }
+
+                        .form-control {
+                            height: 46px;
+                            border-radius: 10px;
+                            border: 1px solid #EAEAEA;
+                            font-size: 18px;
+                            line-height: 26px;
+                            color: #000;
+
+                            &::placeholder {
+                                color: rgba(0, 0, 0, 0.30);
+                            }
+                        }
+
+                    }
+                }
+
+                .invitation-success {
+                    padding: 20px 0;
+                    text-align: center;
+
+                    h5 {
+                        font-size: 18px;
+                        line-height: 22px;
+                        font-weight: 600;
+                        color: #000000;
+                        margin-bottom: 10px;
+                    }
+        
+                    h4 {
+                        font-size: 18px;
+                        line-height: 22px;
+                        font-weight: 600;
+                        color: #F98D29;
+                    }
+                }
+
+                .content-share {
+                    h5 {
+                        font-size: 22px;
+                        color: #00142F;
+                        line-height: 27px;
+                        margin-bottom: 20px;
+                        font-weight: 600;
+                        text-align: center;
+                    }
+
+                    h4 {
+                        font-size: 22px;
+                        color: #F98D29;
+                        line-height: 27px;
+                        margin-bottom: 20px;
+                        font-weight: 600;
+                        text-align: center;
+                    }
+                }
+
+                .content-video-type {
+                    h5 {
+                        font-size: 22px;
+                        color: #00142F;
+                        line-height: 27px;
+                        margin-bottom: 20px;
+                        font-weight: 600;
+                        text-align: center;
+                    }
+                }
+
+                .content-stream {
+                    margin-bottom: 30px;
+
+                    h5 {
+                        font-size: 22px;
+                        color: #00142F;
+                        line-height: 27px;
+                        margin-bottom: 20px;
+                        font-weight: 600;
+                        text-align: center;
+                    }
+
+                    .img-stream {
+                        max-width: 267px;
+                        margin: 0 auto 24px auto;                        
+                    }
+
+                    .form-group {
+                        max-width: 356px;
+                        margin: 0 auto;
+
+                        .form-control {
+                            height: 46px;
+                            border-radius: 10px;
+                            border: 1px solid #EAEAEA;
+                            font-size: 18px;
+                            line-height: 26px;
+                            color: #000;
+                            text-align: center;
+
+                            &::placeholder {
+                                color: rgba(0, 0, 0, 0.30);
+                                text-align: center;
+                            }
+                        }
+
+                    }
+                }
+
+                .setting-content {
+                    .nav-tabs {
+                        width: 100%;
+                        text-align: center;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border: 0;
+                        li {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            a {
+                                font-size: 20px;
+                                line-height: 24px;
+                                color: #000000;
+                                margin: 10px 40px;
+                                padding: 10px 5px;
+                                display: block;
+                                font-weight: 600;
+                                border-bottom: 2px solid transparent;
+                            }
+
+                            .active {
+                                border-bottom: 2px solid #F98D29;
+                            }
+                        }
+                    }
+
+                    .tab-inner {
+                        padding: 60px 80px;
+
+                        .custom-checkbox.custom-checkbox-2 {
+                            max-width: unset;
+
+                            .custom-control-label {
+                                color: #000000;
+                                font-size: 18px;
+                                line-height: 30px;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -724,7 +1070,7 @@ $proxima: 'Proxima Nova Rg';
 
   .modal-backdrop {
     background: rgba(0, 0, 0, 0.75);
-    z-index: 9998;
+    z-index: 9999;
   }
 
   .modal-backdrop.show {
@@ -950,8 +1296,6 @@ $proxima: 'Proxima Nova Rg';
                     }
                 }
             }
-            
-           
 
             .incall-participent {
                 .search-incall {
@@ -1005,7 +1349,74 @@ $proxima: 'Proxima Nova Rg';
                 height: calc( 100vh - 300px) !important;
                 min-height: 350px;
             }
-            
+
+            .share-card-div {
+                padding: 20px 0px;
+            }
+
+            .content-leaving {
+                h5 {
+                    font-size: 20px;
+                    line-height: 22px;
+                }
+    
+                h4 {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+
+            .session-record {
+                h4 {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+
+            .add-participent {
+                .form-group {
+                    margin-bottom: 20px;
+
+                    label.col-form-label {
+                        font-size: 16px;
+                        line-height: 20px;
+                        margin-bottom: 0px;
+                    }
+
+                }
+            }
+
+            .invitation-success{
+               padding: 20px 0;
+            }
+
+            .content-share {
+                h5 {
+                    font-size: 20px;
+                    line-height: 22px;
+                }
+    
+                h4 {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+
+            .content-video-type {
+                h5 {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+
+            .content-stream {
+                margin-bottom: 30px;
+
+                h5 {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
         }
 
         .modal-footer-partcipent {
