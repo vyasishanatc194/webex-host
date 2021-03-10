@@ -217,6 +217,12 @@
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='4' viewBox='0 0 20 4'%3E%3Cg id='more-icon' transform='translate(10588 -5006)'%3E%3Ccircle id='Ellipse_209' data-name='Ellipse 209' cx='2' cy='2' r='2' transform='translate(-10588 5006)' fill='%23fff'/%3E%3Ccircle id='Ellipse_210' data-name='Ellipse 210' cx='2' cy='2' r='2' transform='translate(-10580 5006)' fill='%23fff'/%3E%3Ccircle id='Ellipse_211' data-name='Ellipse 211' cx='2' cy='2' r='2' transform='translate(-10572 5006)' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E%0A");
 }
 
+.share-option-icon {
+  width: 15px;
+  height: 14px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13.356' height='14.901' viewBox='0 0 13.356 14.901'%3E%3Cg id='share-option' transform='matrix(0.017, 1, -1, 0.017, 13.101, 0)'%3E%3Cpath id='Path_66' data-name='Path 66' d='M14.519,8.754l-4.193,4.193a.524.524,0,0,1-.893-.369v-2.1H7.6q-5.839,0-7.165-3.3A7.457,7.457,0,0,1,0,4.455,9.834,9.834,0,0,1,1.04.761l.086-.2q.061-.139.111-.246a.931.931,0,0,1,.107-.18A.28.28,0,0,1,1.572,0a.239.239,0,0,1,.192.082.305.305,0,0,1,.07.2A1.667,1.667,0,0,1,1.814.5,1.694,1.694,0,0,0,1.793.7q-.041.557-.041,1.007A6.97,6.97,0,0,0,1.9,3.185a4.45,4.45,0,0,0,.4,1.134,2.849,2.849,0,0,0,.655.827,3.844,3.844,0,0,0,.864.569A4.684,4.684,0,0,0,4.9,6.064a10.384,10.384,0,0,0,1.261.176q.635.049,1.437.049H9.434v-2.1a.521.521,0,0,1,.893-.368l4.193,4.193a.515.515,0,0,1,0,.737Z' transform='translate(0 0)' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+
 .left-side-nav {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;

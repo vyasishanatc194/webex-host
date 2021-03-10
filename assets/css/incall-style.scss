@@ -192,7 +192,48 @@
 }
 
 .in-call-are-body-top-div {
-  
+  .in-call-are-bt-center-div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .btn-group-bx-div {
+      display: flex;
+      flex-wrap: wrap;
+
+      .btn.btn-screen-sharing-it {
+        background: transparent linear-gradient(99deg, #fc711a 0%, #f7b733 100%) 0% 0% no-repeat padding-box;
+        border-radius: 10px 0 0 0;
+        color: #fff;
+        border: none;
+        box-shadow: none;
+        display: flex;
+        align-items: center;
+
+        .icon-span {
+          display: flex;
+        }
+      }
+
+      .btn.btn-sharing-it {
+        background: transparent linear-gradient(102deg, #ff223b 0%, #f87777 100%) 0% 0% no-repeat padding-box;
+        border: none;
+        border-radius: 0 10px 0 0;
+        color: #fff;
+        box-shadow: none;
+        display: flex;
+        align-items: center;
+
+        .icon-span {
+          display: flex;
+        }
+      }
+
+      .btn.br-tlr-10 {
+        border-radius: 10px 10px 0 0;
+      }
+    }
+  }
 }
 
 .in-call-user-owl-slider-slider {
@@ -613,8 +654,6 @@
   }
 }
 
-
-
 .in-call-user-ss-box {
   margin: 0 0 20px 0;
 
@@ -826,12 +865,17 @@
       .tplf-recording-option-div {
         padding: 15px;
       }
+
+      .tplf-share-screen-div {
+        padding: 15px;
+      }
     }
   }
 
   .in-call-action-area-div {
     .in-call-action-area-row {
       padding: 10px 10px;
+      border-radius: 24px;
 
       .in-call-action-area-left {
         width: 100%;
@@ -922,6 +966,15 @@
             display: flex;
             justify-content: flex-start;
           }
+
+          &.remove-arrow {
+            padding-right: 10px;
+            padding-left: 10px;
+
+            .icon-span {
+              justify-content: center;
+            }
+          }
         }
 
         .dropdown-menu-custom {
@@ -932,11 +985,73 @@
           bottom: 135px !important;
         }
       }
+
+      .btn.multiple-btn-common {
+        padding-right: 80px;
+      }
+    }
+  }
+
+  .in-call-are-body-top-div {
+    .in-call-are-bt-center-div {
+      .btn-group-bx-div {
+        margin: 0 0 10px 0;
+
+        &.mb-mobile-0 {
+          margin-bottom: 0;
+        }
+
+        .btn.btn-screen-sharing-it {
+          border-radius: 10px 10px 0 0;
+          width: 100%;
+          justify-content: center;
+        }
+
+        .btn.btn-sharing-it {
+          border-radius: 0 0 10px 10px;
+          width: 100%;
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  .in-call-user-ss-box {
+    .in-call-user-ss-img-thumb {
+      border: 3px solid #fff;
+      height: 100px;
+      width: 100px;
+    }
+
+    .in-call-user-ss-content-div {
+      .in-call-user-ss-content-row {
+        p {
+          font-size: 12px;
+          width: calc(100% - 21px);
+        }
+
+        .bg-custom-icon {
+          height: 14px;
+          width: 14px;
+        }
+      }
     }
   }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  .main-center-section {
+    .incall-area-section {
+      .tplf-recording-option-div {
+        padding: 15px;
+      }
+
+      .tplf-share-screen-div {
+        padding: 15px;
+      }
+    }
+  }
+
   .in-call-action-area-div {
     .in-call-action-area-row {
       padding: 10px 10px 0 10px;
@@ -1029,6 +1144,41 @@
             display: flex;
             justify-content: flex-start;
           }
+
+          &.remove-arrow {
+            padding-right: 10px;
+            padding-left: 10px;
+
+            .icon-span {
+              justify-content: center;
+            }
+          }
+        }
+      }
+
+      .btn.multiple-btn-common {
+        padding-right: 80px;
+      }
+    }
+  }
+
+  .in-call-user-ss-box {
+    .in-call-user-ss-img-thumb {
+      border: 3px solid #fff;
+      height: 100px;
+      width: 100px;
+    }
+
+    .in-call-user-ss-content-div {
+      .in-call-user-ss-content-row {
+        p {
+          font-size: 12px;
+          width: calc(100% - 21px);
+        }
+
+        .bg-custom-icon {
+          height: 14px;
+          width: 14px;
         }
       }
     }
