@@ -731,6 +731,35 @@
   color: #fff;
 }
 
+.modal-custom .modal-dialog .modal-content .modal-body .incall-participent .tag {
+  background-color: #FFEEDB;
+  padding: 6px 15px;
+  border-radius: 30px;
+  color: #F98D29;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 14px;
+  height: 26px;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .incall-participent .tag-orange {
+  padding-left: 30px;
+  position: relative;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .incall-participent .tag-orange::after {
+  content: '';
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: left center;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11.37' height='8.353' viewBox='0 0 11.37 8.353'%3E%3Cpath id='check' d='M11.238,5.993,4.723,12.507a.447.447,0,0,1-.631,0L.13,8.519a.448.448,0,0,1,0-.632l.947-.946a.446.446,0,0,1,.631,0l2.7,2.721L9.659,4.414a.448.448,0,0,1,.632,0l.947.947A.445.445,0,0,1,11.238,5.993Z' transform='translate(0 -4.284)' fill='%23f98d29'/%3E%3C/svg%3E%0A");
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  left: 10px;
+  top: 6px;
+}
+
 .modal-custom .modal-dialog .modal-content .modal-body .incall-participent .participent-list ul.list {
   width: 100%;
   display: -webkit-box;
@@ -1290,6 +1319,129 @@
   line-height: 30px;
 }
 
+.modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .audio-setting h5 {
+  font-size: 22px;
+  color: #00142F;
+  line-height: 27px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .audio-setting .form-group {
+  margin-bottom: 24px;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .audio-setting .form-group label.col-form-label {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .audio-setting .audio-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  left: -10px;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .audio-setting .audio-group a {
+  color: #002855;
+  font-size: 20px;
+  margin: 0 5px;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .audio-setting .audio-group a span {
+  font-size: 28px;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .audio-setting .audio-group a:hover {
+  color: #00C6FF;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .audio-setting .audio-group .slider {
+  height: 2px;
+  background-color: #E0E3E9;
+  padding: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: 0;
+  -webkit-appearance: none;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .audio-setting .audio-group .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* Override default look */
+  appearance: none;
+  background: transparent linear-gradient(144deg, #0072FF 0%, #00C6FF 100%) 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  opacity: 1;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+  /* Cursor on hover */
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .audio-setting .volume ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .audio-setting .volume ul li {
+  margin-right: 10px;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .audio-setting .volume ul li a {
+  background-color: #D6E3F5;
+  display: block;
+  height: 40px;
+  width: 10px;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .audio-setting .volume ul li a:hover {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background: transparent linear-gradient(119deg, #FC711A 0%, #F7B733 100%) 0% 0% no-repeat padding-box;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .audio-setting .volume ul li a.active {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background: transparent linear-gradient(119deg, #FC711A 0%, #F7B733 100%) 0% 0% no-repeat padding-box;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .preview-text {
+  margin-top: 10px;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .preview-text h3 {
+  font-size: 18px;
+  line-height: 22px;
+  color: #00142F;
+  text-align: center;
+  font-weight: 600;
+}
+
 .modal-backdrop {
   background: rgba(0, 0, 0, 0.75);
   z-index: 9999;
@@ -1574,53 +1726,41 @@
     line-height: 24px;
   }
   .modal-custom .modal-dialog .modal-content .modal-body .setting-content .nav-tabs {
-    width: 100%;
-    text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     border: 0;
-  }
-  .modal-custom .modal-dialog .modal-content .modal-body .setting-content .nav-tabs li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow-x: auto;
   }
   .modal-custom .modal-dialog .modal-content .modal-body .setting-content .nav-tabs li a {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 20px;
     color: #000000;
-    margin: 10px 40px;
+    margin: 10px 5px;
     padding: 10px 5px;
     display: block;
     font-weight: 600;
     border-bottom: 2px solid transparent;
+    white-space: nowrap;
   }
   .modal-custom .modal-dialog .modal-content .modal-body .setting-content .nav-tabs li .active {
     border-bottom: 2px solid #F98D29;
   }
   .modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner {
-    padding: 60px 80px;
+    padding: 30px 0px;
   }
-  .modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .custom-checkbox.custom-checkbox-2 {
+  .modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .audio-setting .form-group label.col-form-label {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .audio-setting .btn.btn-custom {
     max-width: unset;
+    margin-bottom: 10px;
   }
-  .modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .custom-checkbox.custom-checkbox-2 .custom-control-label {
-    color: #000000;
-    font-size: 18px;
-    line-height: 30px;
+  .modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .audio-setting .volume ul li {
+    margin-right: 5px;
+  }
+  .modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .audio-setting .volume ul li a {
+    width: 6px;
   }
   .modal-custom .modal-dialog .modal-content .modal-footer-partcipent {
     -ms-flex-wrap: wrap;
