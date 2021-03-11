@@ -296,10 +296,10 @@
       <div class="modal-header close-none">
         <h5 class="modal-title">Incoming Participant</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          <span aria-hidden="true"><img src="assets/images/participant/cross-sign.png" alt=""></span>
         </button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body pb-0">
         <div class="content-partciapte">
             <h5>This participant would like to join the session:</h5>
             <h4>Hange Zoe (Hange_Zoe@Capitaland.sg)</h4>
@@ -320,7 +320,7 @@
       <div class="modal-header close-top-right">
         <h5 class="modal-title">Incoming Participant</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          <span aria-hidden="true"><img src="assets/images/participant/cross-sign.png" alt=""></span>
         </button>
       </div>
       <div class="modal-body">
@@ -334,7 +334,7 @@
               </div>
             </div>
 
-            <div class="form-group">
+            <div class="form-group mb-4">
               <div class="custom-control custom-checkbox custom-checkbox-2">
                 <input type="checkbox" class="custom-control-input" id="customCheck1" name="example1" checked>
                 <label class="custom-control-label" for="customCheck1">Eren Yeager (Eren_Yeager@Capitaland.sg)</label>
@@ -358,16 +358,16 @@
       <div class="modal-header close-none">
         <h5 class="modal-title">Join Session</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          <span aria-hidden="true"><img src="assets/images/participant/cross-sign.png" alt=""></span>
         </button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body join-body">
         <div class="join-session">
-           <div class="row">
+           <div class="row no-gutters">
             <div class="col-lg-12">
-              <div class="form-group row">
-                  <label for="staticEmail" class="col-sm-4 col-form-label">Profile Picture</label>
-                  <div class="col-sm-8">
+              <div class="form-group row no-gutters">
+                  <label for="staticEmail" class="col-sm-3 col-form-label">Profile Picture</label>
+                  <div class="col-sm-9 form-pad">
                     <div class="upload-row">
                       <div class="img-upload " style="display: none;">
                         <img src="assets/images/profile-pic.png" class="profile-pic" alt="">
@@ -383,27 +383,28 @@
 
              
 
-              <div class="form-group row">
-                <label for="staticEmail" class="col-sm-4 col-form-label">Video Input</label>
-                <div class="col-sm-8">
-                  <select class="form-control select2">
-                    <option class="">Please Select a Camera</option>
-                    <option class="">In-built Camera 0577</option>
-                    <option class="">HP Widevision HD Camera </option>
-                    <option value="">Join Call without Video</option>
+              <div class="form-group row no-gutters">
+                <label for="staticEmail" class="col-sm-3 col-form-label">Video Input</label>
+                <div class="col-sm-9 form-pad">
+                  <select class="form-control select-video">
+                    <option ></option>
+                    <option >In-built Camera 0577</option>
+                    <option >HP Widevision HD Camera </option>
+                    <option >Join Call without Video</option>
                   </select>
                 </div>
               </div>
 
-              <div class="form-group row">
-                <label for="staticEmail" class="col-sm-4 col-form-label">Audio Input</label>
-                <div class="col-sm-8">
-                  <select class="form-control select2">
-                    <option class="">Computer Audio</option>
-                    <option class="">In-built Camera 0577</option>
-                    <option class="">In-built Camera 0577 2 </option>
+              <div class="form-group row no-gutters">
+                <label for="staticEmail" class="col-sm-3 col-form-label">Audio Input</label>
+                <div class="col-sm-9 form-pad">
+                  <select class="form-control select-audio">
+                    <option ></option>
+                    <option >Computer Audio</option>
+                    <option >In-built Camera 0577</option>
+                    <option >In-built Camera 0577 2 </option>
                   </select>
-                  <span class="feedback">Test Speaker and Microphone</span>
+                  <span class="feedback ">Test Speaker and Microphone</span>
                 </div>
               </div>
 
@@ -412,7 +413,7 @@
       </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-custom btn-orange" data-dismiss="modal">Done</button>
+        <button type="button" class="btn btn-custom btn-orange orange-shadow remove-disabled" disabled data-dismiss="modal">Done</button>
         
       </div>
     </div>
@@ -427,31 +428,27 @@
       <div class="modal-header close-back">
         <h5 class="modal-title">Audio Test</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          <span aria-hidden="true"><img src="assets/images/participant/back-arrow.png" alt=""></span>
         </button>
       </div>
-      <div class="modal-body">
-        <div class="join-session">
+      <div class="modal-body audio-body">
+        <div class="">
            <div class="row">
             <div class="col-lg-12">
            
               <div class="audio-content">
                 <h5>Do you hear a ringtone?</h5>
 
-                <div class="form-group row mb-0">
-                  <label for="staticEmail" class="col-sm-4 col-form-label">Output Volume</label>
-                  <div class="col-sm-8">
+                <div class="form-group row mb-1 no-gutters">
+                  <label for="staticEmail" class="col-sm-3 col-form-label">Output Volume</label>
+                  <div class="col-sm-9">
                     <div class="audio-group">
                       <a href="#!">
-                        <span class="material-icons">
-                          volume_mute
-                        </span>
+                        <span class="icon icon-volume"></span>
                       </a>
                       <input type="range" class="form-control slider" >
                       <a href="#!">
-                        <span class="material-icons">
-                          volume_up
-                        </span>
+                        <span class="icon icon-volume-up"></span>
                       </a>
                     </div>
                  
@@ -464,9 +461,9 @@
            </div>
       </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-custom btn-red" data-dismiss="modal">No</button>
-        <button type="button" class="btn btn-custom btn-blue" data-dismiss="modal">Yes</button>
+      <div class="modal-footer pb-36">
+        <button type="button" class="btn btn-custom btn-red red-shadow" data-dismiss="modal">No</button>
+        <button type="button" class="btn btn-custom btn-blue blue-shadow" data-dismiss="modal">Yes</button>
       </div>
     </div>
   </div>
@@ -479,20 +476,20 @@
       <div class="modal-header close-back">
         <h5 class="modal-title">Audio Test</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          <span aria-hidden="true"><img src="assets/images/participant/back-arrow.png" alt=""></span>
         </button>
       </div>
       <div class="modal-body">
-        <div class="join-session">
+        <div class="">
            <div class="row">
             <div class="col-lg-12">
            
-              <div class="audio-content">
+              <div class="audio-content audio-content-2">
                 <h5>Try speaking into your microphone</h5>
 
-                <div class="form-group row ">
-                  <label for="staticEmail" class="col-sm-4 col-form-label">Audio Input</label>
-                  <div class="col-sm-8">
+                <div class="form-group row no-gutters ">
+                  <label for="staticEmail" class="col-sm-3 col-form-label">Audio Input</label>
+                  <div class="col-sm-9">
                    <div class="volume">
                      <ul>
                        <li>
@@ -554,20 +551,16 @@
                   </div>
                 </div>
 
-                <div class="form-group row mb-0">
-                  <label for="staticEmail" class="col-sm-4 col-form-label">Input Volume</label>
-                  <div class="col-sm-8">
+                <div class="form-group row no-gutters mb-0">
+                  <label for="staticEmail" class="col-sm-3 col-form-label">Input Volume</label>
+                  <div class="col-sm-9">
                     <div class="audio-group">
                       <a href="#!">
-                        <span class="material-icons">
-                          volume_mute
-                        </span>
+                        <span class="icon icon-volume"></span>
                       </a>
                       <input type="range" class="form-control slider" >
                       <a href="#!">
-                        <span class="material-icons">
-                          volume_up
-                        </span>
+                        <span class="icon icon-volume-up"></span>
                       </a>
                     </div>
                  
@@ -581,7 +574,7 @@
       </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-custom btn-orange" data-dismiss="modal">Done</button>
+        <button type="button" class="btn btn-custom btn-orange orange-shadow" data-dismiss="modal">Done</button>
       </div>
     </div>
   </div>
@@ -589,12 +582,12 @@
 
 <!-- in call partcipant -->
 <div class="modal fade modal-custom" tabindex="-1" id="modal-incall-participant">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-579">
     <div class="modal-content">
-      <div class="modal-header white-header close-top-right">
+      <div class="modal-header header-partciapnt close-top-right">
         <h5 class="modal-title">Participants</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          <span aria-hidden="true"><img src="assets/images/participant/cross-sign.png" alt=""></span>
         </button>
       </div>
       <div class="modal-body p-0">
@@ -604,9 +597,7 @@
               <div class="form-group search-incall">
                 <input type="text" class="form-control" placeholder="Type a participant name here…">
                 <a href="#!" class="btn btn-search" >
-                  <span class="material-icons">
-                    search
-                    </span>
+               <span class="icon icon-search"></span>                  
                 </a>
               </div>
             </div>
@@ -626,9 +617,25 @@
                       </div>
 
                       <div class="user-action">
-                        <div class="action-group">
-                          <a href="#!" class="btn btn-squre"><i class="icon icon-mic-mute"></i></a>
-                          <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                        <div class="action-group hover-none">
+                            <a href="#!" class="btn btn-squre"><i class="icon icon-mic-mute"></i></a>
+                            <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                        </div>
+
+                        <div class="action-group hover-block">
+                          <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                       
+                          <div class="dropdown">
+                            <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             More
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Stop Video</a>
+                              <a class="dropdown-item" href="#">Allow Share Screen</a>
+                              <a class="dropdown-item" href="#">Remove from Call</a>
+                            </div>
+                          </div>
+
                         </div>
                       </div>
                     </li>
@@ -645,9 +652,25 @@
                       </div>
 
                       <div class="user-action">
-                        <div class="action-group">
-                          <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
-                          <a href="#!" class="btn btn-squre"><i class="icon icon-video-mute"></i></a>
+                        <div class="action-group hover-none">
+                            <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
+                            <a href="#!" class="btn btn-squre"><i class="icon icon-video-mute"></i></a>
+                        </div>
+
+                        <div class="action-group hover-block">
+                          <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                       
+                          <div class="dropdown">
+                            <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             More
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Stop Video</a>
+                              <a class="dropdown-item" href="#">Allow Share Screen</a>
+                              <a class="dropdown-item" href="#">Remove from Call</a>
+                            </div>
+                          </div>
+
                         </div>
                       </div>
                     </li>
@@ -664,14 +687,30 @@
                       </div>
 
                       <div class="user-action">
-                        <div class="action-group">
-                          <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
-                          <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                        <div class="action-group hover-none">
+                            <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
+                            <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                        </div>
+
+                        <div class="action-group hover-block">
+                          <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                       
+                          <div class="dropdown">
+                            <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             More
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Stop Video</a>
+                              <a class="dropdown-item" href="#">Allow Share Screen</a>
+                              <a class="dropdown-item" href="#">Remove from Call</a>
+                            </div>
+                          </div>
+
                         </div>
                       </div>
                     </li>
 
-                    <li class="active">
+                    <li class="">
                       <div class="partcipent-user">
                         <div class="user-img">
                           <img src="assets/images/profile-pic.png" alt="">
@@ -683,9 +722,12 @@
                       </div>
 
                       <div class="user-action">
+                        <div class="action-group hover-none">
+                            <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
+                            <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                        </div>
 
-
-                        <div class="action-group">
+                        <div class="action-group hover-block">
                           <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
                        
                           <div class="dropdown">
@@ -715,9 +757,25 @@
                       </div>
 
                       <div class="user-action">
-                        <div class="action-group">
-                          <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
-                          <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                        <div class="action-group hover-none">
+                            <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
+                            <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                        </div>
+
+                        <div class="action-group hover-block">
+                          <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                       
+                          <div class="dropdown">
+                            <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             More
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Stop Video</a>
+                              <a class="dropdown-item" href="#">Allow Share Screen</a>
+                              <a class="dropdown-item" href="#">Remove from Call</a>
+                            </div>
+                          </div>
+
                         </div>
                       </div>
                     </li>
@@ -734,9 +792,25 @@
                       </div>
 
                       <div class="user-action">
-                        <div class="action-group">
-                          <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
-                          <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                        <div class="action-group hover-none">
+                            <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
+                            <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                        </div>
+
+                        <div class="action-group hover-block">
+                          <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                       
+                          <div class="dropdown">
+                            <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             More
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Stop Video</a>
+                              <a class="dropdown-item" href="#">Allow Share Screen</a>
+                              <a class="dropdown-item" href="#">Remove from Call</a>
+                            </div>
+                          </div>
+
                         </div>
                       </div>
                     </li>
@@ -753,9 +827,25 @@
                       </div>
 
                       <div class="user-action">
-                        <div class="action-group">
-                          <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
-                          <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                        <div class="action-group hover-none">
+                            <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
+                            <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                        </div>
+
+                        <div class="action-group hover-block">
+                          <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                       
+                          <div class="dropdown">
+                            <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             More
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Stop Video</a>
+                              <a class="dropdown-item" href="#">Allow Share Screen</a>
+                              <a class="dropdown-item" href="#">Remove from Call</a>
+                            </div>
+                          </div>
+
                         </div>
                       </div>
                     </li>
@@ -769,9 +859,9 @@
       </div>
       </div>
       <div class="modal-footer modal-footer-partcipent">
-        <button type="button" class="btn btn-custom btn-sm btn-blue" data-dismiss="modal">Mute All</button>
-        <button type="button" class="btn btn-custom btn-sm btn-orange" data-dismiss="modal">Add Participant</button>
-        <button type="button" class="btn btn-custom btn-sm btn-transparent" data-dismiss="modal">Stop Video For All</button>
+        <button type="button" class="btn btn-custom btn-sm btn-blue mute-all blue-shadow" >Mute All</button>
+        <button type="button" class="btn btn-custom btn-sm btn-orange orange-shadow" data-dismiss="modal">Add Participant</button>
+        <button type="button" class="btn btn-custom btn-sm btn-transparent stop-all" >Stop Video For All</button>
       </div>
     </div>
   </div>
@@ -781,10 +871,10 @@
 <div class="modal fade modal-custom" tabindex="-1" id="modal-incall-participant-access">
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content">
-      <div class="modal-header white-header close-top-right">
+      <div class="modal-header header-partciapnt close-top-right">
         <h5 class="modal-title">Participants</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          <span aria-hidden="true"><img src="assets/images/participant/cross-sign.png" alt=""></span>
         </button>
       </div>
       <div class="modal-body p-0">
@@ -816,9 +906,25 @@
                       </div>
 
                       <div class="user-action">
-                        <div class="action-group">
-                          <a href="#!" class="btn btn-squre"><i class="icon icon-mic-mute"></i></a>
-                          <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                        <div class="action-group hover-none">
+                            <a href="#!" class="btn btn-squre"><i class="icon icon-mic-mute"></i></a>
+                            <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                        </div>
+
+                        <div class="action-group hover-block">
+                          <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                       
+                          <div class="dropdown">
+                            <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             More
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Stop Video</a>
+                              <a class="dropdown-item" href="#">Remove Share Screen Access</a>
+                              <a class="dropdown-item" href="#">Remove from Call</a>
+                            </div>
+                          </div>
+
                         </div>
                       </div>
                     </li>
@@ -835,11 +941,28 @@
                       </div>
 
                       <div class="user-action">
-                        <div class="action-group">
-                          <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
-                          <a href="#!" class="btn btn-squre"><i class="icon icon-video-mute"></i></a>
+                        <div class="action-group hover-none">
+                            <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
+                            <a href="#!" class="btn btn-squre"><i class="icon icon-video-mute"></i></a>
+                        </div>
+
+                        <div class="action-group hover-block">
+                          <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                       
+                          <div class="dropdown">
+                            <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             More
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Stop Video</a>
+                              <a class="dropdown-item" href="#">Remove Share Screen Access</a>
+                              <a class="dropdown-item" href="#">Remove from Call</a>
+                            </div>
+                          </div>
+
                         </div>
                       </div>
+
                     </li>
 
                     <li>
@@ -854,14 +977,30 @@
                       </div>
 
                       <div class="user-action">
-                        <div class="action-group">
-                          <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
-                          <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                        <div class="action-group hover-none">
+                            <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
+                            <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                        </div>
+
+                        <div class="action-group hover-block">
+                          <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                       
+                          <div class="dropdown">
+                            <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             More
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Stop Video</a>
+                              <a class="dropdown-item" href="#">Remove Share Screen Access</a>
+                              <a class="dropdown-item" href="#">Remove from Call</a>
+                            </div>
+                          </div>
+
                         </div>
                       </div>
                     </li>
 
-                    <li class="active">
+                    <li class="">
                       <div class="partcipent-user">
                         <div class="user-img">
                           <img src="assets/images/profile-pic.png" alt="">
@@ -874,8 +1013,14 @@
 
                       <div class="user-action">
 
+                        <div class="action-group hover-none">
+                          <div class="action-group">
+                            <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
+                            <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                          </div>
+                        </div>
 
-                        <div class="action-group">
+                        <div class="action-group hover-block">
                           <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
                        
                           <div class="dropdown">
@@ -905,9 +1050,25 @@
                       </div>
 
                       <div class="user-action">
-                        <div class="action-group">
-                          <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
-                          <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                        <div class="action-group hover-none">
+                            <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
+                            <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                        </div>
+
+                        <div class="action-group hover-block">
+                          <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                       
+                          <div class="dropdown">
+                            <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             More
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Stop Video</a>
+                              <a class="dropdown-item" href="#">Remove Share Screen Access</a>
+                              <a class="dropdown-item" href="#">Remove from Call</a>
+                            </div>
+                          </div>
+
                         </div>
                       </div>
                     </li>
@@ -922,11 +1083,26 @@
                           <p>Kailee@certis.sg</p>
                         </div>
                       </div>
-
                       <div class="user-action">
-                        <div class="action-group">
-                          <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
-                          <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                        <div class="action-group hover-none">
+                            <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
+                            <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                        </div>
+
+                        <div class="action-group hover-block">
+                          <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                       
+                          <div class="dropdown">
+                            <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             More
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Stop Video</a>
+                              <a class="dropdown-item" href="#">Remove Share Screen Access</a>
+                              <a class="dropdown-item" href="#">Remove from Call</a>
+                            </div>
+                          </div>
+
                         </div>
                       </div>
                     </li>
@@ -943,9 +1119,25 @@
                       </div>
 
                       <div class="user-action">
-                        <div class="action-group">
-                          <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
-                          <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                        <div class="action-group hover-none">
+                            <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
+                            <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                        </div>
+
+                        <div class="action-group hover-block">
+                          <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                       
+                          <div class="dropdown">
+                            <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             More
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Stop Video</a>
+                              <a class="dropdown-item" href="#">Remove Share Screen Access</a>
+                              <a class="dropdown-item" href="#">Remove from Call</a>
+                            </div>
+                          </div>
+
                         </div>
                       </div>
                     </li>
@@ -959,9 +1151,9 @@
       </div>
       </div>
       <div class="modal-footer modal-footer-partcipent">
-        <button type="button" class="btn btn-custom btn-sm btn-blue" data-dismiss="modal">Mute All</button>
-        <button type="button" class="btn btn-custom btn-sm btn-orange" data-dismiss="modal">Add Participant</button>
-        <button type="button" class="btn btn-custom btn-sm btn-transparent" data-dismiss="modal">Stop Video For All</button>
+        <button type="button" class="btn btn-custom btn-sm btn-blue mute-all blue-shadow">Mute All</button>
+        <button type="button" class="btn btn-custom btn-sm btn-orange orange-shadow " data-dismiss="modal">Add Participant</button>
+        <button type="button" class="btn btn-custom btn-sm btn-transparent stop-all" >Stop Video For All</button>
       </div>
     </div>
   </div>
@@ -974,7 +1166,7 @@
       <div class="modal-header close-top-right">
         <h5 class="modal-title">Select a Screen To Share</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          <span aria-hidden="true"><img src="assets/images/participant/cross-sign.png" alt=""></span>
         </button>
       </div>
       <div class="modal-body">
@@ -1071,7 +1263,7 @@
             </div>
           </div>
         </div>
-        <button type="button" class="btn btn-custom btn-orange btn-md" data-dismiss="modal">Share </button>
+        <button type="button" class="btn btn-custom btn-orange btn-md orange-shadow" data-dismiss="modal">Share </button>
       </div>
     </div>
   </div>
@@ -1084,7 +1276,7 @@
       <div class="modal-header close-none">
         <h5 class="modal-title">Leaving Session</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          <span aria-hidden="true"><img src="assets/images/participant/cross-sign.png" alt=""></span>
         </button>
       </div>
       <div class="modal-body">
@@ -1096,8 +1288,8 @@
         </div>
       </div>
       <div class="modal-footer ">
-        <button type="button" class="btn btn-custom btn-red " data-dismiss="modal">Yes, Leave Session </button>
-        <button type="button" class="btn btn-custom btn-blue " data-dismiss="modal">No, Stay in Session </button>
+        <button type="button" class="btn btn-custom btn-red red-shadow" data-dismiss="modal">Yes, Leave Session </button>
+        <button type="button" class="btn btn-custom btn-blue blue-shadow" data-dismiss="modal">No, Stay in Session </button>
       </div>
     </div>
   </div>
@@ -1110,7 +1302,7 @@
       <div class="modal-header white-header pt-4 close-none">
         <h5 class="modal-title text-center">Session Recorded Succesfully</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          <span aria-hidden="true"><img src="assets/images/participant/cross-sign.png" alt=""></span>
         </button>
       </div>
       <div class="modal-body pt-0">
@@ -1121,7 +1313,7 @@
         </div>
       </div>
       <div class="modal-footer pb-4">
-        <button type="button" class="btn btn-custom btn-orange " data-dismiss="modal">Ok</button>
+        <button type="button" class="btn btn-custom btn-orange orange-shadow" data-dismiss="modal">Ok</button>
       </div>
     </div>
   </div>
@@ -1135,11 +1327,11 @@
       <div class="modal-header close-none">
         <h5 class="modal-title">Add Participant</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          <span aria-hidden="true"><img src="assets/images/participant/cross-sign.png" alt=""></span>
         </button>
       </div>
       <div class="modal-body">
-        <div class="add-participent mb-4">
+        <div class="add-participent ">
            <div class="row">
             <div class="col-lg-12">
             
@@ -1178,7 +1370,7 @@
       </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-custom btn-orange" data-dismiss="modal">Send Invitation</button>
+        <button type="button" class="btn btn-custom btn-orange orange-shadow" data-dismiss="modal">Send Invitation</button>
         
       </div>
     </div>
@@ -1193,7 +1385,7 @@
       <div class="modal-header close-none">
         <h5 class="modal-title">Participant Invitation Sent Successfully</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          <span aria-hidden="true"><img src="assets/images/participant/cross-sign.png" alt=""></span>
         </button>
       </div>
       <div class="modal-body">
@@ -1203,7 +1395,7 @@
         </div>
       </div>
       <div class="modal-footer pb-4">
-        <button type="button" class="btn btn-custom btn-orange" data-dismiss="modal">Ok</button>
+        <button type="button" class="btn btn-custom btn-orange orange-shadow" data-dismiss="modal">Ok</button>
         
       </div>
     </div>
@@ -1217,7 +1409,7 @@
       <div class="modal-header close-none">
         <h5 class="modal-title">Request to Share Screen</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          <span aria-hidden="true"><img src="assets/images/participant/cross-sign.png" alt=""></span>
         </button>
       </div>
       <div class="modal-body">
@@ -1228,8 +1420,8 @@
         </div>
       </div>
       <div class="modal-footer ">
-        <button type="button" class="btn btn-custom btn-red " data-dismiss="modal">Do Not Allow </button>
-        <button type="button" class="btn btn-custom btn-blue " data-dismiss="modal">Allow </button>
+        <button type="button" class="btn btn-custom btn-red red-shadow" data-dismiss="modal">Do Not Allow </button>
+        <button type="button" class="btn btn-custom btn-blue blue-shadow" data-dismiss="modal">Allow </button>
       </div>
     </div>
   </div>
@@ -1242,7 +1434,7 @@
       <div class="modal-header close-none">
         <h5 class="modal-title">Select Video Type</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          <span aria-hidden="true"><img src="assets/images/participant/cross-sign.png" alt=""></span>
         </button>
       </div>
       <div class="modal-body">
@@ -1252,8 +1444,8 @@
         </div>
       </div>
       <div class="modal-footer ">
-        <button type="button" class="btn btn-custom btn-orange " data-dismiss="modal">Using Webcam</button>
-        <button type="button" class="btn btn-custom btn-blue " data-dismiss="modal">Live Streaming </button>
+        <button type="button" class="btn btn-custom btn-orange orange-shadow " data-dismiss="modal">Using Webcam</button>
+        <button type="button" class="btn btn-custom btn-blue  blue-shadow" data-dismiss="modal">Live Streaming </button>
       </div>
     </div>
   </div>
@@ -1266,7 +1458,7 @@
       <div class="modal-header close-back">
         <h5 class="modal-title">Connect Your Live Stream</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          <span aria-hidden="true"><img src="assets/images/participant/back-arrow.png" alt=""></span>
         </button>
       </div>
       <div class="modal-body">
@@ -1284,7 +1476,7 @@
         </div>
       </div>
       <div class="modal-footer pb-5">
-        <button type="button" class="btn btn-custom btn-orange " data-dismiss="modal">Done</button>
+        <button type="button" class="btn btn-custom btn-orange orange-shadow" data-dismiss="modal">Done</button>
       </div>
     </div>
   </div>
@@ -1297,7 +1489,7 @@
       <div class="modal-header close-top-right">
         <h5 class="modal-title">Settings</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          <span aria-hidden="true"><img src="assets/images/participant/cross-sign.png" alt=""></span>
         </button>
       </div>
       <div class="modal-body">
@@ -1827,7 +2019,7 @@
       </div>
       <div class="modal-footer">
         
-        <button type="button" class="btn btn-custom btn-orange btn-md" data-dismiss="modal">Save</button>
+        <button type="button" class="btn btn-custom btn-orange btn-md orange-shadow" data-dismiss="modal">Save</button>
       </div>
     </div>
   </div>
@@ -1871,12 +2063,44 @@
   });
 
 
-    $('.select2').select2(
+    $('.select-audio').select2(
       {
         minimumResultsForSearch: -1,
         width: 100,
+        placeholder: "Please Select an Audio device",
+
       }
     );
+
+    $('.select-video').select2(
+      {
+        minimumResultsForSearch: -1,
+        width: 100,
+        placeholder: "Please Select a Camera",
+      }
+    );
+
+    
+    $(function() {
+
+      $(".select-video").on("change", function() {        
+        $('.remove-disabled').removeAttr("disabled");
+      })
+
+      $(".select-audio").on("change", function() {
+        $('.remove-disabled').removeAttr("disabled");
+      })
+
+    });
+
+    $(".mute-all").on("click",function(){
+      $(".icon-mic").addClass('icon-mic-mute');
+    });
+
+    $(".stop-all").on("click",function(){
+      $(".icon-video").addClass('icon-video-mute');
+    });
+
 </script>
 
 </body>
