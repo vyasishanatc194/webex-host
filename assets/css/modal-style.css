@@ -1866,5 +1866,8 @@
   .modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner {
     padding: 20px 30px;
   }
+  .modal-custom .modal-dialog .modal-content .modal-body .search-incall {
+    margin-top: 30px;
+  }
 }
 /*# sourceMappingURL=modal-style.css.map */
