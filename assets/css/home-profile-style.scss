@@ -5,8 +5,11 @@
 }
 
 .my-profile-root {
+  padding: 30px 0 0 21px;
+  max-width: 1580px;
+
   .heading-title-div {
-    margin: 0 0 40px 0;
+    margin: 0 0 50px 0;
 
     h2 {
       font-size: 38px;
@@ -70,13 +73,14 @@
       }
 
       .input-control {
-        max-width: 70%;
+        max-width: 356px;
       }
     }
   }
 
   .my-profile-body {
     min-height: calc(100vh - 400px);
+    padding: 0 0 0 90px;
   }
 
   .btn-group-div {
@@ -97,8 +101,22 @@
   }
 }
 
+@media (min-width: 1025px) and (max-width: 1490px) {
+  .my-profile-root {
+    .my-profile-body {
+      padding: 0;
+
+      .form-root .form-group-custom label {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
 @media (max-width: 767px) {
   .my-profile-root {
+    padding: 30px 0 0 0;
+
     .heading-title-div {
       h2 {
         font-size: 24px;
@@ -149,6 +167,66 @@
         min-width: auto;
         font-size: 14px;
         padding: 7px 20px 7px 20px;
+      }
+    }
+
+    .my-profile-body {
+      padding: 0;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .my-profile-root {
+    .my-profile-body {
+      padding: 0;
+      min-height: calc(100vh - 480px);
+    }
+
+    .profile-pic-upload-group {
+      margin: 0 0 40px 0;
+
+      .circle {
+        .profile-pic {
+          height: 100px;
+          width: 100px;
+        }
+      }
+
+      .profile-label-text-div {
+        label.filelabel-text {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .btn-group-div {
+      max-width: 100%;
+
+      .btn.btn-common-secondary {
+        min-height: 46px;
+        min-width: auto;
+        font-size: 16px;
+        padding: 7px 30px 7px 30px;
+      }
+
+      .btn.btn-common-primary.btn-common-primary-54 {
+        min-height: 46px;
+        min-width: auto;
+        font-size: 16px;
+        padding: 7px 30px 7px 30px;
+      }
+    }
+
+    .form-root {
+      .form-group-custom {
+        .input-control {
+          max-width: 100%;
+        }
+
+        label {
+          font-size: 18px;
+        }
       }
     }
   }

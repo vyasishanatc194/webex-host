@@ -521,35 +521,33 @@
 <script>
   $(document).ready(function () {
     $("#our-upcoming-sessions-owl").owlCarousel({
-      loop: false,
-      nav:true,
+      loop: true,
+      nav: true,
       navText: ['<span class="span-roundcircle left-roundcircle"><span class="material-icons"> navigate_before </span></span>','<span class="span-roundcircle right-roundcircle"><span class="material-icons"> navigate_next </span></span>'],
       dots: false,
       stagePadding: 0,
-      margin: 15,
+      margin: 20,
       autoplay: true,
+      autoWidth:true,
       smartSpeed: 2000,
       responsive: {
         0: {
-          items: 1,
-          autoplay: true,
-          nav:true,
-          dots: false,
+          autoWidth:false,
+          items:1,
           margin: 5,
         },
         600: {
-          items: 2,
           margin: 5,
         },
         1200: {
-          items: 3,
-          margin: 5,
+          margin: 15,
         },
         1600: {
-          items: 4,
+          margin: 20,
         }
       }
     });
+    
   });
 </script>
 

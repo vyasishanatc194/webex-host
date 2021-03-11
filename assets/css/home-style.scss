@@ -2,10 +2,14 @@
   padding: 0;
   margin: 0;
   position: relative;
+
+  .personal-room-div {
+    padding: 0 0 0 13px;
+  }
 }
 
 .personal-room-root {
-  padding: 0;
+  padding: 32px 0 0 0;
   margin: 0;
   position: relative;
   border-bottom: 2px solid #eff2f6;
@@ -14,7 +18,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    margin: 0 0 70px 0;
+    margin: 0 0 93px 0;
 
     .personal-room-left {
       width: 165px;
@@ -109,10 +113,11 @@
 }
 
 .upcoming-slider-root {
-  padding: 40px 0 20px 0;
+  padding: 42px 0 20px 0;
 
   .heading-title-div {
     margin: 0 0 40px 0;
+    padding: 0 0 0 30px;
 
     h2 {
       font-size: 28px;
@@ -133,6 +138,19 @@
 
   .owl-slider-main-slider {
     padding: 0 50px;
+
+    &::before {
+      content: "";
+      // height: calc(100% + 40px);
+      // width: 20px;
+      // background: #fff;
+      // position: absolute;
+      // top: -20px;
+      // right: 60px;
+      // z-index: 2;
+      // filter: blur(8px);
+      // opacity: 1;
+    }
   }
 
   .owl-carousel .owl-nav {
@@ -174,11 +192,12 @@
 
   .ups-slider-box {
     padding: 0;
-    margin: 0 10px 20px 10px;
+    margin: 0 15px 30px 15px;
     position: relative;
     background: #fff;
+    width: 316px;
     border-radius: 25px;
-    box-shadow: 0 0 15px 0 #dfe1e3;
+    box-shadow: 0 0 25px 0 rgba(223, 225, 227, 0.5);
 
     .ups-slider-img-thumb {
       padding: 0;
@@ -246,7 +265,7 @@
       }
 
       .our-content-full {
-        margin: 0 0 30px 0;
+        margin: 0 0 40px 0;
       }
 
       .btn-group-div {
@@ -254,7 +273,7 @@
         justify-content: center;
         flex-wrap: wrap;
         width: 100%;
-        padding: 20px 0 0 0;
+        padding: 15px 0 0 0;
 
         .btn {
           width: calc(50% - 12px);
@@ -284,7 +303,7 @@
   width: 100%;
 
   .no-sessions-scheduled-row {
-    padding: 40px 15px;
+    padding: 60px 15px 60px 15px;
     margin: 0;
     position: relative;
     width: 100%;
@@ -329,6 +348,12 @@
 }
 
 @media (max-width: 767px) {
+  .personal-room-section {
+    .personal-room-div {
+      padding: 0;
+    }
+  }
+
   .personal-room-root {
     .personal-room-row {
       margin: 0 0 40px 0;
@@ -406,6 +431,8 @@
 
   .upcoming-slider-root {
     .heading-title-div {
+      padding: 0;
+
       h2 {
         font-size: 20px;
       }
@@ -414,7 +441,7 @@
 
   .owl-slider-main-div {
     .owl-slider-main-slider {
-      padding: 0;
+      padding: 0 0 0 0;
     }
 
     .owl-carousel {
