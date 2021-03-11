@@ -1297,13 +1297,13 @@ $proxima: 'Proxima Nova Rg';
                 }
 
                 .content-stream {
-                    margin-bottom: 30px;
+                 
 
                     h5 {
                         font-size: 22px;
                         color: #00142F;
                         line-height: 27px;
-                        margin-bottom: 20px;
+                        margin-bottom: 24px;
                         font-weight: 600;
                         text-align: center;
                     }
@@ -1510,6 +1510,9 @@ $proxima: 'Proxima Nova Rg';
 
             .pb-36 {
                 padding-bottom: 30px !important;
+            }
+            .pb-40 {
+                padding-bottom: 40px !important;
             }
 
             .audio-body {
