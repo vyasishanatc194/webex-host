@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="description" content="" />
+<meta name="author" content="" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>Chat | Certis</title>
+<meta content='initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width' name='viewport' />
+<meta name="theme-color" content="#002855">
+<meta name="msapplication-navbutton-color" content="#002855">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#002855">
+<link href='assets/images/favicon.png' rel='shortcut icon'>
+<link href="assets/css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet" />
+<link href="assets/css/feather.min.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/fonts/lato/lato-font.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/owl.carousel.min.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/modal-style.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/incall-style.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/chat-style.scss" media="all" rel="stylesheet" type="text/css" />
+<script src="assets/js/modernizr.js"></script>
+</head>
+
+<body>
+
+<div id="wrapper" class="wrapper dashboard-wrapper">
+
+  <!-- Begin page content -->
+  <main role="main" class="common-wrapper-area-main">
+    <div class="common-wrapper-area-div">
+
+        <!--  main  -->
+        <div class="main-chat-section">
+          <div class="main-chat-div">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-12 col-md-12">
+
+                  <section class="in-chat-root-area-section">
+                    <div class="in-chat-root-area-div">
+
+                      <div class="in-chat-root-area-left-div">
+
+                        <div class="in-char-root-ltop-div">
+                          <div class="in-char-root-lt-left-div">
+                            <div class="title-div title-div-back-div">
+                              <div class="back-div">
+                                <a href="in_call.html" class="btn btn-back-auth"><span class="material-icons"> navigate_before </span></a>
+                              </div>
+                              <h1>Group Video Conference</h1>
+                            </div>
+                          </div>
+                          <div class="in-char-root-lt-right-div">
+
+                          </div>
+                        </div>
+
+                        <div class="in-char-root-lbody-div">
+
+                        </div>
+
+                      </div>
+
+                      <div class="in-chat-root-area-right-div">
+
+                      </div>
+
+                    </div>
+                  </section>
+                  
+                </div>  
+              </div>        
+            </div>
+          </div>
+        </div><!--  end of main  -->
+
+    </div>
+  </main>
+
+</div><!-- end of wrapper -->
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/search-dropdown.js"></script>
+<script src="assets/js/custom.js"></script>
+
+<script>
+  $(document).ready(function () {
+    $("#in-call-user-slider-owl").owlCarousel({
+      loop: false,
+      nav:true,
+      navText: ['<span class="span-roundcircle left-roundcircle"><span class="material-icons"> navigate_before </span></span>','<span class="span-roundcircle right-roundcircle"><span class="material-icons"> navigate_next </span></span>'],
+      dots: false,
+      stagePadding: 0,
+      margin: 15,
+      autoplay: true,
+      autoWidth:true,
+      smartSpeed: 2000,
+      responsive: {
+        0: {
+          margin: 5,
+        },
+        600: {
+          margin: 5,
+        }
+      }
+    });
+
+    $('.dropdown-menu.dropdown-menu-custom').on('click', function(event){
+      event.stopPropagation();
+    });
+  });
+</script>
+
+</body>
+</html>

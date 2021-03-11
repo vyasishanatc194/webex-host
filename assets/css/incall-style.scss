@@ -562,7 +562,11 @@
         border-radius: 25px;
         min-width: 370px;
         padding: 5px 0;
-        top: -15px !important;
+        top: -26px !important;
+
+        &.dropdown-menu-right {
+          left: 42px !important;
+        }
 
         .dropdown-form-div {
           .form-group {
@@ -621,6 +625,20 @@
                 background-image: none;
               }
             }
+          }
+        }
+      }
+
+      .dropdown-menu-custom-w328 {
+        min-width: 328px;
+
+        .dropdown-form-div  {
+          .check-list-box .custom-checkbox {
+            padding: 5px 15px 5px 25px;
+          }
+
+          .form-group {
+            padding: 12px 0 16px 0;
           }
         }
       }
@@ -1180,6 +1198,16 @@
           height: 14px;
           width: 14px;
         }
+      }
+    }
+  }
+}
+
+@media (min-width: 1921px) {
+  .in-call-action-area-div {
+    .btn-group-root {
+      ul.btn-group-list {
+        flex-wrap: nowrap;
       }
     }
   }

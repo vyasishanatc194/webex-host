@@ -91,6 +91,18 @@
   max-width: 660px;
 }
 
+.auth-section .auth-div .auth-center-root .auth-body-div::before {
+  content: "";
+  background: transparent linear-gradient(114deg, #0072ff 0%, #00c6ff 100%);
+  height: 100%;
+  width: calc(100% - 10px);
+  position: absolute;
+  border-radius: 20px;
+  -webkit-filter: blur(50px);
+          filter: blur(50px);
+  left: 10px;
+}
+
 .auth-section .auth-div .auth-center-root .auth-body-div .auth-card-box {
   padding: 0;
   margin: 0;
