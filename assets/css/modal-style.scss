@@ -1143,7 +1143,7 @@ $proxima: 'Proxima Nova Rg';
                     }
 
                     .tab-inner {
-                        padding: 60px 80px;
+                        padding: 60px 70px;
 
                         .custom-checkbox.custom-checkbox-2 {
                             max-width: unset;
@@ -1154,7 +1154,6 @@ $proxima: 'Proxima Nova Rg';
                                 line-height: 30px;
                             }
                         }
-
 
                         .audio-setting {
                             h5 {
@@ -1167,7 +1166,7 @@ $proxima: 'Proxima Nova Rg';
                             } 
         
                             .form-group {
-                                margin-bottom: 24px;
+                                margin-bottom: 40px;
         
                                 label.col-form-label {
                                     font-size: 20px;
@@ -1249,6 +1248,12 @@ $proxima: 'Proxima Nova Rg';
                             }
                         }
 
+                        .setting-btn {
+                            .btn {
+                                height: 47px;
+                            }
+                        }
+
                         .preview-text {
                             margin-top: 10px;
                             h3 {
@@ -1257,6 +1262,20 @@ $proxima: 'Proxima Nova Rg';
                                 color: #00142F;
                                 text-align: center;
                                 font-weight: 600;
+                            }
+                        }
+
+                        .preview-img {
+                            width: 100%;
+                        }
+
+                        .video-setting {
+                            .form-group {
+                                margin-bottom: 20px;
+
+                                .col-form-label {
+                                    white-space: nowrap;
+                                }
                             }
                         }
                     }
@@ -1648,9 +1667,16 @@ $proxima: 'Proxima Nova Rg';
                 .tab-inner {
                     padding: 30px 0px;
 
+                    .custom-checkbox.custom-checkbox-2 .custom-control-label { 
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+
                     .audio-setting {
 
                        .form-group {
+                           margin-bottom: 15px;
+
                             label.col-form-label {
                                 font-size: 16px;
                                 line-height: 24px;
@@ -1673,8 +1699,6 @@ $proxima: 'Proxima Nova Rg';
                             }
                         }
                     }
-                    
-                  
                     
                 }
             }
@@ -1703,27 +1727,80 @@ $proxima: 'Proxima Nova Rg';
 }
 
 @media (max-width: 320px) {
-    .modal-custom .modal-dialog .modal-content .modal-body .incall-participent .participent-list ul.list li {
-        flex-direction: column;
-        align-items: flex-start;
-
-        .user-action .action-group{
-            justify-content: flex-end;
-            margin-left: 60px;
-          
-            .btn-squre {
-                height: 35px;
-                width: 35px;
+    .modal-custom .modal-dialog .modal-content .modal-body {
+        .incall-participent .participent-list ul.list li {
+            flex-direction: column;
+            align-items: flex-start;
     
-                .icon {
-                 height: 35px;
-                width: 35px;   
+            .user-action .action-group{
+                justify-content: flex-end;
+                margin-left: 60px;
+              
+                .btn-squre {
+                    height: 35px;
+                    width: 35px;
+        
+                    .icon {
+                     height: 35px;
+                    width: 35px;   
+                    }
+                }
+            }
+    
+            .partcipent-user {
+                margin-bottom: 10px;
+            }
+        }
+        }
+
+        .setting-content .tab-inner .audio-setting .volume ul li {
+            margin-right: 3px !important;
+        }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .modal-custom {
+        .modal-dialog {
+            .modal-content {
+
+                .close-top-right {
+                    overflow: hidden;
+                    
+                    .close {
+                        height: 62px;
+                        width: 56px;
+                        border-radius: 0px;
+                        background: transparent linear-gradient(127deg, #FC711A 0%, #F7B733 100%) 0% 0% no-repeat padding-box;
+                        opacity: 1;
+                        position: relative;
+                        top: -0px;
+                        right: -0px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+            
+
+                        span {
+                            font-size: 35px;
+                            color: #fff;
+                        }
+                    }
+                }
+
+                .modal-body {
+                    .setting-content {
+                       .tab-inner {
+                        padding: 20px 30px;
+                       }
+                    }
+
+                    .search-incall {
+                        margin-top: 30px;
+                    }
                 }
             }
         }
-
-        .partcipent-user {
-            margin-bottom: 10px;
-        }
     }
 }
+
