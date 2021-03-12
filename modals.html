@@ -1534,7 +1534,7 @@
                         <label for="staticEmail" class="col-sm-3 col-form-label">Video Input</label>
                       
                         <div class="col-sm-9">
-                          <select class="form-control select2 ">
+                          <select class="form-control  select-video">
                             <option class="">Please Select a Camera</option>
                             <option class="">In-built Camera 0577</option>
                             <option class="">HP Widevision HD Camera </option>
@@ -1656,11 +1656,11 @@
                     </div>
 
                     <div class="col-sm-6">
-                      <select class="form-control select2">
-                        <option class="">Please Select a Camera</option>
-                        <option class="">In-built Camera 0577</option>
-                        <option class="">HP Widevision HD Camera </option>
-                        <option value="">Join Call without Video</option>
+                      <select class="form-control select-audio">
+                        <option ></option>
+                        <option >Computer Audio</option>
+                        <option >In-built Camera 0577</option>
+                        <option >In-built Camera 0577 2 </option>
                       </select>
                     </div>
                    
@@ -1813,11 +1813,11 @@
                     </div>
 
                     <div class="col-sm-6">
-                      <select class="form-control select2">
-                        <option class="">Please Select a Camera</option>
-                        <option class="">In-built Camera 0577</option>
-                        <option class="">HP Widevision HD Camera </option>
-                        <option value="">Join Call without Video</option>
+                      <select class="form-control select-audio">
+                        <option ></option>
+                        <option >Computer Audio</option>
+                        <option >In-built Camera 0577</option>
+                        <option >In-built Camera 0577 2 </option>
                       </select>
                     </div>
                    
@@ -2063,6 +2063,14 @@
   });
 
 
+  // $('.select2').select2(
+  //     {
+  //       minimumResultsForSearch: -1,
+  //       width: 100,
+  //       placeholder: "Please Select",
+  //     }
+  //   );
+
     $('.select-audio').select2(
       {
         minimumResultsForSearch: -1,
@@ -2080,13 +2088,7 @@
       }
     );
 
-    $('.select2').select2(
-      {
-        minimumResultsForSearch: -1,
-        width: 100,
-        placeholder: "Please Select a Camera",
-      }
-    );
+
 
     
     $(function() {
