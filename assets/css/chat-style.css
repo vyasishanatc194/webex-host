@@ -17,7 +17,7 @@
 }
 
 .in-chat-root-area-left-div {
-  padding: 24px 10px 0 46px;
+  padding: 24px 5px 0 46px;
   width: calc(100% - 630px);
 }
 
@@ -31,9 +31,10 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
   padding: 31px 0 15px 0;
   border-bottom: 1px solid #e0e3e9;
+  width: calc(100% - 30px);
+  margin-right: 30px;
 }
 
 .in-chat-root-area-left-div .in-char-root-ltop-div .title-div {
@@ -151,7 +152,27 @@
 }
 
 .in-chat-root-area-left-div .in-char-root-lbody-div {
-  padding: 30px 0 0 0;
+  padding: 30px 20px 0 0;
+  margin: 0;
+  width: 100%;
+  max-height: calc(100vh - 127px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.in-chat-root-area-left-div .in-char-root-lbody-div::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.in-chat-root-area-left-div .in-char-root-lbody-div::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 50px;
+}
+
+.in-chat-root-area-left-div .in-char-root-lbody-div::-webkit-scrollbar-thumb {
+  background-color: #d4d8e0;
+  border-radius: 50px;
 }
 
 .group-video-bx-card {
@@ -434,6 +455,10 @@
   color: #fff;
 }
 
+.in-chat-mp-card-div .in-chat-mp-body-div {
+  min-height: calc(100vh - 150px);
+}
+
 .in-chat-mp-card-div .chat-box {
   padding: 0;
   margin: 0;
@@ -447,7 +472,7 @@
 }
 
 .in-chat-mp-card-div .chat-box .card-body {
-  padding: 0;
+  padding: 20px 10px 0 10px;
   margin: 0;
   position: relative;
   display: -webkit-box;
@@ -469,6 +494,21 @@
   margin: 0;
   position: relative;
   overflow: auto;
+}
+
+.in-chat-mp-card-div .chat-box .card-body .card-body-row::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.in-chat-mp-card-div .chat-box .card-body .card-body-row::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 50px;
+}
+
+.in-chat-mp-card-div .chat-box .card-body .card-body-row::-webkit-scrollbar-thumb {
+  background-color: #d4d8e0;
+  border-radius: 50px;
 }
 
 .in-chat-mp-card-div .chat-box .card-body .card-body-row .chat-item {
@@ -562,6 +602,75 @@
   position: relative;
 }
 
+.in-chat-mp-card-div .chat-box .card-body .card-body-row .chat-item .chat-file-inner {
+  padding: 5px 5px 5px 5px;
+  min-height: 61px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+.in-chat-mp-card-div .chat-box .card-body .card-body-row .chat-item .chat-file-inner .chat-file-inner-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  color: #00142f;
+}
+
+.in-chat-mp-card-div .chat-box .card-body .card-body-row .chat-item .chat-file-inner .chat-file-inner-row .chat-file-inner-left {
+  width: calc(100% - 63px);
+  padding: 0 15px 0 0;
+  min-width: 170px;
+}
+
+.in-chat-mp-card-div .chat-box .card-body .card-body-row .chat-item .chat-file-inner .chat-file-inner-row .chat-file-inner-right {
+  width: 63px;
+}
+
+.in-chat-mp-card-div .chat-box .card-body .card-body-row .chat-item .chat-file-inner .chat-file-inner-row h4 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: #00142f;
+}
+
+.in-chat-mp-card-div .chat-box .card-body .card-body-row .chat-item .chat-file-inner .chat-file-inner-row p {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: #86a3cb;
+}
+
+.in-chat-mp-card-div .chat-box .card-body .card-body-row .chat-item .chat-file-inner .chat-file-inner-row .file-icon-bx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 63px;
+  height: 63px;
+  background: #ffeedb;
+  border-radius: 12px;
+}
+
 .in-chat-mp-card-div .chat-box .card-body .card-body-row .chat-item.chat-right {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -610,7 +719,7 @@
 }
 
 .in-chat-mp-card-div .chat-box .card-body .card-body-row .chat-item.chat-right .chat-text .chat-text-inner {
-  padding: 5px 41px 5px 5px;
+  padding: 5px 25px 5px 5px;
   min-height: 61px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -622,6 +731,97 @@
       flex-wrap: wrap;
   position: relative;
   z-index: 3;
+}
+
+.in-chat-mp-card-div .chat-box .card-body .card-body-row .chat-item.chat-right .chat-file-inner {
+  z-index: 3;
+  padding-left: 0;
+  margin-left: -10px;
+}
+
+.in-chat-mp-card-div .chat-box .card-body .card-body-row .chat-item.chat-right .chat-file-inner .chat-file-inner-row {
+  color: #fff;
+}
+
+.in-chat-mp-card-div .chat-box .card-body .card-body-row .chat-item.chat-right .chat-file-inner .chat-file-inner-row .chat-file-inner-left {
+  padding: 0 15px 0 27px;
+}
+
+.in-chat-mp-card-div .chat-box .card-body .card-body-row .chat-item.chat-right .chat-file-inner .chat-file-inner-row .file-icon-bx {
+  background: #f98d29;
+}
+
+.in-chat-mp-card-div .chat-box .card-body .card-body-row .chat-item.chat-right .chat-file-inner .chat-file-inner-row h4 {
+  color: #fff;
+}
+
+.in-chat-mp-card-div .chat-box .card-body .card-body-row .chat-row-new-join {
+  padding: 8px 20px;
+  margin: 0 auto 17px auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: calc(100% - 50px);
+}
+
+.in-chat-mp-card-div .chat-box .card-body .card-body-row .chat-row-new-join::before {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background: #e0e3e9;
+  position: absolute;
+}
+
+.in-chat-mp-card-div .chat-box .card-body .card-body-row .chat-row-new-join .nj-chat-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 13px 0 16px;
+  background: #eff2f6;
+}
+
+.in-chat-mp-card-div .chat-box .card-body .card-body-row .chat-row-new-join .nj-chat-details .nj-img-thumb {
+  width: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.in-chat-mp-card-div .chat-box .card-body .card-body-row .chat-row-new-join .nj-chat-details .nj-img-thumb .img-user {
+  height: 48px;
+  width: 48px;
+  border-radius: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 3px solid #fff;
+}
+
+.in-chat-mp-card-div .chat-box .card-body .card-body-row .chat-row-new-join .nj-chat-details .nj-chat-user {
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 22px;
+  color: #00142f66;
+  font-weight: 500;
+  padding: 0 0 0 23px;
+  max-width: calc(100% - 48px);
 }
 
 .in-chat-mp-card-div .chat-box .card-footer {
@@ -676,6 +876,23 @@
   cursor: pointer;
 }
 
+.in-chat-mp-card-div .chat-box .card-footer .card-footer-row .card-form .btn-file-div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 10px 0 0;
+  height: 82px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .in-chat-mp-card-div .chat-box .card-footer .card-footer-row .card-form textarea.form-control {
   width: 100%;
   height: 82px;
@@ -696,9 +913,8 @@
 }
 
 .in-chat-mp-card-div .chat-box .card-footer .card-footer-row .card-form .btn.btn-primary {
-  width: 58px;
-  height: 58px;
-  background: transparent;
+  width: 63px;
+  height: 63px;
   border-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -709,9 +925,144 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: linear-gradient(121deg, #ef4443 2%, #ef6b18 100%);
+  background: transparent linear-gradient(315deg, #f7b733 0%, #fc711a 100%);
   outline: none;
+  border-radius: 12px;
+  padding: 5px 8px 8px 9px;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.in-chat-mp-card-div .chat-box .card-footer .card-footer-row .card-form .btn.btn-primary .send-button-icon {
+  background-position: center;
+  width: 27px;
+  height: 27px;
+}
+
+.in-chat-mp-card-div .chat-box .card-footer .top-typying-div .top-typying-row-div {
+  padding: 0;
+  margin: 0 0 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.in-chat-mp-card-div .chat-box .card-footer .top-typying-div .top-typying-row-div .top-typying-left-div {
+  height: 48px;
+  width: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.in-chat-mp-card-div .chat-box .card-footer .top-typying-div .top-typying-row-div .top-typying-left-div .round-bx {
+  background: #fff;
+  height: 48px;
+  width: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 100%;
+  padding: 5px 0 0 0;
+}
+
+.in-chat-mp-card-div .chat-box .card-footer .top-typying-div .top-typying-row-div .top-typying-left-div .round-bx .dot {
+  background: #c3cede;
+  height: 6px;
+  width: 6px;
+  display: inline-block;
+  border-radius: 100px;
+  margin: 0 2px;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.in-chat-mp-card-div .chat-box .card-footer .top-typying-div .top-typying-row-div .top-typying-left-div .round-bx .dot.dot2 {
+  background: #d2dae5;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+@-webkit-keyframes dot-up-down1 {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+}
+
+@keyframes dot-up-down1 {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+}
+
+@-webkit-keyframes dot-up-down2 {
+  from {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes dot-up-down2 {
+  from {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.in-chat-mp-card-div .chat-box .card-footer .top-typying-div .top-typying-row-div .top-typying-right-div {
+  width: calc(100% - 48px);
+  padding: 0 0 0 16px;
+}
+
+.in-chat-mp-card-div .chat-box .card-footer .top-typying-div .top-typying-row-div .top-typying-right-div p {
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 22px;
+  color: #00142f66;
+  font-weight: 500;
 }
 /*# sourceMappingURL=chat-style.css.map */
