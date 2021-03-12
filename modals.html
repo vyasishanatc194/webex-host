@@ -2111,7 +2111,7 @@
     });
 
     $(".mute-all").on("click",function(){
-      $(".icon-mic").addClass('icon-mic-mute');
+      $(".icon-mic").toggleClass('icon-mic-mute');
 
       if ($(this).text() == "Unmute All")
        $(this).text("Mute All")
