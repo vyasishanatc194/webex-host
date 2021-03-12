@@ -247,7 +247,132 @@
                     display: flex;
                     align-items: flex-start;
                 }
+
+                .label-center {
+                    display: flex;
+                    align-items: center;
+                    .custom-control-label {
+                        &::before{
+                            top: 12px;
+                         }
+    
+                         &::after{
+                            top: 12px;
+                         }
+                    }
+                     
+                }
+
+                .session-pass {
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #000;
+                    font-weight: 600;
+                    display: flex;
+                    align-items: center;
+
+                    span {
+                        margin: 0 20px;
+                    }
+                }
             }
         }
     }
+}
+
+@media (max-width: 767px) {
+    .shedule-session-section {
+        .shecdule-herader  {
+            margin-bottom: 30px;
+
+            h3 {
+                font-size: 24px;
+                line-height: 30px;
+            }
+        }
+
+        .schedule-body {
+            .schdule-left {
+                width: 100%;
+
+                .upload-div {
+                    padding: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    margin-bottom: 40px;
+
+                    .img-upload  {
+                        height: 100px;
+                        width: 100px;
+                    }
+
+                    .custom-file {
+                        label {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+            .schdule-right {
+                width: 100%;
+                min-width: unset;
+
+                form {
+                    .form-group {
+                        flex-direction: column;
+                        .form-label {
+                            width: 100%;
+                            margin-bottom: 10px;
+                            font-size: 16px;
+                            line-height: 20px;
+                        }
+
+                        .form-input {
+                            width: 100%;
+                            max-width: unset;
+                            
+                            .select2-container {
+                                margin-bottom: 20px;
+                            }
+                        }
+                    }
+                } 
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    
+    .shedule-session-section {
+        .schedule-body {
+            .schdule-left {
+                width: 100% !important;
+        
+                .upload-div {
+                    padding: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    margin-bottom: 40px;
+                    width: 100%;
+        
+                    .img-upload  {
+                        height: 167px;
+                        width: 167px;
+                    }
+        
+                    .custom-file {
+                        label {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+   
 }

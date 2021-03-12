@@ -278,4 +278,129 @@
       -ms-flex-align: start;
           align-items: flex-start;
 }
+
+.shedule-session-section .schedule-body .schdule-right form .label-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shedule-session-section .schedule-body .schdule-right form .label-center .custom-control-label::before {
+  top: 12px;
+}
+
+.shedule-session-section .schedule-body .schdule-right form .label-center .custom-control-label::after {
+  top: 12px;
+}
+
+.shedule-session-section .schedule-body .schdule-right form .session-pass {
+  font-size: 18px;
+  line-height: 22px;
+  color: #000;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shedule-session-section .schedule-body .schdule-right form .session-pass span {
+  margin: 0 20px;
+}
+
+@media (max-width: 767px) {
+  .shedule-session-section .shecdule-herader {
+    margin-bottom: 30px;
+  }
+  .shedule-session-section .shecdule-herader h3 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .shedule-session-section .schedule-body .schdule-left {
+    width: 100%;
+  }
+  .shedule-session-section .schedule-body .schdule-left .upload-div {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 40px;
+  }
+  .shedule-session-section .schedule-body .schdule-left .upload-div .img-upload {
+    height: 100px;
+    width: 100px;
+  }
+  .shedule-session-section .schedule-body .schdule-left .upload-div .custom-file label {
+    text-align: center;
+  }
+  .shedule-session-section .schedule-body .schdule-right {
+    width: 100%;
+    min-width: unset;
+  }
+  .shedule-session-section .schedule-body .schdule-right form .form-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .shedule-session-section .schedule-body .schdule-right form .form-group .form-label {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .shedule-session-section .schedule-body .schdule-right form .form-group .form-input {
+    width: 100%;
+    max-width: unset;
+  }
+  .shedule-session-section .schedule-body .schdule-right form .form-group .form-input .select2-container {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .shedule-session-section .schedule-body .schdule-left {
+    width: 100% !important;
+  }
+  .shedule-session-section .schedule-body .schdule-left .upload-div {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+  .shedule-session-section .schedule-body .schdule-left .upload-div .img-upload {
+    height: 167px;
+    width: 167px;
+  }
+  .shedule-session-section .schedule-body .schdule-left .upload-div .custom-file label {
+    text-align: center;
+  }
+}
 /*# sourceMappingURL=shedule-session.css.map */
