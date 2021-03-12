@@ -20,7 +20,11 @@
 <link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/home-style.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/shedule-session.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/flatpickr.min.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/select2.min.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/modal-style.css" media="all" rel="stylesheet" type="text/css" />
 <script src="assets/js/modernizr.js"></script>
+
 </head>
 
 <body>
@@ -283,15 +287,115 @@
                             <form>
                               <div class="form-group ">
                                 <label for="inputEmail3" class="form-label">Email</label>
-                                <div class="form-input">
+                                <div class="form-input pad-60">
                                   <input type="email" class="form-control" id="inputEmail3">
                                 </div>
                               </div>
 
                               <div class="form-group ">
                                 <label for="inputEmail3" class="form-label">Session Date</label>
-                                <div class="form-input">
-                                  <input type="email" class="form-control" id="inputEmail3">
+                                <div class="form-input pad-60">
+                                  <input type="email" class="form-control date " id="inputEmail3">
+                                  <a href="#" class="btn-picker"></a>
+                                </div>
+                              </div>
+
+                              <div class="form-group ">
+                                <label for="inputEmail3" class="form-label">Session Start Time</label>
+                                <div class="form-input row no-gutters">
+                                  <div class="col-sm-4">
+                                    <select class="form-control select2">
+                                      <option >00</option>
+                                      <option >01</option>
+                                      <option >02</option>
+                                      <option >03</option>
+                                    </select>
+                                  </div>
+
+                                  <div class="col-sm-4">
+                                    <select class="form-control select2">
+                                      <option >00</option>
+                                      <option >01</option>
+                                      <option >02</option>
+                                      <option >03</option>
+                                    </select>
+                                  </div>
+
+
+                                  <div class="col-sm-4">
+                                    <select class="form-control select2">
+                                      <option >AM</option>
+                                      <option >PM</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="form-group ">
+                                <label for="inputEmail3" class="form-label">Session End Time</label>
+                                <div class="form-input row no-gutters">
+                                  <div class="col-sm-4">
+                                    <select class="form-control select2">
+                                      <option >00</option>
+                                      <option >01</option>
+                                      <option >02</option>
+                                      <option >03</option>
+                                    </select>
+                                  </div>
+
+                                  <div class="col-sm-4">
+                                    <select class="form-control select2">
+                                      <option >00</option>
+                                      <option >01</option>
+                                      <option >02</option>
+                                      <option >03</option>
+                                    </select>
+                                  </div>
+
+
+                                  <div class="col-sm-4">
+                                    <select class="form-control select2">
+                                      <option >AM</option>
+                                      <option >PM</option>
+                                   
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="form-group ">
+                                <label for="inputEmail3" class="form-label">Time Zone</label>
+                                <div class="form-input row no-gutters">
+                                  <div class="col-sm-12">
+                                    <select class="form-control select2">
+                                      <option >(UTC-12:00) International Date Line West</option>
+                                      <option >(UTC-11:00) Coordinated Universal Time-11</option>
+                                      <option >(UTC-10:00) Hawaii</option>
+                                      <option >(UTC-09:00) Alaska</option>
+                                    </select>
+                                  </div>
+
+                                </div>
+                              </div>
+
+                              <div class="form-group form-top-line">
+                                <label for="inputEmail3" class="form-label">Waiting Video/Audio</label>
+                                <div class="form-input row no-gutters">
+                                  <div class="col-sm-12 mb-3">
+                                    <div class="custom-control custom-checkbox custom-checkbox-2 black">
+                                      <input type="checkbox" class="custom-control-input" id="wating" name="example1" checked="">
+                                      <label class="custom-control-label" for="wating">Use Casting Default</label>
+                                    </div>
+                                  </div>
+
+                                  <div class="col-sm-12 ">
+                                    <div class="custom-control custom-checkbox custom-checkbox-2 black">
+                                      <input type="checkbox" class="custom-control-input" id="wating" name="example1" checked="">
+                                      <label class="custom-control-label w-100" for="wating"><input type="text" class="form-control"></label>
+                                    </div>
+                                    
+                                  </div>
+
                                 </div>
                               </div>
 
@@ -320,7 +424,9 @@
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/owl.carousel.min.js"></script>
 <script src="assets/js/search-dropdown.js"></script>
+<script src="assets/js/flatpickr.min.js"></script>
 <script src="assets/js/custom.js"></script>
+<script src="assets/js/select2.full.js"></script>
 
 <script>
 
@@ -345,11 +451,28 @@ $(document).ready(function () {
       $(".file-upload").click();
     });
 
+    $('.select2').select2({
+        minimumResultsForSearch: -1,
+        width: 100,        
+      }
+    );
 
-    // select
 
+    // date
+    
+    let date;
+
+    date = flatpickr(".date",{
+        enableTime: false,
+        dateFormat: "F, d Y "
+    });
    
 
+    $(".btn-picker").click(function () {
+      date.toggle();
+    });
+
+      // date end
   });
 
 </script>

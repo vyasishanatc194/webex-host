@@ -1,3 +1,20 @@
+.custom-checkbox.custom-checkbox-2.custom-checkbox-2.black {
+    .custom-control-label {
+        font-size: 18px;
+        color: #000;
+        font-weight: 500;
+        line-height: 22px;
+
+        &::after {
+            top: 0;
+        }
+
+        &::before {
+            top: 0;
+        }
+    }
+}
+
 .shedule-session-section {
     padding: 40px 0 0 0;
 
@@ -82,9 +99,11 @@
                     .form-input {
                         width: calc(100% - 215px);
                         max-width: 450px;
+                        // padding-right: 65px;
+                        position: relative;
 
                         .form-control {
-                            border: 1px solid #EAEAEA;
+                            border: 1px solid #EAEAEA !important;
                             height: 46px;
                             padding-left: 20px;
                             color: #000;
@@ -93,8 +112,140 @@
                             line-height: 22px;
                             overflow: hidden;
                             outline: 0;
+                            border-radius: 10px;
                         }
                     }
+
+                    .date.active~.btn-picker {
+                        &:after {
+                            transition: all 0.3s ease-in-out;
+                            transform: rotate(-180deg);
+                        }
+                    }
+
+                    .btn-picker {
+                            height: 46px;
+                            width: 46px;
+                            position: absolute;
+                            top: 0;
+                            min-width: 45px;
+                            background: transparent linear-gradient(132deg, #0072FF 0%, #00C6FF 100%) 0% 0% no-repeat padding-box;
+                            border-radius: 10px !important;
+                            right: 14px;
+
+                            &::after {
+                                content: "";
+                                background-image: url("data:image/svg+xml,%3Csvg id='arrow-down' xmlns='http://www.w3.org/2000/svg' width='12' height='7.41' viewBox='0 0 12 7.41'%3E%3Cpath id='Path_26' data-name='Path 26' d='M7.41,7.84,12,12.42l4.59-4.58L18,9.25l-6,6-6-6Z' transform='translate(-6 -7.84)' fill='%23fff'/%3E%3C/svg%3E%0A");
+                                background-size: auto;
+                                position: absolute;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                left: 0;
+                                right: 0;
+                                top: 0;
+                                bottom: 0;
+                                height: 45px;
+                                width: 45px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                color: #fff;
+                                margin: 0 auto;
+                                transition: all 0.3s ease-in-out;
+                                transform: rotate(0deg);
+                            }
+                    }
+                        
+                    .pad-60 {
+                        padding-right: 75px;
+                    }
+
+                    .form-control[readonly] {
+                        background-color: #fff;
+                        opacity: 1;
+                    }
+                }
+
+
+                .select2-container {
+                    width: calc(100% - 75px) !important;
+                    box-shadow: none;
+                    outline: none;
+                    margin-right: 70px;
+                }
+            
+                .select2-container--default .select2-selection--single .select2-selection__rendered {
+                    height: 45px;
+                    line-height: 40px;
+                    font-size: 18px;
+                    color: #000;
+                    box-shadow: none;
+                    outline: none;
+                }
+            
+                .select2-container--default .select2-selection--single {
+                    height: 45px;
+                    line-height: 40px;
+                    font-size: 18px;
+                    color: #000;
+                    font-weight: 500;
+                    box-shadow: none;
+                    padding-left: 12px;
+                    outline: none;
+                    border-radius: 10px !important;
+                    border: 1px solid #D6E3F5 !important;
+                }
+            
+                .select2-selection__placeholder {
+                    color: rgba(0, 0, 0, 0.30) !important;
+                }
+            
+                .select2-container--default .select2-selection--single .select2-selection__arrow {
+                    height: 45px;
+                    width: 45px;
+                    min-width: 45px;
+                    height: 45px;
+                    background: transparent linear-gradient(132deg, #0072FF 0%, #00C6FF 100%) 0% 0% no-repeat padding-box;
+                    border-radius: 10px !important;
+                    right: -60px;
+            
+                    b {
+                        display: none;
+                    }
+            
+                    &::after {
+                        content: "";
+                        background-image: url("data:image/svg+xml,%3Csvg id='arrow-down' xmlns='http://www.w3.org/2000/svg' width='12' height='7.41' viewBox='0 0 12 7.41'%3E%3Cpath id='Path_26' data-name='Path 26' d='M7.41,7.84,12,12.42l4.59-4.58L18,9.25l-6,6-6-6Z' transform='translate(-6 -7.84)' fill='%23fff'/%3E%3C/svg%3E%0A");
+                        background-size: auto;
+                        position: absolute;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
+                        height: 45px;
+                        width: 45px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: #fff;
+                        margin: 0 auto;
+                        transition: all 0.3s ease-in-out;
+                        transform: rotate(0deg);
+                    }
+                }
+            
+                .select2-container--open .select2-selection__arrow {
+                    &:after {
+                        transition: all 0.3s ease-in-out;
+                        transform: rotate(-180deg) !important;
+                    }
+                }
+
+                .form-top-line {
+                    display: flex;
+                    align-items: flex-start;
                 }
             }
         }
