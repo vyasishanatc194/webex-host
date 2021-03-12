@@ -566,6 +566,8 @@
 
         &.dropdown-menu-right {
           left: 42px !important;
+          min-width: 328px;
+          padding: 8px 0 12px 0;
         }
 
         .dropdown-form-div {

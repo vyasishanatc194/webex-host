@@ -721,6 +721,8 @@
 
 .in-call-action-area-div .btn-group-root .dropup-custom .dropdown-menu-custom.dropdown-menu-right {
   left: 42px !important;
+  min-width: 328px;
+  padding: 8px 0 12px 0;
 }
 
 .in-call-action-area-div .btn-group-root .dropup-custom .dropdown-menu-custom .dropdown-form-div .form-group {
