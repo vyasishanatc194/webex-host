@@ -1,0 +1,111 @@
+.shedule-session-section {
+  padding: 40px 0 0 0;
+}
+
+.shedule-session-section .shecdule-herader {
+  margin-bottom: 60px;
+}
+
+.shedule-session-section .shecdule-herader h3 {
+  font-size: 38px;
+  line-height: 46px;
+  color: #083257;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.shedule-session-section .schedule-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.shedule-session-section .schedule-body .schdule-left {
+  width: 280px;
+}
+
+.shedule-session-section .schedule-body .schdule-left .upload-div {
+  padding: 0px 20px 20px 0px;
+}
+
+.shedule-session-section .schedule-body .schdule-left .upload-div .img-upload {
+  height: 167px;
+  width: 167px;
+  border-radius: 100px;
+  margin-left: 12px;
+  overflow: hidden;
+}
+
+.shedule-session-section .schedule-body .schdule-left .upload-div .img-upload img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.shedule-session-section .schedule-body .schdule-left .upload-div .custom-file label {
+  text-align: left;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  color: #F98D29;
+  border: 0;
+  padding: 10px 0;
+}
+
+.shedule-session-section .schedule-body .schdule-left .upload-div .custom-file label::after {
+  display: none;
+}
+
+.shedule-session-section .schedule-body .schdule-left .upload-div .custom-file input {
+  display: none !important;
+}
+
+.shedule-session-section .schedule-body .schdule-right {
+  padding-left: 20px;
+  width: calc(100% - 280px);
+  min-width: 670px;
+}
+
+.shedule-session-section .schedule-body .schdule-right form {
+  width: 100%;
+}
+
+.shedule-session-section .schedule-body .schdule-right form .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.shedule-session-section .schedule-body .schdule-right form .form-group .form-label {
+  width: 215px;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 600;
+}
+
+.shedule-session-section .schedule-body .schdule-right form .form-group .form-input {
+  width: calc(100% - 215px);
+  max-width: 450px;
+}
+
+.shedule-session-section .schedule-body .schdule-right form .form-group .form-input .form-control {
+  border: 1px solid #EAEAEA;
+  height: 46px;
+  padding-left: 20px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  overflow: hidden;
+  outline: 0;
+}
+/*# sourceMappingURL=shedule-session.css.map */
