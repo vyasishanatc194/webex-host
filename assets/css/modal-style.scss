@@ -2099,6 +2099,10 @@ $proxima: 'Proxima Nova Rg';
         .modal-dialog {
             .modal-content {
 
+                    .header-partciapnt {
+                        padding-top: 16px !important;
+                    }
+
                 .close-top-right {
                     overflow: hidden;
                     
@@ -2116,10 +2120,7 @@ $proxima: 'Proxima Nova Rg';
                         justify-content: center;
             
 
-                        span {
-                            font-size: 35px;
-                            color: #fff;
-                        }
+                        
                     }
                 }
 
