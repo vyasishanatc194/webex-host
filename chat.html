@@ -15,6 +15,7 @@
 <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet" />
 <link href="assets/css/feather.min.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/fonts/lato/lato-font.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/fonts/proxima/stylesheet.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/owl.carousel.min.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/modal-style.css" media="all" rel="stylesheet" type="text/css" />
@@ -66,21 +67,24 @@
                                   </a>
                                 </li>
                                 <li class="btn-nav-items">
-                                  <a href="#" class="btn btn-common-secondary btn-icon active"> 
+                                  <a href="#" class="btn btn-common-secondary btn-icon active" id="button-icon-click-active1"> 
                                     <span class="bg-custom-icon video-camera-icon icon-view"></span> 
                                     <span class="bg-custom-icon no-video-camera-icon2 icon-none"></span> 
                                   </a>
                                 </li>
                                 <li class="btn-nav-items">
-                                  <a href="#" class="btn btn-common-secondary btn-icon "> 
+                                  <a href="#" class="btn btn-common-secondary btn-icon" id="button-icon-click-active2"> 
                                     <span class="bg-custom-icon microphone-icon icon-view"></span> 
                                     <span class="bg-custom-icon un-mute-white-microphone-icon icon-none"></span> 
                                   </a>
                                 </li>
                                 <li class="btn-nav-items">
-                                  <a href="#" class="btn btn-common-secondary btn-icon"> 
+                                  <a href="#" class="btn btn-common-secondary btn-icon dropdown-toggle" id="volume-btn" data-toggle="dropdown"> 
                                     <span class="bg-custom-icon volume-icon"></span>
                                   </a>
+                                  <div class="dropdown-menu volume-btn-dropdown-menu">
+                                    
+                                  </div>
                                 </li>
                                 <li class="btn-nav-items">
                                   <button type="button" class="btn btn-primary btn-common-danger">
@@ -454,6 +458,435 @@
                               </div>
 
                               <div class="tab-pane " id="participants-tab">
+
+                                <div class="in-chat-participants-root-div">
+                                  <div class="in-chat-participants-inner-div">
+                                    <div class="participent-list-main">
+                                      <div class="participent-list">
+                                        <ul class="list">
+                                          <li>
+                                            <div class="partcipent-user">
+                                              <div class="user-img">
+                                                <img src="assets/images/profile.jpg" class="img-fluid" alt="img" />
+                                              </div>
+                                              <div class="user-info">
+                                                <h3>Helena Carter</h3>
+                                                <p>Helena@certis.sg</p>
+                                              </div>
+                                            </div>
+                      
+                                            <div class="user-action">
+                                              <div class="action-group hover-none">
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-mic-mute"></i></a>
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                                              </div>
+                      
+                                              <div class="action-group hover-block">
+                                                <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                                            
+                                                <div class="dropdown">
+                                                  <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  More
+                                                  </button>
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Stop Video</a>
+                                                    <a class="dropdown-item" href="#">Remove from Call</a>
+                                                  </div>
+                                                </div>
+                      
+                                              </div>
+                                            </div>
+                                          </li>
+                      
+                                          <li>
+                                            <div class="partcipent-user">
+                                              <div class="user-img">
+                                                <img src="assets/images/profile.jpg" class="img-fluid" alt="img" />
+                                              </div>
+                                              <div class="user-info">
+                                                <h3>Rheneay Tristan</h3>
+                                                <p>Rheneay@certis.sg</p>
+                                              </div>
+                                            </div>
+                      
+                                            <div class="user-action">
+                                              <div class="action-group hover-none">
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-mic"></i></a>
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-video-mute"></i></a>
+                                              </div>
+                      
+                                              <div class="action-group hover-block">
+                                                <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                                            
+                                                <div class="dropdown">
+                                                  <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  More
+                                                  </button>
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Stop Video</a>
+                                                    
+                                                    <a class="dropdown-item" href="#">Remove from Call</a>
+                                                  </div>
+                                                </div>
+                      
+                                              </div>
+                                            </div>
+                                          </li>
+                      
+                                          <li>
+                                            <div class="partcipent-user">
+                                              <div class="user-img">
+                                                <img src="assets/images/profile.jpg" class="img-fluid" alt="img" />
+                                              </div>
+                                              <div class="user-info">
+                                                <h3>Heidi Shontell</h3>
+                                                <p>Heidi@certis.sg</p>
+                                              </div>
+                                            </div>
+                      
+                                            <div class="user-action">
+                                              <div class="action-group hover-none">
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-mic"></i></a>
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                                              </div>
+                      
+                                              <div class="action-group hover-block">
+                                                <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                                            
+                                                <div class="dropdown">
+                                                  <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  More
+                                                  </button>
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Stop Video</a>
+                                                    
+                                                    <a class="dropdown-item" href="#">Remove from Call</a>
+                                                  </div>
+                                                </div>
+                      
+                                              </div>
+                                            </div>
+                                          </li>
+                      
+                                          <li>
+                                            <div class="partcipent-user">
+                                              <div class="user-img">
+                                                <img src="assets/images/profile.jpg" class="img-fluid" alt="img" />
+                                              </div>
+                                              <div class="user-info">
+                                                <h3>John Bloom </h3>
+                                                <p>John@certis.sg</p>
+                                              </div>
+                                            </div>
+                      
+                                            <div class="user-action">
+                                              <div class="action-group hover-none">
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-mic"></i></a>
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                                              </div>
+                      
+                                              <div class="action-group hover-block">
+                                                <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                                            
+                                                <div class="dropdown">
+                                                  <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  More
+                                                  </button>
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Stop Video</a>
+                                                    
+                                                    <a class="dropdown-item" href="#">Remove from Call</a>
+                                                  </div>
+                                                </div>
+                      
+                                              </div>
+                                            </div>
+                                          </li>
+
+                                          <li>
+                                            <div class="partcipent-user">
+                                              <div class="user-img">
+                                                <img src="assets/images/profile.jpg" class="img-fluid" alt="img" />
+                                              </div>
+                                              <div class="user-info">
+                                                <h3>Helena Carter</h3>
+                                                <p>Helena@certis.sg</p>
+                                              </div>
+                                            </div>
+                      
+                                            <div class="user-action">
+                                              <div class="action-group hover-none">
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-mic-mute"></i></a>
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                                              </div>
+                      
+                                              <div class="action-group hover-block">
+                                                <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                                            
+                                                <div class="dropdown">
+                                                  <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  More
+                                                  </button>
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Stop Video</a>
+                                                    <a class="dropdown-item" href="#">Remove from Call</a>
+                                                  </div>
+                                                </div>
+                      
+                                              </div>
+                                            </div>
+                                          </li>
+                      
+                                          <li>
+                                            <div class="partcipent-user">
+                                              <div class="user-img">
+                                                <img src="assets/images/profile.jpg" class="img-fluid" alt="img" />
+                                              </div>
+                                              <div class="user-info">
+                                                <h3>Rheneay Tristan</h3>
+                                                <p>Rheneay@certis.sg</p>
+                                              </div>
+                                            </div>
+                      
+                                            <div class="user-action">
+                                              <div class="action-group hover-none">
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-mic"></i></a>
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-video-mute"></i></a>
+                                              </div>
+                      
+                                              <div class="action-group hover-block">
+                                                <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                                            
+                                                <div class="dropdown">
+                                                  <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  More
+                                                  </button>
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Stop Video</a>
+                                                    
+                                                    <a class="dropdown-item" href="#">Remove from Call</a>
+                                                  </div>
+                                                </div>
+                      
+                                              </div>
+                                            </div>
+                                          </li>
+                      
+                                          <li>
+                                            <div class="partcipent-user">
+                                              <div class="user-img">
+                                                <img src="assets/images/profile.jpg" class="img-fluid" alt="img" />
+                                              </div>
+                                              <div class="user-info">
+                                                <h3>Heidi Shontell</h3>
+                                                <p>Heidi@certis.sg</p>
+                                              </div>
+                                            </div>
+                      
+                                            <div class="user-action">
+                                              <div class="action-group hover-none">
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-mic"></i></a>
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                                              </div>
+                      
+                                              <div class="action-group hover-block">
+                                                <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                                            
+                                                <div class="dropdown">
+                                                  <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  More
+                                                  </button>
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Stop Video</a>
+                                                    
+                                                    <a class="dropdown-item" href="#">Remove from Call</a>
+                                                  </div>
+                                                </div>
+                      
+                                              </div>
+                                            </div>
+                                          </li>
+                      
+                                          <li>
+                                            <div class="partcipent-user">
+                                              <div class="user-img">
+                                                <img src="assets/images/profile.jpg" class="img-fluid" alt="img" />
+                                              </div>
+                                              <div class="user-info">
+                                                <h3>John Bloom </h3>
+                                                <p>John@certis.sg</p>
+                                              </div>
+                                            </div>
+                      
+                                            <div class="user-action">
+                                              <div class="action-group hover-none">
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-mic"></i></a>
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                                              </div>
+                      
+                                              <div class="action-group hover-block">
+                                                <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                                            
+                                                <div class="dropdown">
+                                                  <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  More
+                                                  </button>
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Stop Video</a>
+                                                    
+                                                    <a class="dropdown-item" href="#">Remove from Call</a>
+                                                  </div>
+                                                </div>
+                      
+                                              </div>
+                                            </div>
+                                          </li>
+
+                                          <li>
+                                            <div class="partcipent-user">
+                                              <div class="user-img">
+                                                <img src="assets/images/profile.jpg" class="img-fluid" alt="img" />
+                                              </div>
+                                              <div class="user-info">
+                                                <h3>Helena Carter</h3>
+                                                <p>Helena@certis.sg</p>
+                                              </div>
+                                            </div>
+                      
+                                            <div class="user-action">
+                                              <div class="action-group hover-none">
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-mic-mute"></i></a>
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                                              </div>
+                      
+                                              <div class="action-group hover-block">
+                                                <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                                            
+                                                <div class="dropdown">
+                                                  <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  More
+                                                  </button>
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Stop Video</a>
+                                                    <a class="dropdown-item" href="#">Remove from Call</a>
+                                                  </div>
+                                                </div>
+                      
+                                              </div>
+                                            </div>
+                                          </li>
+                      
+                                          <li>
+                                            <div class="partcipent-user">
+                                              <div class="user-img">
+                                                <img src="assets/images/profile.jpg" class="img-fluid" alt="img" />
+                                              </div>
+                                              <div class="user-info">
+                                                <h3>Rheneay Tristan</h3>
+                                                <p>Rheneay@certis.sg</p>
+                                              </div>
+                                            </div>
+                      
+                                            <div class="user-action">
+                                              <div class="action-group hover-none">
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-mic"></i></a>
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-video-mute"></i></a>
+                                              </div>
+                      
+                                              <div class="action-group hover-block">
+                                                <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                                            
+                                                <div class="dropdown">
+                                                  <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  More
+                                                  </button>
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Stop Video</a>
+                                                    
+                                                    <a class="dropdown-item" href="#">Remove from Call</a>
+                                                  </div>
+                                                </div>
+                      
+                                              </div>
+                                            </div>
+                                          </li>
+                      
+                                          <li>
+                                            <div class="partcipent-user">
+                                              <div class="user-img">
+                                                <img src="assets/images/profile.jpg" class="img-fluid" alt="img" />
+                                              </div>
+                                              <div class="user-info">
+                                                <h3>Heidi Shontell</h3>
+                                                <p>Heidi@certis.sg</p>
+                                              </div>
+                                            </div>
+                      
+                                            <div class="user-action">
+                                              <div class="action-group hover-none">
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-mic"></i></a>
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                                              </div>
+                      
+                                              <div class="action-group hover-block">
+                                                <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                                            
+                                                <div class="dropdown">
+                                                  <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  More
+                                                  </button>
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Stop Video</a>
+                                                    
+                                                    <a class="dropdown-item" href="#">Remove from Call</a>
+                                                  </div>
+                                                </div>
+                      
+                                              </div>
+                                            </div>
+                                          </li>
+                      
+                                          <li>
+                                            <div class="partcipent-user">
+                                              <div class="user-img">
+                                                <img src="assets/images/profile.jpg" class="img-fluid" alt="img" />
+                                              </div>
+                                              <div class="user-info">
+                                                <h3>John Bloom </h3>
+                                                <p>John@certis.sg</p>
+                                              </div>
+                                            </div>
+                      
+                                            <div class="user-action">
+                                              <div class="action-group hover-none">
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-mic"></i></a>
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                                              </div>
+                      
+                                              <div class="action-group hover-block">
+                                                <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                                            
+                                                <div class="dropdown">
+                                                  <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  More
+                                                  </button>
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Stop Video</a>
+                                                    
+                                                    <a class="dropdown-item" href="#">Remove from Call</a>
+                                                  </div>
+                                                </div>
+                      
+                                              </div>
+                                            </div>
+                                          </li>
+                      
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
                               </div> 
 
                             </div>
@@ -485,10 +918,12 @@
 
 <script>
   $(document).ready(function () {
-    $(".btn-nav-list-div .btn-nav-list-ul .btn.btn-icon").click(function() {
-      $(this).toggleClass("active");
-    });
-
+    for(let bi = 0; bi < 5; bi++)  {
+      $(".btn-nav-list-div .btn-nav-list-ul #button-icon-click-active"+ bi).click(function() {
+        $(this).toggleClass("active");
+      });
+    }
+    
     $('.dropdown-menu.dropdown-menu-custom').on('click', function(event){
       event.stopPropagation();
     });
