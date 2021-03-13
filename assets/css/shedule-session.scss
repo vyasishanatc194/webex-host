@@ -271,13 +271,17 @@
                     display: flex;
                     align-items: center;
 
-                    span {
+                    span.copy-img {
                         margin: 0 20px;
                     }
                 }
             }
         }
     }
+}
+
+hr.line-2 {
+    border-top: 2px solid #EFF2F6;
 }
 
 @media (max-width: 767px) {

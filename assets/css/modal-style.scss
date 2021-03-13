@@ -2039,14 +2039,15 @@ $proxima: 'Proxima Nova Rg';
             padding: 12px 20px;
 
             .btn-sm {
-               height: 50px;
-               width: calc(50% - 10px);
-               margin-bottom: 5px;
+               height: 42px;
+               width: calc(50% - 12px);
+               margin-bottom: 8px;
             }
 
             .btn-sm.btn-transparent {
                 width: 100%;
                 min-width: calc(100% - 10px);
+                margin-bottom: 0;
             }
         }
     }
