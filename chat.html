@@ -78,15 +78,25 @@
                                     <span class="bg-custom-icon un-mute-white-microphone-icon icon-none"></span> 
                                   </a>
                                 </li>
+                                
                                 <li class="btn-nav-items">
                                   <a href="#" class="btn btn-common-secondary btn-icon dropdown-toggle" id="volume-btn" data-toggle="dropdown"> 
                                     <span class="bg-custom-icon volume-icon"></span>
                                   </a>
                                   <div class="dropdown-menu volume-btn-dropdown-menu">
-                                    
+                                    <div class="volume-group-dropdown">
+                                      <div class="audio-group">
+                                        <button class="btn-volumn-icon"> <span class="bg-custom-icon volume-high-black-icon"></span> </button>
+                                        <div class="range-slider-custom">
+                                          <input type="range" class="slider" />
+                                        </div>
+                                        <button class="btn-volumn-icon"> <span class="bg-custom-icon volume-low-black-icon"></span> </button>
+                                      </div>
+                                    </div>
                                   </div>
                                 </li>
-                                <li class="btn-nav-items">
+
+                                <li class="btn-nav-items btn-nav-items-width-100">
                                   <button type="button" class="btn btn-primary btn-common-danger">
                                     <span class="icon-span mr-2"> <span class="bg-custom-icon telephone-button"></span> </span>
                                     <span class="text-span mr-6px"> Leave </span>
@@ -292,7 +302,14 @@
                       </div>
 
                       <div class="in-chat-root-area-right-div">
-                        <div class="in-chat-mp-card-div">
+                        <div class="in-chat-mp-card-div" id="in-chat-mp-card-div">
+
+                          <div class="collpse-mobile-div">
+                            <button class="btn btn-collpse-cst" id="onclick-group-chat-open">
+                              <span class="bg-custom-icon chevron-right-next-icon"></span>
+                            </button>
+                          </div>
+
                           <div class="in-chat-mp-top-div">
                             <div class="in-chat-mp-top-left-div">
                               <h2>Group Chat</h2>
@@ -311,7 +328,7 @@
                             </div>
                           </div>
 
-                          <div class="in-chat-mp-body-div">
+                          <div class="in-chat-mp-body-div" id="in-chat-mp-body-div">
                             <div class="tab-content">
                               <div class="tab-pane active" id="messages-tab">
                                 <div class="in-chat-mp-body-inner-div">
@@ -927,6 +944,13 @@
     $('.dropdown-menu.dropdown-menu-custom').on('click', function(event){
       event.stopPropagation();
     });
+
+    $("#onclick-group-chat-open").click(function() {
+      $("#in-chat-mp-body-div").toggleClass("active");
+      $("#in-chat-mp-card-div").toggleClass("active");
+      
+    });
+    
   });
 </script>
 

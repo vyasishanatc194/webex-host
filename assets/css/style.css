@@ -435,6 +435,24 @@ body {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='31.555' height='30.191' viewBox='0 0 31.555 30.191'%3E%3Cg id='send-button' transform='matrix(0.875, -0.485, 0.485, 0.875, -18.544, -21.598)'%3E%3Cg id='send' transform='translate(0 38.25)'%3E%3Cpath id='Path_25' data-name='Path 25' d='M0,59.214,24.458,48.732,0,38.25V46.4l17.47,2.329L0,51.061Z' transform='translate(0 -38.25)' fill='%23fff'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
 }
 
+.volume-high-black-icon {
+  width: 18px;
+  height: 16px;
+  background-image: url("data:image/svg+xml,%3Csvg id='volume-high-icon' xmlns='http://www.w3.org/2000/svg' width='17.139' height='15.997' viewBox='0 0 17.139 15.997'%3E%3Cpath id='Path_4' data-name='Path 4' d='M9.96,16.047a.57.57,0,0,0-.6.069L3.8,20.561H1.143A1.144,1.144,0,0,0,0,21.7v4.57a1.144,1.144,0,0,0,1.143,1.143H3.8l5.556,4.446a.572.572,0,0,0,.606.067.57.57,0,0,0,.323-.514V16.562A.573.573,0,0,0,9.96,16.047Z' transform='translate(0 -15.99)' fill='%2300142f'/%3E%3Cpath id='Path_5' data-name='Path 5' d='M342.724,122.417a.572.572,0,0,0-.8.814,4.557,4.557,0,0,1,0,6.453.571.571,0,1,0,.8.811,5.7,5.7,0,0,0,0-8.078Z' transform='translate(-329.549 -118.458)' fill='%2300142f'/%3E%3Cpath id='Path_6' data-name='Path 6' d='M387.842,77.291a.572.572,0,1,0-.806.811,6.818,6.818,0,0,1,0,9.676.572.572,0,0,0,.806.811,7.962,7.962,0,0,0,0-11.3Z' transform='translate(-373.055 -74.942)' fill='%2300142f'/%3E%3C/svg%3E%0A");
+}
+
+.volume-low-black-icon {
+  width: 11px;
+  height: 16px;
+  background-image: url("data:image/svg+xml,%3Csvg id='volume-low-icon' xmlns='http://www.w3.org/2000/svg' width='10.283' height='15.997' viewBox='0 0 10.283 15.997'%3E%3Cpath id='Path_4' data-name='Path 4' d='M9.96,16.047a.57.57,0,0,0-.6.069L3.8,20.561H1.143A1.144,1.144,0,0,0,0,21.7v4.57a1.144,1.144,0,0,0,1.143,1.143H3.8l5.556,4.446a.572.572,0,0,0,.606.067.57.57,0,0,0,.323-.514V16.562A.573.573,0,0,0,9.96,16.047Z' transform='translate(0 -15.99)' fill='%2300142f'/%3E%3C/svg%3E%0A");
+}
+
+.chevron-right-next-icon {
+  width: 9px;
+  height: 28px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27.652' height='8.845' viewBox='0 0 27.652 8.845'%3E%3Cpath id='Chevron_Right_1_' d='M8.54,14.813c-.458.8-6.2,12.431-6.2,12.431a1.4,1.4,0,0,1-1.977,0c-.546-.544-.371-1.286,0-1.973L5.954,13.819.369,2.382a1.507,1.507,0,0,1,0-1.974,1.4,1.4,0,0,1,1.977,0l6.2,12.431A1.755,1.755,0,0,1,8.54,14.813Z' transform='translate(0 8.845) rotate(-90)' fill='%23d6ddea'/%3E%3C/svg%3E%0A");
+}
+
 /*  general css */
 /* Colors: */
 :root {
