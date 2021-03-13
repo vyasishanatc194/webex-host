@@ -2114,13 +2114,14 @@
     padding: 12px 20px;
   }
   .modal-custom .modal-dialog .modal-content .modal-footer-partcipent .btn-sm {
-    height: 50px;
-    width: calc(50% - 10px);
-    margin-bottom: 5px;
+    height: 42px;
+    width: calc(50% - 12px);
+    margin-bottom: 8px;
   }
   .modal-custom .modal-dialog .modal-content .modal-footer-partcipent .btn-sm.btn-transparent {
     width: 100%;
     min-width: calc(100% - 10px);
+    margin-bottom: 0;
   }
   .select2-results__option {
     font-size: 16px;
