@@ -1895,6 +1895,9 @@
     font-size: 16px;
     line-height: 22px;
   }
+  .modal-custom .modal-dialog .modal-content .header-partciapnt {
+    padding-top: 16px !important;
+  }
   .modal-custom .modal-dialog .modal-content .modal-header h5 {
     font-size: 20px;
     line-height: 24px;
