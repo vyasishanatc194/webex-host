@@ -251,6 +251,10 @@
           box-shadow: none;
 }
 
+.backdrop-none .modal-backdrop.show {
+  opacity: 0 !important;
+}
+
 .modal.fade .modal-dialog {
   -webkit-transform: translate(0, 0) scale(0.8);
           transform: translate(0, 0) scale(0.8);
@@ -1722,6 +1726,17 @@
 
 .modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .video-setting .form-group .col-form-label {
   white-space: nowrap;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .modal-progress h5 {
+  font-size: 18px;
+  color: #00142F;
+  line-height: 25px;
+  font-weight: 600;
+  text-align: center;
+  max-width: 467px;
+  margin: 0 auto;
+  margin-bottom: 24px;
 }
 
 .modal-custom .modal-dialog .modal-content .join-body {

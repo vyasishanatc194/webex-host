@@ -23,6 +23,7 @@
 <link href="assets/css/flatpickr.min.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/select2.min.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/modal-style.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/typehead.css" media="all" rel="stylesheet" type="text/css" />
 <script src="assets/js/modernizr.js"></script>
 
 </head>
@@ -403,7 +404,7 @@
                                 <label for="inputEmail3" class="form-label">Session Password</label>
                                 <div class="form-input row no-gutters">
                                   <div class="col-sm-12">
-                                   <a href="#" class="session-pass btn-copy"><span id="copytext">vds84ht79@3</span> <span class="copy-img"><img src="assets/images/participant/copy.png" alt=""></span></a>
+                                   <a href="#" class="session-pass btn-copy" data-toggle="modal" data-target="#modal-invite"><span id="copytext">vds84ht79@3</span> <span class="copy-img"><img src="assets/images/participant/copy.png" alt=""></span></a>
                                   </div>
 
                                 </div>
@@ -427,7 +428,62 @@
                 </div>
 
                 <div class="col-lg-12">
-                  
+                    <div class="add-attendees-section">
+                        <div class="heading">
+                          <h3>Add Attendees</h3>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-lg-10">
+                            <div class="attendees-body">
+                   
+                              <div class="row">
+                                <div class="col-lg-3">
+                                  <div class="form-group">
+                                    <label for="">Email</label>
+                                    <input type="text" class="form-control typehead-box email-name" placeholder="Enter Email" autocomplete="off" />
+                                  </div>
+                                </div>
+                                <div class="col-lg-3">
+                                  <div class="form-group">
+                                    <label for="">First Name</label>
+                                    <input type="text" class="form-control " placeholder="First Name"  />
+                                  </div>
+                                </div>
+    
+                                <div class="col-lg-3">
+                                  <div class="form-group">
+                                    <label for="">Last Name</label>
+                                    <input type="text" class="form-control " placeholder="Last Name"/>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="add-fields">
+                                <!-- template filed added over here -->
+                              </div>
+                          
+                          
+                            <div class="row">
+                              <div class="col-lg-12">
+                                <a href="#!" class="btn btn-custom btn-outline-orange btn-60"id="add-feature">+ Add Another Attendee</a>
+                              </div>
+                            </div>
+  
+  
+                            
+                          </div>
+                          </div>
+                        </div>
+                        
+                     
+
+                        <div class="attendees-footer">
+                     
+                            <a href="#!" class="btn btn-custom btn-blue btn-md" data-toggle="modal" data-target="#modal-draft">Save as Draft</a>
+                            <a href="#!" class="btn btn-custom btn-orange btn-md">Create Session</a>
+                          
+                        </div>
+                    </div>
                 </div>
               </div>        
             </div>
@@ -437,7 +493,72 @@
     </div>
   </main>
 
+  <div class="" id="row-filed" style="display: none;">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="form-group">
+          <input  type="text" class="form-control typehead-box email-name" placeholder="Enter Email" autocomplete="off" />
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="form-group">
+          <input type="text" class="form-control " placeholder="First Name"  />
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="form-group">
+          <input type="text" class="form-control " placeholder="Last Name"/>
+        </div>
+      </div>
+    </div>
+  </div>
 </div><!-- end of wrapper -->
+
+<div class="modal fade modal-custom" tabindex="-1" id="modal-draft">
+  <div class="modal-dialog modal-dialog-centered modal-546">
+    <div class="modal-content modal-shadow">
+      <div class="modal-header white-header pt-4 close-none">
+        <h5 class="modal-title text-center"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><img src="assets/images/participant/cross-sign.png" alt=""></span>
+        </button>
+      </div>
+      <div class="modal-body pt-0">
+        <div class="session-record">
+
+          <h4>Draft Saved Successfully</h4>
+        </div>
+      </div>
+      <div class="modal-footer pb-4">
+        <button type="button" class="btn btn-custom btn-orange orange-shadow" data-dismiss="modal">Ok</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade modal-custom" tabindex="-1" id="modal-invite">
+  <div class="modal-dialog modal-dialog-centered modal-546">
+    <div class="modal-content modal-shadow">
+      <div class="modal-header white-header pt-4 close-none">
+        <h5 class="modal-title text-center"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><img src="assets/images/participant/cross-sign.png" alt=""></span>
+        </button>
+      </div>
+      <div class="modal-body pt-0">
+        <div class="modal-progress">
+          <h5>Generating Invite Links…</h5>
+          <div class="progress">
+            <div class="progress-bar" style="width:70%"></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer pb-4">
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/popper.min.js"></script>
@@ -446,15 +567,50 @@
 <script src="assets/js/search-dropdown.js"></script>
 <script src="assets/js/flatpickr.min.js"></script>
 <script src="assets/js/custom.js"></script>
+<script src="assets/js/bootstrap-typeahead.js"></script>
 <script src="assets/js/select2.full.js"></script>
 
 <script>
 
-$('.btn-copy').click(function(){
-        var copyText = document.getElementById("copytext");
+$('#modal-invite').on('show.bs.modal', function (event) {
+  $('body').toggleClass("backdrop-none");
+})
+
+$('#modal-invite').on('hidden.bs.modal', function (event) {
+  $('body').toggleClass("backdrop-none");
+})
+
+$('#modal-draft').on('show.bs.modal', function (event) {
+  $('body').toggleClass("backdrop-none");
+})
+
+$('#modal-draft').on('hidden.bs.modal', function (event) {
+  $('body').toggleClass("backdrop-none");
+})
+
+var template = $('#row-filed').html();
+
+$('#add-feature').click(function(){
+
+    $('.add-fields').append(template);
+    
+});
+
+$('.email-name').typeahead({
+      source: [
+          { id: 1, name: 'Reiner Braun <span>Reiner_b@capitaland.com</span>', },
+          { id: 2, name: 'Rezika Shiraz <span>Rezika_s@capitaland.com</span>' },
+      ]
+  });
+
+$('.btn-copy').click(function(e){
+       
         /* Select the text field */
-        copyText.select();
-        copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+        e.preventDefault();
+      var text1 = $('.copytext');
+      var text = text1.text();
+      text.select();
+      text.setSelectionRange(0, 99999); /*For mobile devices*/
         /* Copy the text inside the text field */
         document.execCommand("copy");
 

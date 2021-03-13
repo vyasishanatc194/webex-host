@@ -237,6 +237,11 @@ $proxima: 'Proxima Nova Rg';
     }
 }
 
+.backdrop-none {
+    .modal-backdrop.show {
+        opacity: 0 !important;
+    }
+}
 
 .modal.fade {
     .modal-dialog {
@@ -1533,6 +1538,21 @@ $proxima: 'Proxima Nova Rg';
                         }
                     }
                 }
+
+                .modal-progress {
+
+                    
+                    h5 {
+                        font-size: 18px;
+                        color: #00142F;
+                        line-height: 25px;
+                        font-weight: 600;
+                        text-align: center;
+                        max-width: 467px;
+                        margin: 0 auto;
+                        margin-bottom: 24px;
+                    }
+                }
             }
 
             .join-body {
@@ -2119,8 +2139,6 @@ $proxima: 'Proxima Nova Rg';
                         align-items: center;
                         justify-content: center;
             
-
-                        
                     }
                 }
 
