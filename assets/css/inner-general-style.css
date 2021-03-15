@@ -824,5 +824,17 @@
   .table-card-general-div .table-card-bx .table-card-bx-tp {
     padding: 9px 20px 9px 20px;
   }
+  .table-card-general-div .table-card-bx .table-card-bx-body .custom-table th:first-child,
+  .table-card-general-div .table-card-bx .table-card-bx-body .custom-table td:first-child {
+    padding-left: 20px;
+  }
+  .table-card-general-div .table-card-bx .table-card-bx-body .custom-table th:last-child,
+  .table-card-general-div .table-card-bx .table-card-bx-body .custom-table td:last-child {
+    padding-left: 20px;
+  }
+  .table-card-general-div .table-card-bx .table-card-bx-body .custom-table .width-86 {
+    width: 60px;
+    min-width: 60px;
+  }
 }
 /*# sourceMappingURL=inner-general-style.css.map */
