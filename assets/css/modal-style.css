@@ -255,6 +255,11 @@
   opacity: 0 !important;
 }
 
+.modal-shadow {
+  -webkit-box-shadow: 0 23px 66px rgba(0, 0, 0, 0.06) !important;
+          box-shadow: 0 23px 66px rgba(0, 0, 0, 0.06) !important;
+}
+
 .modal.fade .modal-dialog {
   -webkit-transform: translate(0, 0) scale(0.8);
           transform: translate(0, 0) scale(0.8);

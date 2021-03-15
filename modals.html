@@ -276,8 +276,13 @@
                   <a href="#!" class="btn btn-primary mb-2" data-toggle="modal" data-target="#modal-request-to-shares"> Request To Shares Screen</a>               
                   <a href="#!" class="btn btn-primary mb-2" data-toggle="modal" data-target="#modal-video-type">Video Type</a>               
                   <a href="#!" class="btn btn-primary mb-2" data-toggle="modal" data-target="#modal-live-stream">Connect your Live Stream</a>    
-                  <a href="#!" class="btn btn-primary mb-2" data-toggle="modal" data-target="#modal-setting">Setting</a> 
+       
                 </div>  
+
+                <div class="col-lg-12 mt-5">
+                  <a href="#!" class="btn btn-primary mb-2" data-toggle="modal" data-target="#modal-setting">Setting</a> 
+                  <a href="#!" class="btn btn-primary mb-2" data-toggle="modal" data-target="#modal-changes">Saved changes</a> 
+                </div>
               </div>        
             </div>
           </div>
@@ -2029,6 +2034,31 @@
   </div>
 </div>
 
+
+
+
+<div class="modal fade modal-custom" tabindex="-1" id="modal-changes">
+  <div class="modal-dialog modal-dialog-centered modal-546">
+    <div class="modal-content modal-shadow">
+      <div class="modal-header white-header pt-4 close-none">
+        <h5 class="modal-title text-center"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><img src="assets/images/participant/cross-sign.png" alt=""></span>
+        </button>
+      </div>
+      <div class="modal-body pt-0">
+        <div class="session-changes">
+          <h4>Saved changes successfully!</h4>
+        </div>
+      </div>
+      <div class="modal-footer pb-30">
+        <button type="button" class="btn btn-custom btn-orange orange-shadow" data-dismiss="modal">Ok</button>
+      </div>
+    </div>  
+  </div>
+</div>
+
+
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/popper.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
@@ -2042,6 +2072,15 @@
   // $('#modal-incall-participant').on('shown.bs.modal', function (event) {
   //   $('body').toggleClass("custom-modal-backdrop");
   // })
+
+  $('#modal-changes').on('show.bs.modal', function (event) {
+  $('body').toggleClass("backdrop-none");
+})
+
+$('#modal-changes').on('hidden.bs.modal', function (event) {
+  $('body').toggleClass("backdrop-none");
+})
+
 
   $(document).ready(function () {
     var readURL = function (input) {
