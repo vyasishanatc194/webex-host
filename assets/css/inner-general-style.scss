@@ -699,7 +699,244 @@
   }
 }
 
+.no-found-details-div {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  min-height: 410px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+
+  .no-found-details-row {
+    padding: 60px 15px 60px 15px;
+    margin: 0;
+    position: relative;
+    width: 100%;
+
+    .thumb-div {
+      text-align: center;
+      margin: 0 auto 20px auto;
+      height: 80px;
+      width: 80px;
+      background: #eff2f6;
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .no-upcoming-icon {
+        padding-right: 3px;
+        padding-top: 5px;
+        object-fit: contain;
+      }
+    }
+
+    .content-div {
+      padding: 0;
+      margin: 0;
+
+      h2 {
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: 600;
+        letter-spacing: 0;
+        color: #083257;
+        display: block;
+        margin: 0 0 8px 0;
+        text-align: center;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 1.5;
+        font-weight: 500;
+        letter-spacing: 0;
+        color: rgba(8, 50, 87, 0.4);
+        text-align: center;
+        margin: 0 auto 20px auto;
+        max-width: 332px;
+      }
+
+      .btn-div {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .btn-common-primary-outline {
+          min-height: 48px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1650px) {
+  .search-tp-general-div {
+    .width-470 {
+      flex: 0 0 100%;
+      max-width: 100%;
+
+      .form-group-custom {
+        .input-control {
+          .form-control {
+            max-width: calc(100% - 35px);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1450px) {
+  .search-tp-general-div {
+    .width-470 {
+      flex: 0 0 100%;
+      max-width: 100%;
+
+      .form-group-custom {
+        .input-control {
+          .form-control {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+
+    .width-420 {
+      flex: 0 0 100%;
+      max-width: 100%;
+
+      .date-group-custom .max-width-217 {
+        max-width: 100%;
+      }
+
+      .form-group-custom .input-control .form-control {
+        max-width: 100%;
+      }
+    }
+
+    .width-335 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+}
+
 @media (max-width: 767px) {
+  .inner-main-general-root {
+    padding: 30px 0 0 0;
+
+    .heading-title-div {
+      margin: 0 0 25px 0;
+
+      h2 {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .search-tp-general-div {
+    .search-tp-general-inner-div {
+      padding: 20px 20px 25px 20px;
+    }
+
+    .width-100-202 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    .width-202 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    .width-470 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    .width-420 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    .width-335 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    .form-group-custom {
+      .label-div {
+        width: 100%;
+      }
+
+      .input-control {
+        max-width: 100%;
+
+        .form-control {
+          max-width: 100%;
+        }
+      }
+    }
+
+    .btn-group-div {
+      margin: 10px 0 0 0;
+
+      .btn.btn-common-primary.btn-common-search {
+        width: 100%;
+      }
+    }
+  }
+
+  .date-group-custom {
+    .max-width-217 {
+      max-width: 100%;
+    }
+  }
+
+  .table-card-general-div {
+    .table-card-bx {
+      .table-card-bx-tp {
+        padding: 9px 20px 9px 20px;
+
+        .table-card-bx-tp-rf {
+          .btn-group-bx {
+            .btn.btn-common-danger {
+              min-height: 30px;
+              padding: 7px 15px 7px 15px;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+
+      .table-card-bx-body {
+        .custom-table {
+          th,
+          td {
+            &:first-child {
+              padding-left: 20px;
+            }
+
+            &:last-child {
+              padding-left: 20px;
+            }
+          }
+
+          .width-86 {
+            width: 60px;
+            min-width: 60px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
   .inner-main-general-root {
     padding: 30px 0 0 0;
 
@@ -798,7 +1035,4 @@
       }
     }
   }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
 }
