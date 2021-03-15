@@ -444,6 +444,18 @@ $proxima: 'Proxima Nova Rg';
                     }
                 }
 
+                .btn-mute {
+                    max-width: 145px;
+                }
+
+                .btn-add {
+                    max-width: 165px;
+                }
+
+                .btn-video {
+                    max-width: 179px;
+                }
+
                 &::after {
                     width: calc(100% - 40px);
                     margin: 0 auto;
@@ -457,7 +469,7 @@ $proxima: 'Proxima Nova Rg';
                     display: block;
                     
                 }
-                padding: 20px 30px;
+                padding: 20px 20px;
                 
             }
 
@@ -1722,7 +1734,7 @@ $proxima: 'Proxima Nova Rg';
  }
 
  .btn-disabled {
-     opacity: 0.60;
+     opacity: 0.30;
      pointer-events: none;
  }
 
@@ -2113,6 +2125,12 @@ $proxima: 'Proxima Nova Rg';
         }
 }
 
+@media screen and (max-device-width: 767px) and (orientation: landscape) {
+    .modal-custom .modal-dialog .modal-content .modal-footer-partcipent .btn-sm.btn-transparent {
+        min-width: unset;
+        margin-bottom: 10px;
+    }
+}
 @media (min-width: 768px) and (max-width: 1024px) {
 
     .modal-custom {

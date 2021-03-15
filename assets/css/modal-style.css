@@ -469,7 +469,7 @@
 .modal-custom .modal-dialog .modal-content .modal-footer-partcipent {
   position: relative;
   padding-bottom: 31px !important;
-  padding: 20px 30px;
+  padding: 20px 20px;
 }
 
 .modal-custom .modal-dialog .modal-content .modal-footer-partcipent .btn {
@@ -484,6 +484,18 @@
 .modal-custom .modal-dialog .modal-content .modal-footer-partcipent .btn::before {
   height: 6px;
   bottom: -3px;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-footer-partcipent .btn-mute {
+  max-width: 145px;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-footer-partcipent .btn-add {
+  max-width: 165px;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-footer-partcipent .btn-video {
+  max-width: 179px;
 }
 
 .modal-custom .modal-dialog .modal-content .modal-footer-partcipent::after {
@@ -1900,7 +1912,7 @@
 }
 
 .btn-disabled {
-  opacity: 0.60;
+  opacity: 0.30;
   pointer-events: none;
 }
 
@@ -2175,6 +2187,13 @@
   }
   .setting-content .tab-inner .audio-setting .volume ul li {
     margin-right: 3px !important;
+  }
+}
+
+@media screen and (max-device-width: 767px) and (orientation: landscape) {
+  .modal-custom .modal-dialog .modal-content .modal-footer-partcipent .btn-sm.btn-transparent {
+    min-width: unset;
+    margin-bottom: 10px;
   }
 }
 
