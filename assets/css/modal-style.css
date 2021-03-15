@@ -285,6 +285,10 @@
   max-width: 727px !important;
 }
 
+.modal-custom .max-1097 {
+  max-width: 1097px !important;
+}
+
 .modal-custom .modal-dialog {
   max-width: 657px;
 }
@@ -1751,6 +1755,50 @@
   margin-bottom: 24px;
 }
 
+.modal-custom .modal-dialog .modal-content .modal-body .Session-shedule h3 {
+  font-size: 28px;
+  line-height: 34px;
+  color: #083257;
+  font-weight: 600;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .Session-shedule h5 {
+  font-size: 18px;
+  text-align: center;
+  line-height: 34px;
+  color: #083257;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .Session-shedule .tabel-session-schedule {
+  margin: 60px 0 30px 0;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .Session-shedule .tabel-session-schedule .table thead tr th {
+  color: #000000;
+  font-size: 20px;
+  line-height: 24px;
+  white-space: nowrap;
+  border-top: 0;
+  border-color: #EFF2F6;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .Session-shedule .tabel-session-schedule .table tbody tr td {
+  color: #000000;
+  font-size: 18px;
+  line-height: 24px;
+  white-space: nowrap;
+  border-top: 0;
+  width: 25%;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .Session-shedule .tabel-session-schedule .tbl-link {
+  color: #F98D29;
+}
+
 .modal-custom .modal-dialog .modal-content .join-body {
   padding: 23px 40px;
 }
@@ -2138,6 +2186,25 @@
   }
   .modal-custom .modal-dialog .modal-content .modal-body .audio-content-2 .form-group {
     margin-bottom: 30px;
+  }
+  .modal-custom .modal-dialog .modal-content .modal-body .Session-shedule h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .modal-custom .modal-dialog .modal-content .modal-body .Session-shedule h5 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .modal-custom .modal-dialog .modal-content .modal-body .Session-shedule .tabel-session-schedule {
+    margin: 60px 0 30px 0;
+  }
+  .modal-custom .modal-dialog .modal-content .modal-body .Session-shedule .tabel-session-schedule .table thead tr th {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .modal-custom .modal-dialog .modal-content .modal-body .Session-shedule .tabel-session-schedule .table tbody tr td {
+    font-size: 14px;
+    line-height: 16px;
   }
   .modal-custom .modal-dialog .modal-content .modal-footer .btn {
     margin: 0 6px;

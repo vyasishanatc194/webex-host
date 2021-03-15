@@ -274,6 +274,10 @@ $proxima: 'Proxima Nova Rg';
         max-width: 727px !important;
     }
 
+    .max-1097 {
+        max-width: 1097px !important;
+    }
+
     .modal-dialog {
         max-width: 657px;
 
@@ -1565,6 +1569,52 @@ $proxima: 'Proxima Nova Rg';
                         margin-bottom: 24px;
                     }
                 }
+
+                .Session-shedule {
+                    h3 {
+                        font-size: 28px;
+                        line-height: 34px;
+                        color: #083257;
+                        font-weight: 600;
+                        margin-bottom: 12px;
+                        text-align: center;
+                    }
+
+                    h5 {
+                        font-size: 18px;
+                        text-align: center;
+                        line-height: 34px;
+                        color: #083257;
+                        font-weight: 600;
+                        margin-bottom: 12px;
+                    }
+
+                    .tabel-session-schedule {
+                        margin: 60px 0 30px 0;
+
+                        .table thead tr th {
+                            color: #000000;
+                            font-size: 20px;
+                            line-height: 24px;
+                            white-space: nowrap;
+                            border-top: 0;
+                            border-color: #EFF2F6;
+                        }
+
+                        .table tbody tr td {
+                            color: #000000;
+                            font-size: 18px;
+                            line-height: 24px;
+                            white-space: nowrap;
+                            border-top: 0;
+                            width: 25%;
+                        }
+
+                        .tbl-link {
+                            color: #F98D29;
+                        }
+                    }
+                }
             }
 
             .join-body {
@@ -1754,6 +1804,7 @@ $proxima: 'Proxima Nova Rg';
         .header-partciapnt {
             padding-top: 16px !important;
         }
+
         .modal-header  {
             h5 {
                 font-size: 20px;
@@ -2065,6 +2116,33 @@ $proxima: 'Proxima Nova Rg';
 
                 .form-group {
                     margin-bottom: 30px;
+                }
+            }
+
+            .Session-shedule {
+                h3 {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+
+                h5 {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+
+                .tabel-session-schedule {
+                    margin: 60px 0 30px 0;
+
+                    .table thead tr th {
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+
+                    .table tbody tr td {
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
+
                 }
             }
         }
