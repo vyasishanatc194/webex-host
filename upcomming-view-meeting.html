@@ -4,7 +4,7 @@
 <meta name="description" content="" />
 <meta name="author" content="" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<title>Shedule meeting | Certis</title>
+<title>Upcomming view meeting | Certis</title>
 <meta content='initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width' name='viewport' />
 <meta name="theme-color" content="#002855">
 <meta name="msapplication-navbutton-color" content="#002855">
@@ -86,14 +86,14 @@
               <div class="side-nav-item accordion" id="menu-collapse">
                 <ul class="main-listing">
                   
-                  <li class="nav-item active">
+                  <li class="nav-item ">
                     <a class="nav-link nav-normal" href="#">
                       <span class="icon-span"> <span class="bg-custom-icon home-icon"></span> </span>
                       <span class="text-collapse-menu">Home</span>
                     </a>
                   </li>
 
-                  <li class="nav-item">
+                  <li class="nav-item active">
                     <a class="nav-link nav-normal" href="#">
                       <span class="icon-span"> <span class="bg-custom-icon calendar-icon"></span> </span>
                       <span class="text-collapse-menu">Upcoming</span>
@@ -158,7 +158,7 @@
                   <div class="nav-dashboard-row">
 
                     <div class="nav-dashboard-left">
-                      <div class="search-div">
+                      <!-- <div class="search-div">
                         <div class="search-row">
                           <div class="search-input-box">
                             <input type="text" class="form-control form-search" id="form-search" placeholder="Search for meetings and recordings" />
@@ -221,6 +221,10 @@
                           </div>
                         </div>
 
+                      </div> -->
+                    
+                      <div class="back-to-btn">
+                        <a href="#" class="back"><span class="back-to mr-3"></span> Back to Upcoming</a>
                       </div>
                     </div>
 
@@ -275,7 +279,7 @@
                           <div class="schdule-left">
                             <div class="upload-div">
                               <div class="img-upload " >
-                                <img src="assets/images/profile-pic.png" class="profile-pic" alt="">
+                                <img src="assets/images/participant/up-comming-profile.jpg" class="profile-pic" alt="">
                               </div>
                               <div class="custom-file">
                                 <input type="file" class="custom-file-input file-upload"  name="filename">
@@ -287,21 +291,19 @@
 
                             <form>
                               <div class="form-group ">
-                                
                                 <label for="inputEmail3" class="form-label">Session Name</label>
                                 <div class="form-input pad-60">
-                                  <div class="invalid-feedback" style="display: block;">
+                                  <div class="invalid-feedback" >
                                     Please enter a meeting name to proceed.
                                   </div>
-                                  <input type="text" class="form-control" id="inputEmail3">
+                                  <input type="email" class="form-control" id="inputEmail3" value="Weekly Sprint Session" >
                                 </div>
                               </div>
 
                               <div class="form-group ">
                                 <label for="inputEmail3" class="form-label">Session Date</label>
                                 <div class="form-input pad-60">
-                                 
-                                  <input type="email" class="form-control date " id="inputEmail3">
+                                  <input type="email" class="form-control date" id="inputEmail3">
                                   <a href="#" class="btn-picker"></a>
                                 </div>
                               </div>
@@ -425,6 +427,7 @@
                     </div>
                   </div>
                   
+
                 </div>
 
                 <div class="col-lg-12">
@@ -439,11 +442,11 @@
 
                         <div class="row">
                           <div class="col-lg-10">
-                       
                             <div class="attendees-body">
                    
                               <div class="row">
                                 <div class="col-lg-3">
+                                  
                                   <div class="form-group">
                                     <div class="invalid-feedback"style="">
                                       Please add at least one attendee to proceed. 
@@ -471,6 +474,17 @@
                                     <input type="text" class="form-control " placeholder="Last Name"/>
                                   </div>
                                 </div>
+
+                                <div class="col-lg-3">
+                                  <div class="form-group">
+                                    <div class="invalid-feedback" >
+                                      Please add Last name to proceed.
+                                    </div>
+                                    <label for="">Unique Session Link</label>
+                                    <a href="#!" class="session-link">Certiswebex.com/GH635F5</a>
+                                  </div>
+                                </div>
+
                               </div>
                               <div class="add-fields">
                                 <!-- template filed added over here -->
@@ -491,9 +505,10 @@
                         
                      
 
-                        <div class="attendees-footer">
-                            <a href="#!" class="btn btn-custom btn-blue btn-md blue-shadow" data-toggle="modal" data-target="#modal-draft">Save as Draft</a>
-                            <a href="#!" class="btn btn-custom btn-orange btn-md orange-shadow" data-toggle="modal" data-target="#modal-shedule-successsfully">Create Session</a>
+                        <div class="attendees-footer upcoming-attendees-footer">
+                            <a href="#!" class="btn btn-custom btn-red red-shadow btn-md" data-toggle="modal" data-target="#modal-deleted">Delete Session</a>
+                            <a href="#!" class="btn btn-custom btn-blue blue-shadow btn-md" data-toggle="modal" data-target="#modal-draft">Save as Draft</a>
+                            <a href="#!" class="btn btn-custom btn-orange orange-shadow btn-md" data-toggle="modal" data-target="#modal-changes">Update Session</a>
                         </div>
                     </div>
                 </div>
@@ -501,7 +516,7 @@
             </div>
           </div>
         </div><!--  end of main  -->
-
+        
     </div>
   </main>
 
@@ -538,6 +553,7 @@
       </div>
       <div class="modal-body pt-0">
         <div class="session-saved">
+
           <h4>Draft Saved Successfully</h4>
         </div>
       </div>
@@ -548,7 +564,78 @@
   </div>
 </div>
 
+<!-- deleted session -->
 
+<div class="modal fade modal-custom" tabindex="-1" id="modal-deleted">
+  <div class="modal-dialog modal-dialog-centered modal-657">
+    <div class="modal-content modal-shadow">
+      <div class="modal-header pt-4 close-none">
+        <h5 class="modal-title text-center">Deleting Session</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><img src="assets/images/participant/cross-sign.png" alt=""></span>
+        </button>
+      </div>
+      <div class="modal-body ">
+        <div class="content-session-deleted">
+          <h4>Are you sure you’d like to delete this session:</h4>
+
+          <h5>Weekly Sprint Session</h5>
+        </div>
+      </div>
+      
+      <div class="modal-footer modal-footer-delete">
+        <button type="button" class="btn btn-custom btn-blue blue-shadow" data-dismiss="modal">Go Back</button>
+        <button type="button" class="btn btn-custom btn-red red-shadow" data-toggle="modal" data-target="#modal-deleted-success">Delete Session</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- modla delerted usuucessfully -->
+<div class="modal fade modal-custom" tabindex="-1" id="modal-deleted-success">
+  <div class="modal-dialog modal-dialog-centered modal-546">
+    <div class="modal-content modal-shadow">
+      <div class="modal-header white-header pt-4 close-none">
+        <h5 class="modal-title text-center"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><img src="assets/images/participant/cross-sign.png" alt=""></span>
+        </button>
+      </div>
+      <div class="modal-body pt-0">
+        <div class="session-deleted">
+          <h4>Session Deleted Successfully</h4>
+        </div>
+      </div>
+      <div class="modal-footer pb-30">
+        <button type="button" class="btn btn-custom btn-orange orange-shadow" data-dismiss="modal">Ok</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal save chnages -->
+
+<div class="modal fade modal-custom" tabindex="-1" id="modal-changes">
+  <div class="modal-dialog modal-dialog-centered modal-546">
+    <div class="modal-content modal-shadow">
+      <div class="modal-header white-header pt-4 close-none">
+        <h5 class="modal-title text-center"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><img src="assets/images/participant/cross-sign.png" alt=""></span>
+        </button>
+      </div>
+      <div class="modal-body pt-0">
+        <div class="session-changes">
+          <h4>Saved changes successfully!</h4>
+        </div>
+      </div>
+      <div class="modal-footer pb-30">
+        <button type="button" class="btn btn-custom btn-orange orange-shadow" data-dismiss="modal">Ok</button>
+      </div>
+    </div>  
+  </div>
+</div>
 
 <div class="modal fade modal-custom" tabindex="-1" id="modal-invite">
   <div class="modal-dialog modal-dialog-centered modal-546">
@@ -742,11 +829,37 @@ $('#modal-draft').on('hidden.bs.modal', function (event) {
   $('body').toggleClass("backdrop-none");
 })
 
+$('#modal-deleted').on('show.bs.modal', function (event) {
+  $('body').toggleClass("backdrop-none");
+})
+
+$('#modal-deleted').on('hidden.bs.modal', function (event) {
+  $('body').toggleClass("backdrop-none");
+})
+
+$('#modal-deleted-success').on('show.bs.modal', function (event) {
+  $('body').toggleClass("backdrop-none");
+  $('#modal-deleted').modal('hide');
+ 
+  
+})
+$('#modal-deleted-success').on('hidden.bs.modal', function (event) {
+  $('body').toggleClass("backdrop-none");
+})
+
 $('#modal-shedule-successsfully').on('show.bs.modal', function (event) {
   $('body').toggleClass("backdrop-none");
 })
 
 $('#modal-shedule-successsfully').on('hidden.bs.modal', function (event) {
+  $('body').toggleClass("backdrop-none");
+})
+
+$('#modal-changes').on('show.bs.modal', function (event) {
+  $('body').toggleClass("backdrop-none");
+})
+
+$('#modal-changes').on('hidden.bs.modal', function (event) {
   $('body').toggleClass("backdrop-none");
 })
 
@@ -813,7 +926,7 @@ $(document).ready(function () {
 
     date = flatpickr(".date",{
         enableTime: false,
-        dateFormat: "F, d Y ",
+        dateFormat: " d  F  Y ",
         defaultDate: "today",
     });
    

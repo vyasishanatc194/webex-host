@@ -285,6 +285,14 @@
   max-width: 727px !important;
 }
 
+.modal-custom .max-657 {
+  max-width: 657px !important;
+}
+
+.modal-custom .max-1097 {
+  max-width: 1097px !important;
+}
+
 .modal-custom .modal-dialog {
   max-width: 657px;
 }
@@ -469,7 +477,7 @@
 .modal-custom .modal-dialog .modal-content .modal-footer-partcipent {
   position: relative;
   padding-bottom: 31px !important;
-  padding: 20px 30px;
+  padding: 20px 20px;
 }
 
 .modal-custom .modal-dialog .modal-content .modal-footer-partcipent .btn {
@@ -484,6 +492,18 @@
 .modal-custom .modal-dialog .modal-content .modal-footer-partcipent .btn::before {
   height: 6px;
   bottom: -3px;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-footer-partcipent .btn-mute {
+  max-width: 145px;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-footer-partcipent .btn-add {
+  max-width: 165px;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-footer-partcipent .btn-video {
+  max-width: 179px;
 }
 
 .modal-custom .modal-dialog .modal-content .modal-footer-partcipent::after {
@@ -542,6 +562,10 @@
 .modal-custom .modal-dialog .modal-content .modal-footer-share .check-share .custom-checkbox.custom-checkbox-2 .custom-control-label::after {
   height: 26px;
   width: 26px;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-footer-delete {
+  padding-bottom: 23px;
 }
 
 .modal-custom .modal-dialog .modal-content .modal-body {
@@ -1739,6 +1763,101 @@
   margin-bottom: 24px;
 }
 
+.modal-custom .modal-dialog .modal-content .modal-body .Session-shedule h3 {
+  font-size: 28px;
+  line-height: 34px;
+  color: #083257;
+  font-weight: 600;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .Session-shedule h5 {
+  font-size: 18px;
+  text-align: center;
+  line-height: 34px;
+  color: #083257;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .Session-shedule .tabel-session-schedule {
+  margin: 60px 0 30px 0;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .Session-shedule .tabel-session-schedule .table thead tr th {
+  color: #000000;
+  font-size: 20px;
+  line-height: 24px;
+  white-space: nowrap;
+  border-top: 0;
+  border-color: #EFF2F6;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .Session-shedule .tabel-session-schedule .table tbody tr td {
+  color: #000000;
+  font-size: 18px;
+  line-height: 24px;
+  white-space: nowrap;
+  border-top: 0;
+  width: 25%;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .Session-shedule .tabel-session-schedule .tbl-link {
+  color: #F98D29;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .session-deleted h4 {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #00142F;
+  max-width: 396px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .session-changes h4 {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #00142F;
+  max-width: 396px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .content-session-deleted h4 {
+  font-size: 22px;
+  color: #00142F;
+  line-height: 27px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .content-session-deleted h5 {
+  font-size: 22px;
+  color: #F98D29;
+  line-height: 27px;
+  margin-bottom: 0px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .session-saved h4 {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #00142F;
+  max-width: 396px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
 .modal-custom .modal-dialog .modal-content .join-body {
   padding: 23px 40px;
 }
@@ -1900,8 +2019,12 @@
 }
 
 .btn-disabled {
-  opacity: 0.60;
+  opacity: 0.30;
   pointer-events: none;
+}
+
+.btn-disabled::before {
+  display: none;
 }
 
 @media (max-width: 767px) {
@@ -2123,6 +2246,49 @@
   .modal-custom .modal-dialog .modal-content .modal-body .audio-content-2 .form-group {
     margin-bottom: 30px;
   }
+  .modal-custom .modal-dialog .modal-content .modal-body .Session-shedule h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .modal-custom .modal-dialog .modal-content .modal-body .Session-shedule h5 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .modal-custom .modal-dialog .modal-content .modal-body .Session-shedule .tabel-session-schedule {
+    margin: 60px 0 30px 0;
+  }
+  .modal-custom .modal-dialog .modal-content .modal-body .Session-shedule .tabel-session-schedule .table thead tr th {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .modal-custom .modal-dialog .modal-content .modal-body .Session-shedule .tabel-session-schedule .table tbody tr td {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .modal-custom .modal-dialog .modal-content .modal-body .session-deleted h4 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .modal-custom .modal-dialog .modal-content .modal-body .session-deleted h5 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .modal-custom .modal-dialog .modal-content .modal-body .content-session-deleted h4 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .modal-custom .modal-dialog .modal-content .modal-body .content-session-deleted h5 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .modal-custom .modal-dialog .modal-content .modal-body .session-saved h4 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .modal-custom .modal-dialog .modal-content .modal-body .session-changes h4 {
+    font-size: 18px;
+    line-height: 24px;
+  }
   .modal-custom .modal-dialog .modal-content .modal-footer .btn {
     margin: 0 6px;
   }
@@ -2175,6 +2341,13 @@
   }
   .setting-content .tab-inner .audio-setting .volume ul li {
     margin-right: 3px !important;
+  }
+}
+
+@media screen and (max-device-width: 767px) and (orientation: landscape) {
+  .modal-custom .modal-dialog .modal-content .modal-footer-partcipent .btn-sm.btn-transparent {
+    min-width: unset;
+    margin-bottom: 10px;
   }
 }
 

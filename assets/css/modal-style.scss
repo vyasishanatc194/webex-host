@@ -274,6 +274,14 @@ $proxima: 'Proxima Nova Rg';
         max-width: 727px !important;
     }
 
+    .max-657 {
+        max-width: 657px !important;
+    }
+
+    .max-1097 {
+        max-width: 1097px !important;
+    }
+
     .modal-dialog {
         max-width: 657px;
 
@@ -444,6 +452,18 @@ $proxima: 'Proxima Nova Rg';
                     }
                 }
 
+                .btn-mute {
+                    max-width: 145px;
+                }
+
+                .btn-add {
+                    max-width: 165px;
+                }
+
+                .btn-video {
+                    max-width: 179px;
+                }
+
                 &::after {
                     width: calc(100% - 40px);
                     margin: 0 auto;
@@ -457,7 +477,7 @@ $proxima: 'Proxima Nova Rg';
                     display: block;
                     
                 }
-                padding: 20px 30px;
+                padding: 20px 20px;
                 
             }
 
@@ -502,6 +522,10 @@ $proxima: 'Proxima Nova Rg';
                         }
                     }
                 }
+            }
+
+            .modal-footer-delete {
+                padding-bottom: 23px;
             }
 
             .modal-body {
@@ -1553,6 +1577,111 @@ $proxima: 'Proxima Nova Rg';
                         margin-bottom: 24px;
                     }
                 }
+
+                .Session-shedule {
+                    h3 {
+                        font-size: 28px;
+                        line-height: 34px;
+                        color: #083257;
+                        font-weight: 600;
+                        margin-bottom: 12px;
+                        text-align: center;
+                    }
+
+                    h5 {
+                        font-size: 18px;
+                        text-align: center;
+                        line-height: 34px;
+                        color: #083257;
+                        font-weight: 600;
+                        margin-bottom: 12px;
+                    }
+
+                    .tabel-session-schedule {
+                        margin: 60px 0 30px 0;
+
+                        .table thead tr th {
+                            color: #000000;
+                            font-size: 20px;
+                            line-height: 24px;
+                            white-space: nowrap;
+                            border-top: 0;
+                            border-color: #EFF2F6;
+                        }
+
+                        .table tbody tr td {
+                            color: #000000;
+                            font-size: 18px;
+                            line-height: 24px;
+                            white-space: nowrap;
+                            border-top: 0;
+                            width: 25%;
+                        }
+
+                        .tbl-link {
+                            color: #F98D29;
+                        }
+                    }
+                }
+
+                .session-deleted {
+                    h4 {
+                        font-size: 25px;
+                        line-height: 30px;
+                        font-weight: 600;
+                        color: #00142F;
+                        max-width: 396px;
+                        margin: 0 auto;
+                        text-align: center;
+                        margin-bottom: 40px;
+                    }
+                }
+
+                .session-changes {
+                    h4 {
+                        font-size: 25px;
+                        line-height: 30px;
+                        font-weight: 600;
+                        color: #00142F;
+                        max-width: 396px;
+                        margin: 0 auto;
+                        text-align: center;
+                        margin-bottom: 40px;
+                    }
+                }
+
+                .content-session-deleted {
+                    h4 {
+                        font-size: 22px;
+                        color: #00142F;
+                        line-height: 27px;
+                        margin-bottom: 20px;
+                        font-weight: 600;
+                        text-align: center;
+                    }
+
+                    h5 {
+                        font-size: 22px;
+                        color: #F98D29;
+                        line-height: 27px;
+                        margin-bottom: 0px;
+                        font-weight: 600;
+                        text-align: center;
+                    }
+                }
+
+                .session-saved {
+                    h4 {
+                        font-size: 25px;
+                        line-height: 30px;
+                        font-weight: 600;
+                        color: #00142F;
+                        max-width: 396px;
+                        margin: 0 auto;
+                        text-align: center;
+                        margin-bottom: 40px;
+                    }
+                }
             }
 
             .join-body {
@@ -1722,8 +1851,12 @@ $proxima: 'Proxima Nova Rg';
  }
 
  .btn-disabled {
-     opacity: 0.60;
+     opacity: 0.30;
      pointer-events: none;
+
+     &::before {
+         display: none;
+     }
  }
 
 @media (max-width: 767px) {
@@ -1738,6 +1871,7 @@ $proxima: 'Proxima Nova Rg';
         .header-partciapnt {
             padding-top: 16px !important;
         }
+
         .modal-header  {
             h5 {
                 font-size: 20px;
@@ -2051,6 +2185,73 @@ $proxima: 'Proxima Nova Rg';
                     margin-bottom: 30px;
                 }
             }
+
+            .Session-shedule {
+                h3 {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+
+                h5 {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+
+                .tabel-session-schedule {
+                    margin: 60px 0 30px 0;
+
+                    .table thead tr th {
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+
+                    .table tbody tr td {
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
+
+                }
+            }
+
+            .session-deleted {
+                h4 {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+
+                h5 {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+
+        
+
+            .content-session-deleted {
+                h4 {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+
+                h5 {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+
+            .session-saved {
+                h4 {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+
+            .session-changes {
+                h4 {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
         }
 
         .modal-footer {
@@ -2058,6 +2259,7 @@ $proxima: 'Proxima Nova Rg';
                 margin: 0 6px;
             }
         }
+        
         .modal-footer-partcipent {
             flex-wrap: wrap;
             padding: 12px 20px;
@@ -2113,6 +2315,12 @@ $proxima: 'Proxima Nova Rg';
         }
 }
 
+@media screen and (max-device-width: 767px) and (orientation: landscape) {
+    .modal-custom .modal-dialog .modal-content .modal-footer-partcipent .btn-sm.btn-transparent {
+        min-width: unset;
+        margin-bottom: 10px;
+    }
+}
 @media (min-width: 768px) and (max-width: 1024px) {
 
     .modal-custom {
