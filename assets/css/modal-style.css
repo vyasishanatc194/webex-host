@@ -1916,6 +1916,10 @@
   pointer-events: none;
 }
 
+.btn-disabled::before {
+  display: none;
+}
+
 @media (max-width: 767px) {
   .btn.btn-custom {
     height: 50px;
