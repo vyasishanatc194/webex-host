@@ -776,6 +776,26 @@
       .table-card-bx-tp {
         padding: 9px 20px 9px 20px;
       }
+
+      .table-card-bx-body {
+        .custom-table {
+          th,
+          td {
+            &:first-child {
+              padding-left: 20px;
+            }
+
+            &:last-child {
+              padding-left: 20px;
+            }
+          }
+
+          .width-86 {
+            width: 60px;
+            min-width: 60px;
+          }
+        }
+      }
     }
   }
 }
