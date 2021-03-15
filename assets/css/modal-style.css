@@ -285,6 +285,10 @@
   max-width: 727px !important;
 }
 
+.modal-custom .max-657 {
+  max-width: 657px !important;
+}
+
 .modal-custom .max-1097 {
   max-width: 1097px !important;
 }
@@ -558,6 +562,10 @@
 .modal-custom .modal-dialog .modal-content .modal-footer-share .check-share .custom-checkbox.custom-checkbox-2 .custom-control-label::after {
   height: 26px;
   width: 26px;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-footer-delete {
+  padding-bottom: 23px;
 }
 
 .modal-custom .modal-dialog .modal-content .modal-body {
@@ -1799,6 +1807,57 @@
   color: #F98D29;
 }
 
+.modal-custom .modal-dialog .modal-content .modal-body .session-deleted h4 {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #00142F;
+  max-width: 396px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .session-changes h4 {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #00142F;
+  max-width: 396px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .content-session-deleted h4 {
+  font-size: 22px;
+  color: #00142F;
+  line-height: 27px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .content-session-deleted h5 {
+  font-size: 22px;
+  color: #F98D29;
+  line-height: 27px;
+  margin-bottom: 0px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .session-saved h4 {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #00142F;
+  max-width: 396px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
 .modal-custom .modal-dialog .modal-content .join-body {
   padding: 23px 40px;
 }
@@ -2205,6 +2264,30 @@
   .modal-custom .modal-dialog .modal-content .modal-body .Session-shedule .tabel-session-schedule .table tbody tr td {
     font-size: 14px;
     line-height: 16px;
+  }
+  .modal-custom .modal-dialog .modal-content .modal-body .session-deleted h4 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .modal-custom .modal-dialog .modal-content .modal-body .session-deleted h5 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .modal-custom .modal-dialog .modal-content .modal-body .content-session-deleted h4 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .modal-custom .modal-dialog .modal-content .modal-body .content-session-deleted h5 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .modal-custom .modal-dialog .modal-content .modal-body .session-saved h4 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .modal-custom .modal-dialog .modal-content .modal-body .session-changes h4 {
+    font-size: 18px;
+    line-height: 24px;
   }
   .modal-custom .modal-dialog .modal-content .modal-footer .btn {
     margin: 0 6px;

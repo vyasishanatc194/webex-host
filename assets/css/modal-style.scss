@@ -274,6 +274,10 @@ $proxima: 'Proxima Nova Rg';
         max-width: 727px !important;
     }
 
+    .max-657 {
+        max-width: 657px !important;
+    }
+
     .max-1097 {
         max-width: 1097px !important;
     }
@@ -518,6 +522,10 @@ $proxima: 'Proxima Nova Rg';
                         }
                     }
                 }
+            }
+
+            .modal-footer-delete {
+                padding-bottom: 23px;
             }
 
             .modal-body {
@@ -1615,6 +1623,65 @@ $proxima: 'Proxima Nova Rg';
                         }
                     }
                 }
+
+                .session-deleted {
+                    h4 {
+                        font-size: 25px;
+                        line-height: 30px;
+                        font-weight: 600;
+                        color: #00142F;
+                        max-width: 396px;
+                        margin: 0 auto;
+                        text-align: center;
+                        margin-bottom: 40px;
+                    }
+                }
+
+                .session-changes {
+                    h4 {
+                        font-size: 25px;
+                        line-height: 30px;
+                        font-weight: 600;
+                        color: #00142F;
+                        max-width: 396px;
+                        margin: 0 auto;
+                        text-align: center;
+                        margin-bottom: 40px;
+                    }
+                }
+
+                .content-session-deleted {
+                    h4 {
+                        font-size: 22px;
+                        color: #00142F;
+                        line-height: 27px;
+                        margin-bottom: 20px;
+                        font-weight: 600;
+                        text-align: center;
+                    }
+
+                    h5 {
+                        font-size: 22px;
+                        color: #F98D29;
+                        line-height: 27px;
+                        margin-bottom: 0px;
+                        font-weight: 600;
+                        text-align: center;
+                    }
+                }
+
+                .session-saved {
+                    h4 {
+                        font-size: 25px;
+                        line-height: 30px;
+                        font-weight: 600;
+                        color: #00142F;
+                        max-width: 396px;
+                        margin: 0 auto;
+                        text-align: center;
+                        margin-bottom: 40px;
+                    }
+                }
             }
 
             .join-body {
@@ -2145,6 +2212,46 @@ $proxima: 'Proxima Nova Rg';
 
                 }
             }
+
+            .session-deleted {
+                h4 {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+
+                h5 {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+
+        
+
+            .content-session-deleted {
+                h4 {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+
+                h5 {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+
+            .session-saved {
+                h4 {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+
+            .session-changes {
+                h4 {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
         }
 
         .modal-footer {
@@ -2152,6 +2259,7 @@ $proxima: 'Proxima Nova Rg';
                 margin: 0 6px;
             }
         }
+        
         .modal-footer-partcipent {
             flex-wrap: wrap;
             padding: 12px 20px;

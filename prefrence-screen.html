@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="description" content="" />
+<meta name="author" content="" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>Preferences | Certis</title>
+<meta content='initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width' name='viewport' />
+<meta name="theme-color" content="#002855">
+<meta name="msapplication-navbutton-color" content="#002855">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#002855">
+<link href='assets/images/favicon.png' rel='shortcut icon'>
+<link href="assets/css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet" />
+<link href="assets/css/feather.min.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/fonts/lato/lato-font.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/owl.carousel.min.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/left-sidebar.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/home-style.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/shedule-session.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/flatpickr.min.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/select2.min.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/modal-style.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/typehead.css" media="all" rel="stylesheet" type="text/css" />
+<script src="assets/js/modernizr.js"></script>
+
+</head>
+
+<body>
+
+<div id="wrapper" class="wrapper dashboard-wrapper">
+
+  <!-- left-side -->
+  <div class="left-side-nav-main-root">
+    <div class="left-side-nav">
+      <div class="left-side-nav-inner">
+
+          <div class="nav-logo-section">
+            <a href="#" class="dash-logo" >
+              <img src="assets/images/logo.png" class="logo" alt="logo" /> 
+            </a>
+
+            <div class="mobile-menu-div desktop-hidden">
+              <button class="navbar-toggler mobile-menu-button" id="menu-open" type="button">
+                <span class="navbar-toggler-icon"> <i class="fe fe-menu"></i> </span>
+              </button>
+            </div>
+          </div>
+
+          <div class="left-side-menu" id="dashboard-menu-clone">
+            <div class="left-side-inner">
+
+              <!--  mobile  -->
+              <a href="javascript:void(0)" class="closebtn desktop-hidden" id="menu-closed"> <i class="fe fe-x"></i> </a>
+              <div class="menu-cloned-one desktop-hidden" id="menu-cloned-one">
+                <div class="nav-dashboard-right">
+                  <div class="user-drop-down">
+                    <div class="dropdown drop-left dropdown-custom-top">
+                      <a class="btn btn-default dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="user-profile">
+                          <div class="user-img">
+                            <img src="assets/images/profile-pic.png" class="user-top-image" alt="user image" />
+                            <!-- <div class="no-image-available"><span class="text">HS</span></div> -->
+                          </div>
+                          <div class="user-info">
+                            <h3>Heidi Shontell</h3>
+                          </div>
+                        </div>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                        <ul>
+                          <li><a class="dropdown-item" href="#"> My Profile  </a> </li>
+                          <li><a class="dropdown-item" href="login.html"> Sign Out  </a> </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+              <!--  End of mobile  -->
+
+              <div class="side-nav-item accordion" id="menu-collapse">
+                <ul class="main-listing">
+                  
+                  <li class="nav-item active">
+                    <a class="nav-link nav-normal" href="#">
+                      <span class="icon-span"> <span class="bg-custom-icon home-icon"></span> </span>
+                      <span class="text-collapse-menu">Home</span>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link nav-normal" href="#">
+                      <span class="icon-span"> <span class="bg-custom-icon calendar-icon"></span> </span>
+                      <span class="text-collapse-menu">Upcoming</span>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link nav-normal" href="#">
+                      <span class="icon-span"> <span class="bg-custom-icon record-circular-button-icon"></span> </span>
+                      <span class="text-collapse-menu">Recordings</span>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link nav-normal" href="#">
+                      <span class="icon-span"> <span class="bg-custom-icon settings-icon"></span> </span>
+                      <span class="text-collapse-menu">Preferences</span>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link nav-normal" href="#">
+                      <span class="icon-span"> <span class="bg-custom-icon contact-book-icon"></span> </span>
+                      <span class="text-collapse-menu">Contacts</span>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link nav-normal" href="#">
+                      <span class="icon-span"> <span class="bg-custom-icon question-icon"></span> </span>
+                      <span class="text-collapse-menu">Support</span>
+                    </a>
+                  </li>
+
+                </ul>
+              </div>
+                
+            </div>
+          </div>
+          
+          <!--  mobile  -->
+          <div id="cd-shadow-layer" class="menu-closed backdrop-menu-layer"></div>
+          <!--  End of mobile  -->
+
+      </div>
+    </div>
+  </div>
+  <!--  End of left-side  -->
+
+  <!-- Begin page content -->
+  <main role="main" class="middle-area-dashboard main-dashboard">
+    <div class="main-middle-area">
+
+        <!--  Header  -->
+        <header class="header header-dashboard">
+          <nav class="navbar navbar-light">
+            <div class="container-fluid d-block">
+                
+              <div class="row col-header-row">
+                <div class="col-lg-12 col-12">
+
+                  <div class="nav-dashboard-row">
+
+                    <div class="nav-dashboard-left">
+                      <div class="search-div">
+                        <div class="search-row">
+                          <div class="search-input-box">
+                            <input type="text" class="form-control form-search" id="form-search" placeholder="Search for meetings and recordings" />
+                          </div>
+                          <button class="search-icon-box">
+                            <span class="bg-custom-icon search-icon"></span>
+                          </button>
+                        </div>
+
+                        <div class="dropdown-menu dropdown-menu-card" id="search-dropdown">
+                          <div class="back-dropdown"></div>
+                          <div class="card-body">
+                            <div class="list-group">
+
+                              <div class="list-group-item">
+                                
+                                <div class="typeh-list-div">
+                                  <div class="typeh-list-left-div">
+                                    <div class="thumb-image"> <a href="#" class="img-link"><img src="assets/images/img-01.jpg" class="img-fluid img-responsive" alt="img" /></a> </div>
+                                  </div>
+                                  <div class="typeh-list-right-div">
+                                    <h4 class="text-h4">
+                                      <a href="#" class="link"> Reiner Team Sprint Meeting </a>
+                                    </h4>
+                                    <p>Session</p>
+                                  </div>
+                                </div>
+                                
+                              </div>
+
+                              <div class="list-group-item">
+                                <div class="typeh-list-div">
+                                  <div class="typeh-list-left-div">
+                                    <div class="thumb-image"> <img src="assets/images/img-02.jpg" class="img-fluid img-responsive" alt="img" /> </div>
+                                  </div>
+                                  <div class="typeh-list-right-div">
+                                    <h4 class="text-h4">
+                                      <a href="#" class="link"> Reiner Team Weekly Check-In </a>
+                                    </h4>
+                                    <p>Session</p>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="list-group-item">
+                                <div class="typeh-list-div">
+                                  <div class="typeh-list-left-div">
+                                    <div class="thumb-image"> <img src="assets/images/icons/custom/record-circular-button.svg" class="img-fluid img-responsive object-contain" alt="img" /> </div>
+                                  </div>
+                                  <div class="typeh-list-right-div">
+                                    <h4 class="text-h4">
+                                      <a href="#" class="link"> Recording_2021_01_26_3_30_23_PM </a>
+                                    </h4>
+                                    <p>Recording</p>
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                      </div> 
+                    
+                     
+                    </div>
+
+                    <div class="nav-dashboard-right">
+                      <div class="user-drop-down mobile-hidden">
+                        <div class="dropdown drop-left dropdown-custom-top">
+                          <a class="btn btn-default dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="user-profile">
+                              <div class="user-img">
+                                <img src="assets/images/profile-pic.png" class="user-top-image" alt="user image" />
+                                <!-- <div class="no-image-available"><span class="text">HS</span></div> -->
+                              </div>
+                              <div class="user-info">
+                                <h3>Heidi Shontell</h3>
+                              </div>
+                            </div>
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                            <ul>
+                              <li><a class="dropdown-item" href="#"> My Profile  </a> </li>
+                              <li><a class="dropdown-item" href="login.html"> Sign Out  </a> </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            
+            </div>
+          </nav>
+        </header>
+        <!-- End of header -->
+        
+        <!--  main  -->
+        <div class="main-section">
+          <div class="main-div">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-12 col-md-12">
+                  <div class="prefrences-section">
+                    <div class="prefrences-herader">
+                      <h3>Preferences</h3>
+                    </div>
+
+                    <div class="prefrences-body">
+                 
+                      <div class="prefrences-tab">
+                        <ul class="nav nav-tabs">
+                          <li><a class="active" data-toggle="tab" href="#home">General</a></li>
+                          <li><a data-toggle="tab" href="#menu1">My Personal Room</a></li>
+                          <li><a data-toggle="tab" href="#menu2">Video</a></li>
+                          <li><a data-toggle="tab" href="#menu3">Audio</a></li>
+                          <li><a data-toggle="tab" href="#menu4">Share Screen</a></li>
+                          <li><a data-toggle="tab" href="#menu5">Scheduling</a></li>
+                          <li><a data-toggle="tab" href="#menu6">Recordings</a></li>
+                        </ul>
+                      </div>
+                      
+                      <div class="prefrences-content">
+                        <div class="tab-content">
+                          <div id="home" class="tab-pane fade in active show">
+                            <div class="tab-inner">
+                              <div class="row">
+                                <div class="col-lg-12">
+                                  <form >
+                                    <div class="max-700">
+                                      <div class="form-group row no-gutters">
+                                        <label for="inputPassword" class="col-sm-4 col-form-label">Time Zone</label>
+                                        <div class="col-sm-8">
+                                          <select class="form-control select2">
+                                            <option >(UTC-07:00) Pacific Time (US & Canada)</option>
+                                            <option >(UTC-11:00) Coordinated Universal Time-11</option>
+                                            <option >(UTC-10:00) Hawaii</option>
+                                            <option >(UTC-09:00) Alaska</option>
+                                          </select>
+                                        </div>
+                                      </div>
+  
+                                      <div class="form-group row no-gutters">
+                                        <label for="inputPassword" class="col-sm-4 col-form-label">Language</label>
+                                        <div class="col-sm-8">
+                                          <select class="form-control select2">
+                                            <option >English (US)</option>
+                                            <option >Español</option>
+                                            <option >Español (Latinoamerica)</option>
+                                            <option >Euskara</option>
+                                          </select>
+                                        </div>
+                                      </div>
+  
+                                      <div class="form-group row no-gutters">
+                                        <label for="inputPassword" class="col-sm-4 col-form-label">Region</label>
+                                        <div class="col-sm-8">
+                                          <select class="form-control select2">
+                                            <option >Singapore</option>
+                                            <option >Slovakia</option>
+                                            <option >Slovenia</option>
+                                            <option >Soloman Islands</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    
+
+                                    <div class="form-group row mb-0 mt-40 no-gutters">
+                                      <div class="col-sm-12">
+                                        <div class="custom-control custom-checkbox custom-checkbox-2 black">
+                                          <input type="checkbox" class="custom-control-input" id="checkbox1" name="example1" checked="">
+                                          <label class="custom-control-label" for="checkbox1">Ask me to confirm when I choose to leave a session</label>
+                                        </div>
+
+                                      </div>
+
+                                      <div class="col-sm-12">
+                                        <div class="custom-control custom-checkbox custom-checkbox-2 black">
+                                          <input type="checkbox" class="custom-control-input" id="checkbox12" name="example1" checked="">
+                                          <label class="custom-control-label" for="checkbox12">Stop my video and audio when my display is inactive or when screen saver begins</label>
+                                        </div>
+
+                                      </div>
+    
+                                    </div>
+
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div id="menu1" class="tab-pane fade">
+                            <div class="tab-inner">
+                              <div class="row">
+                                <div class="col-lg-12">
+                                  <form >
+                                    <div class="max-955">
+
+                                      <div class="form-group row no-gutters">
+                                        <label for="inputPassword" class="col-sm-3 col-form-label">Personal Room Name</label>
+                                        <div class="col-sm-9">
+                                         <input type="text" class="form-control" >
+                                         <div class="valid-feedback text-black" style="display: block;">Your Personal Room name must be between 1 and 28 characters</div>
+                                        </div>
+                                      </div>
+
+                                      <div class="form-group row no-gutters">
+                                        <label for="inputPassword" class="col-sm-3 col-form-label">Personal Room Link</label>
+                                        <div class="col-sm-9">
+                                          <div class="room-link">
+                                            <a href="#!" class="">Https://certisebc.webex.com/meet/</a>
+                                            <input type="text" class="form-control" placeholder="YourID">
+
+                                          </div>
+                                        
+                                         <div class="valid-feedback">Your Personal Room name must be between 1 and 28 characters</div>
+                                        </div>
+                                      </div>
+
+                                      <div class="form-group row no-gutters">
+                                        <label for="inputPassword" class="col-sm-3 col-form-label">Host PIN:</label>
+                                        <div class="col-sm-9">
+                                         <input type="text" class="form-control" >
+                                         <div class="valid-feedback text-black" style="display: block;">Your host PIN must be exactly 4 digits. It can’t contain sequential digits, such as 1234, or repeat a digit 4 times, such
+                                          as 1111.</div>
+                                        </div>
+                                      </div>
+
+                                      <div class="form-group row no-gutters">
+                                        <label for="inputPassword" class="col-sm-3 col-form-label">Automatic Lock</label>
+                                        <div class="col-sm-9">
+                                          <div class="custom-control custom-checkbox custom-checkbox-2 black">
+                                            <input type="checkbox" class="custom-control-input" id="checkbox1" name="example1" checked="">
+                                            <label class="custom-control-label" for="checkbox1">Automatically lock my session</label>
+                                          </div>
+                                     
+                                        </div>
+                                      </div>
+
+                                      <div class="form-group row no-gutters">
+                                        <label for="inputPassword" class="col-sm-3 col-form-label">Notifications</label>
+                                        <div class="col-sm-9">
+                                          <div class="custom-control custom-checkbox custom-checkbox-2 black">
+                                            <input type="checkbox" class="custom-control-input" id="checkbox1" name="example1" checked="">
+                                            <label class="custom-control-label" for="checkbox1">Notify me by email when someone enters my Personal Room lobby while I am away</label>
+                                          </div>
+                                     
+                                        </div>
+                                      </div>
+
+                                      <div class="form-group row no-gutters">
+                                        <label for="inputPassword" class="col-sm-3 col-form-label">Cohosts</label>
+                                        <div class="col-sm-9">
+                                          <div class="custom-control custom-checkbox custom-checkbox-2 black">
+                                            <input type="checkbox" class="custom-control-input" id="checkbox1" name="example1" checked="">
+                                            <label class="custom-control-label" for="checkbox1">Allow cohosts for my Personal Room sessions</label>
+                                          </div>
+                                     
+                                          <div class="pl-5">
+                                            <div class="custom-control custom-checkbox custom-checkbox-2 black">
+                                              <input type="checkbox" class="custom-control-input" id="checkbox1" name="example1" checked="">
+                                              <label class="custom-control-label" for="checkbox1">Automatically make the first person with a host account on this site or the first
+                                                Person joining from an authenticated Certis video device in this organization
+                                                the cohost of my Personal Room sessions.</label>
+                                            </div>
+
+                                            <div class="custom-control custom-checkbox custom-checkbox-2 black">
+                                              <input type="checkbox" class="custom-control-input" id="checkbox1" name="example1" checked="">
+                                              <label class="custom-control-label" for="checkbox1">Let me choose cohosts for my Personal Room sessions</label>
+                                              <input type="text" class="form-control" placeholder="Separate email addresses with a comma or semicolon">
+                                            </div>
+
+                                          </div>
+
+                                        </div>
+
+                                       
+                                      </div>
+
+
+                                    </div>
+
+                                    
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div id="menu2" class="tab-pane fade">
+                            <h3>Menu 2</h3>
+                            <p>Some content in menu 2.</p>
+                          </div>
+                          <div id="menu3" class="tab-pane fade">
+                            <h3>Menu 2</h3>
+                            <p>Some content in menu 2.</p>
+                          </div>
+                          <div id="menu4" class="tab-pane fade">
+                            <h3>Menu 2</h3>
+                            <p>Some content in menu 2.</p>
+                          </div>
+                          <div id="menu5" class="tab-pane fade">
+                            <h3>Menu 2</h3>
+                            <p>Some content in menu 2.</p>
+                          </div>
+                          <div id="menu6" class="tab-pane fade">
+                            <h3>Menu 2</h3>
+                            <p>Some content in menu 2.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="prefrences-footer">
+                      <div class="prefrence-btns">
+                        <a href="#!" class="btn btn-custom btn-orange orange-shadow" data-toggle="modal" data-target="#modal-changes">Save Changes</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+            
+           
+              </div>        
+            </div>
+          </div>
+        </div><!--  end of main  -->
+        
+    </div>
+  </main>
+
+
+</div><!-- end of wrapper -->
+
+<!-- modal save chnages -->
+
+<div class="modal fade modal-custom" tabindex="-1" id="modal-changes">
+  <div class="modal-dialog modal-dialog-centered modal-546">
+    <div class="modal-content modal-shadow">
+      <div class="modal-header white-header pt-4 close-none">
+        <h5 class="modal-title text-center"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><img src="assets/images/participant/cross-sign.png" alt=""></span>
+        </button>
+      </div>
+      <div class="modal-body pt-0">
+        <div class="session-changes">
+          <h4>Saved changes successfully!</h4>
+        </div>
+      </div>
+      <div class="modal-footer pb-30">
+        <button type="button" class="btn btn-custom btn-orange orange-shadow" data-dismiss="modal">Ok</button>
+      </div>
+    </div>  
+  </div>
+</div>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/search-dropdown.js"></script>
+<script src="assets/js/flatpickr.min.js"></script>
+<script src="assets/js/custom.js"></script>
+<script src="assets/js/bootstrap-typeahead.js"></script>
+<script src="assets/js/select2.full.js"></script>
+
+<script>
+
+
+
+$('#modal-changes').on('show.bs.modal', function (event) {
+  $('body').toggleClass("backdrop-none");
+})
+
+$('#modal-changes').on('hidden.bs.modal', function (event) {
+  $('body').toggleClass("backdrop-none");
+})
+
+
+
+
+$(document).ready(function () {
+    var readURL = function (input) {
+      if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+          $('.profile-pic').attr('src', e.target.result);
+        }
+
+        reader.readAsDataURL(input.files[0]);
+      }
+    }
+
+    $(".file-upload").on('change', function () {
+      readURL(this);
+    });
+
+    $(".upload-button").on('click', function () {
+      $(".file-upload").click();
+    });
+
+    $('.select2').select2({
+        minimumResultsForSearch: -1,
+        width: 100,        
+      }
+    );
+
+   
+
+    // date
+    
+    let date;
+
+    date = flatpickr(".date",{
+        enableTime: false,
+        dateFormat: " d  F  Y ",
+        defaultDate: "today",
+    });
+   
+
+    $(".btn-picker").click(function () {
+      date.toggle();
+    });
+
+      // date end
+
+   
+
+  });
+
+
+
+</script>
+
+</body>
+</html>
