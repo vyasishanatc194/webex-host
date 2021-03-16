@@ -1206,7 +1206,7 @@ hr.line-2 {
   color: #000;
   text-align: center;
   font-weight: 500;
-  max-width: 140px;
+  max-width: 170px;
   margin: 0 auto;
 }
 
@@ -1239,9 +1239,9 @@ hr.line-2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
