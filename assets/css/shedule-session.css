@@ -891,6 +891,7 @@ hr.line-2 {
 
 .prefrences-section .prefrences-body .prefrences-content .personal-tab .custom-checkbox.custom-checkbox-2.custom-checkbox-2.black .custom-control-label {
   font-weight: 500;
+  line-height: 20px;
 }
 
 .prefrences-section .prefrences-body .prefrences-content .personal-tab .checkbox-sm {
@@ -923,6 +924,7 @@ hr.line-2 {
   margin-left: 10px;
   width: 100%;
   max-width: 400px;
+  margin-top: -10px;
 }
 
 .prefrences-section .prefrences-body .prefrences-content .personal-tab .personal-start span.session-text {

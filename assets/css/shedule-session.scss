@@ -818,6 +818,7 @@ hr.line-2 {
             .personal-tab {
                 .custom-checkbox.custom-checkbox-2.custom-checkbox-2.black .custom-control-label {
                     font-weight: 500;
+                    line-height: 20px;
                 }
 
                 .checkbox-sm {
@@ -834,6 +835,7 @@ hr.line-2 {
                     align-content: center;
                 }
 
+                
                 .personal-start {
                     display: inline-flex;
                     align-items: center;
@@ -841,6 +843,7 @@ hr.line-2 {
                     margin-left: 10px;
                     width: 100%;
                     max-width: 400px;
+                    margin-top: -10px;
 
                     span.session-text {
                         color: #000000;
@@ -1292,10 +1295,10 @@ hr.line-2 {
                 line-height: 30px;
             }
         }
+
         .prefrences-body {
             .prefrences-tab {
                 ul {
-              
                     li {
                         a {
                             margin-right: 10px;
