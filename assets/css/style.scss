@@ -24,6 +24,10 @@ body {
   display: none;
 }
 
+.overflow-xy-hidden {
+  overflow: hidden;
+}
+
 .position-fixed {
   position: unset !important;
   overflow: hidden;
@@ -2000,6 +2004,14 @@ body {
       justify-content: center;
       flex-wrap: wrap;
       width: 100%;
+    }
+
+    &.rec-gmc-div {
+      padding: 49px 10px 14px 10px;
+
+      .general-message-card-inner {
+        min-height: 85px;
+      }
     }
   }
 }
