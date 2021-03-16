@@ -963,8 +963,9 @@
 
 .in-chat-mp-card-div .chat-box .card-footer .card-footer-row .card-form .btn.btn-primary .send-button-icon {
   background-position: center;
-  width: 27px;
-  height: 27px;
+  -webkit-transform: rotate(-29deg);
+          transform: rotate(-29deg);
+  margin: 0 0 6px 0;
 }
 
 .in-chat-mp-card-div .chat-box .card-footer .top-typying-div .top-typying-row-div {
