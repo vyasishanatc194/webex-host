@@ -595,7 +595,7 @@ hr.line-2 {
         color: #000000 !important;
         font-size: 14px;
         line-height: 17px;
-        font-family: 500;
+        font-weight: 500;
         margin-top: 5px;
     }
 
@@ -633,6 +633,7 @@ hr.line-2 {
                         justify-content: center;
                         margin-right: 70px;
                         border-bottom: 3px solid #fff;
+                        white-space: nowrap;
                         &.active {
                             border-bottom: 3px solid #F98D29;
                         }
@@ -655,6 +656,26 @@ hr.line-2 {
                 max-width: 955px;
                 width: 100%;
                 padding-right: 10px;
+            }
+
+            .max-1000 {
+                max-width: 1000px;
+                width: 100%;
+            }
+
+            .max-1050 {
+                max-width: 1050px;
+                width: 100%;
+            }
+
+            .max-885 {
+                max-width: 885px;
+                width: 100%;
+            }
+
+            .conatainer-1080 {
+                max-width: 1100px;
+                width: 100%;
             }
 
             .form-group {
@@ -793,6 +814,330 @@ hr.line-2 {
             .mt-40 {
                 margin-top: 40px;
             }
+
+            .personal-tab {
+                .custom-checkbox.custom-checkbox-2.custom-checkbox-2.black .custom-control-label {
+                    font-weight: 500;
+                }
+
+                .checkbox-sm {
+                    padding-left: 40px;
+                }
+
+                .minute-session {
+                    max-width: 140px;
+                    width: 100%;
+                }
+
+                .check-minute {
+                    display: flex;
+                    align-content: center;
+                }
+
+                .personal-start {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    margin-left: 10px;
+                    width: 100%;
+                    max-width: 400px;
+
+                    span.session-text {
+                        color: #000000;
+                        font-size: 18px;
+                        line-height: 22px;
+                        margin-left: 10px;
+                    }
+
+                    .select2-container {
+                        width: calc(100% - 70px) !important;
+                    }
+
+                    .select2-container--default .select2-selection--single .select2-selection__arrow {
+                        margin-right: -60px;
+                    }
+
+                    .select2-container--default .select2-selection--single {
+                        margin-right: 0;
+                    }
+                }
+            }
+
+            .video-tab {
+                .custom-checkbox.custom-checkbox-2 {
+                    max-width: unset !important;
+                    margin: unset !important;
+
+                    .custom-control-label {
+                        font-size: 18px;
+                        line-height: 29px;
+                        font-weight: 500;
+                        margin-bottom: 20px;
+                    }
+                }
+
+
+                .preview-img {
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .preview-text {
+                    margin-top: 10px;
+
+                    h3 {
+                        font-size: 18px;
+                        line-height: 22px;
+                        color: #00142F;
+                        text-align: center;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .audio-tab {
+
+                .custom-checkbox.custom-checkbox-2 {
+                    max-width: unset !important;
+                    margin: unset !important;
+
+                    .custom-control-label {
+                        font-size: 18px;
+                        line-height: 29px;
+                        font-weight: 500;
+                        margin-bottom: 20px;
+                    }
+                }
+
+                .setting-btn {
+                    .btn {
+                        height: 47px;
+                    }
+                }
+
+                .volume {
+                    ul {
+                        margin: 0;
+                        padding: 0;
+                        list-style: none;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+
+                        li {
+                            margin-right: 14px;
+
+                            a {
+                                background-color: #D6E3F5;
+                                display: block;
+                                height: 40px;
+                                width: 10px;
+                                border-radius: 10px;
+                                transition: all 0.3s;
+                                &:hover {
+                                    transition: all 0.3s;
+                                    background: transparent linear-gradient(119deg, #FC711A 0%, #F7B733 100%) 0% 0% no-repeat padding-box;
+                                }
+                                &.active {
+                                    transition: all 0.3s;
+                                    background: transparent linear-gradient(119deg, #FC711A 0%, #F7B733 100%) 0% 0% no-repeat padding-box;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .form-group {
+                    margin-bottom: 40px;
+                }
+                
+
+                .audio-group {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    position: relative;
+                    
+                    .icon-volume {
+                        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12.214' height='19' viewBox='0 0 12.214 19'%3E%3Cg id='volume-down' transform='translate(0 -15.99)'%3E%3Cpath id='Path_4' data-name='Path 4' d='M11.83,16.058a.676.676,0,0,0-.718.081l-6.6,5.28H1.357A1.359,1.359,0,0,0,0,22.777V28.2a1.358,1.358,0,0,0,1.357,1.357H4.511l6.6,5.28a.679.679,0,0,0,.719.08.677.677,0,0,0,.384-.611V16.67A.681.681,0,0,0,11.83,16.058Z' fill='%23002855'/%3E%3C/g%3E%3C/svg%3E%0A");
+                        background-size: auto;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        height: 40px;
+                        width: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+    
+                    .icon-volume-up {
+                        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20.356' height='19' viewBox='0 0 20.356 19'%3E%3Cg id='volume-up' transform='translate(0 -15.99)'%3E%3Cpath id='Path_4' data-name='Path 4' d='M11.83,16.058a.676.676,0,0,0-.718.081l-6.6,5.28H1.357A1.359,1.359,0,0,0,0,22.777V28.2a1.358,1.358,0,0,0,1.357,1.357H4.511l6.6,5.28a.679.679,0,0,0,.719.08.677.677,0,0,0,.384-.611V16.67A.681.681,0,0,0,11.83,16.058Z' fill='%23002855'/%3E%3Cpath id='Path_5' data-name='Path 5' d='M342.907,122.448a.679.679,0,0,0-.954.966,5.412,5.412,0,0,1,0,7.665.678.678,0,1,0,.954.964,6.769,6.769,0,0,0,0-9.595Z' transform='translate(-327.258 -101.756)' fill='%23002855'/%3E%3Cpath id='Path_6' data-name='Path 6' d='M388.025,77.322a.679.679,0,1,0-.957.964,8.1,8.1,0,0,1,0,11.493.679.679,0,0,0,.957.964,9.457,9.457,0,0,0,0-13.42Z' transform='translate(-370.461 -58.542)' fill='%23002855'/%3E%3C/g%3E%3C/svg%3E%0A");
+                        background-size: auto;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        height: 40px;
+                        width: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-left: 10px;
+                    }
+
+                    a {
+                        color: #002855;
+                        font-size: 20px;
+                        margin: 0 5px;
+                        span {
+                            font-size: 28px;
+                        }
+                        &:hover  {
+                            color: #00C6FF;
+                        }
+                    }
+
+                    .slider {
+                        height: 2px;
+                        background-color: #E0E3E9 !important;
+                        padding: 0;
+                        box-shadow: none;
+                        outline: 0;
+                        overflow: visible;
+                        -webkit-appearance: none;
+                        border: 0;
+                    }
+
+                    .slider::-webkit-slider-thumb {
+                        -webkit-appearance: none; /* Override default look */
+                        appearance: none;
+                        background: transparent linear-gradient(144deg, #0072FF 0%, #00C6FF 100%) 0% 0% no-repeat padding-box;
+                        border-radius: 10px;
+                        opacity: 1;
+                        width: 14px;
+                        height: 14px;
+                        cursor: pointer; /* Cursor on hover */
+                    }
+                }
+
+                
+            }
+
+            .share-tab {
+                .custom-checkbox.custom-checkbox-2 {
+                    max-width: unset !important;
+                    margin: unset !important;
+
+                    .custom-control-label {
+                        font-weight: 600;
+                        line-height: 22px;
+                        color: #000;
+                    }
+                }
+            }
+
+            .scheduling-tab {
+                .custom-checkbox.custom-checkbox-2 {
+                    max-width: unset !important;
+                    margin: unset !important;
+
+                    .custom-control-label {
+                        font-size: 18px;
+                        line-height: 22px;
+                        font-weight: 500;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+
+            .recording-tab {
+                .form-group-center {
+                    align-items: center;
+                }
+
+                .recored-text {
+                    h3 {
+                        font-size: 18px;
+                        line-height: 22px;
+                        color: #000;
+                        font-weight: 600;
+                        margin-bottom: 20px;
+                    }
+                }
+
+                .radio-session {
+                    padding: 0;
+                    
+                    .custom-control-label {
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        margin-bottom: 50px;
+                     
+
+                        &::after {
+                            display: none;
+                        }
+
+                        &::before {
+                            display: none;
+                        }
+
+                        .session-content-box {
+                            height: 132px;
+                            margin-bottom: 20px;
+                            overflow: hidden;
+                            border: 1px solid transparent;
+                            transition: all 0.3s ease-in-out;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+
+                        h3 {
+                            font-size: 18px;
+                            line-height: 22px;
+                            color: #000;
+                            text-align: center;
+                            font-weight: 500;
+                            max-width: 140px;
+                            margin: 0 auto;
+                        }
+                    }
+
+                    .custom-control-input:checked~.custom-control-label {
+                        .session-content-box {
+                            background: #F9F9F9 0% 0% no-repeat padding-box;
+                            box-shadow: 0px 3px 6px #F8962C80;
+                            border: 1px solid #F98D29;
+                            border-radius: 10px;
+                            transition: all 0.3s ease-in-out;
+                        }
+                    }
+                }
+
+                .row-session {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    margin: 0 -15px;
+                    width: 100%;
+
+                    .col-session {  
+                        margin: 0 15px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: auto;
+                        width: 245px;
+                        min-width: 245px;
+                    }
+                }
+            }
+
+           
         }
         
     }
@@ -983,6 +1328,95 @@ hr.line-2 {
                 .max-700 {
                     padding-right: 0;
                 }
+        
+                .audio-tab {
+                    .setting-btn {
+                        margin-bottom: 20px;
+                    }
+
+                    .form-group {
+                        margin-bottom: 20px;
+                    }
+
+                    .volume {
+                        ul  {
+                            li {
+                                margin-right: 7px;
+                                a {
+                                   width: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .video-tab {
+                    .custom-checkbox.custom-checkbox-2 {
+                        .custom-control-label {
+                           font-size: 16px;
+                        }
+                    }
+
+                    .preview-text {
+                        margin-bottom: 40px;
+                    }
+                }
+
+                .personal-tab {
+                    .check-minute {
+                        display: flex;
+                        flex-direction: column;
+               
+
+                        .personal-start {
+                            margin-top: 10px;
+
+                            .session-text  {
+                                font-size: 16px;
+                            }
+                        }
+
+                        
+                    }
+
+                    .room-link {
+                        display: flex;
+                       flex-direction: column;
+                       justify-content: flex-start;
+                       align-items: flex-start;
+
+                       a {
+                           margin-bottom: 10px;
+                       }
+                    }
+                }
+
+                .recording-tab {
+                    .recored-text {
+                        h3 {
+                            font-size: 16px;
+                        }
+                    }
+
+                    .row-session {
+                        margin: 0 auto;
+
+                        .col-session {
+                            margin: 0 auto; 
+
+                            .radio-session .custom-control-label {
+                                margin-bottom: 20px;
+
+                                h3 {
+                                    max-width: unset;
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+
+                    
+                }
             }
         }
 
@@ -1022,3 +1456,17 @@ hr.line-2 {
     }
    
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .prefrences-section {
+        .prefrences-body .prefrences-tab ul li a {
+            margin-right: 20px;
+            font-size: 18px;
+        }
+    }
+
+    .prefrences-content .recording-tab .radio-session .custom-control-label h3 {
+        max-width: unset !important;
+    }
+}
+
