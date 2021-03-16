@@ -793,6 +793,45 @@ hr.line-2 {
             .mt-40 {
                 margin-top: 40px;
             }
+
+            .personal-tab {
+                .custom-checkbox.custom-checkbox-2.custom-checkbox-2.black .custom-control-label {
+                    font-weight: 500;
+                }
+
+                .minute-session {
+                    max-width: 140px;
+                    width: 100%;
+                }
+
+                .personal-start {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    margin-left: 10px;
+                    width: 100%;
+                    max-width: 400px;
+
+                    span.session-text {
+                        color: #000000;
+                        font-size: 18px;
+                        line-height: 22px;
+                        margin-left: 10px;
+                    }
+
+                    .select2-container {
+                        width: calc(100% - 70px) !important;
+                    }
+
+                    .select2-container--default .select2-selection--single .select2-selection__arrow {
+                        margin-right: -60px;
+                    }
+
+                    .select2-container--default .select2-selection--single {
+                        margin-right: 0;
+                    }
+                }
+            }
         }
         
     }
