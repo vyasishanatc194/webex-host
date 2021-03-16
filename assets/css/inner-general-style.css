@@ -618,6 +618,10 @@
   padding-right: 35px;
 }
 
+.table-card-general-div .table-card-bx .table-card-bx-body .custom-table td.no-found-td {
+  vertical-align: top;
+}
+
 .table-card-general-div .table-card-bx .table-card-bx-body .custom-table thead th {
   font-size: 14px;
   line-height: 1.5;
@@ -627,6 +631,10 @@
   border-bottom: 1px solid #eff2f6;
   padding-top: 17px;
   padding-bottom: 16px;
+}
+
+.table-card-general-div .table-card-bx .table-card-bx-body .custom-table tbody + tbody {
+  border-top: 1px solid transparent;
 }
 
 .table-card-general-div .table-card-bx .table-card-bx-body .custom-table .width-86 {
@@ -764,7 +772,6 @@
   padding: 0;
   margin: 0;
   position: relative;
-  min-height: 410px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -780,7 +787,7 @@
 }
 
 .no-found-details-div .no-found-details-row {
-  padding: 60px 15px 60px 15px;
+  padding: 64px 15px 60px 15px;
   margin: 0;
   position: relative;
   width: 100%;
@@ -893,6 +900,22 @@
             flex: 0 0 100%;
     max-width: 100%;
   }
+  .table-card-general-div .table-card-bx .table-card-bx-body .no-found-table-responsive .custom-table .width-280 {
+    width: 180px;
+    min-width: 180px;
+  }
+  .table-card-general-div .table-card-bx .table-card-bx-body .no-found-table-responsive .custom-table .width-345 {
+    width: 200px;
+    min-width: 200px;
+  }
+  .table-card-general-div .table-card-bx .table-card-bx-body .no-found-table-responsive .custom-table .width-190 {
+    width: 120px;
+    min-width: 120px;
+  }
+  .table-card-general-div .table-card-bx .table-card-bx-body .no-found-table-responsive .custom-table .width-270 {
+    width: 120px;
+    min-width: 120px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -975,6 +998,22 @@
   .table-card-general-div .table-card-bx .table-card-bx-body .custom-table .width-86 {
     width: 60px;
     min-width: 60px;
+  }
+  .table-card-general-div .table-card-bx .table-card-bx-body .no-found-table-responsive .custom-table .width-280 {
+    width: 130px;
+    min-width: 130px;
+  }
+  .table-card-general-div .table-card-bx .table-card-bx-body .no-found-table-responsive .custom-table .width-345 {
+    width: 165px;
+    min-width: 165px;
+  }
+  .table-card-general-div .table-card-bx .table-card-bx-body .no-found-table-responsive .custom-table .width-190 {
+    width: 120px;
+    min-width: 120px;
+  }
+  .table-card-general-div .table-card-bx .table-card-bx-body .no-found-table-responsive .custom-table .width-270 {
+    width: 80px;
+    min-width: 80px;
   }
 }
 

@@ -396,7 +396,7 @@
                                               <td>
                                                 <div class="custom-control custom-checkbox custom-checkbox-general">
                                                   <input type="checkbox" class="custom-control-input"
-                                                    id="us-checkbox-01" name="us-checkbox-name" />
+                                                    id="us-checkbox-01" name="us-checkbox-name" checked />
                                                   <label class="custom-control-label" for="us-checkbox-01"> &nbsp;
                                                   </label>
                                                 </div>
@@ -432,7 +432,7 @@
                                               <td>
                                                 <div class="custom-control custom-checkbox custom-checkbox-general">
                                                   <input type="checkbox" class="custom-control-input"
-                                                    id="us-checkbox-02" name="us-checkbox-name" />
+                                                    id="us-checkbox-02" name="us-checkbox-name" checked />
                                                   <label class="custom-control-label" for="us-checkbox-02"> &nbsp;
                                                   </label>
                                                 </div>
@@ -693,7 +693,7 @@
 
   </div><!-- end of wrapper -->
 
-  <div class="modal fade modal-custom" tabindex="-1" id="modal-deleted">
+  <div class="modal fade modal-custom modal-backdrop-transaprent modal-shadow-custom" tabindex="-1" id="modal-deleted">
     <div class="modal-dialog modal-dialog-centered modal-657">
       <div class="modal-content modal-shadow">
         <div class="modal-header pt-4 close-none">
@@ -718,7 +718,7 @@
     </div>
   </div>
 
-  <div class="modal fade modal-custom" tabindex="-1" id="modal-deleted-multiple">
+  <div class="modal fade modal-custom modal-backdrop-transaprent modal-shadow-custom" tabindex="-1" id="modal-deleted-multiple">
     <div class="modal-dialog modal-dialog-centered modal-657">
       <div class="modal-content modal-shadow">
         <div class="modal-header pt-4 close-none">
@@ -744,7 +744,7 @@
     </div>
   </div>
 
-  <div class="modal fade modal-custom" tabindex="-1" id="modal-changes">
+  <div class="modal fade modal-custom modal-backdrop-transaprent modal-shadow-custom" tabindex="-1" id="modal-changes">
     <div class="modal-dialog modal-dialog-centered modal-546">
       <div class="modal-content modal-shadow">
         <div class="modal-header white-header pt-4 close-none">
@@ -778,8 +778,7 @@
       $('.select2').select2({
         minimumResultsForSearch: -1,
         width: 100,
-      }
-      );
+      });
 
       // call date picker
 
@@ -794,6 +793,14 @@
       });
 
       // $("#modal-deleted-multiple").modal("show");
+
+      $('#modal-deleted-multiple').on('show.bs.modal', function (event) {
+        $('body').toggleClass("backdrop-none");
+      })
+
+      $('#modal-deleted-multiple').on('hidden.bs.modal', function (event) {
+        $('body').toggleClass("backdrop-none");
+      })
     });
   </script>
 
