@@ -703,7 +703,7 @@
 
 .table-card-general-div .table-card-bx .table-card-bx-body .custom-table td:first-child,
 .table-card-general-div .table-card-bx .table-card-bx-body .custom-table th:first-child {
-  padding-left: 35px;
+  padding-left: 36px;
 }
 
 .table-card-general-div .table-card-bx .table-card-bx-body .custom-table td:last-child,
@@ -731,8 +731,8 @@
 }
 
 .table-card-general-div .table-card-bx .table-card-bx-body .custom-table .width-86 {
-  width: 86px;
-  min-width: 86px;
+  width: 76px;
+  min-width: 76px;
 }
 
 .table-card-general-div .table-card-bx .table-card-bx-body .custom-table .width-140 {
