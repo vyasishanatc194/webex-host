@@ -532,6 +532,16 @@ $proxima: 'Proxima Nova Rg';
                 padding-bottom: 23px;
             }
 
+            .pt-28 {
+                padding-top: 28px !important;
+            }
+
+            
+            .min-body {
+                min-height: 682px;
+                max-height: 682px;
+            }
+
             .modal-body {
                 padding: 30px 30px 20px 30px;
 
@@ -1415,8 +1425,8 @@ $proxima: 'Proxima Nova Rg';
                                 font-size: 20px;
                                 line-height: 24px;
                                 color: #000000;
-                                margin: 10px 40px;
-                                padding: 10px 5px;
+                                margin: 0px 40px;
+                                padding: 0px 5px;
                                 display: block;
                                 font-weight: 600;
                                 border-bottom: 2px solid transparent;
@@ -1428,10 +1438,11 @@ $proxima: 'Proxima Nova Rg';
                         }
                     }
 
-                    
+                   
+
                     .tab-inner {
-                        padding: 60px 55px 60px 62px;
-                        min-height: 566px;
+                        padding: 90px 55px 60px 50px;
+                        
 
                         .custom-row {
                             display: flex;
@@ -1440,12 +1451,12 @@ $proxima: 'Proxima Nova Rg';
 
                             .col-one {
                                 width: 100%;
-                                max-width: 156px;
+                                max-width: 158px;
                             }
                             .col-two {
                                 width: 100%;
-                                max-width: 670px;
-                                padding-left: 30px; 
+                                max-width: 660px;
+                                padding-left: 5px;
                             }
                         }
 
@@ -1463,7 +1474,18 @@ $proxima: 'Proxima Nova Rg';
                             .custom-control-label {
                                 color: #000000;
                                 font-size: 18px;
-                                line-height: 30px;
+                                line-height: 33px;
+
+                                &::after {
+                                    height: 26px;
+                                    width: 26px;
+                                    left: 1px;
+                                }
+
+                                &::before {
+                                    height: 26px;
+                                    width: 26px;
+                                }
                             }
                         }
 
@@ -1472,9 +1494,13 @@ $proxima: 'Proxima Nova Rg';
                             align-items: center;
                             justify-content: center;
                             width: 100%;
+                            padding-right: 11px;
                         }
 
                         .audio-setting {
+
+                            
+
                             h5 {
                                 font-size: 22px;
                                 color: #00142F;
@@ -1500,6 +1526,32 @@ $proxima: 'Proxima Nova Rg';
                                 justify-content: space-between;
                                 position: relative;
                                 left: -10px;
+
+                                .icon-volume {
+                                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12.214' height='19' viewBox='0 0 12.214 19'%3E%3Cg id='volume-down' transform='translate(0 -15.99)'%3E%3Cpath id='Path_4' data-name='Path 4' d='M11.83,16.058a.676.676,0,0,0-.718.081l-6.6,5.28H1.357A1.359,1.359,0,0,0,0,22.777V28.2a1.358,1.358,0,0,0,1.357,1.357H4.511l6.6,5.28a.679.679,0,0,0,.719.08.677.677,0,0,0,.384-.611V16.67A.681.681,0,0,0,11.83,16.058Z' fill='%23002855'/%3E%3C/g%3E%3C/svg%3E%0A");
+                                    background-size: auto;
+                                    background-position: center;
+                                    background-repeat: no-repeat;
+                                    height: 40px;
+                                    width: 40px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                }
+            
+                                .icon-volume-up {
+                                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20.356' height='19' viewBox='0 0 20.356 19'%3E%3Cg id='volume-up' transform='translate(0 -15.99)'%3E%3Cpath id='Path_4' data-name='Path 4' d='M11.83,16.058a.676.676,0,0,0-.718.081l-6.6,5.28H1.357A1.359,1.359,0,0,0,0,22.777V28.2a1.358,1.358,0,0,0,1.357,1.357H4.511l6.6,5.28a.679.679,0,0,0,.719.08.677.677,0,0,0,.384-.611V16.67A.681.681,0,0,0,11.83,16.058Z' fill='%23002855'/%3E%3Cpath id='Path_5' data-name='Path 5' d='M342.907,122.448a.679.679,0,0,0-.954.966,5.412,5.412,0,0,1,0,7.665.678.678,0,1,0,.954.964,6.769,6.769,0,0,0,0-9.595Z' transform='translate(-327.258 -101.756)' fill='%23002855'/%3E%3Cpath id='Path_6' data-name='Path 6' d='M388.025,77.322a.679.679,0,1,0-.957.964,8.1,8.1,0,0,1,0,11.493.679.679,0,0,0,.957.964,9.457,9.457,0,0,0,0-13.42Z' transform='translate(-370.461 -58.542)' fill='%23002855'/%3E%3C/g%3E%3C/svg%3E%0A");
+                                    background-size: auto;
+                                    background-position: center;
+                                    background-repeat: no-repeat;
+                                    height: 40px;
+                                    width: 40px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    margin-left: 10px;
+                                }
+            
         
                                 a {
                                     color: #002855;
@@ -1535,6 +1587,8 @@ $proxima: 'Proxima Nova Rg';
                             }
         
                             .volume {
+                                padding-left: 2px;
+
                                 ul {
                                     margin: 0;
                                     padding: 0;
@@ -1544,8 +1598,11 @@ $proxima: 'Proxima Nova Rg';
                                     justify-content: flex-start;
         
                                     li {
-                                        margin-right: 10px;
+                                        margin-right: 15px;
         
+                                        &:last-child {
+                                            margin-right: 0;
+                                        }
                                         a {
                                             background-color: #D6E3F5;
                                             display: block;
@@ -1565,6 +1622,20 @@ $proxima: 'Proxima Nova Rg';
                                     }
                                 }
                             }
+
+                            
+                            .mb-54 {
+                                margin-bottom: 54px;
+                            }
+
+                            .mb-45 {
+                                margin-bottom: 45px;
+                            }
+
+                            .mb-52 {
+                                margin-bottom: 52px;
+                            }
+                            
                         }
 
                         .setting-btn {
@@ -1599,6 +1670,11 @@ $proxima: 'Proxima Nova Rg';
                                 }
                             }
                         }
+                    }
+
+                   
+                    .tab-inner-audio {
+                        padding: 59px 64px 0px 50px;
                     }
                 }
 
@@ -2179,6 +2255,7 @@ $proxima: 'Proxima Nova Rg';
                     .custom-row {
                         .col-two {
                             padding-left: 0;
+                            padding-right: 0;
                         }
                     }
 
@@ -2415,6 +2492,7 @@ $proxima: 'Proxima Nova Rg';
                         .custom-row {
                             .col-two {
                                 padding-left: 0;
+                                padding-right: 0;
                             }
                         }
                     }
