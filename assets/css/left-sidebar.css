@@ -368,7 +368,7 @@
 }
 
 .left-side-nav .left-side-menu .left-side-inner .side-nav-item {
-  padding-top: 30px;
+  padding-top: 45px;
   padding-left: 30px;
   padding-bottom: 15px;
 }
@@ -380,7 +380,7 @@
 
 .left-side-nav .left-side-menu .left-side-inner .side-nav-item ul li {
   list-style: none;
-  margin: 0 0 10px 0;
+  margin: 0 0 19px 0;
   padding: 0;
   display: block;
 }
@@ -427,7 +427,7 @@
 }
 
 .left-side-nav .left-side-menu .left-side-inner .side-nav-item ul li .nav-link .text-collapse-menu {
-  padding: 0 0 0 20px;
+  padding: 0 0 0 25px;
   width: calc(100% - 28px);
 }
 
