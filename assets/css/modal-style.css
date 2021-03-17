@@ -578,8 +578,7 @@
 }
 
 .modal-custom .modal-dialog .modal-content .min-body {
-  min-height: 682px;
-  max-height: 682px;
+  min-height: 679px;
 }
 
 .modal-custom .modal-dialog .modal-content .modal-body {
@@ -1603,18 +1602,43 @@
   line-height: 24px;
   color: #000000;
   margin: 0px 40px;
-  padding: 0px 5px;
+  padding: 0px 5px 9px 5px;
   display: block;
   font-weight: 600;
-  border-bottom: 2px solid transparent;
+  position: relative;
 }
 
-.modal-custom .modal-dialog .modal-content .modal-body .setting-content .nav-tabs li .active {
-  border-bottom: 2px solid #F98D29;
+.modal-custom .modal-dialog .modal-content .modal-body .setting-content .nav-tabs li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: block;
+  height: 2px;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #F98D29;
+  opacity: 0;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .setting-content .nav-tabs li .active::after {
+  opacity: 1;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .setting-content .select2-selection--single .select2-selection__arrow {
+  background: transparent linear-gradient(132deg, #0072FF 0%, #00C6FF 100%) 0% 0% no-repeat padding-box !important;
 }
 
 .modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner {
-  padding: 90px 55px 60px 50px;
+  padding: 59px 64px 0px 50px;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .custom-row-start {
+  -webkit-box-align: start !important;
+      -ms-flex-align: start !important;
+          align-items: flex-start !important;
 }
 
 .modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .custom-row {
@@ -1638,6 +1662,10 @@
   width: 100%;
   max-width: 660px;
   padding-left: 5px;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .video-setting .custom-row .col-two {
+  max-width: 378px;
 }
 
 .modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .select2-container--default .select2-selection--single {
@@ -1714,6 +1742,7 @@
           justify-content: space-between;
   position: relative;
   left: -10px;
+  height: 20px;
 }
 
 .modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .audio-setting .audio-group .icon-volume {
@@ -1840,15 +1869,19 @@
 }
 
 .modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .audio-setting .mb-54 {
-  margin-bottom: 54px;
+  margin-bottom: 43px;
 }
 
 .modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .audio-setting .mb-45 {
-  margin-bottom: 45px;
+  margin-bottom: 32px;
 }
 
 .modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .audio-setting .mb-52 {
-  margin-bottom: 52px;
+  margin-bottom: 40px;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .audio-setting .mb-24 {
+  margin-bottom: 24px;
 }
 
 .modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .setting-btn {
@@ -1872,8 +1905,13 @@
   font-weight: 600;
 }
 
+.modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .preview {
+  margin-left: 22px;
+}
+
 .modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .preview-img {
   width: 100%;
+  max-width: 266px;
 }
 
 .modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .video-setting .form-group {
@@ -1884,8 +1922,28 @@
   white-space: nowrap;
 }
 
+.modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .video-setting .mt-20 {
+  margin-top: 20px;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .video-setting .mb-24 {
+  margin-bottom: 15px;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .video-setting .mb-30 {
+  margin-bottom: 20px;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .video-setting .custom-checkbox.custom-checkbox-2 {
+  margin-bottom: 10px;
+}
+
 .modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner-audio {
   padding: 59px 64px 0px 50px;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner-video {
+  padding: 59px 54px 0px 50px;
 }
 
 .modal-custom .modal-dialog .modal-content .modal-body .modal-progress h5 {
@@ -2012,6 +2070,10 @@
 
 .modal-custom .modal-dialog .modal-content .pb-35 {
   padding-bottom: 35px !important;
+}
+
+.modal-custom .modal-dialog .modal-content .pb-33 {
+  padding-bottom: 33px !important;
 }
 
 .modal-backdrop {
@@ -2340,11 +2402,7 @@
     padding: 10px 5px;
     display: block;
     font-weight: 600;
-    border-bottom: 2px solid transparent;
     white-space: nowrap;
-  }
-  .modal-custom .modal-dialog .modal-content .modal-body .setting-content .nav-tabs li .active {
-    border-bottom: 2px solid #F98D29;
   }
   .modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner {
     padding: 30px 0px;
@@ -2357,6 +2415,16 @@
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    padding-right: 0;
+  }
+  .modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .custom-row {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .custom-row .col-two {
     padding-left: 0;
@@ -2364,7 +2432,7 @@
   }
   .modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .custom-checkbox.custom-checkbox-2 .custom-control-label {
     font-size: 16px;
-    line-height: 20px;
+    line-height: 30px;
   }
   .modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .audio-setting .form-group {
     margin-bottom: 15px;
@@ -2382,6 +2450,22 @@
   }
   .modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .audio-setting .volume ul li a {
     width: 6px;
+  }
+  .modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .video-setting .preview {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .modal-custom .modal-dialog .modal-content .modal-body .audio-content-2 {
     padding: 0 30px 0 10px;
@@ -2538,6 +2622,20 @@
   }
   .modal-custom .modal-dialog .modal-content .modal-body .search-incall {
     margin-top: 30px;
+  }
+  .modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .audio-setting .form-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner .audio-setting .form-group .col-form-label {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 /*# sourceMappingURL=modal-style.css.map */
