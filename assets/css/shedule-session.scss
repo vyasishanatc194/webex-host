@@ -1281,7 +1281,7 @@ hr.line-2 {
 
                         .col-one {
                             width: 100%;
-                            max-width: 158px;
+                            max-width: 240px;
                         }
                         .col-two {
                             width: 100%;
@@ -1928,6 +1928,10 @@ hr.line-2 {
                         }
                     }
 
+                    .pl-40 {
+                        padding-left: 0px;
+                    }
+
                     .row-session {
                         margin: 0 auto;
 
@@ -1988,6 +1992,26 @@ hr.line-2 {
         }
     }
    
+    .prefrences-section {
+        .audio-setting {
+            .custom-row {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .form-group {
+                align-items: flex-start !important;
+
+                label {
+                    font-size: 16px;
+                    line-height: 20px;
+                    margin-bottom: 5px;
+                }
+            }
+
+          
+        }
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -1996,6 +2020,8 @@ hr.line-2 {
             margin-right: 20px;
             font-size: 18px;
         }
+
+        
     }
 
     .prefrences-content .recording-tab .radio-session .custom-control-label h3 {

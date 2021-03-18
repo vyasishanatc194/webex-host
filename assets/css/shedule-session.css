@@ -1389,7 +1389,7 @@ hr.line-2 {
 
 .prefrences-section .prefrences-body .audio-tab .audio-setting .custom-row .col-one {
   width: 100%;
-  max-width: 158px;
+  max-width: 240px;
 }
 
 .prefrences-section .prefrences-body .audio-tab .audio-setting .custom-row .col-two {
@@ -2032,6 +2032,9 @@ hr.line-2 {
   .prefrences-section .prefrences-body .prefrences-content .recording-tab .recored-text h3 {
     font-size: 16px;
   }
+  .prefrences-section .prefrences-body .prefrences-content .recording-tab .pl-40 {
+    padding-left: 0px;
+  }
   .prefrences-section .prefrences-body .prefrences-content .recording-tab .row-session {
     margin: 0 auto;
   }
@@ -2078,6 +2081,25 @@ hr.line-2 {
   }
   .shedule-session-section .schedule-body .schdule-left .upload-div .custom-file label {
     text-align: center;
+  }
+  .prefrences-section .audio-setting .custom-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .prefrences-section .audio-setting .form-group {
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+  }
+  .prefrences-section .audio-setting .form-group label {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 5px;
   }
 }
 
