@@ -502,7 +502,7 @@ hr.line-2 {
   position: absolute;
   bottom: 0;
   min-width: 45px;
-  background: transparent linear-gradient(132deg, #0072FF 0%, #00C6FF 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(132deg, #0072FF 10%, #00C6FF 70%) 0% 0% no-repeat padding-box;
   border-radius: 10px !important;
   right: 14px;
 }
@@ -575,7 +575,7 @@ hr.line-2 {
   padding-left: 12px;
   outline: none;
   border-radius: 10px !important;
-  border: 1px solid #D6E3F5 !important;
+  border: 1px solid #EAEAEA !important;
 }
 
 .shedule-session-section .schedule-body .schdule-right form .select2-selection__placeholder {
@@ -587,7 +587,7 @@ hr.line-2 {
   width: 45px;
   min-width: 45px;
   height: 45px;
-  background: transparent linear-gradient(132deg, #0072FF 0%, #00C6FF 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(132deg, #0072FF 10%, #00C6FF 70%) 0% 0% no-repeat padding-box;
   border-radius: 10px !important;
   right: -60px;
 }
@@ -752,6 +752,9 @@ hr.line-2 {
 
 .prefrences-section {
   padding: 40px 0 0 0;
+  padding-left: 20px;
+  max-width: 1220px;
+  width: 100%;
 }
 
 .prefrences-section .valid-feedback.text-black {
@@ -763,7 +766,7 @@ hr.line-2 {
 }
 
 .prefrences-section .prefrences-herader {
-  margin-bottom: 60px;
+  margin-bottom: 43px;
 }
 
 .prefrences-section .prefrences-herader h3 {
@@ -797,10 +800,9 @@ hr.line-2 {
   bottom: 4px;
   left: 0;
   right: 0;
-  margin: 0 auto;
   display: block;
   height: 2px;
-  width: 100%;
+  width: 98%;
   border-radius: 0px;
   background-color: #EFEFEF;
   z-index: 22;
@@ -845,6 +847,10 @@ hr.line-2 {
 
 .prefrences-section .prefrences-body .prefrences-tab ul li .active::before {
   opacity: 1;
+}
+
+.prefrences-section .prefrences-body .prefrences-tab ul li:last-child a {
+  margin-right: 0;
 }
 
 .prefrences-section .prefrences-body .prefrences-content {
@@ -948,8 +954,8 @@ hr.line-2 {
 }
 
 .prefrences-section .prefrences-body .prefrences-content .select2-container--default .select2-selection--single .select2-selection__rendered {
-  height: 45px;
-  line-height: 40px;
+  height: 47px;
+  line-height: 42px;
   font-size: 18px;
   color: #000;
   -webkit-box-shadow: none;
@@ -958,7 +964,7 @@ hr.line-2 {
 }
 
 .prefrences-section .prefrences-body .prefrences-content .select2-container--default .select2-selection--single {
-  height: 45px;
+  height: 47px;
   line-height: 40px;
   font-size: 18px;
   color: #000;
@@ -968,7 +974,7 @@ hr.line-2 {
   padding-left: 12px;
   outline: none;
   border-radius: 10px !important;
-  border: 1px solid #D6E3F5 !important;
+  border: 1px solid #EAEAEA !important;
   margin-right: 60px;
 }
 
@@ -977,11 +983,10 @@ hr.line-2 {
 }
 
 .prefrences-section .prefrences-body .prefrences-content .select2-container--default .select2-selection--single .select2-selection__arrow {
-  height: 45px;
+  height: 47px;
   width: 45px;
   min-width: 45px;
-  height: 45px;
-  background: transparent linear-gradient(132deg, #0072FF 0%, #00C6FF 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(132deg, #0072FF 10%, #00C6FF 70%) 0% 0% no-repeat padding-box;
   border-radius: 10px !important;
   right: 0px;
 }
@@ -1001,8 +1006,8 @@ hr.line-2 {
   right: 0;
   top: 0;
   bottom: 0;
-  height: 45px;
-  width: 45px;
+  height: 47px;
+  width: 47px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1309,7 +1314,7 @@ hr.line-2 {
   line-height: 22px;
   color: #000;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 31px;
 }
 
 .prefrences-section .prefrences-body .prefrences-content .recording-tab .radio-session {
@@ -1397,6 +1402,26 @@ hr.line-2 {
   height: auto;
   width: 245px;
   min-width: 245px;
+}
+
+.prefrences-section .prefrences-body .prefrence-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.prefrences-section .prefrences-body .mt-340 {
+  margin-top: 340px;
+}
+
+.prefrences-section .prefrences-body .mt-8 {
+  margin-top: 8px;
 }
 
 .prefrences-section .prefrences-footer .prefrence-btns {

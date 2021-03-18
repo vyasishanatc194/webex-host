@@ -1633,6 +1633,10 @@
   opacity: 1;
 }
 
+.modal-custom .modal-dialog .modal-content .modal-body .setting-content .mb-30 {
+  margin-bottom: 20px;
+}
+
 .modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner {
   padding: 59px 64px 0px 50px;
 }
@@ -1959,6 +1963,11 @@
   margin-bottom: 24px;
 }
 
+.modal-custom .modal-dialog .modal-content .modal-body .Session-shedule {
+  padding: 0 25px;
+  margin-bottom: 50px;
+}
+
 .modal-custom .modal-dialog .modal-content .modal-body .Session-shedule h3 {
   font-size: 28px;
   line-height: 34px;
@@ -1972,13 +1981,30 @@
   font-size: 18px;
   text-align: center;
   line-height: 34px;
-  color: #083257;
+  color: #000;
   font-weight: 600;
   margin-bottom: 12px;
 }
 
 .modal-custom .modal-dialog .modal-content .modal-body .Session-shedule .tabel-session-schedule {
   margin: 60px 0 30px 0;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .Session-shedule .tabel-session-schedule .min-330 {
+  min-width: 330px;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .Session-shedule .tabel-session-schedule .min-216 {
+  min-width: 216px;
+  max-width: 216px;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .Session-shedule .tabel-session-schedule .min-206 {
+  min-width: 206px;
+}
+
+.modal-custom .modal-dialog .modal-content .modal-body .Session-shedule .tabel-session-schedule .min-227 {
+  min-width: 227px;
 }
 
 .modal-custom .modal-dialog .modal-content .modal-body .Session-shedule .tabel-session-schedule .table thead tr th {
@@ -1988,6 +2014,7 @@
   white-space: nowrap;
   border-top: 0;
   border-color: #EFF2F6;
+  padding: 25px 5px;
 }
 
 .modal-custom .modal-dialog .modal-content .modal-body .Session-shedule .tabel-session-schedule .table tbody tr td {
@@ -1996,7 +2023,7 @@
   line-height: 24px;
   white-space: nowrap;
   border-top: 0;
-  width: 25%;
+  padding: 20px 5px 11px 5px;
 }
 
 .modal-custom .modal-dialog .modal-content .modal-body .Session-shedule .tabel-session-schedule .tbl-link {
@@ -2076,6 +2103,11 @@
 
 .modal-custom .modal-dialog .modal-content .pb-33 {
   padding-bottom: 33px !important;
+}
+
+.modal-custom .modal-dialog .modal-content .pb-66 {
+  padding-bottom: 55px !important;
+  padding-top: 0 !important;
 }
 
 .modal-backdrop {
@@ -2481,6 +2513,9 @@
   .modal-custom .modal-dialog .modal-content .modal-body .audio-content-2 .form-group {
     margin-bottom: 30px;
   }
+  .modal-custom .modal-dialog .modal-content .modal-body .Session-shedule {
+    padding: 0;
+  }
   .modal-custom .modal-dialog .modal-content .modal-body .Session-shedule h3 {
     font-size: 20px;
     line-height: 30px;
@@ -2495,6 +2530,8 @@
   .modal-custom .modal-dialog .modal-content .modal-body .Session-shedule .tabel-session-schedule .table thead tr th {
     font-size: 16px;
     line-height: 20px;
+    min-width: unset;
+    max-width: unset;
   }
   .modal-custom .modal-dialog .modal-content .modal-body .Session-shedule .tabel-session-schedule .table tbody tr td {
     font-size: 14px;

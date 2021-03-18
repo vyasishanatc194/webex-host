@@ -1462,6 +1462,10 @@ $proxima: 'Proxima Nova Rg';
                         opacity: 1;
                     }
 
+                    .mb-30 {
+                        margin-bottom: 20px;
+                    }
+
                     .tab-inner {
                         padding: 59px 64px 0px 50px;
                        
@@ -1759,6 +1763,9 @@ $proxima: 'Proxima Nova Rg';
                 }
 
                 .Session-shedule {
+                    padding: 0 25px;
+                    margin-bottom: 50px;
+
                     h3 {
                         font-size: 28px;
                         line-height: 34px;
@@ -1772,13 +1779,31 @@ $proxima: 'Proxima Nova Rg';
                         font-size: 18px;
                         text-align: center;
                         line-height: 34px;
-                        color: #083257;
+                        color: #000;
                         font-weight: 600;
                         margin-bottom: 12px;
                     }
 
                     .tabel-session-schedule {
                         margin: 60px 0 30px 0;
+
+                        .min-330 {
+                            min-width: 330px;
+                        }
+
+                       
+                        .min-216 {
+                            min-width: 216px;
+                            max-width: 216px;
+                        }
+
+                        .min-206 {
+                            min-width: 206px;
+                        }
+
+                        .min-227 {
+                            min-width: 227px;
+                        }
 
                         .table thead tr th {
                             color: #000000;
@@ -1787,6 +1812,7 @@ $proxima: 'Proxima Nova Rg';
                             white-space: nowrap;
                             border-top: 0;
                             border-color: #EFF2F6;
+                            padding: 25px 5px;
                         }
 
                         .table tbody tr td {
@@ -1795,7 +1821,8 @@ $proxima: 'Proxima Nova Rg';
                             line-height: 24px;
                             white-space: nowrap;
                             border-top: 0;
-                            width: 25%;
+                            // width: 25%;
+                            padding: 20px 5px 11px 5px;
                         }
 
                         .tbl-link {
@@ -1886,6 +1913,11 @@ $proxima: 'Proxima Nova Rg';
 
             .pb-33 {
                 padding-bottom: 33px !important;
+            }
+
+            .pb-66 {
+                padding-bottom: 55px !important;
+                padding-top: 0 !important;
             }
 
             
@@ -2314,6 +2346,8 @@ $proxima: 'Proxima Nova Rg';
                 .tab-inner {
                     padding: 30px 0px;
 
+
+
                     .speaker-group {
                         flex-direction: column;
                         align-items: flex-start;
@@ -2334,6 +2368,8 @@ $proxima: 'Proxima Nova Rg';
                         font-size: 16px;
                         line-height: 30px;
                     }
+
+                    
 
                     .audio-setting {
 
@@ -2373,6 +2409,8 @@ $proxima: 'Proxima Nova Rg';
                     }
                     
                 }
+
+
             }
 
             .audio-content-2 {
@@ -2394,6 +2432,8 @@ $proxima: 'Proxima Nova Rg';
             }
 
             .Session-shedule {
+                padding: 0;
+
                 h3 {
                     font-size: 20px;
                     line-height: 30px;
@@ -2410,6 +2450,8 @@ $proxima: 'Proxima Nova Rg';
                     .table thead tr th {
                         font-size: 16px;
                         line-height: 20px;
+                        min-width: unset;
+                        max-width: unset;
                     }
 
                     .table tbody tr td {

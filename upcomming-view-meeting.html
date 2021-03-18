@@ -391,14 +391,14 @@
                                 <div class="form-input row no-gutters">
                                   <div class="col-sm-12 mb-3">
                                     <div class="custom-control custom-checkbox custom-checkbox-2 black">
-                                      <input type="checkbox" class="custom-control-input" id="wating" name="example1" checked="">
+                                      <input type="radio" class="custom-control-input" id="wating" name="example1" checked="">
                                       <label class="custom-control-label" for="wating">Use Casting Default</label>
                                     </div>
                                   </div>
 
                                   <div class="col-sm-12 ">
                                     <div class="custom-control custom-checkbox custom-checkbox-2 black label-center ">
-                                      <input type="checkbox" class="custom-control-input" id="wating1" name="example1" checked="">
+                                      <input type="radio" class="custom-control-input" id="wating1" name="example1" checked="">
                                       <label class="custom-control-label w-100 " for="wating1"><input type="text" class="form-control" placeholder="Enter Youtube Link"></label>
                                     </div>
                                     
@@ -452,7 +452,7 @@
                                       Please add at least one attendee to proceed. 
                                     </div>
                                     <label for="">Email</label>
-                                    <input type="text" class="form-control typehead-box email-name" placeholder="Enter Email" autocomplete="off" />
+                                    <input type="text" class="form-control typehead-box email-name" value="Heidi_Klum@capitaland.sg" placeholder="Enter Email" autocomplete="off" />
                                   </div>
                                 </div>
                                 <div class="col-lg-3">
@@ -461,7 +461,7 @@
                                       Please add first name to proceed.
                                     </div>
                                     <label for="">First Name</label>
-                                    <input type="text" class="form-control " placeholder="First Name"  />
+                                    <input type="text" class="form-control " placeholder="First Name" value="Heidi" />
                                   </div>
                                 </div>
     
@@ -471,7 +471,7 @@
                                       Please add Last name to proceed.
                                     </div>
                                     <label for="">Last Name</label>
-                                    <input type="text" class="form-control " placeholder="Last Name"/>
+                                    <input type="text" class="form-control " placeholder="Last Name" value="Klum"/>
                                   </div>
                                 </div>
 
@@ -585,7 +585,7 @@
       
       <div class="modal-footer modal-footer-delete">
         <button type="button" class="btn btn-custom btn-blue blue-shadow" data-dismiss="modal">Go Back</button>
-        <button type="button" class="btn btn-custom btn-red red-shadow" data-toggle="modal" data-target="#modal-deleted-success">Delete Session</button>
+        <button type="button" class="btn btn-custom btn-red red-shadow mdl-delete" data-toggle="modal" data-target="#modal-deleted-success">Delete Session</button>
       </div>
     </div>
   </div>
@@ -814,6 +814,7 @@
 <script>
 
 $('#modal-invite').on('show.bs.modal', function (event) {
+  $('body').removeClass("backdrop-none");
   $('body').toggleClass("backdrop-none");
 })
 
@@ -822,6 +823,7 @@ $('#modal-invite').on('hidden.bs.modal', function (event) {
 })
 
 $('#modal-draft').on('show.bs.modal', function (event) {
+  $('body').removeClass("backdrop-none");
   $('body').toggleClass("backdrop-none");
 })
 
@@ -830,24 +832,22 @@ $('#modal-draft').on('hidden.bs.modal', function (event) {
 })
 
 $('#modal-deleted').on('show.bs.modal', function (event) {
-  $('body').toggleClass("backdrop-none");
+  $('body').removeClass("backdrop-none");
+  $('body').addClass("backdrop-none");
 })
 
 $('#modal-deleted').on('hidden.bs.modal', function (event) {
-  $('body').toggleClass("backdrop-none");
+  $('body').addClass("backdrop-none");
 })
 
 $('#modal-deleted-success').on('show.bs.modal', function (event) {
-  $('body').toggleClass("backdrop-none");
+  $('body').addClass("backdrop-none");
   $('#modal-deleted').modal('hide');
- 
-  
-})
-$('#modal-deleted-success').on('hidden.bs.modal', function (event) {
-  $('body').toggleClass("backdrop-none");
 })
 
+
 $('#modal-shedule-successsfully').on('show.bs.modal', function (event) {
+  $('body').removeClass("backdrop-none");
   $('body').toggleClass("backdrop-none");
 })
 
@@ -856,6 +856,7 @@ $('#modal-shedule-successsfully').on('hidden.bs.modal', function (event) {
 })
 
 $('#modal-changes').on('show.bs.modal', function (event) {
+  $('body').removeClass("backdrop-none");
   $('body').toggleClass("backdrop-none");
 })
 
