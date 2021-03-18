@@ -1628,7 +1628,9 @@
 }
 
 .modal-custom .modal-dialog .modal-content .modal-body .setting-content .select2-selection--single .select2-selection__arrow {
-  background: transparent linear-gradient(132deg, #0072FF 0%, #00C6FF 100%) 0% 0% no-repeat padding-box !important;
+  background: transparent linear-gradient(132deg, #0072FF 10%, #00C6FF 70%) 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  opacity: 1;
 }
 
 .modal-custom .modal-dialog .modal-content .modal-body .setting-content .tab-inner {
