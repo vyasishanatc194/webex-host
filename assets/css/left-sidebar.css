@@ -429,6 +429,8 @@
 .left-side-nav .left-side-menu .left-side-inner .side-nav-item ul li .nav-link .text-collapse-menu {
   padding: 0 0 0 25px;
   width: calc(100% - 28px);
+  z-index: 1;
+  position: relative;
 }
 
 .left-side-nav .left-side-menu .left-side-inner .side-nav-item ul li:hover .nav-link {
@@ -451,9 +453,9 @@
 .left-side-nav .left-side-menu .left-side-inner .side-nav-item ul li.active .nav-link::before {
   content: "";
   position: absolute;
-  right: -24px;
-  top: -25px;
-  height: 116px;
+  right: -25px;
+  top: -24px;
+  height: 114px;
   width: 98px;
   background-size: contain;
   background-position: center;
