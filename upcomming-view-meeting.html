@@ -301,10 +301,11 @@
                               </div>
 
                               <div class="form-group ">
+                                
                                 <label for="inputEmail3" class="form-label">Session Date</label>
-                                <div class="form-input pad-60">
-                                  <input type="email" class="form-control date" id="inputEmail3">
-                                  <a href="#" class="btn-picker"></a>
+                                <div class="form-input pad-60 flatpickr date" data-wrap="true" data-clickOpens="false">
+                                  <input type="text" class="form-control flatpickr " data-input  id="inputEmail3">
+                                  <a href="#!" class="btn-picker " data-toggle></a>
                                 </div>
                               </div>
 
@@ -932,9 +933,9 @@ $(document).ready(function () {
     });
    
 
-    $(".btn-picker").click(function () {
-      date.toggle();
-    });
+    // $(".btn-picker").click(function () {
+    //   date.toggle();
+    // });
 
       // date end
 

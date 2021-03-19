@@ -312,10 +312,9 @@
                                             <label>Session Date</label>
                                           </div>
                                           <div class="input-control">
-                                            <div class="form-input max-width-217 pd-right-46">
-                                              <input type="text" class="form-control date" placeholder="Select a date"
-                                                id="datepicker-01" />
-                                              <a href="#" class="btn-picker"></a>
+                                            <div class="form-input max-width-217 pd-right-46 flatpickr date" data-wrap="true" data-clickOpens="false">
+                                              <input type="email" class="form-control flatpickr " data-input placeholder="Select a date"  id="inputEmail3">
+                                              <a href="#!" class="btn-picker " data-toggle></a>
                                             </div>
                                           </div>
                                         </div>
@@ -803,9 +802,9 @@
         },
       });
 
-      $(".btn-picker").click(function () {
-        date.toggle();
-      });
+      // $(".btn-picker").click(function () {
+      //   date.toggle();
+      // });
 
       
       /**/

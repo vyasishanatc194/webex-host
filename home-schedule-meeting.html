@@ -297,12 +297,12 @@
                                 </div>
                               </div>
 
+                          
                               <div class="form-group ">
                                 <label for="inputEmail3" class="form-label">Session Date</label>
-                                <div class="form-input pad-60">
-                                 
-                                  <input type="email" class="form-control date " id="inputEmail3">
-                                  <a href="#" class="btn-picker"></a>
+                                <div class="form-input pad-60 flatpickr date" data-wrap="true" data-clickOpens="false">
+                                  <input type="text" class="form-control flatpickr " data-input  id="inputEmail3">
+                                  <a href="#!" class="btn-picker " data-toggle></a>
                                 </div>
                               </div>
 
@@ -501,6 +501,8 @@
             </div>
           </div>
         </div><!--  end of main  -->
+
+       
 
     </div>
   </main>
@@ -714,6 +716,7 @@
   </div>
 </div>
 
+
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/popper.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
@@ -815,12 +818,19 @@ $(document).ready(function () {
         enableTime: false,
         dateFormat: "F, d Y ",
         defaultDate: "today",
+        altInput: true,
+        allowInput: true,
     });
    
 
-    $(".btn-picker").click(function () {
-      date.toggle();
-    });
+    // $(".btn-picker").click(function () {
+    //   date.toggle();
+    // });
+
+    
+    // $(".btn-picker").on("click", function () {
+    //   $(".date").trigger();
+    // });
 
       // date end
 

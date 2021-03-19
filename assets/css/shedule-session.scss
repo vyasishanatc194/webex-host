@@ -464,6 +464,13 @@ hr.line-2 {
                         }
                     }
 
+                    .flatpickr.active~.btn-picker {
+                        &:after {
+                            transition: all 0.3s ease-in-out;
+                            transform: rotate(-180deg);
+                        }
+                    }
+
                     .btn-picker {
                             height: 46px;
                             width: 46px;
