@@ -702,17 +702,16 @@
             <span aria-hidden="true"><img src="assets/images/participant/cross-sign.png" alt=""></span>
           </button>
         </div>
-        <div class="modal-body ">
+        <div class="modal-body">
           <div class="content-session-deleted">
             <h4>Are you sure you’d like to delete this session:</h4>
-  
             <h5>Weekly Sprint Session</h5>
           </div>
         </div>
         
         <div class="modal-footer modal-footer-delete">
           <button type="button" class="btn btn-custom btn-blue blue-shadow" data-dismiss="modal">Go Back</button>
-          <button type="button" class="btn btn-custom btn-red red-shadow" data-toggle="modal" data-target="#modal-deleted-success">Delete Session</button>
+          <button type="button" class="btn btn-custom btn-red red-shadow" id="modal-deleted-success-message" data-dismiss="modal" data-toggle="modal" data-target="#modal-deleted-success">Delete Session</button>
         </div>
       </div>
     </div>
@@ -765,6 +764,47 @@
     </div>
   </div>
 
+  <!-- successful modal -->
+  <div class="modal modal-backdrop-transaprent modal-general-message fade" role="dialog" id="modal-deleted-success" >
+    <div class="modal-dialog modal-dialog-centered">
+  
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="general-message-card-div rec-gmc-div">
+            <div class="general-message-card-inner">
+              <p>Session Deleted Successfully</p>
+            </div>
+  
+            <div class="btn-group-div">
+              <a href="#" class="btn btn-common-primary btn-common-primary-54 btn-shadow ps-relative" data-dismiss="modal"> Ok </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+
+  <div class="modal modal-backdrop-transaprent modal-general-message fade" role="dialog" id="modal-deleted-success2" >
+    <div class="modal-dialog modal-dialog-centered">
+  
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="general-message-card-div rec-gmc-div">
+            <div class="general-message-card-inner">
+              <p>Sessions Deleted Successfully</p>
+            </div>
+  
+            <div class="btn-group-div">
+              <a href="#" class="btn btn-common-primary btn-common-primary-54 btn-shadow ps-relative" data-dismiss="modal"> Ok </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/popper.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
@@ -802,7 +842,43 @@
         
       // });
 
-      // $("#modal-deleted-multiple").modal("show");
+      /**/
+
+      $('#modal-deleted-multiple').on('show.bs.modal', function (event) {
+        $('body').toggleClass("backdrop-none");
+      });
+
+      $('#modal-deleted-multiple').on('hidden.bs.modal', function (event) {
+        $('body').toggleClass("backdrop-none");
+      });
+
+      $('#modal-deleted-multiple-recording').on('show.bs.modal', function (event) {
+        $('body').toggleClass("backdrop-none");
+      });
+
+      $('#modal-deleted-multiple-recording').on('hidden.bs.modal', function (event) {
+        $('body').toggleClass("backdrop-none");
+      });
+
+      $("#modal-deleted-success-message").click(function(){
+        $("#modal-deleted-success").on('show.bs.modal', function () {
+          $("body").addClass("modal-bg-transparent-color overflow-xy-hidden");
+        });
+
+        $("#modal-deleted-success").on('hidden.bs.modal', function (event) {
+          $("body").removeClass("modal-bg-transparent-color overflow-xy-hidden");
+        });
+      });
+
+      $("#modal-deleted-multiple-success-message").click(function(){
+        $("#modal-deleted-success2").on('show.bs.modal', function () {
+          $("body").addClass("modal-bg-transparent-color overflow-xy-hidden");
+        });
+
+        $("#modal-deleted-success2").on('hidden.bs.modal', function (event) {
+          $("body").removeClass("modal-bg-transparent-color overflow-xy-hidden");
+        });
+      });
     });
   </script>
 

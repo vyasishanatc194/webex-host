@@ -348,7 +348,7 @@
                                     <div class="table-card-bx-tp-rf">
                                       <div class="btn-group-bx">
                                         <button type="button" class="btn btn-primary btn-common-primary btn-common-primary-36 " id="select-all-btn-recording"> Select All </button>
-                                        <button type="button" class="btn btn-primary btn-common-danger btn-common-danger-36 ml-25" id="delete-selected-btn-recording" data-toggle="modal" data-target="#modal-deleted-multiple-recording"> Delete Selected (2) </button>
+                                        <button type="button" class="btn btn-primary btn-common-danger btn-common-danger-36 ml-25" id="delete-selected-btn-recording" data-toggle="modal" data-target="#modal-deleted-multiple-recording-more"> Delete Selected (2) </button>
                                       </div>
                                     </div>
                                   </div>
@@ -442,7 +442,7 @@
                                               <td>
                                                 <div class="custom-control custom-checkbox custom-checkbox-general">
                                                   <input type="checkbox" class="custom-control-input"
-                                                    id="rec-checkbox-03" name="rec-checkbox-name" />
+                                                    id="rec-checkbox-03" name="rec-checkbox-name" checked />
                                                   <label class="custom-control-label" for="rec-checkbox-03"> &nbsp;
                                                   </label>
                                                 </div>
@@ -476,7 +476,7 @@
                                               <td>
                                                 <div class="custom-control custom-checkbox custom-checkbox-general">
                                                   <input type="checkbox" class="custom-control-input"
-                                                    id="rec-checkbox-04" name="rec-checkbox-name" />
+                                                    id="rec-checkbox-04" name="rec-checkbox-name" checked />
                                                   <label class="custom-control-label" for="rec-checkbox-04"> &nbsp;
                                                   </label>
                                                 </div>
@@ -510,7 +510,7 @@
                                               <td>
                                                 <div class="custom-control custom-checkbox custom-checkbox-general">
                                                   <input type="checkbox" class="custom-control-input"
-                                                    id="rec-checkbox-05" name="rec-checkbox-name" />
+                                                    id="rec-checkbox-05" name="rec-checkbox-name" checked />
                                                   <label class="custom-control-label" for="rec-checkbox-05"> &nbsp;
                                                   </label>
                                                 </div>
@@ -544,7 +544,7 @@
                                               <td>
                                                 <div class="custom-control custom-checkbox custom-checkbox-general">
                                                   <input type="checkbox" class="custom-control-input"
-                                                    id="rec-checkbox-06" name="rec-checkbox-name" />
+                                                    id="rec-checkbox-06" name="rec-checkbox-name" checked />
                                                   <label class="custom-control-label" for="rec-checkbox-06"> &nbsp;
                                                   </label>
                                                 </div>
@@ -578,7 +578,7 @@
                                               <td>
                                                 <div class="custom-control custom-checkbox custom-checkbox-general">
                                                   <input type="checkbox" class="custom-control-input"
-                                                    id="rec-checkbox-07" name="rec-checkbox-name" />
+                                                    id="rec-checkbox-07" name="rec-checkbox-name" checked />
                                                   <label class="custom-control-label" for="rec-checkbox-07"> &nbsp;
                                                   </label>
                                                 </div>
@@ -703,6 +703,32 @@
         <div class="modal-footer modal-footer-delete">
           <button type="button" class="btn btn-custom btn-blue blue-shadow" data-dismiss="modal">Go Back</button>
           <button type="button" class="btn btn-custom btn-red red-shadow" id="modal-deleted-multiple-success-message" data-dismiss="modal" data-toggle="modal" data-target="#modal-deleted-success2">Delete Recordings</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade modal-custom modal-backdrop-transaprent modal-shadow-custom" tabindex="-1" id="modal-deleted-multiple-recording-more">
+    <div class="modal-dialog modal-dialog-centered modal-657">
+      <div class="modal-content modal-shadow">
+        <div class="modal-header pt-3 close-none">
+          <h5 class="modal-title text-center">Deleting Recordings</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><img src="assets/images/participant/cross-sign.png" alt=""></span>
+          </button>
+        </div>
+        <div class="modal-body ">
+          <div class="content-session-deleted">
+            <h4>Are you sure you’d like to delete these recordings:</h4>
+  
+            <h5 class="mb-3">Weekly Sprint Session</h5>
+            <h5>+6 Others</h5>
+          </div>
+        </div>
+        
+        <div class="modal-footer modal-footer-delete">
+          <button type="button" class="btn btn-custom btn-blue blue-shadow" data-dismiss="modal">Go Back</button>
+          <button type="button" class="btn btn-custom btn-red red-shadow" id="modal-deleted-multiple-success-message-more" data-dismiss="modal" data-toggle="modal" data-target="#modal-deleted-success2">Delete Recordings</button>
         </div>
       </div>
     </div>
@@ -842,6 +868,26 @@
           $("body").removeClass("modal-bg-transparent-color overflow-xy-hidden");
         });
       });
+
+      // for more delete
+      $('#modal-deleted-multiple-recording-more').on('show.bs.modal', function (event) {
+        $('body').toggleClass("backdrop-none");
+      });
+
+      $('#modal-deleted-multiple-recording-more').on('hidden.bs.modal', function (event) {
+        $('body').toggleClass("backdrop-none");
+      });
+
+      $("#modal-deleted-multiple-success-message-more").click(function(){
+        $("#modal-deleted-success2").on('show.bs.modal', function () {
+          $("body").addClass("modal-bg-transparent-color overflow-xy-hidden");
+        });
+
+        $("#modal-deleted-success2").on('hidden.bs.modal', function (event) {
+          $("body").removeClass("modal-bg-transparent-color overflow-xy-hidden");
+        });
+      });
+      
       /**/
     });
   </script>

@@ -290,7 +290,7 @@
                                 
                                 <label for="inputEmail3" class="form-label">Session Name</label>
                                 <div class="form-input pad-60">
-                                  <div class="invalid-feedback">
+                                  <div class="invalid-feedback" style="">
                                     Please enter a session name to proceed.
                                   </div>
                                   <input type="text" class="form-control" id="inputEmail3">
@@ -443,10 +443,19 @@
                             <div class="attendees-body">
                    
                               <div class="row">
+                                <div class="col-lg-12">
+                                  <div class="form-group mb-0">
+                                    <div class="invalid-feedback" style="display: block;">
+                                      Please add at least one attendee to proceed. 
+                                    </div>
+                                  </div>
+                                </div>
+
                                 <div class="col-lg-3">
                                   <div class="form-group">
                                     <div class="invalid-feedback" style="">
-                                      Please add at least one attendee to proceed. 
+                                      <!-- Please add at least one attendee to proceed.  -->
+                                      Please add email to proceed.
                                     </div>
                                     <label for="">Email</label>
                                     <input type="text" class="form-control typehead-box email-name" placeholder="Enter Email" autocomplete="off" />
@@ -454,7 +463,7 @@
                                 </div>
                                 <div class="col-lg-3">
                                   <div class="form-group">
-                                    <div class="invalid-feedback" >
+                                    <div class="invalid-feedback" style="">
                                       Please add first name to proceed.
                                     </div>
                                     <label for="">First Name</label>
@@ -464,7 +473,7 @@
     
                                 <div class="col-lg-3">
                                   <div class="form-group">
-                                    <div class="invalid-feedback" >
+                                    <div class="invalid-feedback" style="">
                                       Please add Last name to proceed.
                                     </div>
                                     <label for="">Last Name</label>

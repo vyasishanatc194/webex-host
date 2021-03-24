@@ -5,7 +5,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Recordings | Certis</title>
+  <title>Contacts | Certis</title>
   <meta content='initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width' name='viewport' />
   <meta name="theme-color" content="#002855">
   <meta name="msapplication-navbutton-color" content="#002855">
@@ -102,7 +102,7 @@
                     </a>
                   </li>
 
-                  <li class="nav-item active">
+                  <li class="nav-item">
                     <a class="nav-link nav-normal" href="recording.html">
                       <span class="icon-span"> <span class="bg-custom-icon record-circular-button-icon"></span> </span>
                       <span class="text-collapse-menu">Recordings</span>
@@ -116,7 +116,7 @@
                     </a>
                   </li>
 
-                  <li class="nav-item">
+                  <li class="nav-item active">
                     <a class="nav-link nav-normal" href="contacts.html">
                       <span class="icon-span"> <span class="bg-custom-icon contact-book-icon"></span> </span>
                       <span class="text-collapse-menu">Contacts</span>
@@ -280,11 +280,11 @@
                       <div class="row">
                         <div class="col-lg-12 col-md-12">
 
-                          <div class="inner-main-general-root recordings-main-root">
+                          <div class="inner-main-general-root contacts-main-root">
 
                             <div class="heading-title-div">
                               <div class="heading-title-inner-div">
-                                <h2>Recordings</h2>
+                                <h2>Contacts</h2>
                               </div>
                             </div>
 
@@ -298,7 +298,7 @@
                                       <div class="width-470">
                                         <div class="form-group form-group-custom">
                                           <div class="label-div">
-                                            <label>Search Recordings</label>
+                                            <label>Search Contacts</label>
                                           </div>
                                           <div class="input-control">
                                             <input type="text" class="form-control" placeholder="" />
@@ -309,7 +309,7 @@
                                       <div class="width-420">
                                         <div class="form-group form-group-custom date-group-custom">
                                           <div class="label-div">
-                                            <label>Session Date</label>
+                                            <label>Date Added</label>
                                           </div>
                                           <div class="input-control">
                                             <div class="form-input max-width-217 pd-right-46 flatpickr date" data-wrap="true" data-clickOpens="false">
@@ -342,13 +342,13 @@
                                   <div class="table-card-bx-tp">
                                     <div class="table-card-bx-tp-lf">
                                       <div class="title-txt-div">
-                                        <h4>Recordings</h4>
+                                        <h4>Contacts</h4>
                                       </div>
                                     </div>
                                     <div class="table-card-bx-tp-rf">
                                       <div class="btn-group-bx">
                                         <button type="button" class="btn btn-primary btn-common-primary btn-common-primary-36 " id="select-all-btn-recording"> Select All </button>
-                                        <button type="button" class="btn btn-primary btn-common-danger btn-common-danger-36 ml-25" id="delete-selected-btn-recording" data-toggle="modal" data-target="#modal-deleted-multiple-recording"> Delete Selected (2) </button>
+                                        <button type="button" class="btn btn-primary btn-common-danger btn-common-danger-36 ml-25" id="delete-selected-btn-recording" data-toggle="modal" data-target="#modal-deleted-multiple-cont-more"> Delete Selected (2) </button>
                                       </div>
                                     </div>
                                   </div>
@@ -361,10 +361,11 @@
                                           <thead>
                                             <tr>
                                               <th class="check-th width-86">&nbsp;</th>
-                                              <th class="width-345"> Recording Name </th>
-                                              <th class="width-280"> Session Name </th>
-                                              <th class="width-345"> Session Date & Time </th>
-                                              <th class="width-180"> Length </th>
+                                              <th class="width-140"> First Name </th>
+                                              <th class="width-170"> Last Name </th>
+                                              <th class="width-260"> Email </th>
+                                              <th class="width-290"> Date Added </th>
+                                              <th class="width-275"> Date Last Used </th>
                                               <th class="width-270 last-th">&nbsp;</th>
                                             </tr>
                                           </thead>
@@ -374,31 +375,21 @@
                                               <td>
                                                 <div class="custom-control custom-checkbox custom-checkbox-general">
                                                   <input type="checkbox" class="custom-control-input"
-                                                    id="rec-checkbox-01" name="rec-checkbox-name" checked />
-                                                  <label class="custom-control-label" for="rec-checkbox-01"> &nbsp;
+                                                    id="cont-checkbox-01" name="cont-checkbox-name" checked />
+                                                  <label class="custom-control-label" for="cont-checkbox-01"> &nbsp;
                                                   </label>
                                                 </div>
                                               </td>
-                                              <td> Recording_2021_01_26_3_30_17_PM </td>
-                                              <td>
-                                                <div class="session-img-txt-div">
-                                                  <a href="#" class="session-img-txt-row">
-                                                    <div class="session-img-bx">
-                                                      <img src="assets/images/img-01.jpg" class="img-fluid" alt="img" />
-                                                    </div>
-                                                    <div class="session-txt-bx">
-                                                      <h4>Weekly Sprint Session</h4>
-                                                    </div>
-                                                  </a>
-                                                </div>
-                                              </td>
-                                              <td> (UTC-07:00) 5 Sept 2020, 07:50AM - 08:50AM </td>
-                                              <td> 00:00:14 </td>
+                                              <td> Hange </td>
+                                              <td> Zoe </td>
+                                              <td> Hange_zoe@capitaland.com </td>
+                                              <td> (UTC-07:00) 5 Sept 2020, 07:50AM </td>
+                                              <td> (UTC-07:00) 5 Sept 2020, 07:50AM </td>
                                               <td>
                                                 <div class="action-div">
                                                   <div class="action-row-div">
-                                                    <a href="#" class="btn btn-primary-smallcst mr-20"> Download </a>
-                                                    <a href="#" data-toggle="modal" data-target="#modal-rec-deleted" class="btn btn-danger-smallcst"> Delete </a>
+                                                    <a href="#" data-toggle="modal" data-target="#modal-edit-contact-details" class="btn btn-primary-smallcst mr-20"> Edit </a>
+                                                    <a href="#" data-toggle="modal" data-target="#modal-cont-deleted" class="btn btn-danger-smallcst"> Delete </a>
                                                   </div>
                                                 </div>
                                               </td>
@@ -408,31 +399,21 @@
                                               <td>
                                                 <div class="custom-control custom-checkbox custom-checkbox-general">
                                                   <input type="checkbox" class="custom-control-input"
-                                                    id="rec-checkbox-02" name="rec-checkbox-name" checked />
-                                                  <label class="custom-control-label" for="rec-checkbox-02"> &nbsp;
+                                                    id="cont-checkbox-02" name="cont-checkbox-name" checked />
+                                                  <label class="custom-control-label" for="cont-checkbox-02"> &nbsp;
                                                   </label>
                                                 </div>
                                               </td>
-                                              <td> Recording_2021_01_26_3_30_17_PM </td>
-                                              <td>
-                                                <div class="session-img-txt-div">
-                                                  <a href="#" class="session-img-txt-row">
-                                                    <div class="session-img-bx">
-                                                      <img src="assets/images/img-01.jpg" class="img-fluid" alt="img" />
-                                                    </div>
-                                                    <div class="session-txt-bx">
-                                                      <h4>Weekly Sprint Session</h4>
-                                                    </div>
-                                                  </a>
-                                                </div>
-                                              </td>
-                                              <td> (UTC-07:00) 5 Sept 2020, 07:50AM - 08:50AM </td>
-                                              <td> 00:00:14 </td>
+                                              <td> Hange </td>
+                                              <td> Zoe </td>
+                                              <td> Hange_zoe@capitaland.com </td>
+                                              <td> (UTC-07:00) 5 Sept 2020, 07:50AM </td>
+                                              <td> (UTC-07:00) 5 Sept 2020, 07:50AM </td>
                                               <td>
                                                 <div class="action-div">
                                                   <div class="action-row-div">
-                                                    <a href="#" class="btn btn-primary-smallcst mr-20"> Download </a>
-                                                    <a href="#" data-toggle="modal" data-target="#modal-rec-deleted" class="btn btn-danger-smallcst"> Delete </a>
+                                                    <a href="#" data-toggle="modal" data-target="#modal-edit-contact-details" class="btn btn-primary-smallcst mr-20"> Edit </a>
+                                                    <a href="#" data-toggle="modal" data-target="#modal-cont-deleted" class="btn btn-danger-smallcst"> Delete </a>
                                                   </div>
                                                 </div>
                                               </td>
@@ -442,31 +423,21 @@
                                               <td>
                                                 <div class="custom-control custom-checkbox custom-checkbox-general">
                                                   <input type="checkbox" class="custom-control-input"
-                                                    id="rec-checkbox-03" name="rec-checkbox-name" />
-                                                  <label class="custom-control-label" for="rec-checkbox-03"> &nbsp;
+                                                    id="cont-checkbox-03" name="cont-checkbox-name" checked />
+                                                  <label class="custom-control-label" for="cont-checkbox-03"> &nbsp;
                                                   </label>
                                                 </div>
                                               </td>
-                                              <td> Recording_2021_01_26_3_30_17_PM </td>
-                                              <td>
-                                                <div class="session-img-txt-div">
-                                                  <a href="#" class="session-img-txt-row">
-                                                    <div class="session-img-bx">
-                                                      <img src="assets/images/img-01.jpg" class="img-fluid" alt="img" />
-                                                    </div>
-                                                    <div class="session-txt-bx">
-                                                      <h4>Weekly Sprint Session</h4>
-                                                    </div>
-                                                  </a>
-                                                </div>
-                                              </td>
-                                              <td> (UTC-07:00) 5 Sept 2020, 07:50AM - 08:50AM </td>
-                                              <td> 00:00:14 </td>
+                                              <td> Hange </td>
+                                              <td> Zoe </td>
+                                              <td> Hange_zoe@capitaland.com </td>
+                                              <td> (UTC-07:00) 5 Sept 2020, 07:50AM </td>
+                                              <td> (UTC-07:00) 5 Sept 2020, 07:50AM </td>
                                               <td>
                                                 <div class="action-div">
                                                   <div class="action-row-div">
-                                                    <a href="#" class="btn btn-primary-smallcst mr-20"> Download </a>
-                                                    <a href="#" data-toggle="modal" data-target="#modal-rec-deleted" class="btn btn-danger-smallcst"> Delete </a>
+                                                    <a href="#" data-toggle="modal" data-target="#modal-edit-contact-details" class="btn btn-primary-smallcst mr-20"> Edit </a>
+                                                    <a href="#" data-toggle="modal" data-target="#modal-cont-deleted" class="btn btn-danger-smallcst"> Delete </a>
                                                   </div>
                                                 </div>
                                               </td>
@@ -476,31 +447,21 @@
                                               <td>
                                                 <div class="custom-control custom-checkbox custom-checkbox-general">
                                                   <input type="checkbox" class="custom-control-input"
-                                                    id="rec-checkbox-04" name="rec-checkbox-name" />
-                                                  <label class="custom-control-label" for="rec-checkbox-04"> &nbsp;
+                                                    id="cont-checkbox-04" name="cont-checkbox-name" checked />
+                                                  <label class="custom-control-label" for="cont-checkbox-04"> &nbsp;
                                                   </label>
                                                 </div>
                                               </td>
-                                              <td> Recording_2021_01_26_3_30_17_PM </td>
-                                              <td>
-                                                <div class="session-img-txt-div">
-                                                  <a href="#" class="session-img-txt-row">
-                                                    <div class="session-img-bx">
-                                                      <img src="assets/images/img-01.jpg" class="img-fluid" alt="img" />
-                                                    </div>
-                                                    <div class="session-txt-bx">
-                                                      <h4>Weekly Sprint Session</h4>
-                                                    </div>
-                                                  </a>
-                                                </div>
-                                              </td>
-                                              <td> (UTC-07:00) 5 Sept 2020, 07:50AM - 08:50AM </td>
-                                              <td> 00:00:14 </td>
+                                              <td> Hange </td>
+                                              <td> Zoe </td>
+                                              <td> Hange_zoe@capitaland.com </td>
+                                              <td> (UTC-07:00) 5 Sept 2020, 07:50AM </td>
+                                              <td> (UTC-07:00) 5 Sept 2020, 07:50AM </td>
                                               <td>
                                                 <div class="action-div">
                                                   <div class="action-row-div">
-                                                    <a href="#" class="btn btn-primary-smallcst mr-20"> Download </a>
-                                                    <a href="#" data-toggle="modal" data-target="#modal-rec-deleted" class="btn btn-danger-smallcst"> Delete </a>
+                                                    <a href="#" data-toggle="modal" data-target="#modal-edit-contact-details" class="btn btn-primary-smallcst mr-20"> Edit </a>
+                                                    <a href="#" data-toggle="modal" data-target="#modal-cont-deleted" class="btn btn-danger-smallcst"> Delete </a>
                                                   </div>
                                                 </div>
                                               </td>
@@ -510,31 +471,21 @@
                                               <td>
                                                 <div class="custom-control custom-checkbox custom-checkbox-general">
                                                   <input type="checkbox" class="custom-control-input"
-                                                    id="rec-checkbox-05" name="rec-checkbox-name" />
-                                                  <label class="custom-control-label" for="rec-checkbox-05"> &nbsp;
+                                                    id="cont-checkbox-05" name="cont-checkbox-name" checked />
+                                                  <label class="custom-control-label" for="cont-checkbox-05"> &nbsp;
                                                   </label>
                                                 </div>
                                               </td>
-                                              <td> Recording_2021_01_26_3_30_17_PM </td>
-                                              <td>
-                                                <div class="session-img-txt-div">
-                                                  <a href="#" class="session-img-txt-row">
-                                                    <div class="session-img-bx">
-                                                      <img src="assets/images/img-01.jpg" class="img-fluid" alt="img" />
-                                                    </div>
-                                                    <div class="session-txt-bx">
-                                                      <h4>Weekly Sprint Session</h4>
-                                                    </div>
-                                                  </a>
-                                                </div>
-                                              </td>
-                                              <td> (UTC-07:00) 5 Sept 2020, 07:50AM - 08:50AM </td>
-                                              <td> 00:00:14 </td>
+                                              <td> Hange </td>
+                                              <td> Zoe </td>
+                                              <td> Hange_zoe@capitaland.com </td>
+                                              <td> (UTC-07:00) 5 Sept 2020, 07:50AM </td>
+                                              <td> (UTC-07:00) 5 Sept 2020, 07:50AM </td>
                                               <td>
                                                 <div class="action-div">
                                                   <div class="action-row-div">
-                                                    <a href="#" class="btn btn-primary-smallcst mr-20"> Download </a>
-                                                    <a href="#" data-toggle="modal" data-target="#modal-rec-deleted" class="btn btn-danger-smallcst"> Delete </a>
+                                                    <a href="#" data-toggle="modal" data-target="#modal-edit-contact-details" class="btn btn-primary-smallcst mr-20"> Edit </a>
+                                                    <a href="#" data-toggle="modal" data-target="#modal-cont-deleted" class="btn btn-danger-smallcst"> Delete </a>
                                                   </div>
                                                 </div>
                                               </td>
@@ -544,31 +495,21 @@
                                               <td>
                                                 <div class="custom-control custom-checkbox custom-checkbox-general">
                                                   <input type="checkbox" class="custom-control-input"
-                                                    id="rec-checkbox-06" name="rec-checkbox-name" />
-                                                  <label class="custom-control-label" for="rec-checkbox-06"> &nbsp;
+                                                    id="cont-checkbox-06" name="cont-checkbox-name" checked />
+                                                  <label class="custom-control-label" for="cont-checkbox-06"> &nbsp;
                                                   </label>
                                                 </div>
                                               </td>
-                                              <td> Recording_2021_01_26_3_30_17_PM </td>
-                                              <td>
-                                                <div class="session-img-txt-div">
-                                                  <a href="#" class="session-img-txt-row">
-                                                    <div class="session-img-bx">
-                                                      <img src="assets/images/img-01.jpg" class="img-fluid" alt="img" />
-                                                    </div>
-                                                    <div class="session-txt-bx">
-                                                      <h4>Weekly Sprint Session</h4>
-                                                    </div>
-                                                  </a>
-                                                </div>
-                                              </td>
-                                              <td> (UTC-07:00) 5 Sept 2020, 07:50AM - 08:50AM </td>
-                                              <td> 00:00:14 </td>
+                                              <td> Hange </td>
+                                              <td> Zoe </td>
+                                              <td> Hange_zoe@capitaland.com </td>
+                                              <td> (UTC-07:00) 5 Sept 2020, 07:50AM </td>
+                                              <td> (UTC-07:00) 5 Sept 2020, 07:50AM </td>
                                               <td>
                                                 <div class="action-div">
                                                   <div class="action-row-div">
-                                                    <a href="#" class="btn btn-primary-smallcst mr-20"> Download </a>
-                                                    <a href="#" data-toggle="modal" data-target="#modal-rec-deleted" class="btn btn-danger-smallcst"> Delete </a>
+                                                    <a href="#" data-toggle="modal" data-target="#modal-edit-contact-details" class="btn btn-primary-smallcst mr-20"> Edit </a>
+                                                    <a href="#" data-toggle="modal" data-target="#modal-cont-deleted" class="btn btn-danger-smallcst"> Delete </a>
                                                   </div>
                                                 </div>
                                               </td>
@@ -578,31 +519,21 @@
                                               <td>
                                                 <div class="custom-control custom-checkbox custom-checkbox-general">
                                                   <input type="checkbox" class="custom-control-input"
-                                                    id="rec-checkbox-07" name="rec-checkbox-name" />
-                                                  <label class="custom-control-label" for="rec-checkbox-07"> &nbsp;
+                                                    id="cont-checkbox-07" name="cont-checkbox-name" checked />
+                                                  <label class="custom-control-label" for="cont-checkbox-07"> &nbsp;
                                                   </label>
                                                 </div>
                                               </td>
-                                              <td> Recording_2021_01_26_3_30_17_PM </td>
-                                              <td>
-                                                <div class="session-img-txt-div">
-                                                  <a href="#" class="session-img-txt-row">
-                                                    <div class="session-img-bx">
-                                                      <img src="assets/images/img-01.jpg" class="img-fluid" alt="img" />
-                                                    </div>
-                                                    <div class="session-txt-bx">
-                                                      <h4>Weekly Sprint Session</h4>
-                                                    </div>
-                                                  </a>
-                                                </div>
-                                              </td>
-                                              <td> (UTC-07:00) 5 Sept 2020, 07:50AM - 08:50AM </td>
-                                              <td> 00:00:14 </td>
+                                              <td> Hange </td>
+                                              <td> Zoe </td>
+                                              <td> Hange_zoe@capitaland.com </td>
+                                              <td> (UTC-07:00) 5 Sept 2020, 07:50AM </td>
+                                              <td> (UTC-07:00) 5 Sept 2020, 07:50AM </td>
                                               <td>
                                                 <div class="action-div">
                                                   <div class="action-row-div">
-                                                    <a href="#" class="btn btn-primary-smallcst mr-20"> Download </a>
-                                                    <a href="#" data-toggle="modal" data-target="#modal-rec-deleted" class="btn btn-danger-smallcst"> Delete </a>
+                                                    <a href="#" data-toggle="modal" data-target="#modal-edit-contact-details" class="btn btn-primary-smallcst mr-20"> Edit </a>
+                                                    <a href="#" data-toggle="modal" data-target="#modal-cont-deleted" class="btn btn-danger-smallcst"> Delete </a>
                                                   </div>
                                                 </div>
                                               </td>
@@ -657,75 +588,80 @@
 
   </div><!-- end of wrapper -->
 
-  <div class="modal fade modal-custom modal-backdrop-transaprent modal-shadow-custom" tabindex="-1" id="modal-rec-deleted">
+  <div class="modal fade modal-custom modal-backdrop-transaprent modal-shadow-custom" tabindex="-1" id="modal-cont-deleted">
     <div class="modal-dialog modal-dialog-centered modal-657">
       <div class="modal-content modal-shadow">
         <div class="modal-header pt-3 close-none">
-          <h5 class="modal-title text-center">Deleting Recording</h5>
+          <h5 class="modal-title text-center">Deleting Contact</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true"><img src="assets/images/participant/cross-sign.png" alt=""></span>
           </button>
         </div>
         <div class="modal-body ">
           <div class="content-session-deleted">
-            <h4>Are you sure you’d like to delete this recording:</h4>
+            <h4>Are you sure you’d like to delete this contact:</h4>
   
-            <h5>Recording_2021_01_26_3_30_17_PM</h5>
+            <h5>Hange Zoe</h5>
           </div>
         </div>
         
         <div class="modal-footer modal-footer-delete">
           <button type="button" class="btn btn-custom btn-blue blue-shadow" data-dismiss="modal">Go Back</button>
-          <button type="button" class="btn btn-custom btn-red red-shadow" id="modal-deleted-success-message" data-dismiss="modal" data-toggle="modal" data-target="#modal-deleted-success">Delete Recording</button>
+          <button type="button" class="btn btn-custom btn-red red-shadow" id="modal-deleted-success-message" data-dismiss="modal" data-toggle="modal" data-target="#modal-deleted-success">Delete Contact</button>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="modal fade modal-custom modal-backdrop-transaprent modal-shadow-custom" tabindex="-1" id="modal-deleted-multiple-recording">
+  <div class="modal fade modal-custom modal-backdrop-transaprent modal-shadow-custom" tabindex="-1" id="modal-deleted-multiple-cont">
     <div class="modal-dialog modal-dialog-centered modal-657">
       <div class="modal-content modal-shadow">
         <div class="modal-header pt-3 close-none">
-          <h5 class="modal-title text-center">Deleting Recordings</h5>
+          <h5 class="modal-title text-center">Deleting Contacts</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true"><img src="assets/images/participant/cross-sign.png" alt=""></span>
           </button>
         </div>
         <div class="modal-body ">
           <div class="content-session-deleted">
-            <h4>Are you sure you’d like to delete these recordings:</h4>
+            <h4>Are you sure you’d like to delete these contacts:</h4>
   
-            <h5 class="mb-3">Recording_2021_01_26_3_30_17_PM</h5>
-            <h5>Recording_2021_01_26_3_30_23_PM</h5>
+            <h5 class="mb-3">Hange Zoe</h5>
+            <h5>Eren Yaeger</h5>
           </div>
         </div>
         
         <div class="modal-footer modal-footer-delete">
           <button type="button" class="btn btn-custom btn-blue blue-shadow" data-dismiss="modal">Go Back</button>
-          <button type="button" class="btn btn-custom btn-red red-shadow" id="modal-deleted-multiple-success-message" data-dismiss="modal" data-toggle="modal" data-target="#modal-deleted-success2">Delete Recordings</button>
+          <button type="button" class="btn btn-custom btn-red red-shadow" id="modal-deleted-multiple-success-message" data-dismiss="modal" data-toggle="modal" data-target="#modal-deleted-success2">Delete Contacts</button>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="modal fade modal-custom modal-backdrop-transaprent modal-shadow-custom" tabindex="-1" id="modal-changes">
-    <div class="modal-dialog modal-dialog-centered modal-546">
+  <div class="modal fade modal-custom modal-backdrop-transaprent modal-shadow-custom" tabindex="-1" id="modal-deleted-multiple-cont-more">
+    <div class="modal-dialog modal-dialog-centered modal-657">
       <div class="modal-content modal-shadow">
-        <div class="modal-header white-header pt-4 close-none">
-          <h5 class="modal-title text-center"></h5>
+        <div class="modal-header pt-3 close-none">
+          <h5 class="modal-title text-center">Deleting Contacts</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true"><img src="assets/images/participant/cross-sign.png" alt=""></span>
           </button>
         </div>
-        <div class="modal-body pt-0">
-          <div class="session-changes">
-            <h4>Saved changes successfully!</h4>
+        <div class="modal-body ">
+          <div class="content-session-deleted">
+            <h4>Are you sure you’d like to delete these contacts:</h4>
+  
+            <h5 class="mb-3">Hange Zoe</h5>
+            <h5>+6 Others</h5>
           </div>
         </div>
-        <div class="modal-footer pb-30">
-          <button type="button" class="btn btn-custom btn-orange orange-shadow" data-dismiss="modal">Ok</button>
+        
+        <div class="modal-footer modal-footer-delete">
+          <button type="button" class="btn btn-custom btn-blue blue-shadow" data-dismiss="modal">Go Back</button>
+          <button type="button" class="btn btn-custom btn-red red-shadow" id="modal-deleted-multiple-success-message-more" data-dismiss="modal" data-toggle="modal" data-target="#modal-deleted-success2">Delete Contacts</button>
         </div>
-      </div>  
+      </div>
     </div>
   </div>
 
@@ -736,7 +672,7 @@
         <div class="modal-body">
           <div class="general-message-card-div rec-gmc-div">
             <div class="general-message-card-inner">
-              <p>Recording Deleted Successfully</p>
+              <p>Contact Deleted Successfully</p>
             </div>
   
             <div class="btn-group-div">
@@ -756,7 +692,7 @@
         <div class="modal-body">
           <div class="general-message-card-div rec-gmc-div">
             <div class="general-message-card-inner">
-              <p>Recordings Deleted Successfully</p>
+              <p>Contacts Deleted Successfully</p>
             </div>
   
             <div class="btn-group-div">
@@ -766,6 +702,83 @@
         </div>
       </div>
   
+    </div>
+  </div>
+
+  <!-- edit-contact-details -->
+  <div class="modal fade modal-custom modal-backdrop-transaprent modal-shadow-custom" tabindex="-1" id="modal-edit-contact-details">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content modal-shadow">
+
+        <div class="modal-header close-none">
+          <h5 class="modal-title">Edit Contact Details</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><img src="assets/images/participant/cross-sign.png" alt=""></span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <div class="add-participent ">
+            <div class="row no-gutters">
+              <div class="col-lg-12">
+              
+                <div class="form-group row no-gutters">
+                  <label for="staticEmail" class="col-sm-4 col-form-label">First Name</label>
+                  <div class="col-sm-8">
+                    <div class="form-group-inner">
+                      <input type="text" class="form-control" value="Hange">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group row no-gutters">
+                  <label for="staticEmail" class="col-sm-4 col-form-label">Last Name</label>
+                  <div class="col-sm-8">
+                    <div class="form-group-inner">
+                      <input type="text" class="form-control" value="Zoe" >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group row no-gutters">
+                  <label for="staticEmail" class="col-sm-4 col-form-label">Email</label>
+                  <div class="col-sm-8">
+                    <div class="form-group-inner">
+                      <input type="email" class="form-control" value="Hange_zoe@capitaland.com">
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer pb-35 send-footer">
+          <button type="button" class="btn btn-custom btn-orange orange-shadow" id="modal-save-changes-success-message" data-dismiss="modal" data-toggle="modal" data-target="#modal-changes-cont">Save Changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade modal-custom modal-backdrop-transaprent modal-shadow-custom" tabindex="-1" id="modal-changes-cont">
+    <div class="modal-dialog modal-dialog-centered modal-546">
+      <div class="modal-content modal-shadow">
+        <div class="modal-header white-header pt-4 close-none">
+          <h5 class="modal-title text-center"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><img src="assets/images/participant/cross-sign.png" alt=""></span>
+          </button>
+        </div>
+        <div class="modal-body pt-0">
+          <div class="session-changes">
+            <h4>Saved changes successfully!</h4>
+          </div>
+        </div>
+        <div class="modal-footer pb-30">
+          <button type="button" class="btn btn-custom btn-orange orange-shadow" data-dismiss="modal">Ok</button>
+        </div>
+      </div>  
     </div>
   </div>
 
@@ -815,11 +828,19 @@
         $('body').toggleClass("backdrop-none");
       });
 
-      $('#modal-deleted-multiple-recording').on('show.bs.modal', function (event) {
+      $('#modal-deleted-multiple-cont').on('show.bs.modal', function (event) {
         $('body').toggleClass("backdrop-none");
       });
 
-      $('#modal-deleted-multiple-recording').on('hidden.bs.modal', function (event) {
+      $('#modal-deleted-multiple-cont').on('hidden.bs.modal', function (event) {
+        $('body').toggleClass("backdrop-none");
+      });
+
+      $('#modal-edit-contact-details').on('show.bs.modal', function (event) {
+        $('body').toggleClass("backdrop-none");
+      });
+
+      $('#modal-edit-contact-details').on('hidden.bs.modal', function (event) {
         $('body').toggleClass("backdrop-none");
       });
 
@@ -842,7 +863,36 @@
           $("body").removeClass("modal-bg-transparent-color overflow-xy-hidden");
         });
       });
+
+      $("#modal-save-changes-success-message").click(function(){
+        $("#modal-changes-cont").on('show.bs.modal', function () {
+          $("body").addClass("modal-bg-transparent-color overflow-xy-hidden");
+        });
+
+        $("#modal-changes-cont").on('hidden.bs.modal', function (event) {
+          $("body").removeClass("modal-bg-transparent-color overflow-xy-hidden");
+        });
+      });
       /**/
+
+      // for more delete
+      $('#modal-deleted-multiple-cont-more').on('show.bs.modal', function (event) {
+        $('body').toggleClass("backdrop-none");
+      });
+
+      $('#modal-deleted-multiple-cont-more').on('hidden.bs.modal', function (event) {
+        $('body').toggleClass("backdrop-none");
+      });
+
+      $("#modal-deleted-multiple-success-message-more").click(function(){
+        $("#modal-deleted-success2").on('show.bs.modal', function () {
+          $("body").addClass("modal-bg-transparent-color overflow-xy-hidden");
+        });
+
+        $("#modal-deleted-success2").on('hidden.bs.modal', function (event) {
+          $("body").removeClass("modal-bg-transparent-color overflow-xy-hidden");
+        });
+      });
     });
   </script>
 
