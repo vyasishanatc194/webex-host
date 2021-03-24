@@ -550,9 +550,18 @@
       flex-wrap: wrap;
 }
 
+.in-call-action-area-div .in-call-action-area-row .in-call-action-area-left .img-logo-action {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 140px;
+  height: 42px;
+  -o-object-position: center;
+     object-position: center;
+}
+
 .in-call-action-area-div .in-call-action-area-row .in-call-action-area-right {
   width: calc(100% - 200px);
-  padding: 0 0 0 30px;
+  padding: 0 0 0 20px;
 }
 
 .in-call-action-area-div .btn-group-root ul.btn-group-list {

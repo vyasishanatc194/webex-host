@@ -410,11 +410,18 @@
         display: flex;
         flex-wrap: wrap;
       }
+
+      .img-logo-action {
+        object-fit: contain;
+        width: 140px;
+        height: 42px;
+        object-position: center;
+      }
     }
 
     .in-call-action-area-right {
       width: calc(100% - 200px);
-      padding: 0 0 0 30px;
+      padding: 0 0 0 20px;
     }
   }
 
