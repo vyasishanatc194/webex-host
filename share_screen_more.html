@@ -135,12 +135,22 @@
                                 <ul class="btn-group-list">
 
                                   <li class="btn-item-li"> 
-                                    <div class="dropup-custom dropup">
+                                    <div class="dropup-custom dropup btnshadow-drop">
                                       <button type="button" class="btn btn-primary btn-common-secondary dropdown-toggle" data-toggle="dropdown">
                                         <span class="icon-span"> <span class="bg-custom-icon microphone-icon"></span> </span>
                                         <span class="text-span"> Mute </span>
+                                        <span class="dropdown-arrow-span"> <span class="material-icons"> keyboard_arrow_down </span> </span>
                                       </button>
                                       <div class="dropdown-menu dropdown-menu-custom">
+                                        <div class="close-dropdown-sidebar">
+                                          <div class="close-dropdown-sidebar-row-div">
+                                            <div class="back-div">
+                                              <a href="#" class="btn btn-back-auth btn-close-dropdpwn" id="close-dropdown-sidebar-btn"><span class="material-icons">  navigate_next </span>  </a>
+                                              <h3>Close Sidebar</h3>
+                                            </div>
+                                          </div>
+                                        </div>
+
                                         <div class="dropdown-form-div">
                                           <div class="form-group">
                                             <label class="label">Select a Microphone</label>
@@ -193,13 +203,23 @@
                                   </li>
 
                                   <li class="btn-item-li"> 
-                                    <div class="dropup-custom dropup">
+                                    <div class="dropup-custom dropup btnshadow-drop">
                                       <button type="button" class="btn btn-primary btn-common-secondary dropdown-toggle" data-toggle="dropdown">
                                         <span class="icon-span mr-1"> <span class="bg-custom-icon video-camera-icon"></span> </span>
                                         <span class="text-span"> Stop Video </span>
+                                        <span class="dropdown-arrow-span"> <span class="material-icons"> keyboard_arrow_down </span> </span>
                                       </button>
                                       
                                       <div class="dropdown-menu dropdown-menu-custom">
+                                        <div class="close-dropdown-sidebar">
+                                          <div class="close-dropdown-sidebar-row-div">
+                                            <div class="back-div">
+                                              <a href="#" class="btn btn-back-auth btn-close-dropdpwn" id="close-dropdown-sidebar-btn"><span class="material-icons">  navigate_next </span>  </a>
+                                              <h3>Close Sidebar</h3>
+                                            </div>
+                                          </div>
+                                        </div>
+
                                         <div class="dropdown-form-div">
                                           <div class="form-group">
                                             <label class="label">Select a Camera</label>
@@ -288,13 +308,22 @@
                                   </li>
 
                                   <li class="btn-item-li"> 
-                                    <div class="dropup-custom dropup">
+                                    <div class="dropup-custom dropup btnshadow-drop">
                                       <button type="button" class="btn btn-primary btn-common-secondary dropdown-toggle remove-arrow" data-toggle="dropdown">
                                         <span class="icon-span mr-1"> <span class="bg-custom-icon more-icon"></span> </span>
                                         <span class="text-span"> More Options </span>
                                       </button>
                                       
                                       <div class="dropdown-menu dropdown-menu-custom dropdown-menu-right">
+                                        <div class="close-dropdown-sidebar">
+                                          <div class="close-dropdown-sidebar-row-div">
+                                            <div class="back-div">
+                                              <a href="#" class="btn btn-back-auth btn-close-dropdpwn" id="close-dropdown-sidebar-btn"><span class="material-icons">  navigate_next </span>  </a>
+                                              <h3>Close Sidebar</h3>
+                                            </div>
+                                          </div>
+                                        </div>
+
                                         <div class="dropdown-form-div">
                                           <div class="form-group border-bottom-0">
                                             <div class="check-list-box">
@@ -375,25 +404,29 @@
 
 <script>
   $(document).ready(function () {
-    $("#in-call-user-slider-owl").owlCarousel({
+     var owl = $('#in-call-user-slider-owl');
+    owl.owlCarousel({
       loop: false,
-      nav:true,
+      nav: true,
       navText: ['<span class="span-roundcircle left-roundcircle"><span class="material-icons"> navigate_before </span></span>','<span class="span-roundcircle right-roundcircle"><span class="material-icons"> navigate_next </span></span>'],
       dots: false,
       stagePadding: 0,
       margin: 15,
-      autoplay: true,
-      smartSpeed: 2000,
+      autoPlay: true,
+      responsiveRefreshRate: 200,
+      smartSpeed: 1000,
+      responsiveClass:true,
+      stopOnHover : true,
       responsive: {
         0: {
           items: 1,
-          autoplay: true,
-          nav:true,
-          dots: false,
+          slideBy:1,
+          loop: true,
+          smartSpeed: 250,
           margin: 5,
         },
-        600: {
-          items: 4,
+        500: {
+          items: 5,
           margin: 5,
         },
         1200: {
@@ -404,6 +437,16 @@
           items: 5,
         }
       }
+    });
+
+    $('#in-call-user-slider-owl').trigger('refresh.owl.carousel');
+
+    window.addEventListener('orientationchange', function() {
+      $('#in-call-user-slider-owl').trigger('refresh.owl.carousel');
+    });
+
+    $(".dropdown-menu .back-div").click(function() {
+      $(this).closest(".dropdown-menu").prev().dropdown("toggle");
     });
 
     $('.dropdown-menu.dropdown-menu-custom').on('click', function(event){
