@@ -560,6 +560,7 @@
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/owl.carousel.min.js"></script>
 <script src="assets/js/search-dropdown.js"></script>
+<script src="assets/js/participant-new.js"></script>
 <script src="assets/js/custom.js"></script>
 
 <script>
@@ -616,89 +617,9 @@
 
     // New design participant
 
-    function minimize_screen() {
-      $("#main-big-screen-view-area .part-list-root-div").addClass("hidden-area").removeClass("show-area");
-      $("#goto-presentor-view-area").addClass("hidden-area").removeClass("show-area");
-      $("#chat-group-participant-area").addClass("hidden-area").removeClass("show-area");
+    
 
-      $("#disabled-chat-btn").removeClass("disabled-btn");
-
-      // $("#main-small-screen-view-area").removeClass("maximize-show-area");
-      // $("#main-small-screen-view-area").addClass("minimize-show-area");
-
-      $("#main-small-screen-view-area").addClass("small-show-area minimize-show-area").removeClass("maximize-show-area");
-
-      $("#small-screen-image").addClass("show-area").removeClass("hidden-area");
-      $("#small-screen-video-div").addClass("hidden-area").removeClass("show-area");
-
-      $("#in-call-video-bg-fixed-div").removeClass("bg-color-hidden-video");
-      $("#in-call-video-bg-fixed-div .in-call-video-bg").removeClass("hidden-area");
-    }
-
-    function maximize_screen() {
-      $("#main-big-screen-view-area .part-list-root-div").addClass("show-area").removeClass("hidden-area");
-      $("#goto-presentor-view-area").addClass("show-area").removeClass("hidden-area");
-      $("#chat-group-participant-area").addClass("show-area").removeClass("hidden-area");
-      $("#disabled-chat-btn").addClass("disabled-btn");
-
-      $("#main-small-screen-view-area").addClass("maximize-show-area").removeClass("small-show-area");
-      
-      $("#small-screen-image").addClass("hidden-area").removeClass("show-area");
-      $("#small-screen-video-div").addClass("show-area").removeClass("hidden-area");
-
-      $("#in-call-video-bg-fixed-div").addClass("bg-color-hidden-video");
-      $("#in-call-video-bg-fixed-div .in-call-video-bg").addClass("hidden-area");
-    }
-
-    $("#show-participants-btn").click(function(){
-      $("#main-small-screen-view-area").toggleClass("show-area");
-      $("#main-small-screen-view-area").toggleClass("hidden-area");
-
-      $("#show-participants-btn-area").addClass("hidden-area");
-      $("#main-small-screen-view-area").addClass("small-show-area");
-
-      $(".small-show-area #minimize-screen-btn").click(function(){
-        $("#main-small-screen-view-area.small-show-area").addClass("hidden-area").removeClass("show-area small-show-area");
-        $("#show-participants-btn-area").removeClass("hidden-area");
-      });
-
-      $(".small-show-area #maximize-screen-btn").click(function(){
-        maximize_screen();
-      });
-    });
-
-    // if($(".maximize-show-area")) {
-      
-    // }
-
-    // step 2
-    // $(".small-show-area #maximize-screen-btn").click(function(){
-    //   maximize_screen();
-    // });
-
-    // step 3
-    $(".maximize-show-area #minimize-screen-btn").click(function(){
-      // $("#main-small-screen-view-area").removeClass("small-show-area");
-      minimize_screen();
-      $("#main-small-screen-view-area.small-show-area").addClass("show-area").removeClass("hidden-area");
-      $("#show-participants-btn-area").addClass("hidden-area");
-    });
-
-    // step 4
-    $("#goto-presentor-view-btn").click(function(){
-      $("#main-big-screen-view-area .part-list-root-div").addClass("hidden-area").removeClass("show-area");
-      $("#goto-presentor-view-area").addClass("hidden-area").removeClass("show-area");
-      $("#chat-group-participant-area").addClass("hidden-area").removeClass("show-area");
-      $("#disabled-chat-btn").removeClass("disabled-btn");
-
-      $("#main-small-screen-view-area").removeClass("small-show-area");
-
-      $("#small-screen-image").addClass("show-area").removeClass("hidden-area");
-      $("#small-screen-video-div").addClass("hidden-area").removeClass("show-area");
-
-      $("#in-call-video-bg-fixed-div").removeClass("bg-color-hidden-video");
-      $("#in-call-video-bg-fixed-div .in-call-video-bg").removeClass("hidden-area");
-    });
+    
   });
 </script>
 
