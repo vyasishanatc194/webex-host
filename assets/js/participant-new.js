@@ -60,13 +60,26 @@ $(document).ready(function () {
       $(".maximize-show-area #minimize-screen-btn").click(function(){
         minimize_screen();
         show_participants_btn_not_show();
+
+        $(".small-screen-area #minimize-screen-btn").click(function(){
+          first_minimize_screen();
+        });
       });
 
       $(".maximize-show-area #goto-presentor-view-btn").click(function(){
         minimize_screen();
         show_participants_btn_not_show();
+
+        $(".small-screen-area #minimize-screen-btn").click(function(){
+          first_minimize_screen();
+        });
       });
     });
   });
 
+  // $("#minimize-screen-btn").click(function(){
+  //   if(!$("#main-small-screen-view-area.maximize-show-area.show-area.small-screen-area")){
+  //     console.log("minimize");
+  //   }
+  // });
 });
