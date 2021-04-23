@@ -1087,9 +1087,58 @@
   border: 5px solid #f78c2666;
 }
 
+.right-fixed-btn-div {
+  z-index: 99;
+  position: fixed;
+  bottom: 40px;
+  right: 0;
+}
+
+.right-fixed-btn-div .btn.btn-secondary-show {
+  background: #00000063;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border: 2px solid #f98d29;
+  border-right: 0;
+  border-radius: 12px 0 0 12px;
+  text-align: left;
+  letter-spacing: 0;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  padding: 0 14px 0 14px;
+  min-height: 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+.right-fixed-btn-div .btn.btn-secondary-show .icon-span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 13px 0 3px;
+}
+
 @media (min-width: 1025px) and (max-width: 1450px) {
   .in-call-action-area-div .btn-group-root ul.btn-group-list .btn-item-li {
     margin: 0 10px 10px 0;
+  }
+  .right-fixed-btn-div {
+    bottom: 110px;
+  }
+}
+
+@media (min-width: 1450px) and (max-width: 1800px) {
+  .right-fixed-btn-div {
+    bottom: 110px;
   }
 }
 
@@ -1301,6 +1350,10 @@
     height: 14px;
     width: 14px;
   }
+  .right-fixed-btn-div {
+    bottom: 260px;
+    z-index: 1;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -1416,6 +1469,9 @@
   .in-call-user-ss-box .in-call-user-ss-content-div .in-call-user-ss-content-row .bg-custom-icon {
     height: 14px;
     width: 14px;
+  }
+  .right-fixed-btn-div {
+    bottom: 110px;
   }
 }
 
@@ -1711,6 +1767,21 @@
 .tplf-recording-option-inner
 .tplf-recording-option-inright {
     border-radius: 0;
+  }
+  .right-fixed-btn-div {
+    bottom: auto;
+    top: 0;
+    right: 0;
+  }
+  .right-fixed-btn-div .btn.btn-secondary-show {
+    font-size: 14px;
+    min-height: 44px;
+    border-radius: 0 0 0 12px;
+    border-top: 0;
+  }
+  .right-fixed-btn-div .btn.btn-secondary-show .show-participants-icon {
+    width: 15px;
+    height: 15px;
   }
 }
 

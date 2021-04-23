@@ -19,6 +19,8 @@
 <link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/modal-style.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/incall-style.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/chat-style.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/chat-bx-style.css" media="all" rel="stylesheet" type="text/css" />
 <script src="assets/js/modernizr.js"></script>
 </head>
 
@@ -31,349 +33,522 @@
     <div class="common-wrapper-area-div">
 
         <!--  main  -->
-        <div class="main-center-section">
-          <div class="main-center-div">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-lg-12 col-md-12">
+      <div class="main-center-section">
+        <div class="main-center-div">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-12 col-md-12">
 
-                  <section class="incall-area-section">
-                    <div class="incall-area-div">
+                <section class="incall-area-section">
+                  <div class="incall-area-div">
 
-                      <div class="in-call-video-bg-fixed-div">
-                        <video class="in-call-video-bg" poster="assets/images/background/login_background_graphic.jpg" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-                          <source src="assets/images/background/bg_1.mp4" type="video/mp4">
-                        </video>
-                      </div>
+                    <div class="in-call-video-bg-fixed-div" id="in-call-video-bg-fixed-div">
+                      <video class="in-call-video-bg" poster="assets/images/background/login_background_graphic.jpg" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                        <source src="assets/images/background/bg_1.mp4" type="video/mp4">
+                      </video>
+                    </div>
 
+                    <div class="root-participant-div">
+                      <div class="root-participant-inner-div">
 
-                      <div class="in-call-area-root">
+                        <div class="root-participant-left-div" id="main-big-screen-view-area">
 
-                        <div class="in-call-area-top">
-                          <div class="in-call-area-top-center">
-                            <div class="row">
-                              <div class="col-lg-12 col-md-12">
-
-                                <div class="in-call-user-owl-slider-slider">
-                                  <div class="owl-carousel owl-theme in-call-user-slider-owl" id="in-call-user-slider-owl">
-
-                                    <div class="item">  
-                                      <div class="in-call-user-slider-box">
-                                        <div class="in-call-user-slider-box-inner">
-                                          <div class="in-call-user-slider-img-thumb">
-                                            <div class="img-div">
-                                              <div class="img-thumb"> 
-                                                <img src="assets/images/profile.jpg" class="img-fluid img-responsive" alt="image" />
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div class="in-call-user-slider-content-div">
-                                            <div class="in-call-user-slider-content-row">
-                                              <p>Tristan Lapel</p>
-                                              <a href="#" class="btn-audio">
-                                                <span class="bg-custom-icon un-mute-microphone-icon"></span>
-                                              </a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-
-                                    <div class="item">  
-                                      <div class="in-call-user-slider-box">
-                                        <div class="in-call-user-slider-box-inner">
-                                          <div class="in-call-user-slider-img-thumb">
-                                            <div class="img-div">
-                                              <div class="img-thumb"> 
-                                                <img src="assets/images/profile.jpg" class="img-fluid img-responsive" alt="image" />
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div class="in-call-user-slider-content-div">
-                                            <div class="in-call-user-slider-content-row">
-                                              <p>Rafael Gomez</p>
-                                              <a href="#" class="btn-audio">
-                                                <span class="bg-custom-icon microphone-icon"></span>
-                                              </a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-
-                                    <div class="item">  
-                                      <div class="in-call-user-slider-box">
-                                        <div class="in-call-user-slider-box-inner">
-                                          <div class="in-call-user-slider-img-thumb">
-                                            <div class="img-div">
-                                              <div class="img-thumb"> 
-                                                <img src="assets/images/profile.jpg" class="img-fluid img-responsive" alt="image" />
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div class="in-call-user-slider-content-div">
-                                            <div class="in-call-user-slider-content-row">
-                                              <p>Hailey Riota</p>
-                                              <a href="#" class="btn-audio">
-                                                <span class="bg-custom-icon un-mute-microphone-icon"></span>
-                                              </a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-
-                                    <div class="item">  
-                                      <div class="in-call-user-slider-box active active-in">
-                                        <div class="in-call-user-slider-box-inner">
-                                          <div class="in-call-user-slider-img-thumb">
-                                            <div class="img-div">
-                                              <div class="img-thumb"> 
-                                                <img src="assets/images/profile.jpg" class="img-fluid img-responsive" alt="image" />
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div class="in-call-user-slider-content-div">
-                                            <div class="in-call-user-slider-content-row">
-                                              <p>Sarah Parker</p>
-                                              <a href="#" class="btn-audio">
-                                                <span class="bg-custom-icon microphone-icon"></span>
-                                              </a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-
-                                    <div class="item">  
-                                      <div class="in-call-user-slider-box active">
-                                        <div class="in-call-user-slider-box-inner">
-                                          <div class="in-call-user-slider-img-thumb">
-                                            <div class="img-div">
-                                              <div class="img-thumb"> 
-                                                <img src="assets/images/profile.jpg" class="img-fluid img-responsive" alt="image" />
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div class="in-call-user-slider-content-div">
-                                            <div class="in-call-user-slider-content-row">
-                                              <p>Jamilah Rai</p>
-                                              <a href="#" class="btn-audio">
-                                                <span class="bg-custom-icon microphone-icon"></span>
-                                              </a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-
-                                    <div class="item">  
-                                      <div class="in-call-user-slider-box">
-                                        <div class="in-call-user-slider-box-inner">
-                                          <div class="in-call-user-slider-img-thumb">
-                                            <div class="img-div">
-                                              <div class="img-thumb"> 
-                                                <img src="assets/images/profile.jpg" class="img-fluid img-responsive" alt="image" />
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div class="in-call-user-slider-content-div">
-                                            <div class="in-call-user-slider-content-row">
-                                              <p>Hailey Riota</p>
-                                              <a href="#" class="btn-audio">
-                                                <span class="bg-custom-icon un-mute-microphone-icon"></span>
-                                              </a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-
-                                  </div>
-                                </div>
-
-                              </div>
-                            </div>
+                          <div class="part-list-root-div hidden-area">
+                            <img src="assets/images/participant_video_grid.jpg" alt="img" class="img-fluid" />
                           </div>
+
                         </div>
 
-                        <div class="in-call-area-body">
-                          
-                          <div class="in-call-action-area-div">
-                            <div class="in-call-action-area-row">
-                              <div class="in-call-action-area-left">
-                                <a href="#" class="link"> <img src="assets/images/logo.png" class="img-fluid img-logo-action" alt="logo-img" /> </a>
-                              </div>
-                              <div class="in-call-action-area-right">
-                                <div class="btn-group-root">
-                                  <ul class="btn-group-list">
+                        <div class="root-participant-right-div">
 
-                                    <li class="btn-item-li"> 
-                                      <div class="dropup-custom dropup btnshadow-drop">
-                                        <button type="button" class="btn btn-primary btn-common-secondary dropdown-toggle" data-toggle="dropdown">
-                                          <span class="icon-span"> <span class="bg-custom-icon microphone-icon"></span> </span>
-                                          <span class="text-span"> Mute </span>
-                                          <span class="dropdown-arrow-span"> <span class="material-icons"> keyboard_arrow_down </span> </span>
-                                        </button>
-                                        <div class="dropdown-menu dropdown-menu-custom">
-                                          <div class="close-dropdown-sidebar">
-                                            <div class="close-dropdown-sidebar-row-div">
-                                              <div class="back-div">
-                                                <a href="#" class="btn btn-back-auth btn-close-dropdpwn" id="close-dropdown-sidebar-btn"><span class="material-icons">  navigate_next </span>  </a>
-                                                <h3>Close Sidebar</h3>
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div class="dropdown-form-div">
-                                            <div class="form-group">
-                                              <label class="label">Select a Microphone</label>
-                                              <div class="check-list-box">
-                                                <div class="custom-control custom-checkbox">
-                                                  <input type="radio" class="custom-control-input" id="check01-01" name="microphone-select">
-                                                  <label class="custom-control-label" for="check01-01">Same as System</label>
-                                                </div>
-                                                <div class="custom-control custom-checkbox">
-                                                  <input type="radio" class="custom-control-input" id="check01-02" name="microphone-select">
-                                                  <label class="custom-control-label" for="check01-02">Built-in Microphone (Internal Microphone)</label>
-                                                </div>
-                                              </div>
-                                            </div>
-
-                                            <div class="form-group">
-                                              <label class="label">Select a Speaker</label>
-                                              <div class="check-list-box">
-                                                <div class="custom-control custom-checkbox">
-                                                  <input type="radio" class="custom-control-input" id="check02-01" name="Speaker-select">
-                                                  <label class="custom-control-label" for="check02-01">Same as System</label>
-                                                </div>
-                                                <div class="custom-control custom-checkbox">
-                                                  <input type="radio" class="custom-control-input" id="check02-02" name="Speaker-select">
-                                                  <label class="custom-control-label" for="check02-02">Built-in Output (Internal Speakers)</label>
-                                                </div>
-                                              </div>
-                                            </div>
-
-                                            <div class="form-group">
-                                              <div class="check-list-box">
-                                                <div class="custom-control custom-checkbox">
-                                                  <input type="checkbox" class="custom-control-input" id="check03-01" name="Mute-select">
-                                                  <label class="custom-control-label" for="check03-01">Test Speaker & Microphone</label>
-                                                </div>
-                                              </div>
-                                            </div>
-
-                                            <div class="form-group border-bottom-0">
-                                              <div class="check-list-box">
-                                                <div class="custom-control custom-checkbox">
-                                                  <input type="checkbox" class="custom-control-input" id="check04-01" name="Speaker-Microphone-select">
-                                                  <label class="custom-control-label" for="check04-01">Audio Settings</label>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </li>
-
-                                    <li class="btn-item-li"> 
-                                      <div class="dropup-custom dropup btnshadow-drop">
-                                        <button type="button" class="btn btn-primary btn-common-secondary dropdown-toggle" data-toggle="dropdown">
-                                          <span class="icon-span mr-1"> <span class="bg-custom-icon video-camera-icon"></span> </span>
-                                          <span class="text-span"> Stop Video </span>
-                                          <span class="dropdown-arrow-span"> <span class="material-icons"> keyboard_arrow_down </span> </span>
-                                        </button>
-                                        
-                                        <div class="dropdown-menu dropdown-menu-custom">
-                                          <div class="close-dropdown-sidebar">
-                                            <div class="close-dropdown-sidebar-row-div">
-                                              <div class="back-div">
-                                                <a href="#" class="btn btn-back-auth btn-close-dropdpwn" id="close-dropdown-sidebar-btn"><span class="material-icons">  navigate_next </span>  </a>
-                                                <h3>Close Sidebar</h3>
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div class="dropdown-form-div">
-                                            <div class="form-group">
-                                              <label class="label">Select a Camera</label>
-                                              <div class="check-list-box">
-                                                <div class="custom-control custom-checkbox">
-                                                  <input type="radio" class="custom-control-input" id="sv-check01-01" name="stp-video-select">
-                                                  <label class="custom-control-label" for="sv-check01-01">Same as System</label>
-                                                </div>
-                                                <div class="custom-control custom-checkbox">
-                                                  <input type="radio" class="custom-control-input" id="sv-check01-02" name="stp-video-select">
-                                                  <label class="custom-control-label" for="sv-check01-02">HP Widevision HD Camera</label>
-                                                </div>
-                                              </div>
-                                            </div>
-
-                                            <div class="form-group border-bottom-0">
-                                              <div class="check-list-box">
-                                                <div class="custom-control custom-checkbox">
-                                                  <input type="checkbox" class="custom-control-input" id="sv-check02-01" name="stp-video-select">
-                                                  <label class="custom-control-label" for="sv-check02-01">Video Settings</label>
-                                                </div>
-                                              </div>
-                                            </div>
-
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </li>
-
-                                    <li class="btn-item-li"> 
-                                      <button type="button" class="btn btn-primary btn-common-secondary">
-                                        <span class="icon-span mr-6px mr-6pxi"> <span class="bg-custom-icon social-group-icon"></span> <span class="text-pre">78</span> </span>
-                                        <span class="text-span"> Participants </span>
-                                      </button>
-                                    </li>
-
-                                    <li class="btn-item-li"> 
-                                      <button type="button" class="btn btn-primary btn-common-secondary">
-                                        <span class="icon-span mr-6px"> <span class="bg-custom-icon exclusion-icon"></span> </span>
-                                        <span class="text-span"> Share Screen </span>
-                                      </button>
-                                    </li>
-
-                                    <li class="btn-item-li"> 
-                                      <button type="button" class="btn btn-primary btn-common-primary">
-                                        <span class="icon-span"> <span class="bg-custom-icon speech-bubble-icon"></span> </span>
-                                        <span class="text-span mr-6px"> Chat </span>
-                                      </button>
-                                    </li>
-
-                                    <li class="btn-item-li"> 
-                                      <button type="button" class="btn btn-primary btn-common-secondary">
-                                        <span class="icon-span"> <span class="bg-custom-icon record-circular-button"></span> </span>
-                                        <span class="text-span mr-6px"> Record </span>
-                                      </button>
-                                    </li>
-
-                                    <li class="btn-item-li"> 
-                                      <button type="button" class="btn btn-primary btn-common-danger">
-                                        <span class="icon-span mr-2"> <span class="bg-custom-icon telephone-button"></span> </span>
-                                        <span class="text-span mr-6px"> Leave </span>
-                                      </button>
-                                    </li>
-
+                          <div class="main-desk-div hidden-area" id="main-small-screen-view-area">
+                            <div class="main-desk-row-div">
+                              <div class="main-desk-top-div">
+                                <div class="main-right-action-control">
+                                  <ul class="control-group-btn-div">
+                                    <li><button id="minimize-screen-btn" class="btn btn-action-control mr-26"> <span class="minimize-span"></span> </button></li>
+                                    <li><button id="maximize-screen-btn" class="btn btn-action-control"> <span class="maximize-span"></span> </button></li>
                                   </ul>
                                 </div>
                               </div>
+                              <div class="main-desk-body-div">
+                                <div class="thumb-div">
+                                  <video class="call-video-bg mx-100 hidden-area" id="small-screen-video-div" poster="assets/images/background/login_background_graphic.jpg" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                                    <source src="assets/images/background/bg_1.mp4" type="video/mp4">
+                                  </video>
+                                  <img src="assets/images/participant_video_grid.jpg" alt="img" class="img-fluid img-responsive" />
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="main-desk-btn-row-div hidden-area" id="goto-presentor-view-area">
+                              <div class="main-desk-btn-group-div">
+
+                                <button id="goto-presentor-view-btn" type="button" class="btn btn-primary btn-common-secondary go-to-presentor-view-btn">
+                                  <span class="text-span"> Go to Presentor View </span>
+                                </button>
+
+                              </div>
                             </div>
                           </div>
 
+                          <div class="chat-group-participant-div hidden-area" id="chat-group-participant-area">
+
+                            <div class="in-chat-mp-card-div chat-part-card-bx-div" id="in-chat-mp-card-div">
+
+                              <div class="collpse-mobile-div">
+                                <button class="btn btn-collpse-cst" id="onclick-group-chat-open">
+                                  <span class="bg-custom-icon chevron-right-next-icon"></span>
+                                </button>
+                              </div>
+    
+                              <div class="in-chat-mp-top-div">
+                                <div class="in-chat-mp-top-left-div">
+                                  <h2>Group Chat</h2>
+                                </div>
+                              </div>
+    
+                              <div class="in-chat-mp-body-div" id="in-chat-mp-body-div">
+                                <div class="tab-content">
+                                  <div class="tab-pane active" id="messages-tab">
+                                    <div class="in-chat-mp-body-inner-div">
+    
+                                      <div class="card chat-box" id="chatbox">
+                                        <div class="card-body chat-content">
+            
+                                          <div class="card-body-row">
+            
+                                            <div class="chat-item chat-left">
+                                              <div class="user-img-thumb">
+                                                <img src="assets/images/profile.jpg" class="img-fluid img-user" />
+                                              </div>
+                                              <div class="chat-details">
+                                                <div class="chat-user">Kathy Turnstone</div>
+                                                <div class="chat-text">
+                                                  <div class="chat-text-inner">
+                                                    <span class="text">I have a question</span>
+                                                  </div>
+                                                </div> </br>
+                                              </div>
+                                            </div>
+            
+                                            <div class="chat-item chat-right">
+                                              <div class="chat-details w-100">
+                                                <div class="chat-user">You</div>
+                                                <div class="chat-text">
+                                                  <div class="chat-text-inner">
+                                                    <span class="text">Yes, Kathy? Is it about the finance forecast</span>
+                                                  </div>
+                                                </div> </br>
+                                              </div>
+                                            </div>
+    
+                                            <div class="chat-item chat-left">
+                                              <div class="user-img-thumb">
+                                                <img src="assets/images/profile.png" class="img-fluid img-user" />
+                                              </div>
+                                              <div class="chat-details">
+                                                <div class="chat-user">Jeremy Fischer</div>
+                                                <div class="chat-text">
+                                                  <div class="chat-text-inner">
+                                                    <span class="text">Oh yes, same here too.</span>
+                                                  </div>
+                                                </div> </br>
+                                              </div>
+                                            </div>
+                
+                                          </div>
+            
+                                        </div>
+                                        <div class="card-footer chat-form">
+    
+                                          <div class="top-typying-div">
+                                            <div class="top-typying-row-div">
+                                              <div class="top-typying-left-div">
+                                                <span class="round-bx">
+                                                  <span class="dot dot1"></span>
+                                                  <span class="dot dot2"></span>
+                                                  <span class="dot dot3"></span>
+                                                </span>  
+                                              </div>
+                                              <div class="top-typying-right-div">
+                                                <p>Martin Tan is typing…</p>
+                                              </div>
+                                            </div>
+                                          </div>
+    
+                                          <div class="card-footer-row">
+                                            <form class="card-form" id="chat-form">
+                                              <div class="left-file-div">
+                                                <div class="file-group-div">
+                                                  <input type="file" id="chat-file-select" class="input-file d-none" />
+                                                  <label for="chat-file-select"> <span class="bg-custom-icon paperclip-icon"></span> </label>
+                                                </div>
+                                              </div>
+                                              <textarea class="form-control" placeholder="Write a message"></textarea>
+                                              <div class="btn-file-div">
+                                                <button class="btn btn-primary">
+                                                  <span class="bg-custom-icon send-button-icon"></span>
+                                                </button>
+                                              </div>
+                                              
+                                            </form>
+                                          </div>
+                                        </div>
+                                      </div>
+    
+                                    </div>
+                                  </div>
+    
+                                </div>
+                              </div>
+                              
+                            </div>
+
+                          </div>
+
+                        </div>
+
+                      </div>
+                    </div>
+
+
+                    <div class="in-call-area-root">
+
+                      <div class="in-call-area-top d-none">
+                        <div class="in-call-area-top-center">
+                          <div class="row">
+                            <div class="col-lg-12 col-md-12">
+
+                              <div class="in-call-user-owl-slider-slider">
+                                <div class="owl-carousel owl-theme in-call-user-slider-owl" id="in-call-user-slider-owl">
+
+                                  <div class="item">  
+                                    <div class="in-call-user-slider-box">
+                                      <div class="in-call-user-slider-box-inner">
+                                        <div class="in-call-user-slider-img-thumb">
+                                          <div class="img-div">
+                                            <div class="img-thumb"> 
+                                              <img src="assets/images/profile.jpg" class="img-fluid img-responsive" alt="image" />
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="in-call-user-slider-content-div">
+                                          <div class="in-call-user-slider-content-row">
+                                            <p>Tristan Lapel</p>
+                                            <a href="#" class="btn-audio">
+                                              <span class="bg-custom-icon un-mute-microphone-icon"></span>
+                                            </a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="item">  
+                                    <div class="in-call-user-slider-box">
+                                      <div class="in-call-user-slider-box-inner">
+                                        <div class="in-call-user-slider-img-thumb">
+                                          <div class="img-div">
+                                            <div class="img-thumb"> 
+                                              <img src="assets/images/profile.jpg" class="img-fluid img-responsive" alt="image" />
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="in-call-user-slider-content-div">
+                                          <div class="in-call-user-slider-content-row">
+                                            <p>Rafael Gomez</p>
+                                            <a href="#" class="btn-audio">
+                                              <span class="bg-custom-icon microphone-icon"></span>
+                                            </a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="item">  
+                                    <div class="in-call-user-slider-box">
+                                      <div class="in-call-user-slider-box-inner">
+                                        <div class="in-call-user-slider-img-thumb">
+                                          <div class="img-div">
+                                            <div class="img-thumb"> 
+                                              <img src="assets/images/profile.jpg" class="img-fluid img-responsive" alt="image" />
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="in-call-user-slider-content-div">
+                                          <div class="in-call-user-slider-content-row">
+                                            <p>Hailey Riota</p>
+                                            <a href="#" class="btn-audio">
+                                              <span class="bg-custom-icon un-mute-microphone-icon"></span>
+                                            </a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="item">  
+                                    <div class="in-call-user-slider-box active active-in">
+                                      <div class="in-call-user-slider-box-inner">
+                                        <div class="in-call-user-slider-img-thumb">
+                                          <div class="img-div">
+                                            <div class="img-thumb"> 
+                                              <img src="assets/images/profile.jpg" class="img-fluid img-responsive" alt="image" />
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="in-call-user-slider-content-div">
+                                          <div class="in-call-user-slider-content-row">
+                                            <p>Sarah Parker</p>
+                                            <a href="#" class="btn-audio">
+                                              <span class="bg-custom-icon microphone-icon"></span>
+                                            </a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="item">  
+                                    <div class="in-call-user-slider-box active">
+                                      <div class="in-call-user-slider-box-inner">
+                                        <div class="in-call-user-slider-img-thumb">
+                                          <div class="img-div">
+                                            <div class="img-thumb"> 
+                                              <img src="assets/images/profile.jpg" class="img-fluid img-responsive" alt="image" />
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="in-call-user-slider-content-div">
+                                          <div class="in-call-user-slider-content-row">
+                                            <p>Jamilah Rai</p>
+                                            <a href="#" class="btn-audio">
+                                              <span class="bg-custom-icon microphone-icon"></span>
+                                            </a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="item">  
+                                    <div class="in-call-user-slider-box">
+                                      <div class="in-call-user-slider-box-inner">
+                                        <div class="in-call-user-slider-img-thumb">
+                                          <div class="img-div">
+                                            <div class="img-thumb"> 
+                                              <img src="assets/images/profile.jpg" class="img-fluid img-responsive" alt="image" />
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="in-call-user-slider-content-div">
+                                          <div class="in-call-user-slider-content-row">
+                                            <p>Hailey Riota</p>
+                                            <a href="#" class="btn-audio">
+                                              <span class="bg-custom-icon un-mute-microphone-icon"></span>
+                                            </a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="in-call-area-body">
+
+                        <div class="right-fixed-btn-div" id="show-participants-btn-area">
+                          <div class="btn-r-div">
+                            <button class="btn btn-secondary-show" id="show-participants-btn">
+                              <span class="icon-span"> <span class="bg-custom-icon show-participants-icon"></span></span>
+                              <span class="text-span">Show Participants</span>
+                            </button>
+                          </div>
+                        </div>
+                        
+                        <div class="in-call-action-area-div">
+                          <div class="in-call-action-area-row">
+                            <div class="in-call-action-area-left">
+                              <a href="#" class="link"> <img src="assets/images/logo.png" class="img-fluid img-logo-action" alt="logo-img" /> </a>
+                            </div>
+                            <div class="in-call-action-area-right">
+                              <div class="btn-group-root">
+                                <ul class="btn-group-list">
+
+                                  <li class="btn-item-li"> 
+                                    <div class="dropup-custom dropup btnshadow-drop">
+                                      <button type="button" class="btn btn-primary btn-common-secondary dropdown-toggle" data-toggle="dropdown">
+                                        <span class="icon-span"> <span class="bg-custom-icon microphone-icon"></span> </span>
+                                        <span class="text-span"> Mute </span>
+                                        <span class="dropdown-arrow-span"> <span class="material-icons"> keyboard_arrow_down </span> </span>
+                                      </button>
+                                      <div class="dropdown-menu dropdown-menu-custom">
+                                        <div class="close-dropdown-sidebar">
+                                          <div class="close-dropdown-sidebar-row-div">
+                                            <div class="back-div">
+                                              <a href="#" class="btn btn-back-auth btn-close-dropdpwn" id="close-dropdown-sidebar-btn"><span class="material-icons">  navigate_next </span>  </a>
+                                              <h3>Close Sidebar</h3>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="dropdown-form-div">
+                                          <div class="form-group">
+                                            <label class="label">Select a Microphone</label>
+                                            <div class="check-list-box">
+                                              <div class="custom-control custom-checkbox">
+                                                <input type="radio" class="custom-control-input" id="check01-01" name="microphone-select">
+                                                <label class="custom-control-label" for="check01-01">Same as System</label>
+                                              </div>
+                                              <div class="custom-control custom-checkbox">
+                                                <input type="radio" class="custom-control-input" id="check01-02" name="microphone-select">
+                                                <label class="custom-control-label" for="check01-02">Built-in Microphone (Internal Microphone)</label>
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                          <div class="form-group">
+                                            <label class="label">Select a Speaker</label>
+                                            <div class="check-list-box">
+                                              <div class="custom-control custom-checkbox">
+                                                <input type="radio" class="custom-control-input" id="check02-01" name="Speaker-select">
+                                                <label class="custom-control-label" for="check02-01">Same as System</label>
+                                              </div>
+                                              <div class="custom-control custom-checkbox">
+                                                <input type="radio" class="custom-control-input" id="check02-02" name="Speaker-select">
+                                                <label class="custom-control-label" for="check02-02">Built-in Output (Internal Speakers)</label>
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                          <div class="form-group">
+                                            <div class="check-list-box">
+                                              <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="check03-01" name="Mute-select">
+                                                <label class="custom-control-label" for="check03-01">Test Speaker & Microphone</label>
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                          <div class="form-group border-bottom-0">
+                                            <div class="check-list-box">
+                                              <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="check04-01" name="Speaker-Microphone-select">
+                                                <label class="custom-control-label" for="check04-01">Audio Settings</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </li>
+
+                                  <li class="btn-item-li"> 
+                                    <div class="dropup-custom dropup btnshadow-drop">
+                                      <button type="button" class="btn btn-primary btn-common-secondary dropdown-toggle" data-toggle="dropdown">
+                                        <span class="icon-span mr-1"> <span class="bg-custom-icon video-camera-icon"></span> </span>
+                                        <span class="text-span"> Stop Video </span>
+                                        <span class="dropdown-arrow-span"> <span class="material-icons"> keyboard_arrow_down </span> </span>
+                                      </button>
+                                      
+                                      <div class="dropdown-menu dropdown-menu-custom">
+                                        <div class="close-dropdown-sidebar">
+                                          <div class="close-dropdown-sidebar-row-div">
+                                            <div class="back-div">
+                                              <a href="#" class="btn btn-back-auth btn-close-dropdpwn" id="close-dropdown-sidebar-btn"><span class="material-icons">  navigate_next </span>  </a>
+                                              <h3>Close Sidebar</h3>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="dropdown-form-div">
+                                          <div class="form-group">
+                                            <label class="label">Select a Camera</label>
+                                            <div class="check-list-box">
+                                              <div class="custom-control custom-checkbox">
+                                                <input type="radio" class="custom-control-input" id="sv-check01-01" name="stp-video-select">
+                                                <label class="custom-control-label" for="sv-check01-01">Same as System</label>
+                                              </div>
+                                              <div class="custom-control custom-checkbox">
+                                                <input type="radio" class="custom-control-input" id="sv-check01-02" name="stp-video-select">
+                                                <label class="custom-control-label" for="sv-check01-02">HP Widevision HD Camera</label>
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                          <div class="form-group border-bottom-0">
+                                            <div class="check-list-box">
+                                              <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="sv-check02-01" name="stp-video-select">
+                                                <label class="custom-control-label" for="sv-check02-01">Video Settings</label>
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </li>
+
+                                  <li class="btn-item-li"> 
+                                    <button type="button" class="btn btn-primary btn-common-secondary">
+                                      <span class="icon-span mr-6px mr-6pxi"> <span class="bg-custom-icon social-group-icon"></span> <span class="text-pre">78</span> </span>
+                                      <span class="text-span"> Participants </span>
+                                    </button>
+                                  </li>
+
+                                  <li class="btn-item-li"> 
+                                    <button type="button" class="btn btn-primary btn-common-secondary">
+                                      <span class="icon-span mr-6px"> <span class="bg-custom-icon exclusion-icon"></span> </span>
+                                      <span class="text-span"> Share Screen </span>
+                                    </button>
+                                  </li>
+
+                                  <li class="btn-item-li disabled-list" id="disabled-list"> 
+                                    <button type="button" class="btn btn-primary btn-common-primary" id="disabled-chat-btn">
+                                      <span class="icon-span"> <span class="bg-custom-icon speech-bubble-icon"></span> </span>
+                                      <span class="text-span mr-6px"> Chat </span>
+                                    </button>
+                                  </li>
+
+                                  <li class="btn-item-li"> 
+                                    <button type="button" class="btn btn-primary btn-common-secondary">
+                                      <span class="icon-span"> <span class="bg-custom-icon record-circular-button"></span> </span>
+                                      <span class="text-span mr-6px"> Record </span>
+                                    </button>
+                                  </li>
+
+                                  <li class="btn-item-li"> 
+                                    <button type="button" class="btn btn-primary btn-common-danger">
+                                      <span class="icon-span mr-2"> <span class="bg-custom-icon telephone-button"></span> </span>
+                                      <span class="text-span mr-6px"> Leave </span>
+                                    </button>
+                                  </li>
+
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
                         </div>
 
                       </div>
 
                     </div>
-                  </section>
-                  
-                </div>  
-              </div>        
-            </div>
+
+                  </div>
+                </section>
+                
+              </div>  
+            </div>        
           </div>
-        </div><!--  end of main  -->
+        </div>
+      </div><!--  end of main  -->
 
     </div>
   </main>
@@ -436,6 +611,50 @@
 
     $(".dropdown-menu .back-div").click(function() {
       $(this).closest(".dropdown-menu").prev().dropdown("toggle");
+    });
+
+
+    // bg-color-hidden-video
+
+    // $("#main-small-screen-view-area").addClass("show-area").removeClass("hidden-area");
+    // $("#main-big-screen-view-area .part-list-root-div").addClass("show-area").removeClass("hidden-area");
+    // $("#goto-presentor-view-area").addClass("show-area").removeClass("hidden-area");
+    // $("#chat-group-participant-area").addClass("show-area").removeClass("hidden-area");
+    // $("#goto-presentor-view-area").addClass("show-area").removeClass("hidden-area");
+
+    // step 1
+    $("#show-participants-btn").click(function(){
+      $("#main-small-screen-view-area").toggleClass("show-area");
+      $("#main-small-screen-view-area").toggleClass("hidden-area");
+
+      $("#show-participants-btn-area").addClass("hidden-area");
+    });
+
+    // step 2
+    $("#maximize-screen-btn").click(function(){
+      $("#main-big-screen-view-area .part-list-root-div").addClass("show-area").removeClass("hidden-area");
+      $("#goto-presentor-view-area").addClass("show-area").removeClass("hidden-area");
+      $("#chat-group-participant-area").addClass("show-area").removeClass("hidden-area");
+      $("#disabled-chat-btn").addClass("disabled-btn");
+      
+    });
+
+    // step 3
+    $("#minimize-screen-btn").click(function(){
+      $("#main-big-screen-view-area .part-list-root-div").addClass("hidden-area").removeClass("show-area");
+      $("#goto-presentor-view-area").addClass("hidden-area").removeClass("show-area");
+      $("#chat-group-participant-area").addClass("hidden-area").removeClass("show-area");
+
+      $("#disabled-chat-btn").removeClass("disabled-btn");
+    });
+
+    // step 4
+    $("#goto-presentor-view-btn").click(function(){
+      $("#main-big-screen-view-area .part-list-root-div").addClass("hidden-area").removeClass("show-area");
+      $("#goto-presentor-view-area").addClass("hidden-area").removeClass("show-area");
+      $("#chat-group-participant-area").addClass("hidden-area").removeClass("show-area");
+
+      $("#disabled-chat-btn").removeClass("disabled-btn");
     });
   });
 </script>
