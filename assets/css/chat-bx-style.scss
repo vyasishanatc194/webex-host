@@ -166,6 +166,14 @@
     padding: 7px 48px 7px 37px;
     min-width: 255px;
   }
+
+  &.small-screen-area {
+    .btn-action-control {
+      .minimize-span {
+        margin: 12px 0 0 0;
+      }
+    }
+  }
 }
 
 .chat-part-card-bx-div {

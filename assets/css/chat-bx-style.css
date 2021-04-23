@@ -198,6 +198,10 @@
   min-width: 255px;
 }
 
+.main-desk-div.small-screen-area .btn-action-control .minimize-span {
+  margin: 12px 0 0 0;
+}
+
 .chat-part-card-bx-div {
   border-radius: 15px 15px;
 }
