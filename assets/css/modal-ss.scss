@@ -1,0 +1,227 @@
+.modal {
+  .modal-dialog.modal-857 {
+    max-width: 857px;
+  }
+}
+
+.inc-share-screen-div {
+  padding: 24px 8px 0 8px;
+  max-height: 402px;
+  overflow-y: scroll;
+  margin-right: -17px;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 50px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #f98d29;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: #f98d29;
+  }
+
+  .inc-share-screen-inner-div {
+    padding: 0 10px 0 0;
+  }
+
+  .form-group.radio-group {
+    &:last-child {
+      margin-bottom: 18px;
+    }
+  }
+}
+
+.form-group.radio-group {
+  margin-bottom: 38px;
+}
+
+.modal-inc-share-screen-custom {
+  .modal-dialog {
+    margin: 2rem auto;
+
+    .modal-content {
+      .modal-body {
+        padding: 30px 30px 20px 30px;
+      }
+
+      .modal-footer-inc-ss {
+        padding: 0 38px 38px 38px;
+
+        .btn-center-inc-ss {
+          padding-top: 28px;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          border-top: 2px solid #eff2f6bf;
+        }
+      }
+    }
+  }
+}
+
+.custom-radio.custom-radio-2 {
+  min-height: 28px;
+  padding-left: 0;
+
+  .custom-control-label {
+    padding: 0 0 0 54px;
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    color: #f98d29;
+    font-weight: 600;
+    word-break: break-all;
+    cursor: pointer;
+
+    &::before {
+      top: 0;
+      width: 28px;
+      height: 28px;
+      background-color: transparent;
+      border: 2px solid #d6e3f5;
+    }
+  }
+
+  .custom-control-input:checked ~ .custom-control-label::after {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='4' fill='%23F98D29'/%3E%3C/svg%3E");
+    background-size: 14px;
+    top: 6px;
+    left: 6px;
+  }
+
+  .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: transparent;
+  }
+
+  .custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .modal {
+    .modal-dialog.modal-857 {
+      max-width: calc(100% - 20px);
+    }
+  }
+
+  .modal-inc-share-screen-custom {
+    .modal-dialog {
+      margin: 0.75rem auto;
+
+      .modal-content {
+        .modal-header {
+          h5 {
+            font-size: 18px;
+            line-height: 24px;
+            text-align: left;
+            padding-top: 3px;
+          }
+        }
+
+        .modal-body {
+          padding: 20px 16px 10px 16px;
+
+          .form-group.radio-group {
+            margin-bottom: 16px;
+          }
+
+          .content-incomming-partciapte {
+            h5 {
+              font-size: 16px;
+            }
+          }
+        }
+
+        .modal-footer-inc-ss {
+          padding: 0 28px 20px 28px;
+
+          .btn-center-inc-ss {
+            padding-top: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .inc-share-screen-div {
+    padding: 10px 8px 0 0;
+    max-height: calc(100vh - 315px);
+
+    &::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+  }
+
+  .custom-radio.custom-radio-2 .custom-control-label {
+    padding: 0 0 0 34px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .custom-radio.custom-radio-2 .custom-control-label::before {
+    width: 20px;
+    height: 20px;
+  }
+
+  .custom-radio.custom-radio-2 .custom-control-input:checked ~ .custom-control-label::after {
+    background-size: 10px;
+    top: 2px;
+    left: 2px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .modal {
+    .modal-dialog.modal-857 {
+      max-width: 657px;
+    }
+  }
+
+  .modal-inc-share-screen-custom {
+    .modal-dialog {
+      margin: 0.75rem auto;
+
+      .modal-content {
+        .modal-body {
+          padding: 20px 30px 10px 30px;
+
+          .form-group.radio-group {
+            margin-bottom: 20px;
+          }
+        }
+
+        .modal-footer-inc-ss {
+          padding: 0 28px 20px 28px;
+
+          .btn-center-inc-ss {
+            padding-top: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .inc-share-screen-div {
+    padding: 10px 8px 0 8px;
+    max-height: calc(100vh - 230px);
+
+    &::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+  }
+}
+

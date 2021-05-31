@@ -1,0 +1,23 @@
+.main-desk-div {
+  max-width: 280px;
+}
+
+.root-participant-div .root-participant-right-div {
+  width: 280px;
+}
+
+.root-participant-div .root-participant-left-div {
+  width: calc(100% - 280px);
+}
+
+.main-desk-div .main-desk-body-div {
+  height: 170px;
+}
+
+.main-desk-div .main-desk-body-div .thumb-div .call-video-bg {
+  height: 170px;  
+}
+
+.main-desk-div .main-desk-body-div .thumb-div .img-responsive {
+  height: 170px;
+}

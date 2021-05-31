@@ -22,6 +22,7 @@
 <link href="assets/css/modal-style.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/select2.min.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/shedule-session.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/modal-ss.css" media="all" rel="stylesheet" type="text/css" />
 <script src="assets/js/modernizr.js"></script>
 </head>
 
@@ -277,7 +278,10 @@
                   <a href="#!" class="btn btn-primary mb-2" data-toggle="modal" data-target="#modal-request-to-shares"> Request To Shares Screen</a>               
                   <a href="#!" class="btn btn-primary mb-2" data-toggle="modal" data-target="#modal-video-type">Video Type</a>               
                   <a href="#!" class="btn btn-primary mb-2" data-toggle="modal" data-target="#modal-live-stream">Connect your Live Stream</a>    
-                  <a href="#!" class="btn btn-primary mb-2" data-toggle="modal" data-target="#modal-live-stream">Connect your Live Stream</a>   
+                  <!-- <a href="#!" class="btn btn-primary mb-2" data-toggle="modal" data-target="#modal-live-stream">Connect your Live Stream</a>    -->
+                  <a href="#!" class="btn btn-primary mb-2" data-toggle="modal" data-target="#modal-incoming-share-screen-request">Incoming Share Screen Request</a>
+                  
+                  
                 </div>  
 
                 <div class="col-lg-12 mt-5">
@@ -2065,6 +2069,87 @@
 </div>
 
 
+<!-- Incoming Share Screen Request -->
+<div class="modal fade modal-custom modal-inc-share-screen-custom" tabindex="-1" id="modal-incoming-share-screen-request">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-857">
+    <div class="modal-content modal-shadow">
+      <div class="modal-header close-top-right">
+        <h5 class="modal-title">Incoming Share Screen Request</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><img src="assets/images/participant/cross-sign.png" alt=""></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="content-incomming-partciapte">
+            <h5>Please select a participant to allow share screen access:</h5>
+
+            <div class="inc-share-screen-div">
+              <div class="inc-share-screen-inner-div">
+
+                <div class="form-group radio-group">
+                  <div class="custom-control custom-radio custom-radio-2">
+                    <input type="radio" class="custom-control-input" id="customRadio01" name="inc-share-screen-name">
+                    <label class="custom-control-label" for="customRadio01">Hange Zoe (Hange_Zoe@Capitaland.sg)</label>
+                  </div>
+                </div>
+    
+                <div class="form-group radio-group">
+                  <div class="custom-control custom-radio custom-radio-2">
+                    <input type="radio" class="custom-control-input" id="customRadio02" name="inc-share-screen-name" checked>
+                    <label class="custom-control-label" for="customRadio02">Itadori Yuuji (Itadori_Yuuji@Capitaland.sg)</label>
+                  </div>
+                </div>
+
+                <div class="form-group radio-group">
+                  <div class="custom-control custom-radio custom-radio-2">
+                    <input type="radio" class="custom-control-input" id="customRadio03" name="inc-share-screen-name" >
+                    <label class="custom-control-label" for="customRadio03">Fuji Foo (Fuji_Foo@Capitaland.sg)</label>
+                  </div>
+                </div>
+
+                <div class="form-group radio-group">
+                  <div class="custom-control custom-radio custom-radio-2">
+                    <input type="radio" class="custom-control-input" id="customRadio04" name="inc-share-screen-name" >
+                    <label class="custom-control-label" for="customRadio04">Gojou Satoru (Gojou_S@Capitaland.sg)</label>
+                  </div>
+                </div>
+
+
+                <div class="form-group radio-group">
+                  <div class="custom-control custom-radio custom-radio-2">
+                    <input type="radio" class="custom-control-input" id="customRadio05" name="inc-share-screen-name" >
+                    <label class="custom-control-label" for="customRadio05">Armin Arlelt (Armin_Arlelt@Capitaland.sg)</label>
+                  </div>
+                </div>
+
+                <div class="form-group radio-group">
+                  <div class="custom-control custom-radio custom-radio-2">
+                    <input type="radio" class="custom-control-input" id="customRadio06" name="inc-share-screen-name" >
+                    <label class="custom-control-label" for="customRadio06">Eren Yeager (Eren_Yeager@Capitaland.sg)</label>
+                  </div>
+                </div>
+
+                <div class="form-group radio-group">
+                  <div class="custom-control custom-radio custom-radio-2">
+                    <input type="radio" class="custom-control-input" id="customRadio07" name="inc-share-screen-name" >
+                    <label class="custom-control-label" for="customRadio07">Eren Yeager (Eren_Yeager@Capitaland.sg)</label>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            
+        </div>
+      </div>
+      <div class="modal-footer modal-footer-inc-ss">
+        <div class="btn-center-inc-ss"> 
+          <button type="button" class="btn btn-custom btn-blue blue-shadow min-btn-240 ml-0">Allow Share Screen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/popper.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
@@ -2094,6 +2179,15 @@ $('#modal-invite').on('show.bs.modal', function (event) {
 $('#modal-invite').on('hidden.bs.modal', function (event) {
   $('body').toggleClass("backdrop-none");
 })
+
+$('#modal-incoming-share-screen-request').on('show.bs.modal', function (event) {
+  $('body').toggleClass("backdrop-none");
+})
+
+$('#modal-incoming-share-screen-request').on('hidden.bs.modal', function (event) {
+  $('body').toggleClass("backdrop-none");
+})
+
 
 
 
@@ -2182,6 +2276,8 @@ $('#modal-invite').on('hidden.bs.modal', function (event) {
        $(this).text("Stop Video For All");
       
     });
+
+    $("#modal-incoming-share-screen-request").modal("show");
 
 </script>
 
