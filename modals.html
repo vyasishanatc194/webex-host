@@ -23,6 +23,7 @@
 <link href="assets/css/select2.min.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/shedule-session.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/modal-ss.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/modal-participants-style.css" media="all" rel="stylesheet" type="text/css" />
 <script src="assets/js/modernizr.js"></script>
 </head>
 
@@ -269,6 +270,8 @@
                   <a href="#!" class="btn btn-primary mb-2" data-toggle="modal" data-target="#modal-audio-test">Audio Test</a>
                   <a href="#!" class="btn btn-primary mb-2" data-toggle="modal" data-target="#modal-audio-test-2">Audio Test with input</a>
                   <a href="#!" class="btn btn-primary mb-2" data-toggle="modal" data-target="#modal-incall-participant">Incall participant</a>
+                  <a href="#!" class="btn btn-primary mb-2" data-toggle="modal" data-target="#modal-incall-participant-no-guests">Incall participant no guests</a>
+                  <a href="#!" class="btn btn-primary mb-2" data-toggle="modal" data-target="#modal-incall-participant-no-results">Incall participant no results</a>
                   <a href="#!" class="btn btn-primary mb-2" data-toggle="modal" data-target="#modal-incall-participant-access">Incall participant add access /remove access</a>
                   <a href="#!" class="btn btn-primary mb-2" data-toggle="modal" data-target="#modal-share-screen">Select a Screen To Share</a>
                   <a href="#!" class="btn btn-primary mb-2" data-toggle="modal" data-target="#modal-leaving-session">Leaving Session</a>
@@ -302,9 +305,9 @@
 <!-- participant -->
 
 <div class="modal fade modal-custom" tabindex="-1" id="modal-participant">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+  <div class="modal-dialog modal-dialog-scrollable modal-dialog-top-9">
     <div class="modal-content">
-      <div class="modal-header close-none">
+      <div class="modal-header close-top-right">
         <h5 class="modal-title">Incoming Participant</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true"><img src="assets/images/participant/cross-sign.png" alt=""></span>
@@ -595,585 +598,6 @@
   </div>
 </div>
 
-<!-- in call partcipant -->
-<div class="modal fade modal-custom" tabindex="-1" id="modal-incall-participant">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-579">
-    <div class="modal-content">
-      <div class="modal-header header-partciapnt close-top-right">
-        <h5 class="modal-title">Participants</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true"><img src="assets/images/participant/cross-sign.png" alt=""></span>
-        </button>
-      </div>
-      <div class="modal-body p-0">
-        <div class="incall-participent">
-           <div class="row">
-            <div class="col-lg-12">
-              <div class="form-group search-incall">
-                <input type="text" class="form-control" placeholder="Type a participant name here…">
-                <a href="#!" class="btn btn-search" >
-               <span class="icon icon-search"></span>                  
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-12">
-              <div class="participent-list-main">
-                <div class="participent-list">
-                  <ul class="list">
-                    <li>
-                      <div class="partcipent-user">
-                        <div class="user-img">
-                          <img src="assets/images/profile-pic.png" alt="">
-                        </div>
-                        <div class="user-info">
-                          <h3>Helena Carter</h3>
-                          <p>Helena@certis.sg</p>
-                        </div>
-                      </div>
-
-                      <div class="user-action">
-                        <div class="action-group hover-none">
-                            <a href="#!" class="btn btn-squre"><i class="icon icon-mic-mute"></i></a>
-                            <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
-                        </div>
-
-                        <div class="action-group hover-block">
-                          <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
-                       
-                          <div class="dropdown">
-                            <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                             More
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                              <a class="dropdown-item" href="#">Stop Video</a>
-                              <a class="dropdown-item" href="#">Allow Share Screen</a>
-                              <a class="dropdown-item" href="#">Remove from Call</a>
-                            </div>
-                          </div>
-
-                        </div>
-                      </div>
-                    </li>
-
-                    <li>
-                      <div class="partcipent-user">
-                        <div class="user-img">
-                          <img src="assets/images/profile-pic.png" alt="">
-                        </div>
-                        <div class="user-info">
-                          <h3>Rheneay Tristan</h3>
-                          <p>Rheneay@certis.sg</p>
-                        </div>
-                      </div>
-
-                      <div class="user-action">
-                        <div class="action-group hover-none">
-                            <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
-                            <a href="#!" class="btn btn-squre"><i class="icon icon-video-mute"></i></a>
-                        </div>
-
-                        <div class="action-group hover-block">
-                          <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
-                       
-                          <div class="dropdown">
-                            <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                             More
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                              <a class="dropdown-item" href="#">Stop Video</a>
-                              <a class="dropdown-item" href="#">Allow Share Screen</a>
-                              <a class="dropdown-item" href="#">Remove from Call</a>
-                            </div>
-                          </div>
-
-                        </div>
-                      </div>
-                    </li>
-
-                    <li>
-                      <div class="partcipent-user">
-                        <div class="user-img">
-                          <img src="assets/images/profile-pic.png" alt="">
-                        </div>
-                        <div class="user-info">
-                          <h3>Heidi Shontell</h3>
-                          <p>Heidi@certis.sg</p>
-                        </div>
-                      </div>
-
-                      <div class="user-action">
-                        <div class="action-group hover-none">
-                            <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
-                            <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
-                        </div>
-
-                        <div class="action-group hover-block">
-                          <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
-                       
-                          <div class="dropdown">
-                            <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                             More
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                              <a class="dropdown-item" href="#">Stop Video</a>
-                              <a class="dropdown-item" href="#">Allow Share Screen</a>
-                              <a class="dropdown-item" href="#">Remove from Call</a>
-                            </div>
-                          </div>
-
-                        </div>
-                      </div>
-                    </li>
-
-                    <li class="">
-                      <div class="partcipent-user">
-                        <div class="user-img">
-                          <img src="assets/images/profile-pic.png" alt="">
-                        </div>
-                        <div class="user-info">
-                          <h3>John Bloom </h3>
-                          <p>John@certis.sg</p>
-                        </div>
-                      </div>
-
-                      <div class="user-action">
-                        <div class="action-group hover-none">
-                            <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
-                            <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
-                        </div>
-
-                        <div class="action-group hover-block">
-                          <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
-                       
-                          <div class="dropdown">
-                            <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                             More
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                              <a class="dropdown-item" href="#">Stop Video</a>
-                              <a class="dropdown-item" href="#">Allow Share Screen</a>
-                              <a class="dropdown-item" href="#">Remove from Call</a>
-                            </div>
-                          </div>
-
-                        </div>
-                      </div>
-                    </li>
-
-                    <li>
-                      <div class="partcipent-user">
-                        <div class="user-img">
-                          <img src="assets/images/profile-pic.png" alt="">
-                        </div>
-                        <div class="user-info">
-                          <h3>Sofie Young</h3>
-                          <p>Sofie@certis.sg</p>
-                        </div>
-                      </div>
-
-                      <div class="user-action">
-                        <div class="action-group hover-none">
-                            <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
-                            <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
-                        </div>
-
-                        <div class="action-group hover-block">
-                          <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
-                       
-                          <div class="dropdown">
-                            <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                             More
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                              <a class="dropdown-item" href="#">Stop Video</a>
-                              <a class="dropdown-item" href="#">Allow Share Screen</a>
-                              <a class="dropdown-item" href="#">Remove from Call</a>
-                            </div>
-                          </div>
-
-                        </div>
-                      </div>
-                    </li>
-
-                    <li>
-                      <div class="partcipent-user">
-                        <div class="user-img">
-                          <img src="assets/images/profile-pic.png" alt="">
-                        </div>
-                        <div class="user-info">
-                          <h3>Shih Kai Lee</h3>
-                          <p>Kailee@certis.sg</p>
-                        </div>
-                      </div>
-
-                      <div class="user-action">
-                        <div class="action-group hover-none">
-                            <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
-                            <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
-                        </div>
-
-                        <div class="action-group hover-block">
-                          <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
-                       
-                          <div class="dropdown">
-                            <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                             More
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                              <a class="dropdown-item" href="#">Stop Video</a>
-                              <a class="dropdown-item" href="#">Allow Share Screen</a>
-                              <a class="dropdown-item" href="#">Remove from Call</a>
-                            </div>
-                          </div>
-
-                        </div>
-                      </div>
-                    </li>
-
-                    <li>
-                      <div class="partcipent-user">
-                        <div class="user-img">
-                          <img src="assets/images/profile-pic.png" alt="">
-                        </div>
-                        <div class="user-info">
-                          <h3>Iris Greenwood</h3>
-                          <p>Iris@certis.sg</p>
-                        </div>
-                      </div>
-
-                      <div class="user-action">
-                        <div class="action-group hover-none">
-                            <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
-                            <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
-                        </div>
-
-                        <div class="action-group hover-block">
-                          <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
-                       
-                          <div class="dropdown">
-                            <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                             More
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                              <a class="dropdown-item" href="#">Stop Video</a>
-                              <a class="dropdown-item" href="#">Allow Share Screen</a>
-                              <a class="dropdown-item" href="#">Remove from Call</a>
-                            </div>
-                          </div>
-
-                        </div>
-                      </div>
-                    </li>
-
-                  </ul>
-                </div>
-              </div>
-            
-           </div>
-           </div>
-      </div>
-      </div>
-      <div class="modal-footer modal-footer-partcipent">
-        <button type="button" class="btn btn-custom btn-sm btn-blue mute-all blue-shadow btn-mute" >Mute All</button>
-        <button type="button" class="btn btn-custom btn-sm btn-orange orange-shadow btn-add" data-dismiss="modal">Add Participant</button>
-        <button type="button" class="btn btn-custom btn-sm btn-transparent stop-all btn-video" >Stop Video For All</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- in call partcipant -->
-<div class="modal fade modal-custom" tabindex="-1" id="modal-incall-participant-access">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-    <div class="modal-content">
-      <div class="modal-header header-partciapnt close-top-right">
-        <h5 class="modal-title">Participants</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true"><img src="assets/images/participant/cross-sign.png" alt=""></span>
-        </button>
-      </div>
-      <div class="modal-body p-0">
-        <div class="incall-participent">
-           <div class="row">
-            <div class="col-lg-12">
-              <div class="form-group search-incall">
-                <input type="text" class="form-control" placeholder="Type a participant name here…">
-                <a href="#!" class="btn btn-search" >
-                  <span class="material-icons">
-                    search
-                    </span>
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-12">
-              <div class="participent-list-main">
-                <div class="participent-list">
-                  <ul class="list">
-                    <li>
-                      <div class="partcipent-user">
-                        <div class="user-img">
-                          <img src="assets/images/profile-pic.png" alt="">
-                        </div>
-                        <div class="user-info">
-                          <h3>Helena Carter</h3>
-                          <p>Helena@certis.sg</p>
-                        </div>
-                      </div>
-
-                      <div class="user-action">
-                        <div class="action-group hover-none">
-                            <a href="#!" class="btn btn-squre"><i class="icon icon-mic-mute"></i></a>
-                            <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
-                        </div>
-
-                        <div class="action-group hover-block">
-                          <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
-                       
-                          <div class="dropdown">
-                            <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                             More
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                              <a class="dropdown-item" href="#">Stop Video</a>
-                              <a class="dropdown-item" href="#">Remove Share Screen Access</a>
-                              <a class="dropdown-item" href="#">Remove from Call</a>
-                            </div>
-                          </div>
-
-                        </div>
-                      </div>
-                    </li>
-
-                    <li>
-                      <div class="partcipent-user">
-                        <div class="user-img">
-                          <img src="assets/images/profile-pic.png" alt="">
-                        </div>
-                        <div class="user-info">
-                          <h3>Rheneay Tristan</h3>
-                          <p>Rheneay@certis.sg</p>
-                        </div>
-                      </div>
-
-                      <div class="user-action">
-                        <div class="action-group hover-none">
-                            <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
-                            <a href="#!" class="btn btn-squre"><i class="icon icon-video-mute"></i></a>
-                        </div>
-
-                        <div class="action-group hover-block">
-                          <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
-                       
-                          <div class="dropdown">
-                            <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                             More
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                              <a class="dropdown-item" href="#">Stop Video</a>
-                              <a class="dropdown-item" href="#">Remove Share Screen Access</a>
-                              <a class="dropdown-item" href="#">Remove from Call</a>
-                            </div>
-                          </div>
-
-                        </div>
-                      </div>
-
-                    </li>
-
-                    <li>
-                      <div class="partcipent-user">
-                        <div class="user-img">
-                          <img src="assets/images/profile-pic.png" alt="">
-                        </div>
-                        <div class="user-info">
-                          <h3>Heidi Shontell</h3>
-                          <p>Heidi@certis.sg</p>
-                        </div>
-                      </div>
-
-                      <div class="user-action">
-                        <div class="action-group hover-none">
-                            <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
-                            <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
-                        </div>
-
-                        <div class="action-group hover-block">
-                          <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
-                       
-                          <div class="dropdown">
-                            <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                             More
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                              <a class="dropdown-item" href="#">Stop Video</a>
-                              <a class="dropdown-item" href="#">Remove Share Screen Access</a>
-                              <a class="dropdown-item" href="#">Remove from Call</a>
-                            </div>
-                          </div>
-
-                        </div>
-                      </div>
-                    </li>
-
-                    <li class="">
-                      <div class="partcipent-user">
-                        <div class="user-img">
-                          <img src="assets/images/profile-pic.png" alt="">
-                        </div>
-                        <div class="user-info">
-                          <h3>John Bloom <span class="tag tag-orange">Access</span></h3>
-                          <p>John@certis.sg</p>
-                        </div>
-                      </div>
-
-                      <div class="user-action">
-
-                        <div class="action-group hover-none">
-                          <div class="action-group">
-                            <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
-                            <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
-                          </div>
-                        </div>
-
-                        <div class="action-group hover-block">
-                          <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
-                       
-                          <div class="dropdown">
-                            <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                             More
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                              <a class="dropdown-item" href="#">Stop Video</a>
-                              <a class="dropdown-item" href="#">Remove Share Screen Access</a>
-                              <a class="dropdown-item" href="#">Remove from Call</a>
-                            </div>
-                          </div>
-
-                        </div>
-                      </div>
-                    </li>
-
-                    <li>
-                      <div class="partcipent-user">
-                        <div class="user-img">
-                          <img src="assets/images/profile-pic.png" alt="">
-                        </div>
-                        <div class="user-info">
-                          <h3>Sofie Young</h3>
-                          <p>Sofie@certis.sg</p>
-                        </div>
-                      </div>
-
-                      <div class="user-action">
-                        <div class="action-group hover-none">
-                            <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
-                            <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
-                        </div>
-
-                        <div class="action-group hover-block">
-                          <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
-                       
-                          <div class="dropdown">
-                            <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                             More
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                              <a class="dropdown-item" href="#">Stop Video</a>
-                              <a class="dropdown-item" href="#">Remove Share Screen Access</a>
-                              <a class="dropdown-item" href="#">Remove from Call</a>
-                            </div>
-                          </div>
-
-                        </div>
-                      </div>
-                    </li>
-
-                    <li>
-                      <div class="partcipent-user">
-                        <div class="user-img">
-                          <img src="assets/images/profile-pic.png" alt="">
-                        </div>
-                        <div class="user-info">
-                          <h3>Shih Kai Lee</h3>
-                          <p>Kailee@certis.sg</p>
-                        </div>
-                      </div>
-                      <div class="user-action">
-                        <div class="action-group hover-none">
-                            <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
-                            <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
-                        </div>
-
-                        <div class="action-group hover-block">
-                          <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
-                       
-                          <div class="dropdown">
-                            <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                             More
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                              <a class="dropdown-item" href="#">Stop Video</a>
-                              <a class="dropdown-item" href="#">Remove Share Screen Access</a>
-                              <a class="dropdown-item" href="#">Remove from Call</a>
-                            </div>
-                          </div>
-
-                        </div>
-                      </div>
-                    </li>
-
-                    <li>
-                      <div class="partcipent-user">
-                        <div class="user-img">
-                          <img src="assets/images/profile-pic.png" alt="">
-                        </div>
-                        <div class="user-info">
-                          <h3>Iris Greenwood</h3>
-                          <p>Iris@certis.sg</p>
-                        </div>
-                      </div>
-
-                      <div class="user-action">
-                        <div class="action-group hover-none">
-                            <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
-                            <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
-                        </div>
-
-                        <div class="action-group hover-block">
-                          <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
-                       
-                          <div class="dropdown">
-                            <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                             More
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                              <a class="dropdown-item" href="#">Stop Video</a>
-                              <a class="dropdown-item" href="#">Remove Share Screen Access</a>
-                              <a class="dropdown-item" href="#">Remove from Call</a>
-                            </div>
-                          </div>
-
-                        </div>
-                      </div>
-                    </li>
-
-                  </ul>
-                </div>
-              </div>
-            
-           </div>
-           </div>
-      </div>
-      </div>
-      <div class="modal-footer modal-footer-partcipent">
-        <button type="button" class="btn btn-custom btn-sm btn-blue mute-all blue-shadow btn-mute">Mute All</button>
-        <button type="button" class="btn btn-custom btn-sm btn-orange orange-shadow btn-add" data-dismiss="modal">Add Participant</button>
-        <button type="button" class="btn btn-custom btn-sm btn-transparent stop-all btn-video" >Stop Video For All</button>
-      </div>
-    </div>
-  </div>
-</div>
-
 <!-- select share screen -->
 <div class="modal fade modal-custom" tabindex="-1" id="modal-share-screen">
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-986">
@@ -1334,7 +758,6 @@
   </div>
 </div>
 
-
 <!-- modal add participant -->
 <div class="modal fade modal-custom" tabindex="-1" id="modal-add-participent">
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
@@ -1392,7 +815,6 @@
     </div>
   </div>
 </div>
-
 
 <!-- modal invitaion succeessfully -->
 <div class="modal fade modal-custom" tabindex="-1" id="modal-invitation-successsfully">
@@ -2021,7 +1443,6 @@
   </div>
 </div>
 
-
 <div class="modal fade modal-custom" tabindex="-1" id="modal-changes">
   <div class="modal-dialog modal-dialog-centered modal-546">
     <div class="modal-content modal-shadow">
@@ -2067,7 +1488,6 @@
     </div>
   </div>
 </div>
-
 
 <!-- Incoming Share Screen Request -->
 <div class="modal fade modal-custom modal-inc-share-screen-custom" tabindex="-1" id="modal-incoming-share-screen-request">
@@ -2145,6 +1565,983 @@
         <div class="btn-center-inc-ss"> 
           <button type="button" class="btn btn-custom btn-blue blue-shadow min-btn-240 ml-0">Allow Share Screen</button>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- in call partcipant -->
+<div class="modal fade modal-custom modal-inc-participant-custom" tabindex="-1" id="modal-incall-participant">
+  <div class="modal-dialog modal-dialog-top modal-dialog-scrollable modal-654">
+    <div class="modal-content">
+      
+      <div class="modal-header close-top-right">
+        <h5 class="modal-title">Participants</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><img src="assets/images/participant/cross-sign.png" alt=""></span>
+        </button>
+      </div>
+
+      <div class="modal-body p-0">
+
+        <div class="participant-content-new-root">
+
+          <div class="nav-tabs-div">
+            <ul class="nav nav-tabs">
+              <li><a data-toggle="tab"  class="active" href="#participant-tab01">In Session</a></li>
+              <li><a data-toggle="tab" href="#participant-tab02">Waiting Room</a></li>
+            </ul>
+          </div>
+        
+          <div class="tab-content">
+            <div id="participant-tab01" class="tab-pane fade in show active">
+                
+              <!-- participant -->
+              <div class="incall-participent">
+                <div class="row">
+                <div class="col-lg-12">
+                  <div class="form-group search-incall">
+                    <input type="text" class="form-control" placeholder="Type a participant name here…">
+                    <a href="#!" class="btn btn-search" >
+                    <span class="icon icon-search"></span>                  
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="participent-list-main">
+                    <div class="participent-list">
+                      <ul class="list">
+                        <li>
+                          <div class="partcipent-user">
+                            <!-- <div class="user-img">
+                              <img src="assets/images/profile-pic.png" alt="">
+                            </div> -->
+                            <div class="user-info">
+                              <h3>Helena Carter</h3>
+                              <p>Helena@certis.sg</p>
+                            </div>
+                          </div>
+    
+                          <div class="user-action">
+                            <div class="action-group hover-none">
+                                <a href="#!" class="btn btn-squre"><i class="icon icon-mic-mute"></i></a>
+                                <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                            </div>
+    
+                            <div class="action-group hover-block">
+                              <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                            
+                              <div class="dropdown">
+                                <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  More
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="#">Stop Video</a>
+                                  <a class="dropdown-item" href="#">Allow Share Screen</a>
+                                  <a class="dropdown-item" href="#">Remove from Call</a>
+                                </div>
+                              </div>
+    
+                            </div>
+                          </div>
+                        </li>
+    
+                        <li>
+                          <div class="partcipent-user">
+                            <div class="user-info">
+                              <h3>Rheneay Tristan</h3>
+                              <p>Rheneay@certis.sg</p>
+                            </div>
+                          </div>
+    
+                          <div class="user-action">
+                            <div class="action-group hover-none">
+                                <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
+                                <a href="#!" class="btn btn-squre"><i class="icon icon-video-mute"></i></a>
+                            </div>
+    
+                            <div class="action-group hover-block">
+                              <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                            
+                              <div class="dropdown">
+                                <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  More
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="#">Stop Video</a>
+                                  <a class="dropdown-item" href="#">Allow Share Screen</a>
+                                  <a class="dropdown-item" href="#">Remove from Call</a>
+                                </div>
+                              </div>
+    
+                            </div>
+                          </div>
+                        </li>
+    
+                        <li>
+                          <div class="partcipent-user">
+                            <div class="user-info">
+                              <h3>Heidi Shontell</h3>
+                              <p>Heidi@certis.sg</p>
+                            </div>
+                          </div>
+    
+                          <div class="user-action">
+                            <div class="action-group hover-none">
+                                <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
+                                <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                            </div>
+    
+                            <div class="action-group hover-block">
+                              <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                            
+                              <div class="dropdown">
+                                <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  More
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="#">Stop Video</a>
+                                  <a class="dropdown-item" href="#">Allow Share Screen</a>
+                                  <a class="dropdown-item" href="#">Remove from Call</a>
+                                </div>
+                              </div>
+    
+                            </div>
+                          </div>
+                        </li>
+    
+                        <li class="">
+                          <div class="partcipent-user">
+                            <div class="user-info">
+                              <h3>John Bloom </h3>
+                              <p>John@certis.sg</p>
+                            </div>
+                          </div>
+    
+                          <div class="user-action">
+                            <div class="action-group hover-none">
+                                <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
+                                <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                            </div>
+    
+                            <div class="action-group hover-block">
+                              <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                            
+                              <div class="dropdown">
+                                <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  More
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="#">Stop Video</a>
+                                  <a class="dropdown-item" href="#">Allow Share Screen</a>
+                                  <a class="dropdown-item" href="#">Remove from Call</a>
+                                </div>
+                              </div>
+    
+                            </div>
+                          </div>
+                        </li>
+    
+                        <li>
+                          <div class="partcipent-user">
+                            <div class="user-info">
+                              <h3>Sofie Young</h3>
+                              <p>Sofie@certis.sg</p>
+                            </div>
+                          </div>
+    
+                          <div class="user-action">
+                            <div class="action-group hover-none">
+                                <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
+                                <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                            </div>
+    
+                            <div class="action-group hover-block">
+                              <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                            
+                              <div class="dropdown">
+                                <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  More
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="#">Stop Video</a>
+                                  <a class="dropdown-item" href="#">Allow Share Screen</a>
+                                  <a class="dropdown-item" href="#">Remove from Call</a>
+                                </div>
+                              </div>
+    
+                            </div>
+                          </div>
+                        </li>
+    
+                        <li>
+                          <div class="partcipent-user">
+                            <div class="user-info">
+                              <h3>Shih Kai Lee</h3>
+                              <p>Kailee@certis.sg</p>
+                            </div>
+                          </div>
+    
+                          <div class="user-action">
+                            <div class="action-group hover-none">
+                                <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
+                                <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                            </div>
+    
+                            <div class="action-group hover-block">
+                              <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                            
+                              <div class="dropdown">
+                                <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  More
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="#">Stop Video</a>
+                                  <a class="dropdown-item" href="#">Allow Share Screen</a>
+                                  <a class="dropdown-item" href="#">Remove from Call</a>
+                                </div>
+                              </div>
+    
+                            </div>
+                          </div>
+                        </li>
+    
+                        <li>
+                          <div class="partcipent-user">
+                            <div class="user-info">
+                              <h3>Iris Greenwood</h3>
+                              <p>Iris@certis.sg</p>
+                            </div>
+                          </div>
+    
+                          <div class="user-action">
+                            <div class="action-group hover-none">
+                                <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
+                                <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                            </div>
+    
+                            <div class="action-group hover-block">
+                              <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                            
+                              <div class="dropdown">
+                                <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  More
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="#">Stop Video</a>
+                                  <a class="dropdown-item" href="#">Allow Share Screen</a>
+                                  <a class="dropdown-item" href="#">Remove from Call</a>
+                                </div>
+                              </div>
+    
+                            </div>
+                          </div>
+                        </li>
+    
+                      </ul>
+                    </div>
+                  </div>
+                
+                </div>
+                </div>
+              </div>
+              <!-- End of participant -->
+
+              <div class="modal-footer modal-footer-participant modal-footer-part-in-session">
+                <div class="modal-footer-participant-row"> 
+                  <button type="button" class="btn btn-custom btn-orange orange-shadow btn-add-participant">Add Participant</button>
+                </div>
+              </div>
+                
+            </div>
+        
+            <div id="participant-tab02" class="tab-pane fade "> 
+        
+               <!-- participant -->
+               <div class="incall-participent">
+                <div class="row">
+                <div class="col-lg-12">
+                  <div class="form-group search-incall">
+                    <input type="text" class="form-control" placeholder="Type a participant name here…">
+                    <a href="#!" class="btn btn-search" >
+                    <span class="icon icon-search"></span>                  
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="participent-list-main">
+                    <div class="participent-list">
+                      <ul class="list">
+                        <li>
+                          <div class="partcipent-user">
+                            <div class="user-info">
+                              <h3>Helena Carter</h3>
+                              <p>Helena@certis.sg</p>
+                            </div>
+                          </div>
+    
+                          <div class="user-action">
+                            <div class="action-group">
+                              <a href="#" class="btn btn-custom btn-xs btn-red btn-reject-new">Reject</a>
+                              <a href="#" class="btn btn-custom btn-xs btn-blue btn-admit-new">Admit</a>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="partcipent-user">
+                            <div class="user-info">
+                              <h3>Helena Carter</h3>
+                              <p>Helena@certis.sg</p>
+                            </div>
+                          </div>
+    
+                          <div class="user-action">
+                            <div class="action-group">
+                              <a href="#" class="btn btn-custom btn-xs btn-red btn-reject-new">Reject</a>
+                              <a href="#" class="btn btn-custom btn-xs btn-blue btn-admit-new">Admit</a>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="partcipent-user">
+                            <div class="user-info">
+                              <h3>Helena Carter</h3>
+                              <p>Helena@certis.sg</p>
+                            </div>
+                          </div>
+    
+                          <div class="user-action">
+                            <div class="action-group">
+                              <a href="#" class="btn btn-custom btn-xs btn-red btn-reject-new">Reject</a>
+                              <a href="#" class="btn btn-custom btn-xs btn-blue btn-admit-new">Admit</a>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="partcipent-user">
+                            <div class="user-info">
+                              <h3>Helena Carter</h3>
+                              <p>Helena@certis.sg</p>
+                            </div>
+                          </div>
+    
+                          <div class="user-action">
+                            <div class="action-group">
+                              <a href="#" class="btn btn-custom btn-xs btn-red btn-reject-new">Reject</a>
+                              <a href="#" class="btn btn-custom btn-xs btn-blue btn-admit-new">Admit</a>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="partcipent-user">
+                            <div class="user-info">
+                              <h3>Helena Carter</h3>
+                              <p>Helena@certis.sg</p>
+                            </div>
+                          </div>
+    
+                          <div class="user-action">
+                            <div class="action-group">
+                              <a href="#" class="btn btn-custom btn-xs btn-red btn-reject-new">Reject</a>
+                              <a href="#" class="btn btn-custom btn-xs btn-blue btn-admit-new">Admit</a>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="partcipent-user">
+                            <div class="user-info">
+                              <h3>Helena Carter</h3>
+                              <p>Helena@certis.sg</p>
+                            </div>
+                          </div>
+    
+                          <div class="user-action">
+                            <div class="action-group">
+                              <a href="#" class="btn btn-custom btn-xs btn-red btn-reject-new">Reject</a>
+                              <a href="#" class="btn btn-custom btn-xs btn-blue btn-admit-new">Admit</a>
+                            </div>
+                          </div>
+                        </li>
+
+
+                        <li>
+                          <div class="partcipent-user">
+                            <div class="user-info">
+                              <h3>Helena Carter</h3>
+                              <p>Helena@certis.sg</p>
+                            </div>
+                          </div>
+    
+                          <div class="user-action">
+                            <div class="action-group">
+                              <a href="#" class="btn btn-custom btn-xs btn-red btn-reject-new">Reject</a>
+                              <a href="#" class="btn btn-custom btn-xs btn-blue btn-admit-new">Admit</a>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="partcipent-user">
+                            <div class="user-info">
+                              <h3>Helena Carter</h3>
+                              <p>Helena@certis.sg</p>
+                            </div>
+                          </div>
+    
+                          <div class="user-action">
+                            <div class="action-group">
+                              <a href="#" class="btn btn-custom btn-xs btn-red btn-reject-new">Reject</a>
+                              <a href="#" class="btn btn-custom btn-xs btn-blue btn-admit-new">Admit</a>
+                            </div>
+                          </div>
+                        </li>
+    
+                      </ul>
+                    </div>
+                  </div>
+                
+                </div>
+                </div>
+              </div>
+              <!-- End of participant -->
+
+              <div class="modal-footer modal-footer-participant modal-footer-part-waiting-room">
+                <div class="modal-footer-participant-row"> 
+                  <!-- <button type="button" class="btn btn-custom btn-orange orange-shadow btn-add-participant">Add Participant</button> -->
+                  <button type="button" class="btn btn-custom btn-red red-shadow btn-reject-all">Reject All</button>
+                  <button type="button" class="btn btn-custom btn-blue blue-shadow btn-admit-all">Admit All</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+
+        
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- in call partcipant no-guests -->
+<div class="modal fade modal-custom modal-inc-participant-custom" tabindex="-1" id="modal-incall-participant-no-guests">
+  <div class="modal-dialog modal-dialog-top modal-dialog-scrollable modal-654">
+    <div class="modal-content">
+      
+      <div class="modal-header close-top-right">
+        <h5 class="modal-title">Participants</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><img src="assets/images/participant/cross-sign.png" alt=""></span>
+        </button>
+      </div>
+
+      <div class="modal-body p-0">
+
+        <div class="participant-content-new-root">
+
+          <div class="nav-tabs-div">
+            <ul class="nav nav-tabs">
+              <li><a data-toggle="tab"  class="active" href="#participant-tab01">In Session</a></li>
+              <li><a data-toggle="tab" href="#participant-tab02">Waiting Room</a></li>
+            </ul>
+          </div>
+        
+          <div class="tab-content">
+            <div id="participant-tab01" class="tab-pane fade in show active">
+                
+              <!-- participant -->
+              <div class="incall-participent">
+                <div class="row">
+                <div class="col-lg-12">
+                  <div class="form-group search-incall">
+                    <input type="text" class="form-control" placeholder="Type a participant name here…">
+                    <a href="#!" class="btn btn-search" >
+                    <span class="icon icon-search"></span>                  
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="participent-list-main">
+                    <div class="participent-list">
+                      
+                      <div class="desc-note-div">
+                        <div class="desc-note-inner-div">
+                          <p>There are no guests in the session at the moment.</p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                
+                </div>
+                </div>
+              </div>
+              <!-- End of participant -->
+
+              <div class="modal-footer modal-footer-participant modal-footer-part-in-session">
+                <div class="modal-footer-participant-row"> 
+                  <button type="button" class="btn btn-custom btn-orange orange-shadow btn-add-participant">Add Participant</button>
+                </div>
+              </div>
+                
+            </div>
+        
+            <div id="participant-tab02" class="tab-pane fade "> 
+        
+               <!-- participant -->
+               <div class="incall-participent">
+                <div class="row">
+                <div class="col-lg-12">
+                  <div class="form-group search-incall">
+                    <input type="text" class="form-control" placeholder="Type a participant name here…">
+                    <a href="#!" class="btn btn-search" >
+                    <span class="icon icon-search"></span>                  
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="participent-list-main">
+                    <div class="participent-list">
+                      <div class="desc-note-div">
+                        <div class="desc-note-inner-div">
+                          <p>There are no guests in the waiting room at the moment.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+                </div>
+                </div>
+              </div>
+              <!-- End of participant -->
+
+              <div class="modal-footer modal-footer-participant modal-footer-part-waiting-room">
+                <div class="modal-footer-participant-row"> 
+                  <!-- <button type="button" class="btn btn-custom btn-orange orange-shadow btn-add-participant">Add Participant</button> -->
+                  <button type="button" class="btn btn-custom btn-red red-shadow btn-reject-all">Reject All</button>
+                  <button type="button" class="btn btn-custom btn-blue blue-shadow btn-admit-all">Admit All</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- in call partcipant no-results -->
+<div class="modal fade modal-custom modal-inc-participant-custom" tabindex="-1" id="modal-incall-participant-no-results">
+  <div class="modal-dialog modal-dialog-top modal-dialog-scrollable modal-654">
+    <div class="modal-content">
+      
+      <div class="modal-header close-top-right">
+        <h5 class="modal-title">Participants</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><img src="assets/images/participant/cross-sign.png" alt=""></span>
+        </button>
+      </div>
+
+      <div class="modal-body p-0">
+
+        <div class="participant-content-new-root">
+
+          <div class="nav-tabs-div">
+            <ul class="nav nav-tabs">
+              <li><a data-toggle="tab"  class="active" href="#participant-tab01">In Session</a></li>
+              <li><a data-toggle="tab" href="#participant-tab02">Waiting Room</a></li>
+            </ul>
+          </div>
+        
+          <div class="tab-content">
+            <div id="participant-tab01" class="tab-pane fade in show active">
+                
+              <!-- participant -->
+              <div class="incall-participent">
+                <div class="row">
+                <div class="col-lg-12">
+                  <div class="form-group search-incall">
+                    <input type="text" class="form-control" placeholder="Type a participant name here…">
+                    <a href="#!" class="btn btn-search" >
+                    <span class="icon icon-search"></span>                  
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="participent-list-main">
+                    <div class="participent-list">
+                      
+                      <div class="no-results-div">
+                        <div class="no-results-inner-div">
+                          <p>No results found, please try searching another keyword.</p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                
+                </div>
+                </div>
+              </div>
+              <!-- End of participant -->
+
+              <div class="modal-footer modal-footer-participant modal-footer-part-in-session">
+                <div class="modal-footer-participant-row"> 
+                  <button type="button" class="btn btn-custom btn-orange orange-shadow btn-add-participant">Add Participant</button>
+                </div>
+              </div>
+                
+            </div>
+        
+            <div id="participant-tab02" class="tab-pane fade "> 
+        
+               <!-- participant -->
+               <div class="incall-participent">
+                <div class="row">
+                <div class="col-lg-12">
+                  <div class="form-group search-incall">
+                    <input type="text" class="form-control" placeholder="Type a participant name here…">
+                    <a href="#!" class="btn btn-search" >
+                    <span class="icon icon-search"></span>                  
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="participent-list-main">
+                    <div class="participent-list">
+
+                      <div class="no-results-div">
+                        <div class="no-results-inner-div">
+                          <p>No results found, please try searching another keyword.</p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                
+                </div>
+                </div>
+              </div>
+              <!-- End of participant -->
+
+              <div class="modal-footer modal-footer-participant modal-footer-part-waiting-room">
+                <div class="modal-footer-participant-row"> 
+                  <!-- <button type="button" class="btn btn-custom btn-orange orange-shadow btn-add-participant">Add Participant</button> -->
+                  <button type="button" class="btn btn-custom btn-red red-shadow btn-reject-all">Reject All</button>
+                  <button type="button" class="btn btn-custom btn-blue blue-shadow btn-admit-all">Admit All</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- in call partcipant -->
+<div class="modal fade modal-custom" tabindex="-1" id="modal-incall-participant-access">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header header-partciapnt close-top-right">
+        <h5 class="modal-title">Participants</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><img src="assets/images/participant/cross-sign.png" alt=""></span>
+        </button>
+      </div>
+      <div class="modal-body p-0">
+        <div class="incall-participent">
+           <div class="row">
+            <div class="col-lg-12">
+              <div class="form-group search-incall">
+                <input type="text" class="form-control" placeholder="Type a participant name here…">
+                <a href="#!" class="btn btn-search" >
+                  <span class="material-icons">
+                    search
+                    </span>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="participent-list-main">
+                <div class="participent-list">
+                  <ul class="list">
+                    <li>
+                      <div class="partcipent-user">
+                        <div class="user-img">
+                          <img src="assets/images/profile-pic.png" alt="">
+                        </div>
+                        <div class="user-info">
+                          <h3>Helena Carter</h3>
+                          <p>Helena@certis.sg</p>
+                        </div>
+                      </div>
+
+                      <div class="user-action">
+                        <div class="action-group hover-none">
+                            <a href="#!" class="btn btn-squre"><i class="icon icon-mic-mute"></i></a>
+                            <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                        </div>
+
+                        <div class="action-group hover-block">
+                          <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                       
+                          <div class="dropdown">
+                            <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             More
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Stop Video</a>
+                              <a class="dropdown-item" href="#">Remove Share Screen Access</a>
+                              <a class="dropdown-item" href="#">Remove from Call</a>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="partcipent-user">
+                        <div class="user-img">
+                          <img src="assets/images/profile-pic.png" alt="">
+                        </div>
+                        <div class="user-info">
+                          <h3>Rheneay Tristan</h3>
+                          <p>Rheneay@certis.sg</p>
+                        </div>
+                      </div>
+
+                      <div class="user-action">
+                        <div class="action-group hover-none">
+                            <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
+                            <a href="#!" class="btn btn-squre"><i class="icon icon-video-mute"></i></a>
+                        </div>
+
+                        <div class="action-group hover-block">
+                          <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                       
+                          <div class="dropdown">
+                            <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             More
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Stop Video</a>
+                              <a class="dropdown-item" href="#">Remove Share Screen Access</a>
+                              <a class="dropdown-item" href="#">Remove from Call</a>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+
+                    </li>
+
+                    <li>
+                      <div class="partcipent-user">
+                        <div class="user-img">
+                          <img src="assets/images/profile-pic.png" alt="">
+                        </div>
+                        <div class="user-info">
+                          <h3>Heidi Shontell</h3>
+                          <p>Heidi@certis.sg</p>
+                        </div>
+                      </div>
+
+                      <div class="user-action">
+                        <div class="action-group hover-none">
+                            <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
+                            <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                        </div>
+
+                        <div class="action-group hover-block">
+                          <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                       
+                          <div class="dropdown">
+                            <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             More
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Stop Video</a>
+                              <a class="dropdown-item" href="#">Remove Share Screen Access</a>
+                              <a class="dropdown-item" href="#">Remove from Call</a>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="">
+                      <div class="partcipent-user">
+                        <div class="user-img">
+                          <img src="assets/images/profile-pic.png" alt="">
+                        </div>
+                        <div class="user-info">
+                          <h3>John Bloom <span class="tag tag-orange">Access</span></h3>
+                          <p>John@certis.sg</p>
+                        </div>
+                      </div>
+
+                      <div class="user-action">
+
+                        <div class="action-group hover-none">
+                          <div class="action-group">
+                            <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
+                            <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                          </div>
+                        </div>
+
+                        <div class="action-group hover-block">
+                          <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                       
+                          <div class="dropdown">
+                            <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             More
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Stop Video</a>
+                              <a class="dropdown-item" href="#">Remove Share Screen Access</a>
+                              <a class="dropdown-item" href="#">Remove from Call</a>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="partcipent-user">
+                        <div class="user-img">
+                          <img src="assets/images/profile-pic.png" alt="">
+                        </div>
+                        <div class="user-info">
+                          <h3>Sofie Young</h3>
+                          <p>Sofie@certis.sg</p>
+                        </div>
+                      </div>
+
+                      <div class="user-action">
+                        <div class="action-group hover-none">
+                            <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
+                            <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                        </div>
+
+                        <div class="action-group hover-block">
+                          <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                       
+                          <div class="dropdown">
+                            <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             More
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Stop Video</a>
+                              <a class="dropdown-item" href="#">Remove Share Screen Access</a>
+                              <a class="dropdown-item" href="#">Remove from Call</a>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="partcipent-user">
+                        <div class="user-img">
+                          <img src="assets/images/profile-pic.png" alt="">
+                        </div>
+                        <div class="user-info">
+                          <h3>Shih Kai Lee</h3>
+                          <p>Kailee@certis.sg</p>
+                        </div>
+                      </div>
+                      <div class="user-action">
+                        <div class="action-group hover-none">
+                            <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
+                            <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                        </div>
+
+                        <div class="action-group hover-block">
+                          <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                       
+                          <div class="dropdown">
+                            <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             More
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Stop Video</a>
+                              <a class="dropdown-item" href="#">Remove Share Screen Access</a>
+                              <a class="dropdown-item" href="#">Remove from Call</a>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="partcipent-user">
+                        <div class="user-img">
+                          <img src="assets/images/profile-pic.png" alt="">
+                        </div>
+                        <div class="user-info">
+                          <h3>Iris Greenwood</h3>
+                          <p>Iris@certis.sg</p>
+                        </div>
+                      </div>
+
+                      <div class="user-action">
+                        <div class="action-group hover-none">
+                            <a href="#!" class="btn btn-squre"><i class="icon icon-mic"></i></a>
+                            <a href="#!" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                        </div>
+
+                        <div class="action-group hover-block">
+                          <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                       
+                          <div class="dropdown">
+                            <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             More
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Stop Video</a>
+                              <a class="dropdown-item" href="#">Remove Share Screen Access</a>
+                              <a class="dropdown-item" href="#">Remove from Call</a>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+            
+           </div>
+           </div>
+      </div>
+      </div>
+      <div class="modal-footer modal-footer-partcipent">
+        <button type="button" class="btn btn-custom btn-sm btn-blue mute-all blue-shadow btn-mute">Mute All</button>
+        <button type="button" class="btn btn-custom btn-sm btn-orange orange-shadow btn-add" data-dismiss="modal">Add Participant</button>
+        <button type="button" class="btn btn-custom btn-sm btn-transparent stop-all btn-video" >Stop Video For All</button>
       </div>
     </div>
   </div>
@@ -2240,11 +2637,7 @@ $('#modal-incoming-share-screen-request').on('hidden.bs.modal', function (event)
       }
     );
 
-
-
-    
     $(function() {
-
       $(".select-video").on("change", function() {        
         $('.remove-disabled').removeAttr("disabled");
         $('.remove-disabled').removeClass("btn-disabled");
@@ -2254,17 +2647,15 @@ $('#modal-incoming-share-screen-request').on('hidden.bs.modal', function (event)
         $('.remove-disabled').removeAttr("disabled");
         $('.remove-disabled').removeClass("btn-disabled");
       })
-
     });
 
     $(".mute-all").on("click",function(){
       $(".icon-mic").toggleClass('icon-mic-mute');
 
       if ($(this).text() == "Unmute All")
-       $(this).text("Mute All")
-    else
-       $(this).text("Unmute All");
-
+        $(this).text("Mute All")
+      else
+        $(this).text("Unmute All");
     });
 
     $(".stop-all").on("click",function(){
@@ -2277,7 +2668,7 @@ $('#modal-incoming-share-screen-request').on('hidden.bs.modal', function (event)
       
     });
 
-    $("#modal-incoming-share-screen-request").modal("show");
+    // $("#modal-incall-participant-no-guests").modal("show");
 
 </script>
 
